@@ -32,7 +32,7 @@ FILMS = [
         "status_cls": "",
         "mp4": "films/02_dark_knight_1080p.mp4",
         "prep_time": "25m 37s",
-        "render_time": "In progress on L4: Shots 1-12, 14 & 15 approved (14/20); DK_13, DK_16 & DK_17 queued for locked-camera re-render; rendering Shots 18-20",
+        "render_time": "In progress on L4: Shots 1-12, 14, 15 & 18 approved (15/20); DK_13, DK_16 & DK_17 queued for locked-camera re-render; rendering Shots 19-20",
         "audit": [
             {"shot": "DK_01 (800.4s -> v2: 761.6s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "v1 rejected for 4-9s pan-right & dragon mascot; v2 locked camera cleanly on Gigi for all 10s with crisp SWAT movement behind glass.", "revisions": "v2 APPROVED. Overlay clean DK_01.mp3 at t=0 and trim cleanly after dialogue tail."},
             {"shot": "DK_02 (457.2s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Custom designed Joker voice + Nolan interrogation push-in dead-on; slight mouth slur on final 1.2s silence.", "revisions": "Trim point set to 5.4s; silence-trim added to preflight for future films."},
@@ -51,6 +51,7 @@ FILMS = [
             {"shot": "DK_15 (600.3s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Crisp push-in on Hooman inside CRT monitor holding gilded Magic Cone and brochure with Joker parody graphic.", "revisions": "Approved (overlay clean DK_15.mp3 + CRT bandpass EQ, trim cleanly at 7.3s before tail stretch)."},
             {"shot": "DK_16 (457.0s)", "quality": 6, "physics": 5, "similarity": 8, "lipsync": 7, "notes": "Push-in past foreground Joker caused transparent double-exposure ghosting across the interrogation room wall at 3-6s.", "revisions": "REJECTED (<8). Hardened zero-push-in static camera prompt keeping Joker solid; queued for v2 re-render."},
             {"shot": "DK_17 (600.3s)", "quality": 7, "physics": 7, "similarity": 3, "lipsync": 8, "notes": "Hallucinated an unscripted blonde woman with face blood stepping into frame at 3-8s due to 'Look at her / admiration of Gigi' phrasing.", "revisions": "REJECTED (<8). Locked solo-Joker prompt uploaded; queued for v2 re-render."},
+            {"shot": "DK_18 (457.2s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "Damon lifts Batsuit sleeve checking white Freestyle Libre CGM sensor on tricep cleanly at table; zero morphing.", "revisions": "Approved (overlay crisp DK_18.mp3 at t=0 and trim cleanly at 6.5s before tail repeat)."},
         ],
         "bench": [
             {
@@ -90,12 +91,15 @@ FILMS = [
         "num": "03",
         "title": "Breaking Bad — Say My Name (New Mexico Desert)",
         "subtitle": "35mm High-Noon To'hajiilee Desert Standoff · Damon, Zach, Ajay, Hooman, Walter White & Gus Fring",
-        "status": "Ingredients Ready · Queued",
+        "status": "Ingredients Ready · Rendering on A100",
         "status_cls": "",
         "mp4": "films/03_breaking_bad_1080p.mp4",
         "prep_time": "25m 37s",
-        "render_time": "Queued for G4",
-        "audit": [],
+        "render_time": "In progress on A100 (colab-gpu2): BB_03 approved (168.0s); BB_02 v2 queued",
+        "audit": [
+            {"shot": "BB_02 (264.1s)", "quality": 6, "physics": 5, "similarity": 6, "lipsync": 8, "notes": "Frame 0-1s spawned blue smoke/glow around desert cars and zoomed out abruptly from close-up.", "revisions": "REJECTED (<8). Prompt hardened to lock medium framing from frame 0 with zero blue glow; queued for v2 re-render."},
+            {"shot": "BB_03 (168.0s)", "quality": 9, "physics": 10, "similarity": 10, "lipsync": 8, "notes": "Crisp 100% solid foreground Walter shoulder & Damon clutching sweaty tank top in harsh desert sun; 2.8m on A100.", "revisions": "Approved (overlay crisp BB_03.mp3 at t=0 and trim cleanly at 7.1s before tail repeat)."},
+        ],
     },
     {
         "slug": "04_goodfellas",
