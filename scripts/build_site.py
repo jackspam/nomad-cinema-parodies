@@ -32,7 +32,7 @@ FILMS = [
         "status_cls": "",
         "mp4": "films/02_dark_knight_1080p.mp4",
         "prep_time": "25m 37s",
-        "render_time": "In progress on L4: Shots 1-12, 14 & 15 approved (14/20); DK_13 & DK_16 queued for locked-camera re-render; rendering Shot 17/20",
+        "render_time": "In progress on L4: Shots 1-12, 14 & 15 approved (14/20); DK_13, DK_16 & DK_17 queued for locked-camera re-render; rendering Shots 18-20",
         "audit": [
             {"shot": "DK_01 (800.4s -> v2: 761.6s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "v1 rejected for 4-9s pan-right & dragon mascot; v2 locked camera cleanly on Gigi for all 10s with crisp SWAT movement behind glass.", "revisions": "v2 APPROVED. Overlay clean DK_01.mp3 at t=0 and trim cleanly after dialogue tail."},
             {"shot": "DK_02 (457.2s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Custom designed Joker voice + Nolan interrogation push-in dead-on; slight mouth slur on final 1.2s silence.", "revisions": "Trim point set to 5.4s; silence-trim added to preflight for future films."},
@@ -49,7 +49,40 @@ FILMS = [
             {"shot": "DK_13 (680.3s)", "quality": 7, "physics": 6, "similarity": 8, "lipsync": 8, "notes": "0-4.3s sharp CRT performance, but 4.5-8.5s camera zoomed through foreground officers causing transparent double-exposure & duplicate Hooman face in CRT.", "revisions": "REJECTED (<8). Locked static camera prompt uploaded; queued for v2 re-render."},
             {"shot": "DK_14 (456.2s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Gigi storms doorway swinging wooden pointer at ceiling CRT monitor delivering 'flushable wipes' line.", "revisions": "Approved (overlay clean DK_14.mp3 with clean 5.7s trim before final repeat)."},
             {"shot": "DK_15 (600.3s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Crisp push-in on Hooman inside CRT monitor holding gilded Magic Cone and brochure with Joker parody graphic.", "revisions": "Approved (overlay clean DK_15.mp3 + CRT bandpass EQ, trim cleanly at 7.3s before tail stretch)."},
-            {"shot": "DK_16 (done)", "quality": 6, "physics": 5, "similarity": 8, "lipsync": 7, "notes": "Push-in past foreground Joker caused transparent double-exposure ghosting across the interrogation room wall at 3-6s.", "revisions": "REJECTED (<8). Hardened zero-push-in static camera prompt keeping Joker solid; queued for v2 re-render."},
+            {"shot": "DK_16 (457.0s)", "quality": 6, "physics": 5, "similarity": 8, "lipsync": 7, "notes": "Push-in past foreground Joker caused transparent double-exposure ghosting across the interrogation room wall at 3-6s.", "revisions": "REJECTED (<8). Hardened zero-push-in static camera prompt keeping Joker solid; queued for v2 re-render."},
+            {"shot": "DK_17 (600.3s)", "quality": 7, "physics": 7, "similarity": 3, "lipsync": 8, "notes": "Hallucinated an unscripted blonde woman with face blood stepping into frame at 3-8s due to 'Look at her / admiration of Gigi' phrasing.", "revisions": "REJECTED (<8). Locked solo-Joker prompt uploaded; queued for v2 re-render."},
+        ],
+        "bench": [
+            {
+                "shot": "DK_02 (6.3s · 153f vs 175f)",
+                "ltx_time": "190.9s (cold load)",
+                "mm_time": "457.2s (L4)",
+                "ltx_scores": "10 / 10 / 10 / 10",
+                "mm_scores": "9 / 9 / 9 / 9",
+                "ltx_mp4": "../films/ltx25_bench/ltx25_dk_02.mp4",
+                "mm_mp4": "../films/ltx25_bench/dk_dk_02.mp4",
+                "notes": "LTX-2.5 kept ElevenLabs voice 100% verbatim with zero slur or tail repeat and crisp Heath Ledger lean-forward acting.",
+            },
+            {
+                "shot": "DK_04 (6.3s · 153f vs 175f)",
+                "ltx_time": "45.0s (10.1x faster)",
+                "mm_time": "456.1s (L4)",
+                "ltx_scores": "10 / 10 / 10 / 10",
+                "mm_scores": "10 / 10 / 10 / 9",
+                "ltx_mp4": "../films/ltx25_bench/ltx25_dk_04.mp4",
+                "mm_mp4": "../films/ltx25_bench/dk_dk_04.mp4",
+                "notes": "45 seconds warm on A100 at 1344x768; silky smooth profile push-in, zero artifacting, verbatim ElevenLabs voice.",
+            },
+            {
+                "shot": "DK_05 (6.9s · 169f vs 192f)",
+                "ltx_time": "50.0s (10.4x faster)",
+                "mm_time": "521.3s (L4)",
+                "ltx_scores": "9 / 10 / 9 / 10",
+                "mm_scores": "9 / 9 / 10 / 8",
+                "ltx_mp4": "../films/ltx25_bench/ltx25_dk_05.mp4",
+                "mm_mp4": "../films/ltx25_bench/dk_dk_05.mp4",
+                "notes": "50 seconds on A100; Damon slams gauntlets on table with crisp facial likeness & dead-on lip sync (no voice slurring).",
+            },
         ],
     },
     {
@@ -226,6 +259,24 @@ def build():
 
         detail_video = f'<video controls playsinline src="../{f["mp4"]}" style="max-width:760px;margin:16px 0;"></video>' if has_mp4 else ""
 
+        bench_section = ""
+        if f.get("bench"):
+            b_cards = []
+            for b in f["bench"]:
+                b_cards.append(f"""
+        <div class="card">
+          <h3>{html_mod.escape(b['shot'])}</h3>
+          <div class="meta"><b>LTX-2.5 (A100 40GB):</b> {html_mod.escape(b['ltx_time'])} · Scores (Q/P/M/L): <span class="score">{b['ltx_scores']}</span></div>
+          <video controls playsinline src="{b['ltx_mp4']}"></video>
+          <div class="meta"><b>MiniMax H3 (L4):</b> {html_mod.escape(b['mm_time'])} · Scores (Q/P/M/L): <span class="score">{b['mm_scores']}</span></div>
+          <video controls playsinline src="{b['mm_mp4']}"></video>
+          <div class="meta">{html_mod.escape(b['notes'])}</div>
+        </div>""")
+            bench_section = f"""
+  <h2>4. LTX-2.5 vs MiniMax H3 Side-by-Side Speed &amp; Quality Benchmark</h2>
+  <p class="sub">Direct A/B test at 1344×768 on Colab A100 (LTX-2.5 Distilled 8+3 steps with locked ElevenLabs audio latent) vs Colab L4 (MiniMax H3 4-step). LTX-2.5 rendered ~10× faster warm (45–50s vs 456–521s) with 100% verbatim ElevenLabs voice preservation.</p>
+  <div class="grid">{''.join(b_cards)}</div>"""
+
         detail_html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -256,6 +307,7 @@ def build():
     </thead>
     <tbody>{''.join(audit_rows)}</tbody>
   </table>
+  {bench_section}
 </body>
 </html>"""
         open(f"{BASE}/detail/{slug}.html", "w").write(detail_html)
