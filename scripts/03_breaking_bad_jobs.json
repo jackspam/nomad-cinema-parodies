@@ -5,9 +5,9 @@
       "bb_shot05_walter_standoff.jpg"
     ],
     "audio": "BB_02.mp3",
-    "length": 192,
+    "length": 175,
     "seed": 5008,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm inside the cramped RV lab; blinding shafts of golden-amber sunlight pierce dusty venetian blinds onto boiling glass flasks. Walter White taps a pressurized 5000ml round-bottom flask aggressively with gloved fingers, eyes darting over his fogged safety glasses.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Walter White stands centered outdoors in the scorching New Mexico desert between his dusty black Chrysler 300 and black SUV under blazing deep-blue sky. Walter speaks intensely with subtle brow furrow and measured jaw tension toward his associates across the dirt.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_03",
@@ -17,7 +17,7 @@
     "audio": "BB_03.mp3",
     "length": 192,
     "seed": 5015,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Signature Gilligan bottom-up 'RV toilet POV' 18mm wide distortion looking up at Damon in unzipped yellow Tyvek gripping the narrow bathroom door. Damon stares straight down toward the tiny plastic RV chemical toilet, dabbing forehead sweat with his nitrile glove while gripping the sink edge.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Over-the-shoulder from behind Walter White in the bright New Mexico desert looking at Damon in a black zip jacket and grey tank top clutching his stomach in pain, black Escalades parked behind him on red dirt. Damon grimaces through gritted teeth while speaking his dry deadpan line.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_04",
@@ -27,7 +27,7 @@
     "audio": "BB_04.mp3",
     "length": 175,
     "seed": 5022,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Extreme close-up on iPhone screen & Zach's calm face framed through amber beaker liquid distortion in the RV dinette. Zach sits serenely in his brown Alo suit beside bubbling meth trays, calmly typing a prompt about Mandeville Canyon soil drainage.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Zach sits relaxed outdoors in the bright desert in his brown Alo jacket holding his smartphone showing ChatGPT, with the beige vintage RV parked behind him on desert dirt. Zach looks earnestly toward Walter while talking calmly about ChatGPT and his olive tree crane.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_05",
@@ -37,7 +37,7 @@
     "audio": "BB_05.mp3",
     "length": 175,
     "seed": 5029,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm Arricam LT 35mm lens low-angle inside narrow RV aisle; blue surgical scrubs pop violently against warm orange-amber meth-lab lighting. Ajay snaps on his wireless surgical headlamp and raises a humming cordless micro-drill and thin DBS electrode wire straight toward Damon's skull.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Ajay stands outdoors beside his red 1984 Porsche 911 and the parked vintage RV in desert sunlight wearing blue surgical scrubs, LED surgical headlamp, and holding a cordless micro-drill. Ajay animates enthusiastically with the surgical drill raised while speaking rapidly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_06",
@@ -47,7 +47,7 @@
     "audio": "BB_06.mp3",
     "length": 158,
     "seed": 5036,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 50mm profile on Walter White ripping off his yellow chemical respirator, bathed in sweating amber rim-light. Walter White steps between Ajay and Damon, grabbing Ajay's blue-scrubbed wrist inches from a rack of volatile red-phosphorus jars.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight daylight close-up on Walter White outdoors in the New Mexico desert with a dusty black Chrysler 300 blurred behind him, wearing gold-rimmed glasses and dark jacket over blue shirt. Walter steps slightly forward, speaking sharply with intense authority.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_07",
@@ -57,7 +57,7 @@
     "audio": "BB_07.mp3",
     "length": 158,
     "seed": 5043,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium close-up on Ajay beaming cheerfully beneath his blazing LED headlamp right next to Walt's furious glare. Ajay taps his own temple fondly, gesturing with the titanium stereotactic electrode like it's a magic wand.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium close-up outdoors beside the red 1984 Porsche 911 and parked vintage RV under harsh desert noon sun; Ajay in blue surgical scrubs and illuminated headlamp grins proudly holding his surgical micro-drill while speaking animatedly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_08",
@@ -67,7 +67,7 @@
     "audio": "BB_08.mp3",
     "length": 175,
     "seed": 5050,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm 28mm tight shot at the RV dinette table; sunbeam slices cleanly across Zach's brown Alo chest logo. Zach holds up his iPhone toward Walter White like he's sharing a Restoration Hardware trade coupon.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Wide bright desert standoff shot under deep-blue New Mexico sky: Walter, Damon, and Zach stand on the left beside their black sedan facing Gus Fring on the right beside two black Escalades. Zach gestures slightly as he speaks enthusiastically.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_09",
@@ -77,7 +77,7 @@
     "audio": "BB_09.mp3",
     "length": 192,
     "seed": 5057,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight framing through the crack of the sliding RV bathroom door; Damon sits hidden inside shadowy golden sweat haze. Through the three-inch door crack, Damon wipes his Wayfarers calmly with a paper towel while bracing his knees.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium desert two-shot under blinding blue sky with a black SUV behind them: Damon in black windbreaker over sweat-damp grey tank clutches his stomach beside Walter White. Damon squints cleanly behind black-rimmed glasses and delivers his dry deadpan line.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_10",
@@ -85,9 +85,9 @@
       "bb_shot10_gus_fring.jpg"
     ],
     "audio": "BB_10.mp3",
-    "length": 158,
+    "length": 141,
     "seed": 5064,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. EXTERIOR: 290mm Angenieux telephoto compression across blinding white desert caliche; a black SUV shimmers in heat distortion before Gus Fring steps out cleanly. Gus Fring straightens his immaculate yellow Los Pollos shirt cuffs, stepping over desert scrub with zero dust touching his polished shoes.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium telephoto shot outdoors in To'hajiilee desert beside a black Escalade under harsh noon sun: Gus Fring stands razor-still in a crisp mustard Los Pollos shirt and dark patterned tie. Gus turns his eyes slightly and speaks with ice-cold calm precision.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_11",
@@ -97,7 +97,7 @@
     "audio": "BB_11.mp3",
     "length": 192,
     "seed": 5071,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Low-angle 24mm exterior shot looking up at the RV screen door as Walter White steps out onto the metal step under harsh sun glare. Walter White adjusts his crooked glasses awkwardly, blocking the RV doorway behind him with both hands.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Wide bright desert standoff framing Walter, Damon, and Zach facing Gus Fring between black vehicles on orange-ochre New Mexico dirt. Walter speaks tightly with nervous diplomatic posture.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_12",
@@ -107,7 +107,7 @@
     "audio": "BB_12.mp3",
     "length": 141,
     "seed": 5078,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 200mm tight telephoto close-up on Gus Fring's dead-still face; blinding sun outlines his glasses frame against pure cerulean sky. Gus doesn't turn his head as Zach wanders casually down the RV steps past Walter, squinting peacefully at his phone.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Wide bright desert standoff framing Gus Fring standing tall on the right facing Walter, Damon, and Zach on the left beside black Escalades. Gus remains motionless and addresses them with unblinking arctic precision.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_13",
@@ -117,7 +117,7 @@
     "audio": "BB_13.mp3",
     "length": 158,
     "seed": 5085,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium two-shot in harsh desert noon sun; shadowless dirt foreground with RV and Porsche behind Zach. Zach extends a friendly handshake across five feet of dry scrub toward Gus like he's closing furniture vendor King Jimmy.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Zach sits outdoors on red desert dirt in his brown Alo jacket in front of the vintage RV under deep sunlight, holding his smartphone. Zach smiles earnestly with friendly deal-closer body language while speaking.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_14",
@@ -125,9 +125,9 @@
       "bb_desert_04_hooman_desert.jpg"
     ],
     "audio": "BB_14.mp3",
-    "length": 260,
+    "length": 226,
     "seed": 5092,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. RV cab interior: 35mm tight shot onto the dusty 9-inch CRT TV bolted above the dash; warm cab glare meets green-gold static. The busted RV dashboard CRT snaps on with an unearthly hum; Hooman beams out of the curved glass in his gold Magic Cone jacket.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium two-shot outdoors in harsh desert sunlight beside a black Escalade: Hooman in a gleaming gold silk button-down holds up a white funnel and gold wallet directly across from Gus Fring in his charcoal suit. Hooman speaks with animated Persian-English salesman swagger.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_15",
@@ -135,9 +135,9 @@
       "bb_shot10_gus_fring.jpg"
     ],
     "audio": "BB_15.mp3",
-    "length": 141,
+    "length": 158,
     "seed": 5099,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 85mm reaction close-up through the dusty RV windshield looking at Gus Fring squinting calmly from outside. Gus steps one pace closer to the RV bumper, tilting his head precisely fifteen degrees while staring at the tiny CRT through the cracked glass.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium close-up outdoors beside a black Escalade in crisp New Mexico sunlight: Gus Fring in his mustard shirt and tie stares coldly across the desert, tilting his head a fraction of an inch with icy surgical perplexity as he speaks.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_16",
@@ -145,9 +145,9 @@
       "bb_desert_04_hooman_desert.jpg"
     ],
     "audio": "BB_16.mp3",
-    "length": 209,
+    "length": 192,
     "seed": 5106,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Macro 50mm straight onto curved CRT screen pixels; Hooman's face fills the snowy glass frame. Hooman presses a glowing Magic Cone right up against his webcam lens, holding up a crisp Los Pollos paper cup for scale.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium two-shot outdoors beside a black Escalade under blazing blue sky: Hooman in gleaming gold silk gestures passionately with the white funnel toward stoic Gus Fring. Hooman pitches shamelessly with excited hands and expressive eyebrows.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_17",
@@ -155,9 +155,9 @@
       "bb_shot04_ajay_porsche.jpg"
     ],
     "audio": "BB_17.mp3",
-    "length": 175,
+    "length": 158,
     "seed": 5113,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm exterior medium shot on the open RV passenger window; Ajay leans halfway out in blue scrubs with headlamp shining in broad daylight. Ajay waves Gus eagerly toward the RV door with one hand while revving his cordless surgical drill affectionately in the other.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium shot outdoors beside his red 1984 Porsche 911 and the parked RV in sunlit desert brush: Ajay in blue scrubs and surgical headlamp waves warmly with one hand and lifts his silver surgical drill in the other while speaking happily.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_18",
@@ -167,7 +167,7 @@
     "audio": "BB_18.mp3",
     "length": 277,
     "seed": 5120,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm low-angle shot on the RV steps; Damon exits into blinding midday sun wearing unzipped Tyvek over his Team USA singlet and Wayfarers. Damon steps carefully down onto the dirt, wiping his brow with a towel, nodding respectfully to Gus before walking straight toward Ajay's Porsche.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Wide desert standoff shot under cloudless cobalt sky with black sedan and black Escalades on ochre sand: Damon speaks in deadpan stoicism beside Walter and Zach while facing Gus.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_19",
@@ -175,9 +175,9 @@
       "bb_desert_01_wide.jpg"
     ],
     "audio": "BB_19.mp3",
-    "length": 192,
+    "length": 175,
     "seed": 5127,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm sudden close-up on Zach looking down at his phone screen beside a buzzing desert rattlesnake coiled near the rear tire. Zach ignores the three-foot diamondback rattlesnake coiling inches from his brown Alo sneakers, staring horrified at a ring-camera photo on his phone.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Wide desert standoff shot in bright sunlight between black vehicles on sand: Zach speaks with earnest distress beside Damon and Walter while facing Gus.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_20",
@@ -185,9 +185,9 @@
       "bb_desert_04_hooman_desert.jpg"
     ],
     "audio": "BB_20.mp3",
-    "length": 243,
+    "length": 294,
     "seed": 5134,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 28mm shot framing the open RV windshield with Hooman screaming through the CRT speaker while Gus reaches cleanly toward the battery wire. On the CRT, Hooman swings an imaginary shovel violently until Gus calmly pulls the red jumper wire off the RV battery outside, killing the screen.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium two-shot outdoors beside a black Escalade in golden desert light: Hooman in gold silk gestures urgently holding up his white funnel toward motionless Gus Fring until ending his line abruptly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_21",
@@ -197,6 +197,6 @@
     "audio": "BB_21.mp3",
     "length": 141,
     "seed": 5141,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Ultra-wide 14mm Zeiss sunset-gold Gilligan tableau: Gus walks back to his SUV as Ajay's 400k-mile Guards Red Porsche peels out past Walter White in towering caliche dust. Walter White pulls his black porkpie hat low as Ajay double-clutches the 1984 Porsche 911 into second gear, carrying Damon and Zach off down the dirt road in billowing golden dust.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Centered desert standoff tableau under towering New Mexico red mesas with black Chrysler and black Land Cruiser parked on dirt behind him: Walter White stares dead ahead into the camera lens and delivers his menacing final Heisenberg warning.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   }
 ]

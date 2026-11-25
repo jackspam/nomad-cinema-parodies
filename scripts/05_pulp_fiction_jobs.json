@@ -15,7 +15,7 @@
       "pf_shot07_damon_hallway.jpg"
     ],
     "audio": "PF_02.mp3",
-    "length": 345,
+    "length": 328,
     "seed": 7008,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm tight three-shot outside Apartment 49; sickly warm corridor sconce catches sweat on Damon's brow above dark-teal Wayfarers. Damon checks his tricep CGM sensor under his suit cuff while shifting his weight from foot to foot outside the chipped apartment door.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -85,7 +85,7 @@
       "pf_shot01_jules_vincent.jpg"
     ],
     "audio": "PF_09.mp3",
-    "length": 175,
+    "length": 158,
     "seed": 7057,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 75mm close-up on Vincent Vega staring blankly at Zach's earth-brown Alo shirt under harsh side-window key light. Vincent turns slowly toward Jules, palm raised slightly in utter existential confusion over Zach's jumpsuit.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -115,7 +115,7 @@
       "pf_shot04_deron_table.jpg"
     ],
     "audio": "PF_12.mp3",
-    "length": 158,
+    "length": 141,
     "seed": 7078,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 75mm dead-on close-up on Deron smiling politely beneath his conical bamboo hat brim in golden briefcase bounce light. Deron shakes a tiny yellow box of Po Chai Pills calmly under Jules's barrel, nodding cheerfully like he's discussing Intuit Dome tickets.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -135,7 +135,7 @@
       "pf_shot01_jules_vincent.jpg"
     ],
     "audio": "PF_14.mp3",
-    "length": 226,
+    "length": 209,
     "seed": 7092,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm Dutch tilt onto the dusty wood-grain 1994 Zenith CRT television beside the couch; snow snaps abruptly into Hooman's gold blazer. The Zenith TV turns itself on with an electric crackle; Hooman beams out through static in his gold Magic Cone suit, waving a shiny funnel.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -155,7 +155,7 @@
       "pf_shot01_jules_vincent.jpg"
     ],
     "audio": "PF_16.mp3",
-    "length": 226,
+    "length": 209,
     "seed": 7106,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Macro 75mm straight into the curved Zenith CRT glass; horizontal phosphor lines streak across Hooman holding an Italian silk tie and funnel. On screen, Hooman sprays a tiny jet of water out of a silk necktie and points eagerly at the glowing golden briefcase.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -195,7 +195,7 @@
       "pf_shot01_jules_vincent.jpg"
     ],
     "audio": "PF_20.mp3",
-    "length": 260,
+    "length": 243,
     "seed": 7134,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm tight frame on the flickering Zenith TV as Zach peeks calmly over the couch arm before Jules raises his .45 dead-center at the glass. Hooman waves both hands frantically on the Zenith CRT until Jules calmly aims straight at the screen.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -205,7 +205,7 @@
       "pf_shot01_jules_vincent.jpg"
     ],
     "audio": "PF_21.mp3",
-    "length": 175,
+    "length": 158,
     "seed": 7141,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 2.39:1 slow-motion aftermath: CRT glass implodes in blue sparks while Vincent lowers his pistol into thick cordite smoke drifting across sunlit dust motes. Vincent blows a tiny ribbon of smoke off his barrel, gazing blankly at the steaming TV chassis while bathroom water runs behind the closed door.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   }

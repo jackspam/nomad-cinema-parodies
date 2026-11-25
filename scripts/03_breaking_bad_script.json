@@ -70,8 +70,8 @@
         "Ajay"
       ],
       "speaker": "Walter White",
-      "exact_dialogue": "Ninety-nine point one percent pure. Not a single contaminant enters this RV. Do we understand each other?",
-      "tts_text": "[tense, clipped Bryan Cranston authority, dead serious] Ninety-nine point one percent pure. Not a single contaminant enters this RV. Do we understand each other?",
+      "exact_dialogue": "Ninety-nine point one percent pure. Not a single amateur sets foot in this desert. Do we understand each other?",
+      "tts_text": "[tense, clipped Bryan Cranston authority, dead serious] Ninety-nine point one percent pure. Not a single amateur sets foot in this desert. Do we understand each other?",
       "tts_direction": "Tense, clipped Bryan Cranston authority, dead serious",
       "visual_action": "Walter White taps a pressurized 5000ml round-bottom flask aggressively with gloved fingers, eyes darting over his fogged safety glasses.",
       "sfx_music_cue": "Propane burner roar, glass beaker bubbling, ominous low synth hum."
@@ -249,8 +249,8 @@
         "Gus Fring"
       ],
       "speaker": "Hooman",
-      "exact_dialogue": "Hoobeee? Chetoreee?! Walter, baba! Why you cook in nasty RV with diarrhea, dood? Use Magic Cone, huuuuh?",
-      "tts_text": "Hoobeee? Chetoreee?! Walter, baba! Why you cook in nasty RV with diarrhea, dood? Use Magic Cone, huuuuh?",
+      "exact_dialogue": "Hoobeee? Chetoreee?! Walter, baba! Why you cook in nasty desert sun with diarrhea, dood? Use Magic Cone, huuuuh?",
+      "tts_text": "Hoobeee? Chetoreee?! Walter, baba! Why you cook in nasty desert sun with diarrhea, dood? Use Magic Cone, huuuuh?",
       "tts_direction": "Broken Persian-English, sunny salesman swagger, rising 'huuuuh?' tail (plain v2)",
       "visual_action": "The busted RV dashboard CRT snaps on with an unearthly hum; Hooman beams out of the curved glass in his gold Magic Cone jacket.",
       "sfx_music_cue": "LOUD CRT static pop and high-pitched 15kHz tube whine; bouncy tinny audio through blown RV speaker."
@@ -263,8 +263,8 @@
         "Gus Fring"
       ],
       "speaker": "Gus Fring",
-      "exact_dialogue": "Who is on that monitor? And why is he offering me a gilded traffic funnel?",
-      "tts_text": "[quiet, surgical perplexity, faintly insulted] Who is on that monitor? And why is he offering me a gilded traffic funnel?",
+      "exact_dialogue": "Who is this man in gold silk? And why is he waving a white funnel at my Escalade?",
+      "tts_text": "[quiet, surgical perplexity, faintly insulted] Who is this man in gold silk? And why is he waving a white funnel at my Escalade?",
       "tts_direction": "Quiet surgical perplexity, faintly insulted",
       "visual_action": "Gus steps one pace closer to the RV bumper, tilting his head precisely fifteen degrees while staring at the tiny CRT through the cracked glass.",
       "sfx_music_cue": "Gravel crunch; faint rattle of RV radiator cooling tick."
@@ -292,8 +292,8 @@
         "Gus Fring"
       ],
       "speaker": "Ajay",
-      "exact_dialogue": "Gus, yaar, zero blinking! Very interesting cranial nerve! Come inside RV, I am checking basal ganglia free!",
-      "tts_text": "Gus, yaar, zero blinking! Very interesting cranial nerve! Come inside RV, I am checking basal ganglia free!",
+      "exact_dialogue": "Gus, yaar, zero blinking! Very interesting cranial nerve! Hop in my Porsche, I am checking basal ganglia free!",
+      "tts_text": "Gus, yaar, zero blinking! Very interesting cranial nerve! Hop in my Porsche, I am checking basal ganglia free!",
       "tts_direction": "Thick Indian-English, beaming medical hospitality (plain ElevenLabs v2)",
       "visual_action": "Ajay waves Gus eagerly toward the RV door with one hand while revving his cordless surgical drill affectionately in the other.",
       "sfx_music_cue": "Cordless drill two-second rev; rattle of dry scrub bushes."
@@ -339,8 +339,8 @@
         "Zach"
       ],
       "speaker": "Hooman",
-      "exact_dialogue": "Rattlesnake, Zach?! Hit it with shovel, finish! Fuck that shit, dood! My guy in Encino buy RV\u2014",
-      "tts_text": "Rattlesnake, Zach?! Hit it with shovel, finish! Fuck that shit, dood! My guy in Encino buy RV\u2014",
+      "exact_dialogue": "Rattlesnake, Zach?! Hit it with shovel, finish! Fuck that shit, dood! My guy in Encino buy all these SUVs\u2014",
+      "tts_text": "Rattlesnake, Zach?! Hit it with shovel, finish! Fuck that shit, dood! My guy in Encino buy all these SUVs\u2014",
       "tts_direction": "Loud exasperated West LA fixer barking through static, cut clean on cable yank (plain v2)",
       "visual_action": "On the CRT, Hooman swings an imaginary shovel violently until Gus calmly pulls the red jumper wire off the RV battery outside, killing the screen.",
       "sfx_music_cue": "Rattlesnake hiss; CRT electrical SPARK and dead silence; smooth metallic hood close."
