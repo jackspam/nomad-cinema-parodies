@@ -32,7 +32,7 @@ FILMS = [
         "status_cls": "",
         "mp4": "films/02_dark_knight_1080p.mp4",
         "prep_time": "25m 37s",
-        "render_time": "In progress on L4: Shots 1-12 & 14 approved (13/20); Shot 13 queued for v2 re-render; rendering Shot 15/20",
+        "render_time": "In progress on L4: Shots 1-12, 14 & 15 approved (14/20; DK_15 600.3s); DK_13 v2 queued; rendering Shot 16/20",
         "audit": [
             {"shot": "DK_01 (800.4s -> v2: 761.6s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "v1 rejected for 4-9s pan-right & dragon mascot; v2 locked camera cleanly on Gigi for all 10s with crisp SWAT movement behind glass.", "revisions": "v2 APPROVED. Overlay clean DK_01.mp3 at t=0 and trim cleanly after dialogue tail."},
             {"shot": "DK_02 (457.2s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Custom designed Joker voice + Nolan interrogation push-in dead-on; slight mouth slur on final 1.2s silence.", "revisions": "Trim point set to 5.4s; silence-trim added to preflight for future films."},
@@ -48,6 +48,7 @@ FILMS = [
             {"shot": "DK_12 (387.5s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "Deron leans by white cinderblock holding Po Chai Pills & Clippers line; slight 'security' slur & tail syllable at 5.5s.", "revisions": "Approved (overlay crisp DK_12.mp3 at t=0, trim cleanly at 5.35s)."},
             {"shot": "DK_13 (680.3s)", "quality": 7, "physics": 6, "similarity": 8, "lipsync": 8, "notes": "0-4.3s sharp CRT performance, but 4.5-8.5s camera zoomed through foreground officers causing transparent double-exposure & duplicate Hooman face in CRT.", "revisions": "REJECTED (<8). Locked static camera prompt uploaded; queued for v2 re-render."},
             {"shot": "DK_14 (456.2s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Gigi storms doorway swinging wooden pointer at ceiling CRT monitor delivering 'flushable wipes' line.", "revisions": "Approved (overlay clean DK_14.mp3 with clean 5.7s trim before final repeat)."},
+            {"shot": "DK_15 (600.3s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Crisp push-in on Hooman inside CRT monitor holding gilded Magic Cone and brochure with Joker parody graphic.", "revisions": "Approved (overlay clean DK_15.mp3 + CRT bandpass EQ, trim cleanly at 7.3s before tail stretch)."},
         ],
     },
     {
