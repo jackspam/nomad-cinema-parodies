@@ -15,7 +15,7 @@
       "dk_shot02_joker_table.jpg"
     ],
     "audio": "DK_02.mp3",
-    "length": 192,
+    "length": 175,
     "seed": 4008,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. IMAX 65mm 50mm close-up inside dark interrogation room; Joker's face half-carved in sickly overhead green-cyan pools against pitch-black cinderblock. The Joker sits slumped forward, eyes flicking from Damon's hunched shadow toward the two-way mirror, tongue flicking at his scarred cheek.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with only a slow 3-5% cinema push-in and natural realistic body/mouth physics."
   },
@@ -35,7 +35,7 @@
       "dk_shot04_joker_profile.jpg"
     ],
     "audio": "DK_04.mp3",
-    "length": 192,
+    "length": 175,
     "seed": 4022,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Panavision 50mm tight two-shot profile; shallow depth of field across the pitted metal table under flickering cyan tube. The Joker leans smoothly across the table, studying Damon's trembling knuckles and sweat-slick jaw with genuine fascination.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with only a slow 3-5% cinema push-in and natural realistic body/mouth physics."
   },
@@ -75,7 +75,7 @@
       "dk_shot08_joker_bright.jpg"
     ],
     "audio": "DK_08.mp3",
-    "length": 209,
+    "length": 226,
     "seed": 4050,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. IMAX 65mm 50mm circling slowly behind The Joker in stark white overhead interrogation light; crisp metallic bokeh on cinderblock paint. The Joker rests his chin on steepled purple-gloved fingers, tilting his head calmly as Damon breathes slowly through his nose.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with only a slow 3-5% cinema push-in and natural realistic body/mouth physics."
   },

@@ -75,7 +75,7 @@
       "gf_shot08_tommy_closeup.jpg"
     ],
     "audio": "GF_08.mp3",
-    "length": 192,
+    "length": 175,
     "seed": 6050,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. SCORSESE WHIP-PAN & SLOW DOLLY PUSH: razor-tight 50mm onto Tommy DeVito's stony face under hot red tungsten rim light; grain sharpens. Tommy stops chewing mid-bite, setting his fork down cleanly with a soft porcelain click, boring holes into Deron.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
@@ -105,7 +105,7 @@
       "gf_copa_04_tommy_laugh.jpg"
     ],
     "audio": "GF_11.mp3",
-    "length": 277,
+    "length": 158,
     "seed": 6071,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 35mm low-angle push on Tommy exploding half out of the crimson banquette, veins up in his neck under red shade. Tommy slaps the bread plate aside, knocking silverware onto the floor while leaning inches from Deron's conical hat brim.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
@@ -135,7 +135,7 @@
       "gf_shot05_henry_ots.jpg"
     ],
     "audio": "GF_14.mp3",
-    "length": 175,
+    "length": 192,
     "seed": 6092,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm wide two-shot of Henry Hill and Tommy DeVito both staring straight up at the glowing television in stunned synchronized disbelief. Henry puts his glass down slowly while Tommy stares open-mouthed up at Hooman's face illuminating their dark booth.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
@@ -155,7 +155,7 @@
       "gf_shot01_tommy_funny.jpg"
     ],
     "audio": "GF_16.mp3",
-    "length": 158,
+    "length": 141,
     "seed": 6106,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm low-angle shot on Tommy DeVito sliding violently out of the booth, hand flashing toward his double-breasted jacket. Tommy snatches a heavy green Dom Perignon bottle out of the silver ice bucket, winding up toward the wood-paneled television.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
@@ -195,7 +195,7 @@
       "gf_shot15_table_wide.jpg"
     ],
     "audio": "GF_20.mp3",
-    "length": 311,
+    "length": 294,
     "seed": 6134,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. CLASSIC SCORSESE SLOW-MOTION DOLLY PUSH & FREEZE-FRAME: Zach checks his phone placidly through blue TV smoke as Henry Hill stares dead down the 35mm lens. Henry stares straight into the camera as red lights catch his eyes; beside him, Zach calmly shows him a Mandeville Canyon olive tree photo while the frame freezes into grainy 35mm film.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   }

@@ -1,4 +1,6 @@
+import glob
 import json
+import os
 import sys
 import time
 import urllib.request
@@ -73,12 +75,23 @@ def wait_done(pid):
 def main():
     jobs_path = sys.argv[1]
     jobs = json.load(open(jobs_path))
+    timings_path = "/content/render_timing_log.json"
+    timings = json.load(open(timings_path)) if os.path.exists(timings_path) else {}
+
     for job in jobs:
+        prefix = job["prefix"]
+        existing = sorted(glob.glob(f"/content/ComfyUI/output/video/{prefix}_*.mp4"))
+        if existing:
+            print(f"=== Skipping {prefix} (already rendered: {existing[-1]}) ===", flush=True)
+            continue
         t0 = time.time()
-        print(f"=== Starting {job['prefix']} (len={job['length']}) ===", flush=True)
+        print(f"=== Starting {prefix} (len={job['length']}) ===", flush=True)
         pid = submit(build_workflow(job))
         out = wait_done(pid)
-        print(f"=== Finished {job['prefix']} in {time.time()-t0:.1f}s ===", flush=True)
+        elapsed = round(time.time() - t0, 1)
+        timings[prefix] = {"elapsed_sec": elapsed, "frames": job["length"], "outputs": out.get("17", {}).get("images", [])}
+        json.dump(timings, open(timings_path, "w"), indent=2)
+        print(f"=== Finished {prefix} in {elapsed}s ===", flush=True)
         print(json.dumps(out.get("17", {}), indent=2), flush=True)
 
 

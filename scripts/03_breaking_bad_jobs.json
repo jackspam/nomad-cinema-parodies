@@ -45,7 +45,7 @@
       "bb_desert_02_walter_cu.jpg"
     ],
     "audio": "BB_06.mp3",
-    "length": 175,
+    "length": 158,
     "seed": 5036,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 50mm profile on Walter White ripping off his yellow chemical respirator, bathed in sweating amber rim-light. Walter White steps between Ajay and Damon, grabbing Ajay's blue-scrubbed wrist inches from a rack of volatile red-phosphorus jars.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
@@ -95,7 +95,7 @@
       "bb_desert_01_wide.jpg"
     ],
     "audio": "BB_11.mp3",
-    "length": 209,
+    "length": 192,
     "seed": 5071,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Low-angle 24mm exterior shot looking up at the RV screen door as Walter White steps out onto the metal step under harsh sun glare. Walter White adjusts his crooked glasses awkwardly, blocking the RV doorway behind him with both hands.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
@@ -105,7 +105,7 @@
       "bb_desert_01_wide.jpg"
     ],
     "audio": "BB_12.mp3",
-    "length": 158,
+    "length": 141,
     "seed": 5078,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 200mm tight telephoto close-up on Gus Fring's dead-still face; blinding sun outlines his glasses frame against pure cerulean sky. Gus doesn't turn his head as Zach wanders casually down the RV steps past Walter, squinting peacefully at his phone.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },

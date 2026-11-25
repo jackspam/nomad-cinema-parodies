@@ -5,7 +5,7 @@
       "mx_shot01_morpheus_glasses.jpg"
     ],
     "audio": "MX_01.mp3",
-    "length": 192,
+    "length": 175,
     "seed": 9001,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Symmetrical 27mm Super 35 wide frame inside crumbling Lafayette Hotel; rain sheets down arched windows while green-tinted lightning illuminates Morpheus, Damon, Deron, and Zach. Morpheus stands motionless behind a cracked burgundy leather armchair, water dripping steadily from the peeling ceiling into a metal bucket beside him.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -25,7 +25,7 @@
       "mx_shot01_morpheus_glasses.jpg"
     ],
     "audio": "MX_03.mp3",
-    "length": 209,
+    "length": 192,
     "seed": 9015,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 75mm symmetrical close-up on Morpheus; pale emerald lightning flashes behind his silhouette as rain streams across the pane. Morpheus holds up a single coppertop Duracell battery between black-gloved fingers, glowing stark silver in green storm haze.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -65,7 +65,7 @@
       "mx_shot01_morpheus_glasses.jpg"
     ],
     "audio": "MX_07.mp3",
-    "length": 192,
+    "length": 175,
     "seed": 9043,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. ICONIC 75mm MACRO SUNGLASS REFLECTION SHOT: crimson pill in right leather palm, cobalt pill in left, both reflected symmetrically inside Morpheus's armless pince-nez lenses. Morpheus holds both open palms steady under lightning flashes, waiting with absolute reverence.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -145,7 +145,7 @@
       "mx_shot01_morpheus_glasses.jpg"
     ],
     "audio": "MX_15.mp3",
-    "length": 158,
+    "length": 141,
     "seed": 9099,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 75mm symmetrical close-up on Morpheus leaning downward through green storm gloom, absolute gravity restored. Dust trickles off the ceiling plaster as Morpheus nods once firmly toward Damon's hand.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -195,7 +195,7 @@
       "mx_shot01_morpheus_glasses.jpg"
     ],
     "audio": "MX_20.mp3",
-    "length": 192,
+    "length": 243,
     "seed": 9134,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. ICONIC 1999 FINALE: 2.39:1 wide symmetrical shot as cascading green digital rain swallows the room; Morpheus stands motionless while Deron calmly slurps boba through falling code! Morpheus clicks his Nokia slider shut cleanly as cascading green Matrix code swallows the bathroom door, Deron's conical hat, and Zach's glowing iPhone into black.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   }
