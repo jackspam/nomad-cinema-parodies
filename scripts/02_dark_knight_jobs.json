@@ -1,0 +1,217 @@
+[
+  {
+    "prefix": "dk_dk_01",
+    "images": [
+      "dk_shot01_gigi_obs.jpg",
+      "gigi.jpg"
+    ],
+    "audio": "DK_01.mp3",
+    "length": 243,
+    "seed": 4001,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. 35mm Panavision Primo 35mm lens, slow push inside dark MCU observation room behind two-way mirror; cool cyan-slate reflection on glass, dim practical desk glow. Gigi taps a laminated red/green behavior clip-chart against the two-way glass while Deron eats takeout beside her in a conical bamboo hat and red dragon robe; beyond the glass, Damon looms in the dark Batsuit over a seated Joker. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_02",
+    "images": [
+      "dk_shot02_joker_table.jpg"
+    ],
+    "audio": "DK_02.mp3",
+    "length": 192,
+    "seed": 4008,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. IMAX 65mm 50mm close-up inside dark interrogation room; Joker's face half-carved in sickly overhead green-cyan pools against pitch-black cinderblock. The Joker sits slumped forward, eyes flicking from Damon's hunched shadow toward the two-way mirror, tongue flicking at his scarred cheek. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_03",
+    "images": [
+      "dk_shot03_damon_batman.jpg",
+      "damon.jpg"
+    ],
+    "audio": "DK_03.mp3",
+    "length": 192,
+    "seed": 4015,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. IMAX 65mm 75mm tight reverse over Joker's shoulder onto Damon; dark teal-black shadows hide cowl sweat until cheek gleams faintly. Damon plants armored gauntlets onto the steel table to stay upright, shoulders rigid, silently clenching through a violent gut spasm. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_04",
+    "images": [
+      "dk_shot02_joker_table.jpg"
+    ],
+    "audio": "DK_04.mp3",
+    "length": 192,
+    "seed": 4022,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. Panavision 50mm tight two-shot profile; shallow depth of field across the pitted metal table under flickering cyan tube. The Joker leans smoothly across the table, studying Damon's trembling knuckles and sweat-slick jaw with genuine fascination. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_05",
+    "images": [
+      "dk_shot09_damon_bright.jpg",
+      "damon.jpg"
+    ],
+    "audio": "DK_05.mp3",
+    "length": 192,
+    "seed": 4029,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. HARD CUT TO FULL FLUORESCENT BLAST: 35mm wide 28mm shot as overhead sodium-vapor and unfiltered white tubes slam on, flooding the concrete room in brutal clinical glare. Blinded momentarily by the sudden white glare, Damon grips his stomach over the kevlar bat-symbol, glaring down at Joker with zero loss of composure. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_06",
+    "images": [
+      "dk_shot06_deron_obs.jpg",
+      "deron-robe.jpg"
+    ],
+    "audio": "DK_06.mp3",
+    "length": 141,
+    "seed": 4036,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. Observation room 35mm tight two-shot; harsh white spill from the two-way glass illuminates Deron's conical hat brim and red silk dragon embroidery. Deron taps the glass anxiously with bamboo chopsticks holding a steamed siu mai while peering into the bright interrogation room. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_07",
+    "images": [
+      "dk_shot01_gigi_obs.jpg",
+      "gigi.jpg"
+    ],
+    "audio": "DK_07.mp3",
+    "length": 243,
+    "seed": 4043,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. 35mm close-up on Gigi in dark observation slate-blue spill; hard top rim-light catches her furious expression. Gigi confiscates Deron's chopsticks with one brisk swipe like contraband safety scissors and clips a wooden clothespin onto the red zone of her chart. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_08",
+    "images": [
+      "dk_shot08_joker_bright.jpg"
+    ],
+    "audio": "DK_08.mp3",
+    "length": 209,
+    "seed": 4050,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. IMAX 65mm 50mm circling slowly behind The Joker in stark white overhead interrogation light; crisp metallic bokeh on cinderblock paint. The Joker rests his chin on steepled purple-gloved fingers, tilting his head calmly as Damon breathes slowly through his nose. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_09",
+    "images": [
+      "dk_shot09_damon_bright.jpg",
+      "damon.jpg"
+    ],
+    "audio": "DK_09.mp3",
+    "length": 175,
+    "seed": 4057,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. Handheld 35mm 40mm tight shoulder-height smash-angle as Damon braces over the steel table under blistering top light. Damon slams Joker's forehead gently onto the metal tabletop, then freezes stiff as a deep rumble shakes his own utility belt. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_10",
+    "images": [
+      "dk_shot04_deron_door.jpg",
+      "deron-robe.jpg"
+    ],
+    "audio": "DK_10.mp3",
+    "length": 141,
+    "seed": 4064,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. Wide 28mm interrogation room shot toward heavy steel entry door; clinical fluorescent light hits Deron's vibrant crimson dragon robe and straw conical hat. Deron kicks open the heavy steel door holding a crinkly 99 Ranch bag, an iced brown sugar boba cup, and tiny yellow-boxed Po Chai Pills, offering them straight to Joker. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_11",
+    "images": [
+      "dk_shot11_joker_low.jpg"
+    ],
+    "audio": "DK_11.mp3",
+    "length": 158,
+    "seed": 4071,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. IMAX 65mm 75mm dead-on close-up of The Joker staring up from the steel table in sterile top light. The Joker blinks slowly beneath smudged black eye paint, staring straight up at Deron's conical bamboo hat brim. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_12",
+    "images": [
+      "dk_shot04_deron_door.jpg",
+      "deron-robe.jpg"
+    ],
+    "audio": "DK_12.mp3",
+    "length": 158,
+    "seed": 4078,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. 35mm low-angle medium shot of Deron leaning against the stark white cinderblocks, looking down like a basketball analyst. Deron points sternly at Joker with a small vial of herbal stomach pills, adjusting his red silk dragon sleeve over his GCPD badge. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_13",
+    "images": [
+      "dk_shot05_hooman_tv.jpg",
+      "hooman.jpg"
+    ],
+    "audio": "DK_13.mp3",
+    "length": 226,
+    "seed": 4085,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. 35mm Dutch tilt up toward the corner-mounted CRT CCTV monitor and steel intercom speaker; sickly green scanlines clash with white room glare. The precinct monitor glitches violently; Hooman's face fills the grainy 4:3 screen in his gold Magic Cone blazer, grinning warmly through intercom static. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_14",
+    "images": [
+      "dk_shot14_gigi_interrogation.jpg",
+      "gigi.jpg"
+    ],
+    "audio": "DK_14.mp3",
+    "length": 175,
+    "seed": 4092,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. 35mm medium tracking shot as Gigi strides into the interrogation room doorway under blinding ceiling lights, face thunderous. Gigi points her wooden classroom pointer straight up at the corner CCTV monitor, ignoring Joker completely. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_15",
+    "images": [
+      "dk_shot05_hooman_tv.jpg",
+      "hooman.jpg"
+    ],
+    "audio": "DK_15.mp3",
+    "length": 209,
+    "seed": 4099,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. Tight 75mm telephoto crop onto the buzzing CRT monitor glass; Hooman's gold suit glows against scanline phosphor flicker. On the CCTV screen, Hooman waves a gleaming gilded Magic Cone in one hand and a brochure toward the Joker. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_16",
+    "images": [
+      "dk_shot16_gigi_table.jpg",
+      "gigi.jpg"
+    ],
+    "audio": "DK_16.mp3",
+    "length": 175,
+    "seed": 4106,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. IMAX 65mm 35mm whip-zoom onto Gigi as she slams both palms onto the interrogation table, lighting her face in harsh clinical under-bounce. Gigi leans right over the steel table, rattling Joker's water cup and making even Batman flinch slightly. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_17",
+    "images": [
+      "dk_shot08_joker_bright.jpg"
+    ],
+    "audio": "DK_17.mp3",
+    "length": 209,
+    "seed": 4113,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. 35mm close-up on The Joker looking sideways at Gigi, bathed in ruthless overhead white shadows. The Joker leans sideways out of his chair slightly, eyes wide in sincere professional admiration of Gigi's rage. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_18",
+    "images": [
+      "dk_shot03_damon_batman.jpg",
+      "damon.jpg"
+    ],
+    "audio": "DK_18.mp3",
+    "length": 175,
+    "seed": 4120,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. IMAX 65mm 50mm tight push-in on Damon rising slowly above the table; white light reflects off his dark-teal Wayfarer cowl lenses and sweat. Damon checks the Freestyle Libre CGM sensor on his tricep under the split kevlar plate, standing stiffly like a speed-walker at T2. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_19",
+    "images": [
+      "dk_shot04_deron_door.jpg",
+      "deron-robe.jpg"
+    ],
+    "audio": "DK_19.mp3",
+    "length": 141,
+    "seed": 4127,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. 35mm Panavision Primo 35mm lens medium shot by the doorway; Deron steps aside bowing smoothly in red silk while gripping his boba cup. Deron swings the heavy steel door wide open, holding his conical bamboo hat steady as Damon stiff-walks briskly past him in full flowing cape. The speaking character delivers their line naturally with exact lip sync to the audio."
+  },
+  {
+    "prefix": "dk_dk_20",
+    "images": [
+      "dk_shot05_hooman_tv.jpg",
+      "hooman.jpg"
+    ],
+    "audio": "DK_20.mp3",
+    "length": 277,
+    "seed": 4134,
+    "prompt": "Photorealistic 35mm IMAX live-action film scene, Christopher Nolan The Dark Knight interrogation room cinematography, natural film grain, zero cartoon look. Wide 28mm IMAX closing frame: Gigi snaps the light switch DOWN, plunging Joker and Deron back into dark cyan shadow as the CCTV monitor flickers out. Gigi yanks the monitor power cord out of the wall mid-sentence; the CRT collapses to a bright cyan dot while Joker sits baffled beside Deron slurping boba in the dark. The speaking character delivers their line naturally with exact lip sync to the audio."
+  }
+]
