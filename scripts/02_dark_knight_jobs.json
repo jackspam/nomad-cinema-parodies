@@ -7,7 +7,7 @@
     "audio": "DK_01.mp3",
     "length": 243,
     "seed": 4001,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm Panavision Primo 35mm lens, slow push inside dark MCU observation room behind two-way mirror; cool cyan-slate reflection on glass, dim practical desk glow. Gigi taps a laminated red/green behavior clip-chart against the two-way glass while Deron eats takeout beside her in a conical bamboo hat and red dragon robe; beyond the glass, Damon looms in the dark Batsuit over a seated Joker.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with only a slow 3-5% cinema push-in and natural realistic body/mouth physics."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm Nolan interrogation room scene.\n<Audio 1> is the exact spoken dialogue audio track for the woman in the tan trench coat in <Picture 1>.\nKeep the camera framing locked on <Picture 1> with only a slow 2% push-in. The woman points toward the observation glass and speaks <Audio 1> with exact lip sync while the two uniformed police officers remain still behind her. Do NOT pan away or introduce any other people or creatures. Subtle 35mm film grain."
   },
   {
     "prefix": "dk_dk_02",
@@ -27,7 +27,7 @@
     "audio": "DK_03.mp3",
     "length": 192,
     "seed": 4015,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. IMAX 65mm 75mm tight reverse over Joker's shoulder onto Damon; dark teal-black shadows hide cowl sweat until cheek gleams faintly. Damon plants armored gauntlets onto the steel table to stay upright, shoulders rigid, silently clenching through a violent gut spasm.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with only a slow 3-5% cinema push-in and natural realistic body/mouth physics."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic IMAX 65mm Nolan interrogation room scene.\n<Audio 1> is the exact spoken dialogue audio track for the bald man with glasses in the matte-black Batsuit in <Picture 1>.\nKeep the camera framing strictly locked straight-on to <Picture 1> facing the man in the Batsuit at the steel table. He grips his gauntlets on the table and winces in stomach discomfort while speaking <Audio 1> with exact lip sync. Do NOT orbit behind anyone or morph faces. Subtle 35mm film grain."
   },
   {
     "prefix": "dk_dk_04",
@@ -67,7 +67,7 @@
     "audio": "DK_07.mp3",
     "length": 243,
     "seed": 4043,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm close-up on Gigi in dark observation slate-blue spill; hard top rim-light catches her furious expression. Gigi confiscates Deron's chopsticks with one brisk swipe like contraband safety scissors and clips a wooden clothespin onto the red zone of her chart.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with only a slow 3-5% cinema push-in and natural realistic body/mouth physics."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm Nolan interrogation room scene.\n<Audio 1> is the exact spoken dialogue audio track for the woman holding chopsticks in <Picture 1>.\nKeep camera framing locked on <Picture 1> through the observation glass. She glares fiercely while holding the wooden chopsticks and speaking <Audio 1> with exact lip sync. Do NOT pan away or introduce off-screen people. Subtle 35mm film grain."
   },
   {
     "prefix": "dk_dk_08",
@@ -117,7 +117,7 @@
     "audio": "DK_12.mp3",
     "length": 158,
     "seed": 4078,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm low-angle medium shot of Deron leaning against the stark white cinderblocks, looking down like a basketball analyst. Deron points sternly at Joker with a small vial of herbal stomach pills, adjusting his red silk dragon sleeve over his GCPD badge.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with only a slow 3-5% cinema push-in and natural realistic body/mouth physics."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm low-angle medium shot of Deron leaning against the stark white cinderblocks, looking down  Deron points sternly at Joker with a small vial of herbal stomach pills, adjusting his red silk dragon sleeve over his GCPD badge.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with only a slow 3-5% cinema push-in and natural realistic body/mouth physics."
   },
   {
     "prefix": "dk_dk_13",
@@ -157,7 +157,7 @@
     "audio": "DK_16.mp3",
     "length": 175,
     "seed": 4106,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. IMAX 65mm 35mm whip-zoom onto Gigi as she slams both palms onto the interrogation table, lighting her face in harsh clinical under-bounce. Gigi leans right over the steel table, rattling Joker's water cup and making even Batman flinch slightly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with only a slow 3-5% cinema push-in and natural realistic body/mouth physics."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. IMAX 65mm 35mm controlled slow push-in onto Gigi as she slams both palms onto the interrogation table, lighting her face in harsh clinical under-bounce. Gigi leans right over the steel table, beside the plastic water cup and making even Batman flinch slightly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with only a slow 3-5% cinema push-in and natural realistic body/mouth physics."
   },
   {
     "prefix": "dk_dk_17",

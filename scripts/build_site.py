@@ -40,6 +40,8 @@ FILMS = [
             {"shot": "DK_04 (456.1s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Dead-on two-shot profile Joker leaning toward Batman's gauntlets; slight trailing word echo at 6.1s.", "revisions": "Approved with clean trim at 6.0s."},
             {"shot": "DK_05 (521.3s)", "quality": 9, "physics": 9, "similarity": 10, "lipsync": 8, "notes": "Overhead fluorescents slam on from dark to bright glare just like Nolan's cut.", "revisions": "Approved (overlay crisp DK_05.mp3 at t=0, mute native audio)."},
             {"shot": "DK_06 (330.8s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Deron (conical hat & red dragon robe) holding siu mai in observation booth beside Gigi; slight 'dim sum' echo on final 0.4s.", "revisions": "Approved with clean 5.25s trim."},
+            {"shot": "DK_07 (768.2s)", "quality": 5, "physics": 3, "similarity": 6, "lipsync": 7, "notes": "Literal red lines and floating safety scissors materialized across Gigi's face from simile phrasing in old prompt.", "revisions": "REJECTED (<8). Hardened literal-only prompt queued for re-render."},
+            {"shot": "DK_08 (680.4s)", "quality": 10, "physics": 9, "similarity": 10, "lipsync": 9, "notes": "Smooth Nolan table circle around Joker & Batman with accurate mirror reflections; repeats 'and a little' at 7.8s tail.", "revisions": "Approved with clean 7.6s trim."},
         ],
     },
     {

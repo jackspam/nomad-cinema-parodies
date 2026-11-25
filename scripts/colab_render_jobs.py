@@ -72,11 +72,22 @@ def wait_done(pid):
         time.sleep(8)
 
 
+def wait_queue_empty():
+    while True:
+        with urllib.request.urlopen(f"{COMFY}/queue") as r:
+            q = json.loads(r.read())
+        if not q.get("queue_running") and not q.get("queue_pending"):
+            return
+        time.sleep(8)
+
+
 def main():
     jobs_path = sys.argv[1]
     jobs = json.load(open(jobs_path))
     timings_path = "/content/render_timing_log.json"
     timings = json.load(open(timings_path)) if os.path.exists(timings_path) else {}
+
+    wait_queue_empty()
 
     for job in jobs:
         prefix = job["prefix"]
