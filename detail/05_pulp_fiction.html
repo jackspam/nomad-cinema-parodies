@@ -32,10 +32,10 @@ th { background: #1b202c; color: #93c5fd; font-weight: 600; }
 </head>
 <body>
   <p><a href="../index.html">← Back to Studio Hub</a></p>
-  <span class="badge ">Ingredients Ready · Rendering on L4 (colab-gpu3)</span>
+  <span class="badge done">1080p Ready</span>
   <h1 style="margin-top:8px;">05. Pulp Fiction — Ezekiel 25:17 (Brett&#x27;s Apartment)</h1>
-  <p class="sub">Tarantino 35mm Panavision · Damon, Deron, Zach, Jules Winnfield &amp; Vincent Vega · Ingredient Prep: 25m 37s · Render Time: Rendering on L4 (colab-gpu3)</p>
-  
+  <p class="sub">Tarantino 35mm Panavision · Damon, Deron, Zach, Jules Winnfield &amp; Vincent Vega · Ingredient Prep: 25m 37s · Render Time: 100% LTX-2.5 split L4+A100 (~22m + 25s G4 PF_20 fix, 2m 08s 1080p master)</p>
+  <video controls playsinline src="../films/05_pulp_fiction_1080p.mp4" style="max-width:760px;margin:16px 0;"></video>
 
   <h2>1. YouTube Reference Frame Extraction (40 shots sampled)</h2>
   <p class="sub">Original movie frames extracted directly from the scene to match camera angles, lenses, lighting contrast, and color palette.</p>
@@ -240,9 +240,8 @@ Keep camera framing locked to &lt;Picture 1&gt; with ZERO zoom or pan past foreg
         <div class="meta"><b>Keyframe:</b> pf_shot01_jules_vincent.jpg</div>
         <div class="meta"><b>Line:</b> "Fuck that shit, Jules, dood! Tell Darren I got guy in Encino buy that briefcase! Ten billion—"</div>
         <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
-&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
-Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Fixed medium two-shot anchored strictly to &lt;Picture 1&gt;. Jules stands calmly holding his pistol downward on the left beside Vincent in the olive-green room, delivering his line with cold precision.
-Keep camera framing locked to &lt;Picture 1&gt; with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+&lt;Audio 1&gt; plays off-screen from a speaker while every character face, costume, lighting, lens, and set geometry stays strictly faithful to &lt;Picture 1&gt;. Fixed medium two-shot locked strictly to &lt;Picture 1&gt;: both Jules (left) and Vincent (right) stand completely motionless and SILENT with their mouths tightly CLOSED the entire shot, glaring in stunned disbelief down toward an off-screen ringing speaker while listening quietly without ever opening their mouths or speaking.
+Keep camera framing strictly locked to &lt;Picture 1&gt; with zero lip movement or dialogue on either man, subtle 35mm film grain.</div>
       </div>
       <div class="card">
         <img src="../refs/05_pulp_fiction/pf_shot01_jules_vincent.jpg" alt="pf_shot01_jules_vincent.jpg" />
@@ -260,7 +259,196 @@ Keep camera framing locked to &lt;Picture 1&gt; with ZERO zoom or pan past foreg
     <thead>
       <tr><th>Shot</th><th>Quality</th><th>Physics</th><th>Movie Match</th><th>Lip Sync</th><th>Inspection Notes</th><th>Revisions</th></tr>
     </thead>
-    <tbody><tr><td colspan="7" class="meta">Pending render — clip-by-clip QA scores and revision notes will populate as each shot finishes.</td></tr></tbody>
+    <tbody>
+        <tr>
+          <td><b>PF_01 (LTX-2.5 191.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Jules Winnfield doorway interrogation (&#x27;Royale with Cheese&#x27;) with dead-on Samuel L. Jackson cadence.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_02 (LTX-2.5 420.4s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Damon holding stomach in apartment hallway next to Vincent Vega.</td>
+          <td>Approved (trimmed cleanly at 7.50s with PF_02_clean.mp3).</td>
+        </tr>
+        <tr>
+          <td><b>PF_03 (LTX-2.5 195.2s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Jules scowling in morning blinds (&#x27;7:22 in the AM! Discuss hospitality!&#x27;).</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_04 (LTX-2.5 140.1s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Deron in dragon silk robe biting Big Kahuna Burger by Sprite cup.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_05 (LTX-2.5 115.1s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Vincent Vega baffled beside Jules (&#x27;Who ordered dim sum at 7am?&#x27;).</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_06 (LTX-2.5 140.2s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Deron critiquing dry burger bun vs Monterey Park dumplings.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_07 (LTX-2.5 145.1s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Jules eyeing Big Kahuna Burger (&#x27;Mmmm! This IS a tasty burger!&#x27;).</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_08 (LTX-2.5 210.1s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Zach leaning in brown Alo jacket against vintage green kitchen counter laughing on X.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_09 (LTX-2.5 155.1s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Vincent glaring at Zach&#x27;s UPS jacket seed-oil lecture.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_10 (LTX-2.5 165.3s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Damon asking for Miranda warning &amp; bathroom key in apartment hallway.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_11 (LTX-2.5 140.1s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Explosive Jules Winnfield &#x27;Does he look like a BITCH?!&#x27; close-up.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_12 (LTX-2.5 145.1s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Deron comparing Marsellus Wallace to Clippers coach with zero rings.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_13 (LTX-2.5 195.1s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Zach cheerfully announcing 30% off olive trees from ChatGPT at kitchen sink.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_14 (LTX-2.5 110.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Deron eating burger mid-standoff calmly pitching Magic Cone to Jules.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_15 (LTX-2.5 45.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Vincent checking collar wondering why a Persian briefcase salesman interrupted.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_16 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Zach in kitchen corner pitching 50/50 pocket bidet on briefcase.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_17 (LTX-2.5 50.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Jules reciting Ezekiel 25:17 verbatim with booming v4 thunder SFX cleared.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_18 (LTX-2.5 65.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Damon briskly excusing himself (&#x27;Excuse me, Ezekiel. Moving on.&#x27;).</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_19 (LTX-2.5 40.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Deron nodding politely off to Alhambra soup dumplings after bathroom.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>PF_20 (LTX-2.5 v2 silent-reaction)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Jules &amp; Vincent stare silently with mouths locked closed while off-screen Hooman calls from Encino.</td>
+          <td>v2 APPROVED (speaker EQ + PF_20_clean.mp3 at 6.30s).</td>
+        </tr>
+        <tr>
+          <td><b>PF_21 (LTX-2.5 45.1s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Vincent shrugging &#x27;Let&#x27;s go get a Royale with Cheese&#x27; closing beat.</td>
+          <td>Approved (10/10).</td>
+        </tr></tbody>
   </table>
   
 </body>

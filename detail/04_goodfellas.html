@@ -32,10 +32,10 @@ th { background: #1b202c; color: #93c5fd; font-weight: 600; }
 </head>
 <body>
   <p><a href="../index.html">← Back to Studio Hub</a></p>
-  <span class="badge ">Ingredients Ready · Queued for LTX-2.5 (A100)</span>
+  <span class="badge done">1080p Ready</span>
   <h1 style="margin-top:8px;">04. Goodfellas — &quot;Funny How?&quot; (Copacabana)</h1>
-  <p class="sub">Scorsese 1970s 35mm · Damon, Hooman, Deron, Zach, Tommy DeVito &amp; Henry Hill · Ingredient Prep: 25m 37s · Render Time: Queued for LTX-2.5 on A100 (colab-gpu2)</p>
-  
+  <p class="sub">Scorsese 1970s 35mm · Damon, Hooman, Deron, Zach, Tommy DeVito &amp; Henry Hill · Ingredient Prep: 25m 37s · Render Time: 100% LTX-2.5 on A100 (~20m + 3m GF_04/12 fixes, 2m 08s 1080p master)</p>
+  <video controls playsinline src="../films/04_goodfellas_1080p.mp4" style="max-width:760px;margin:16px 0;"></video>
 
   <h2>1. YouTube Reference Frame Extraction (40 shots sampled)</h2>
   <p class="sub">Original movie frames extracted directly from the scene to match camera angles, lenses, lighting contrast, and color palette.</p>
@@ -80,9 +80,9 @@ Subtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungst
         <div class="meta"><b>Keyframe:</b> gf_shot04_zach_club.jpg</div>
         <div class="meta"><b>Line:</b> "Dude, relax. I&#x27;m checking X—wait, ChatGPT says this steakhouse olive oil has awful omega-six ratios, lol."</div>
         <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
-&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
-Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Side booth shot in warm red Copacabana lighting: Zach in a brown tweed blazer over dark polo stares down calmly at his illuminated smartphone while two suited mobsters lean in mid-debate beside him.
-Subtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to &lt;Audio 1&gt;.</div>
+&lt;Audio 1&gt; is the exact spoken dialogue audio track ONLY for Zach on the far left in the beige tweed jacket in &lt;Picture 1&gt;, reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Fixed booth framing anchored 100% to &lt;Picture 1&gt; in warm red Copacabana lighting: ONLY the bearded young man on the far LEFT (Zach) looks down at his smartphone and speaks calmly and casually delivering &lt;Audio 1&gt; with exact lip sync while the two suited mobsters in the middle and far right keep their mouths completely CLOSED listening quietly without ever speaking.
+Keep camera framing anchored to &lt;Picture 1&gt;, warm 1970s red tungsten glow, authentic 35mm film grain, exact lip sync ONLY on Zach on the far left.</div>
       </div>
       <div class="card">
         <img src="../refs/04_goodfellas/gf_shot02_damon_tux.jpg" alt="gf_shot02_damon_tux.jpg" />
@@ -160,9 +160,9 @@ Subtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungst
         <div class="meta"><b>Keyframe:</b> gf_copa_03_zach_ots.jpg</div>
         <div class="meta"><b>Line:</b> "Wait, Tommy—I don&#x27;t think you realize! On X, that watch factory is thirty percent off plus tax!"</div>
         <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
-&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
-Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Two-shot across the red-fringed table lamp: Zach scrolls calmly on his smartphone while Jimmy Conway beside him stares intensely toward Tommy; Zach raises his chin politely and speaks calmly.
-Subtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to &lt;Audio 1&gt;.</div>
+&lt;Audio 1&gt; is the exact spoken dialogue audio track ONLY for Zach on the left in the brown tweed jacket in &lt;Picture 1&gt;, reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Fixed two-shot across the red-fringed table lamp anchored strictly to &lt;Picture 1&gt;: ONLY the bearded young man on the LEFT (Zach) scrolls his smartphone, raises his chin politely toward Tommy, and speaks calmly delivering &lt;Audio 1&gt; with exact lip sync while the older grey-haired man on the right (Tommy) listens quietly with his mouth completely CLOSED the entire time.
+Keep camera framing anchored to &lt;Picture 1&gt;, warm 1970s red tungsten glow, authentic 35mm film grain, exact lip sync ONLY on Zach on the left.</div>
       </div>
       <div class="card">
         <img src="../refs/04_goodfellas/gf_shot10_hooman_waiter.jpg" alt="gf_shot10_hooman_waiter.jpg" />
@@ -250,7 +250,187 @@ Subtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungst
     <thead>
       <tr><th>Shot</th><th>Quality</th><th>Physics</th><th>Movie Match</th><th>Lip Sync</th><th>Inspection Notes</th><th>Revisions</th></tr>
     </thead>
-    <tbody><tr><td colspan="7" class="meta">Pending render — clip-by-clip QA scores and revision notes will populate as each shot finishes.</td></tr></tbody>
+    <tbody>
+        <tr>
+          <td><b>GF_01 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Smooth Scorsese booth push-in across Henry Hill under Copacabana tungsten lamp.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_02 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Deron between Paulie and Henry with calamari plate &amp; chopsticks.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_03 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Explosive Tommy DeVito &#x27;Emperor of Monterey Park!&#x27; glare with verbatim v4 lip sync.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_04 (LTX-2.5 130.1s v2)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>v1 mouthed by center gangster; locked solo-left Zach prompt fixed lip sync cleanly to Zach scrolling X.</td>
+          <td>v2 APPROVED (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_05 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Damon gripping stomach in open tuxedo over singlet under warm booth lamp.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_06 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Deron lifting calamari ring with chopsticks praising Din Tai Fung soup dumplings.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_07 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Wide 6-person Copacabana booth shot; all cast steady while Damon pitches Deron&#x27;s joke.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_08 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Signature Joe Pesci slow menace push-in (&#x27;Funny how?! Am I a clown to you?&#x27;).</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_09 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Damon calm smug smile across table (&#x27;LA County jail—jail, never prison&#x27;).</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_10 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Deron beaming between Paulie and Henry comparing Tommy to a Stephen Chow movie.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_11 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Tommy erupting over fake Rolex with whiskey glass raised.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_12 (LTX-2.5 50.0s v2)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>v1 Tommy echoed mouthing; v2 locks ONLY Zach speaking while Tommy glares silently.</td>
+          <td>v2 APPROVED (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_13 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Hooman in burgundy waiter jacket carrying glowing Magic Cone on silver tray.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_14 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Henry squinting across booth asking who put a Persian cable channel on TV.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_15 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Hooman pitching 50/50 Copacabana Magic Cone deal beside booth.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_16 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Tommy yelling &#x27;Take that bronze cylinder out of here right now!&#x27;.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_17 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Damon standing hurriedly clutching Zone-5 CGM flare-up.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_18 (LTX-2.5)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Deron waving calamari with fake Rolex gag.</td>
+          <td>Approved (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>GF_19 (LTX-2.5 95.1s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Hooman slams silver tray beside table shouting Encino pitch right in Tommy&#x27;s face.</td>
+          <td>Approved (trimmed cleanly at 10.90s with GF_19_clean.mp3 to remove trailing gibberish).</td>
+        </tr>
+        <tr>
+          <td><b>GF_20 (LTX-2.5 85.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Damon closes out with Copacabana booth confession.</td>
+          <td>Approved (trimmed cleanly at 7.95s with GF_20_clean.mp3 to drop ElevenLabs repeat).</td>
+        </tr></tbody>
   </table>
   
 </body>
