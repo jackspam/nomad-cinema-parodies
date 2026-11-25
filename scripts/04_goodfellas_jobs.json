@@ -77,7 +77,7 @@
     "audio": "GF_08.mp3",
     "length": 175,
     "seed": 6050,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. SCORSESE WHIP-PAN & SLOW DOLLY PUSH: razor-tight 50mm onto Tommy DeVito's stony face under hot red tungsten rim light; grain sharpens. Tommy stops chewing mid-bite, setting his fork down cleanly with a soft porcelain click, boring holes into Deron.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. SCORSESE controlled slow push-in & SLOW DOLLY PUSH: razor-tight 50mm onto Tommy DeVito's stony face under hot red tungsten rim light; grain sharpens. Tommy stops chewing mid-bite, setting his fork down cleanly with a soft porcelain click, boring holes into Deron.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "gf_gf_09",
@@ -95,7 +95,7 @@
       "gf_shot03_deron_booth.jpg"
     ],
     "audio": "GF_10.mp3",
-    "length": 158,
+    "length": 141,
     "seed": 6064,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm straight-on close-up of Deron smiling brightly under his conical bamboo hat, raising his left wrist into warm tungsten light. Deron shoves his wrist right near Tommy's wine glass, beaming proudly at his Guangzhou Clean Factory Daytona super-clone.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },

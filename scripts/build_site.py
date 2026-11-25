@@ -32,11 +32,14 @@ FILMS = [
         "status_cls": "",
         "mp4": "films/02_dark_knight_1080p.mp4",
         "prep_time": "25m 37s",
-        "render_time": "Pending G4 batch",
+        "render_time": "In progress on L4: Shot 1 (800.4s), Shot 2 (457.2s), Shot 3 (521.2s), Shot 4 (456.1s), Shot 5 (521.3s), Shot 6 (330.8s)",
         "audit": [
-            {"shot": "DK_01 (L4 test)", "quality": 6, "physics": 5, "similarity": 7, "lipsync": 8, "notes": "0-3s Gigi good, 4-9s panned right and morphed Deron/Batman.", "revisions": "Flagged for locked-camera single-keyframe re-render on G4."},
-            {"shot": "DK_02 (L4 test)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Dead-on Heath Ledger Joker lighting and lip sync up to 6.1s; repeated 'silk bathrobe' at 6.3-7.8s.", "revisions": "Trim point set to 6.45s; re-rendering full clean batch on G4."},
-            {"shot": "DK_03 (L4 test)", "quality": 6, "physics": 5, "similarity": 7, "lipsync": 8, "notes": "0-3.5s morphed through back of Joker's head into Damon.", "revisions": "Flagged for locked-camera re-render on G4."},
+            {"shot": "DK_01 (800.4s)", "quality": 6, "physics": 4, "similarity": 7, "lipsync": 8, "notes": "0-3s Gigi clean, 4-9s panned right and spawned dragon mascot due to off-screen prompt mention.", "revisions": "REJECTED (<8). Prompt hardened to lock camera on Gigi only; queued for re-render."},
+            {"shot": "DK_02 (457.2s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Custom designed Joker voice + Nolan interrogation push-in dead-on; slight mouth slur on final 1.2s silence.", "revisions": "Trim point set to 5.4s; silence-trim added to preflight for future films."},
+            {"shot": "DK_03 (521.2s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "Damon Batsuit straight-on framing clean with zero face morph; slight slur on 'unlocked' at 5.5s.", "revisions": "Approved (native voice muted, clean DK_03.mp3 anchored at t=0)."},
+            {"shot": "DK_04 (456.1s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Dead-on two-shot profile Joker leaning toward Batman's gauntlets; slight trailing word echo at 6.1s.", "revisions": "Approved with clean trim at 6.0s."},
+            {"shot": "DK_05 (521.3s)", "quality": 9, "physics": 9, "similarity": 10, "lipsync": 8, "notes": "Overhead fluorescents slam on from dark to bright glare just like Nolan's cut.", "revisions": "Approved (overlay crisp DK_05.mp3 at t=0, mute native audio)."},
+            {"shot": "DK_06 (330.8s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Deron (conical hat & red dragon robe) holding siu mai in observation booth beside Gigi; slight 'dim sum' echo on final 0.4s.", "revisions": "Approved with clean 5.25s trim."},
         ],
     },
     {

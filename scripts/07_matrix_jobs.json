@@ -45,7 +45,7 @@
       "mx_shot01_morpheus_glasses.jpg"
     ],
     "audio": "MX_05.mp3",
-    "length": 175,
+    "length": 158,
     "seed": 9029,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 75mm razor-tight turn onto Morpheus; armless pince-nez sunglasses reflect Zach's brown hoodie and glowing phone screen in pure green-tinted scorn. Morpheus removes nothing, tilting his chin down one cold millimeter while leather trenchcoat lapels creak softly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -55,7 +55,7 @@
       "mx_shot06_deron_corner.jpg"
     ],
     "audio": "MX_06.mp3",
-    "length": 175,
+    "length": 158,
     "seed": 9036,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot beside the crumbling marble hearth; Deron's bright red silk dragon robe clashes violently with the monochrome 1999 green grade. Deron leans over Damon's shoulder under his conical bamboo hat, inspecting Morpheus's outstretched hands like an unimpressed tea-shop critic.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -85,7 +85,7 @@
       "mx_shot06_deron_corner.jpg"
     ],
     "audio": "MX_09.mp3",
-    "length": 158,
+    "length": 141,
     "seed": 9057,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm sudden intrusion frame: Deron thrusts a bright yellow box of Po Chai Pills straight between the Red Pill and Blue Pill! Deron shakes tiny brown herbal micro-pills out of a plastic vial right next to Morpheus's crimson Red Pill.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -135,7 +135,7 @@
       "mx_shot02_damon_chair.jpg"
     ],
     "audio": "MX_14.mp3",
-    "length": 175,
+    "length": 158,
     "seed": 9092,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm close-up on Damon pinching the crimson Red Pill between wet gloved fingers, peering skeptically at Morpheus. Damon pulls his wet trench lapel slightly back revealing his soaked tri-singlet while staring hard into Morpheus's sunglasses.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -165,9 +165,9 @@
       "mx_shot02_damon_chair.jpg"
     ],
     "audio": "MX_17.mp3",
-    "length": 175,
+    "length": 158,
     "seed": 9113,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm fast whip-pan tracking Damon swallowing the Red Pill dry and bolting straight toward the cracked hotel bathroom door in full race stride! Damon kicks the peeling green bathroom door halfway off its rusted hinges, vanishing inside in a blur of wet black wool.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm fast controlled slow push-in tracking Damon swallowing the Red Pill dry and bolting straight toward the cracked hotel bathroom door in full race stride! Damon kicks the peeling green bathroom door halfway off its rusted hinges, vanishing inside in a blur of wet black wool.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_18",
@@ -195,7 +195,7 @@
       "mx_shot01_morpheus_glasses.jpg"
     ],
     "audio": "MX_20.mp3",
-    "length": 243,
+    "length": 226,
     "seed": 9134,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. ICONIC 1999 FINALE: 2.39:1 wide symmetrical shot as cascading green digital rain swallows the room; Morpheus stands motionless while Deron calmly slurps boba through falling code! Morpheus clicks his Nokia slider shut cleanly as cascading green Matrix code swallows the bathroom door, Deron's conical hat, and Zach's glowing iPhone into black.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   }
