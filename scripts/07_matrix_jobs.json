@@ -25,19 +25,19 @@
       "mx_shot01_morpheus_glasses.jpg"
     ],
     "audio": "MX_03.mp3",
-    "length": 192,
+    "length": 158,
     "seed": 9015,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 75mm symmetrical close-up on Morpheus; pale emerald lightning flashes behind his silhouette as rain streams across the pane. Morpheus holds up a single coppertop Duracell battery between black-gloved fingers, glowing stark silver in green storm haze.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_04",
     "images": [
-      "mx_shot02_damon_chair.jpg"
+      "mx_shot04_zach_divan.jpg"
     ],
     "audio": "MX_04.mp3",
     "length": 209,
-    "seed": 9022,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm cut to Zach lounging comfortably on the damp hotel divan in his UPS-brown Alo suit; bright blue iPhone screen pierces the Matrix-green room. Zach holds his phone up cheerfully toward Morpheus, scrolling X calmly while ignoring the peeling wallpaper and storm.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "seed": 9023,
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Zach sitting on the leather divan holding the glowing phone in <Picture 1>, reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed 35mm medium shot anchored strictly to <Picture 1> inside the emerald-green Lafayette Hotel room: Zach in his brown UPS hoodie lounges calmly on the leather divan looking up toward camera while holding his glowing smartphone and scrolling X comfortably while speaking <Audio 1>.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_05",
@@ -45,7 +45,7 @@
       "mx_shot01_morpheus_glasses.jpg"
     ],
     "audio": "MX_05.mp3",
-    "length": 158,
+    "length": 175,
     "seed": 9029,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 75mm razor-tight turn onto Morpheus; armless pince-nez sunglasses reflect Zach's brown hoodie and glowing phone screen in pure green-tinted scorn. Morpheus removes nothing, tilting his chin down one cold millimeter while leather trenchcoat lapels creak softly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -56,8 +56,8 @@
     ],
     "audio": "MX_06.mp3",
     "length": 158,
-    "seed": 9036,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot beside the crumbling marble hearth; Deron's bright red silk dragon robe clashes violently with the monochrome 1999 green grade. Deron leans over Damon's shoulder under his conical bamboo hat, inspecting Morpheus's outstretched hands like an unimpressed tea-shop critic.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "seed": 9037,
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track ONLY for the solo man in red silk dragon robe in <Picture 1>, reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed 35mm medium shot locked strictly to <Picture 1>: ONLY Deron stands completely alone beside the emerald hotel window wearing his red silk dragon robe and conical straw hat, holding his warm teacup and peering sideways like an unimpressed tea-shop critic speaking <Audio 1>. ZERO other people, Damon, or extra figures enter the frame.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_07",
@@ -65,7 +65,7 @@
       "mx_shot01_morpheus_glasses.jpg"
     ],
     "audio": "MX_07.mp3",
-    "length": 175,
+    "length": 192,
     "seed": 9043,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. ICONIC 75mm MACRO SUNGLASS REFLECTION SHOT: crimson pill in right leather palm, cobalt pill in left, both reflected symmetrically inside Morpheus's armless pince-nez lenses. Morpheus holds both open palms steady under lightning flashes, waiting with absolute reverence.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -92,12 +92,12 @@
   {
     "prefix": "mx_mx_10",
     "images": [
-      "mx_shot02_damon_chair.jpg"
+      "mx_shot04_zach_divan.jpg"
     ],
     "audio": "MX_10.mp3",
     "length": 192,
-    "seed": 9064,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot on Zach resting calmly on the green-lit divan, typing seriously into ChatGPT while lightning flickers outside. Zach holds up a tree-crane blueprint on his iPhone toward the storm window as if checking hovercraft cargo clearance.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "seed": 9065,
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Zach sitting on the leather divan holding his smartphone in <Picture 1>, reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed 35mm medium shot locked strictly to <Picture 1>: Zach relaxes calmly on the tufted divan in his brown hoodie glancing between his bright smartphone screen and the rain-streaked emerald hotel window, speaking thoughtfully with exact lip sync to <Audio 1>.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_11",
@@ -106,8 +106,8 @@
     ],
     "audio": "MX_11.mp3",
     "length": 379,
-    "seed": 9071,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 40mm Dutch pan to the cracked corner Sony CRT television; phosphor green snow bursts alive into Hooman's beaming gold Magic Cone suit! The ancient corner hotel TV flickers violently; Hooman beams out through emerald scanlines framing a glowing Magic Cone.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "seed": 9072,
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed 40mm emerald-lit hotel medium close-up locked to <Picture 1>: ONLY Hooman in his gold-and-black patterned silk shirt stays completely visible center-frame holding up a glowing white Magic Cone funnel in his right hand and a blue capsule in his left, speaking energetically directly to camera delivering <Audio 1>; do NOT spawn any television screen, CRT box, floating hologram, or green triangle covering Hooman.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_12",
@@ -115,7 +115,7 @@
       "mx_shot01_morpheus_glasses.jpg"
     ],
     "audio": "MX_12.mp3",
-    "length": 158,
+    "length": 141,
     "seed": 9078,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm tight shot on Morpheus snapping upright, heavy black trench flaring dramatically as green lightning illuminates his jaw. Morpheus whips a gleaming Nokia 8110 banana slider phone out of his coat pocket, snapping the spring keypad open aggressively.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -145,7 +145,7 @@
       "mx_shot01_morpheus_glasses.jpg"
     ],
     "audio": "MX_15.mp3",
-    "length": 141,
+    "length": 175,
     "seed": 9099,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 75mm symmetrical close-up on Morpheus leaning downward through green storm gloom, absolute gravity restored. Dust trickles off the ceiling plaster as Morpheus nods once firmly toward Damon's hand.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
@@ -156,8 +156,8 @@
     ],
     "audio": "MX_16.mp3",
     "length": 158,
-    "seed": 9106,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot beside the armchair: Deron pops open a red stainless thermos under his conical hat, pouring steaming hot water calmly. Deron hands Damon a steaming paper cup straight out of his red silk dragon sleeve, grinning cheerfully.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "seed": 9107,
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track ONLY for the solo man in red silk dragon robe in <Picture 1>, reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed 35mm medium shot locked strictly to <Picture 1>: ONLY Deron stands completely alone beside the emerald hotel window in his red silk dragon robe and conical straw hat holding a warm cup of hot tea and grinning cheerfully delivering <Audio 1>. ZERO duplicate conical-hat people, Damon, or extra figures enter the frame.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_17",
@@ -167,17 +167,17 @@
     "audio": "MX_17.mp3",
     "length": 158,
     "seed": 9113,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm fast controlled slow push-in tracking Damon swallowing the Red Pill dry and bolting straight toward the cracked hotel bathroom door in full race stride! Damon kicks the peeling green bathroom door halfway off its rusted hinges, vanishing inside in a blur of wet black wool.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed 35mm medium framing anchored 100% to <Picture 1> inside the emerald-lit Lafayette Hotel room: Damon swallows hard, grips his stomach sharply in sudden Zone-5 distress, and rises rapidly up out of the cracked burgundy leather armchair while keeping his face, teal Wayfarers, and black leather trenchcoat clearly visible speaking <Audio 1>.\nKeep camera framing strictly locked to <Picture 1> without spawning extra rooms or characters, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_18",
     "images": [
-      "mx_shot02_damon_chair.jpg"
+      "mx_shot04_zach_divan.jpg"
     ],
     "audio": "MX_18.mp3",
     "length": 192,
-    "seed": 9120,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm surreal close-up on the cracked wall mirror turning into liquid silver mercury as Zach calmly holds up his iPhone beside it. Liquid silver mercury ripples across the glass behind Zach as he steps neatly back toward the divan, typing fast.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "seed": 9121,
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Zach sitting on the leather divan holding his glowing phone in <Picture 1>, reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed 35mm medium shot locked strictly to <Picture 1>: Zach sits upright on the leather divan typing fast on his bright glowing iPhone as emerald lightning flickers outside the rain-streaked window behind him, speaking rapidly with exact lip sync to <Audio 1>.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_19",
@@ -195,7 +195,7 @@
       "mx_shot01_morpheus_glasses.jpg"
     ],
     "audio": "MX_20.mp3",
-    "length": 226,
+    "length": 175,
     "seed": 9134,
     "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. ICONIC 1999 FINALE: 2.39:1 wide symmetrical shot as cascading green digital rain swallows the room; Morpheus stands motionless while Deron calmly slurps boba through falling code! Morpheus clicks his Nokia slider shut cleanly as cascading green Matrix code swallows the bathroom door, Deron's conical hat, and Zach's glowing iPhone into black.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   }

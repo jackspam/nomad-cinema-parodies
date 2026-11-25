@@ -2,22 +2,22 @@
   {
     "prefix": "jp_jp_01",
     "images": [
-      "jp_shot09_trex_roar.jpg"
+      "jp_shot01b_ajay_explorer.jpg"
     ],
     "audio": "JP_01.mp3",
     "length": 141,
     "seed": 8001,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Iconic 1993 Dean Cundey 50mm dashboard close-up inside dark Ford Explorer #04; rain streaks violently outside in cold blue-green floodlights as concentric ripples shake two plastic water cups. Ajay leans right over the dashboard plastic cups with his LED surgical headlamp flashing onto the rippling water rings.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Ajay in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm night interior shot locked to <Picture 1>: Ajay in rain-soaked blue scrubs, stethoscope, and glowing surgical headlamp leans over the two trembling plastic cups of water on the Explorer dashboard under cold blue-green storm light while speaking <Audio 1> excitedly with concentric vibration ripples shaking the water surface.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_02",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg"
+      "jp_shot02_sheren_explorer.jpg"
     ],
     "audio": "JP_02.mp3",
     "length": 141,
     "seed": 8008,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm inside the cramped green-yellow Explorer cabin; piercing yellow headlamp glare reflects off rain droplets across Sheren's impatient face. Sheren yanks the steering wheel hard off the electric guide rail, flooring the accelerator through deep mud without glancing at the brake pedal.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Sheren behind the steering wheel in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm windshield shot locked to <Picture 1>: Sheren in her black waterproof jacket grips the steering wheel tightly inside Explorer #04 during torrential night rain as yellow headlights and windshield wipers flash across rain-lashed glass while she speaks <Audio 1> impatiently.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_03",
@@ -27,47 +27,48 @@
     "audio": "JP_03.mp3",
     "length": 158,
     "seed": 8015,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm passenger close-up on Gigi clutching her laminated Boonton behavior chart as blue-green electric fence power surges dead outside. Gigi braces against the grab handle while glaring sideways at a sputtering magnesium road flare burning in Sheren's spare hand.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot locked strictly to <Picture 1> at the open green-and-yellow Jurassic Park Ford Explorer door in pouring midnight tropical storm rain: Gigi in her soaked clear poncho and red-framed glasses grips her glowing yellow flashlight firmly in both wet hands and warns Sheren sharply with urgent stern teacher authority while rain lashes down outside.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_04",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg"
+      "jp_shot02_sheren_explorer.jpg"
     ],
     "audio": "JP_04.mp3",
     "length": 158,
     "seed": 8022,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm tight profile on Sheren tossing the blazing crimson flare half out the cracked window; harsh red light washes across her cheek. Sheren pitches the hissing flare straight into the flooded ferns and drifts the Explorer sideways right beside the wooden bathroom shack.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Sheren behind the wheel in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm windshield shot locked to <Picture 1>: red flare glow flickers across the wet hood and glass as Sheren scoffs sharply over her shoulder while yanking the Explorer steering wheel aggressively in pouring night rain.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_05",
     "images": [
-      "jp_shot01_ford_rain.jpg"
+      "jp_shot05b_damon_stall.jpg"
     ],
     "audio": "JP_05.mp3",
     "length": 175,
     "seed": 8029,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. CUT INSIDE THATCHED RESTROOM STALL: 27mm tight shot under single swinging amber bulb; rain leaks through palm fronds onto Damon on the toilet. Damon sits in his soaked open rain jacket and Team USA singlet gripping his knees, checking the Freestyle Libre sensor on his arm calmly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Damon inside the wooden stall in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 27mm interior stall shot locked to <Picture 1> under the warm amber hanging bulb: rain drips past dark wooden thatch walls onto Damon's wet yellow rain slicker and singlet as he sits stoically speaking <Audio 1> with bone-dry deadpan calm.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_07",
+    "silent_on_camera": true,
     "images": [
       "jp_shot09_trex_roar.jpg"
     ],
     "audio": "JP_07.mp3",
     "length": 141,
     "seed": 8043,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Low-angle inside Explorer looking up through shattering plexiglass moonroof as the giant dinosaur snout presses into yellow beam bounce. Ajay aims his bright LED surgical headlamp straight through the cracking roof glass into the T-Rex's massive yellow iris.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is Ajay speaking off-camera from inside the Ford Explorer during the dinosaur attack; do NOT spawn any extra humans on screen.\nKeep every scale texture, vehicle detail, wet lighting, and paddock fence geometry strictly faithful to <Picture 1>. Dynamic 1993 Spielberg 35mm wide action shot in pouring midnight monsoon rain: the massive 40-foot Tyrannosaurus Rex snaps taut paddock fence cables with heavy dripping power, whips its rain-slicked jaws downward toward the green-and-yellow Ford Explorer #04 roof as headlights flash across flooded asphalt, heavy water spray, and shaking suspension.\nNatural photorealistic heavy monster weight and rain physics, zero human faces visible on camera, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_08",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg"
+      "jp_shot02_sheren_explorer.jpg"
     ],
     "audio": "JP_08.mp3",
     "length": 158,
     "seed": 8050,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm side-window tracking shot as Sheren violently spins the Explorer in blinding white headlights, mud flying past dinosaur claws. Sheren cranks the Explorer hard backward with one palm on the wheel, sliding inches past the T-Rex's giant clawed foot.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Sheren driving in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm windshield shot locked to <Picture 1>: storm rain batters the Explorer glass as Sheren cranks the wheel hard one-handed with fierce impatience delivering <Audio 1> while headlights sweep outside.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_09",
@@ -77,77 +78,77 @@
     "audio": "JP_09.mp3",
     "length": 175,
     "seed": 8057,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 27mm dramatic low-angle in flooded mud outside Explorer; blue-green xenon light catches Gigi stepping boldly out under the pouring storm. Gigi storms right into the mud puddles holding her laminated clip-chart high like a crossing guard stopping traffic, scolding the 40-foot predator.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm storm-lashed shot locked strictly to <Picture 1> at the open green-and-yellow Jurassic Park Explorer door in pouring rain: Gigi in her soaked yellow/clear poncho and red glasses leans fiercely forward aiming her bright yellow flashlight beam into the dark jungle night, shouting commanding kindergarten teacher discipline straight into the storm.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_11",
     "images": [
-      "jp_shot01_ford_rain.jpg"
+      "jp_shot05b_damon_stall.jpg"
     ],
     "audio": "JP_11.mp3",
     "length": 158,
     "seed": 8071,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm inside the flimsy wooden restroom stall as the sliding Explorer clips the corner post\u2014warm bulb swings wildly over Damon's head. Splinters rain onto Damon's shoulders as he braces calmly on the toilet seat, turning an empty cardboard toilet-paper roll slowly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Damon inside the wooden stall in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm interior wooden stall shot locked to <Picture 1>: the warm amber hanging bulb swings gently as water vibrates off the thatch rafters onto Damon's yellow raincoat while he speaks <Audio 1> unruffled.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_12",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg"
+      "jp_shot16_gigi_trex.jpg"
     ],
     "audio": "JP_12.mp3",
     "length": 158,
     "seed": 8078,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. ICONIC 27mm DEAN CUNDEY REVEAL: T-Rex tears the entire thatch roof clean away above Damon! Blinding white lightning illuminates monster jaws directly over the porcelain toilet! As the thatch roof disintegrates in rain, Gigi marches straight beside the roofless stall doorway, blasting the dinosaur's manners.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Gigi standing in the foreground holding her clipboard in <Picture 1> and is reused verbatim.\nKeep every character face, costume, T-Rex silhouette, Explorer #04, and lightning storm geometry strictly faithful to <Picture 1>. Dramatic 1993 Spielberg wide rain-lashed action frame: foreground Gigi in yellow raincoat and red glasses points sternly upward with her clipboard shouting furiously at the roaring 40-foot Tyrannosaurus Rex as lightning flashes and rain pours between them.\nKeep camera framing anchored to <Picture 1>, heavy live-action storm physics, exact lip sync ONLY on Gigi, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_13",
     "images": [
-      "jp_shot09_trex_roar.jpg"
+      "jp_shot01b_ajay_explorer.jpg"
     ],
     "audio": "JP_13.mp3",
     "length": 141,
     "seed": 8085,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm low-angle shot of Ajay climbing boldly onto the wet yellow hood of Explorer #04 in blue surgical scrubs, cordless drill whirring. Ajay waves a thin titanium electrode wire and spinning micro-drill up toward the T-Rex's massive cranium like a fearless field doctor.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Ajay in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm night rain frame locked to <Picture 1> beside the Explorer dashboard cups: Ajay's surgical headlamp flares brightly in the cold cyan mist as he raises one hand earnestly shouting <Audio 1> toward the dark jungle.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_14",
     "images": [
-      "jp_shot01_ford_rain.jpg"
+      "jp_shot05b_damon_stall.jpg"
     ],
     "audio": "JP_14.mp3",
     "length": 192,
     "seed": 8092,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 50mm upward POV from behind the porcelain toilet; rain pours straight onto Damon's Wayfarers with dinosaur jaws hovering two feet overhead. Damon points two steady fingers upward at the T-Rex's nose without flinching, utterly refusing to rush his dignity.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Damon in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 50mm frame locked to <Picture 1> under the amber bulb: Damon lifts his gaze straight up above the camera lens without flinching, pointing a calm finger upward while delivering <Audio 1> in icy courtroom-lawyer deadpan under leaking storm rain.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_15",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg"
+      "jp_shot02_sheren_explorer.jpg"
     ],
     "audio": "JP_15.mp3",
     "length": 141,
     "seed": 8099,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot at Explorer driver window; Sheren leans halfway out into the downpour, scowling past mud-splattered glass. Sheren taps the Explorer horn aggressively while pointing at the collapsed timber bathroom wall like a bad renovation contractor.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Sheren behind the wheel in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm windshield shot locked to <Picture 1>: Sheren scowls angrily out toward the rain-soaked jungle gripping the steering wheel and honking the horn with sharp household-COO impatience speaking <Audio 1>.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_16",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg"
+      "jp_shot16_gigi_trex.jpg"
     ],
     "audio": "JP_16.mp3",
     "length": 158,
     "seed": 8106,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 27mm dramatic upward angle: Gigi stands inches below the dinosaur chin in blinding xenon floodlights, pinning a red clip straight onto its snout scale. Gigi snaps her wooden behavior clothespin firmly onto a muddy fern beside the dinosaur's massive toe, folding her arms dead-serious.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Gigi in the yellow raincoat holding her clipboard in <Picture 1> and is reused verbatim.\nKeep every character face, costume, Explorer, and towering T-Rex geometry strictly faithful to <Picture 1>. Dramatic 27mm rainstorm hero frame: Gigi shakes her laminated clipboard sternly toward the towering 40-foot Tyrannosaurus Rex as lightning cracks behind its jaws and heavy rain pours across the mud and green Explorer.\nKeep camera framing anchored to <Picture 1>, exact lip sync ONLY on Gigi, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_17",
     "images": [
-      "jp_shot09_trex_roar.jpg"
+      "jp_shot01b_ajay_explorer.jpg"
     ],
     "audio": "JP_17.mp3",
     "length": 141,
     "seed": 8113,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm tight close-up on Ajay beaming brightly beside the Explorer windshield as the T-Rex actually takes one hesitant step backward into the storm. Ajay pumps his fist in triumph, draping his stethoscope back smoothly over his soaked blue scrubs.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Ajay in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm frame locked to <Picture 1>: Ajay beams excitedly beside the plastic water cups under cold blue-green storm light, nodding warmly with surgical pride while speaking <Audio 1>.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_18",
@@ -157,17 +158,17 @@
     "audio": "JP_18.mp3",
     "length": 175,
     "seed": 8120,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium tracking shot through splintered cedar framing as Damon rises cleanly off the porcelain seat, zipping his slicker. Damon steps gracefully over collapsed thatch beams, snapping his Wayfarers dry before jogging briskly toward the roaring Explorer.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 50mm interior frame inside the wet Jurassic Park Explorer #04 locked strictly to <Picture 1>: Damon in dark black Wayfarers and sweat-damp khaki shirt catches his breath relieved beside the plastic water cup on the windowsill while windshield wipers sweep heavy storm rain and headlights flare behind him.\nKeep camera framing strictly locked to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_19",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg"
+      "jp_shot02_sheren_explorer.jpg"
     ],
     "audio": "JP_19.mp3",
     "length": 175,
     "seed": 8127,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 27mm low mud-level tracking shot: Sheren drifts the Ford Explorer through a wide arc, scooping Gigi, Ajay, and Damon aboard mid-roll! Explorer doors slam shut in rapid succession while Sheren hits full throttle through mud spray, tail-sliding away from the paddock.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for Sheren driving in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm rain-streaked windshield shot locked to <Picture 1>: Sheren grins maniacally cranking the Explorer wheel with headlights flaring into jungle mist and wipers slapping hard while yelling <Audio 1> cheerfully at full speed.\nKeep camera framing anchored to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_20",
@@ -177,6 +178,6 @@
     "audio": "JP_20.mp3",
     "length": 158,
     "seed": 8134,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 18mm closing Dean Cundey rain-swept hero shot: Explorer vanishes into emerald jungle mist while the T-Rex stands quietly beside the ruined stall under flashing blue xenon. Through the streaked rear Explorer window, Gigi waves fondly back at the T-Rex as it unleashes one final majestic Jurassic roar into the lightning storm.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm rain-lashed closing shot locked strictly to <Picture 1> by the open green-and-yellow Jurassic Park Explorer door in cold xenon floodlights: Gigi in her soaked yellow poncho and red glasses lowers her yellow flashlight slightly with warm gruff satisfaction, delivering her final warning cleanly through the tropical downpour.\nKeep camera framing strictly locked to <Picture 1>, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   }
 ]

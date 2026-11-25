@@ -191,13 +191,14 @@
   },
   {
     "prefix": "pf_pf_20",
+    "silent_on_camera": true,
     "images": [
       "pf_shot01_jules_vincent.jpg"
     ],
     "audio": "PF_20.mp3",
     "length": 243,
-    "seed": 7134,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium two-shot anchored strictly to <Picture 1>. Jules stands calmly holding his pistol downward on the left beside Vincent in the olive-green room, delivering his line with cold precision.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "seed": 7135,
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> plays off-screen from a speaker while every character face, costume, lighting, lens, and set geometry stays strictly faithful to <Picture 1>. Fixed medium two-shot locked strictly to <Picture 1>: both Jules (left) and Vincent (right) stand completely motionless and SILENT with their mouths tightly CLOSED the entire shot, glaring in stunned disbelief down toward an off-screen ringing speaker while listening quietly without ever opening their mouths or speaking.\nKeep camera framing strictly locked to <Picture 1> with zero lip movement or dialogue on either man, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_21",

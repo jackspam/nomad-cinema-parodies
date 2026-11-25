@@ -33,6 +33,13 @@ def valid_h3_frames(min_seconds: float) -> int:
     return 5 + 17 * k
 
 
+def valid_ltx_frames(min_seconds: float) -> int:
+    # LTX-2.5 requires 1 + 8*k frames at 24fps
+    needed = math.ceil(min_seconds * 24.0)
+    k = max(5, math.ceil((needed - 1) / 8.0))
+    return 1 + 8 * k
+
+
 def trim_trailing_silence(mp3_path: str) -> tuple[float, float]:
     """Strip trailing digital silence (>0.25s below -38dB) while keeping a 0.15s natural breath tail."""
     before = ffprobe_dur(mp3_path)
@@ -71,7 +78,11 @@ def validate_and_prepare(slug: str) -> list[str]:
         issues.append(f"{slug}: only {len(yt_frames)} YT frames (need >= 40)")
 
     jobs_path = f"{BASE}/scripts/{slug}_jobs.json"
+    script_path = f"{BASE}/scripts/{slug}_script.json"
     jobs = json.load(open(jobs_path))
+    script_shots = {}
+    if os.path.exists(script_path):
+        script_shots = {s["shot_id"].lower(): s for s in json.load(open(script_path)).get("shots", [])}
     trimmed_count = 0
 
     for j in jobs:
@@ -80,23 +91,30 @@ def validate_and_prepare(slug: str) -> list[str]:
         if len(imgs) != 1:
             issues.append(f"{prefix}: expected 1 bespoke keyframe, found {len(imgs)}")
         for im in imgs:
-            if not os.path.exists(f"{BASE}/refs/{slug}/{im}"):
-                issues.append(f"{prefix}: missing keyframe refs/{slug}/{im}")
+            im_path = f"{BASE}/refs/{slug}/{im}"
+            if not os.path.exists(im_path) or os.path.getsize(im_path) < 1000:
+                issues.append(f"{prefix}: missing or empty keyframe refs/{slug}/{im}")
 
         prompt = j.get("prompt", "")
-        if "<Picture 1>" not in prompt or "<Audio 1>" not in prompt:
-            issues.append(f"{prefix}: missing <Picture 1> or <Audio 1> tags")
+        if "<Picture 1>" not in prompt:
+            issues.append(f"{prefix}: missing <Picture 1> tag")
+        if not j.get("silent_on_camera") and "<Audio 1>" not in prompt:
+            issues.append(f"{prefix}: missing <Audio 1> tag")
         for pat in BANNED_PROMPT_PATTERNS:
             if re.search(pat, prompt, re.I):
                 issues.append(f"{prefix}: risky motion/physics phrase matched '{pat}'")
 
         au = f"{BASE}/audio/{slug}/{j['audio']}"
-        if not os.path.exists(au):
+        if not os.path.exists(au) or os.path.getsize(au) < 1000:
             issues.append(f"{prefix}: missing audio {au}")
         else:
             b, a = trim_trailing_silence(au)
             if a < b:
                 trimmed_count += 1
+            shot_id = prefix.split("_", 1)[1].lower() if "_" in prefix else prefix.lower()
+            words = len(script_shots.get(shot_id, {}).get("exact_dialogue", "").split())
+            if words > 0 and a > max(10.0, words * 0.55 + 2.5):
+                print(f"  WARN (long audio check): {prefix} audio {a:.2f}s looks unusually long for {words} words (inspect for ElevenLabs repeat or gibberish tail)")
             nf = valid_h3_frames(a + 0.45)
             j["length"] = nf
 
