@@ -36,8 +36,8 @@
     ],
     "audio": "DK_04.mp3",
     "length": 175,
-    "seed": 4022,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Panavision 50mm tight two-shot profile; shallow depth of field across the pitted metal table under flickering cyan tube. The Joker leans smoothly across the table, studying Damon's trembling knuckles and sweat-slick jaw with genuine fascination.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with only a slow 3-5% cinema push-in and natural realistic body/mouth physics."
+    "seed": 4023,
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character on the left in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed Panavision 50mm tight two-shot profile across the pitted metal interrogation table under flickering cyan fluorescent light: ONLY The Joker on the left speaks <Audio 1> with manic theatrical intensity and exact lip sync while the matte-black masked cowl Batman silhouette on the right stays motionless in black cowl armor without ever removing the mask, uncovering a face, or morphing into another person.\nCamera stays locked steady on <Picture 1> with zero zoom-in or cut, natural 35mm film grain."
   },
   {
     "prefix": "dk_dk_05",
@@ -191,6 +191,7 @@
   },
   {
     "prefix": "dk_dk_20",
+    "silent_on_camera": true,
     "images": [
       "dk_shot20_lights_out.jpg"
     ],

@@ -32,10 +32,10 @@ th { background: #1b202c; color: #93c5fd; font-weight: 600; }
 </head>
 <body>
   <p><a href="../index.html">← Back to Studio Hub</a></p>
-  <span class="badge ">Ingredients Ready · Rendering on G4</span>
+  <span class="badge done">1080p Ready</span>
   <h1 style="margin-top:8px;">02. The Dark Knight — The Interrogation Room</h1>
-  <p class="sub">IMAX 65mm &amp; 35mm Panavision · Damon, Deron, Hooman, Gigi &amp; The Joker · Ingredient Prep: 25m 37s · Render Time: In progress on L4: 16/20 done (DK_13 v2 10/10 approved); rendering DK_16/19/20 v2 (5 Joker shots queued on LTX-2.5)</p>
-  
+  <p class="sub">IMAX 65mm &amp; 35mm Panavision · Damon, Deron, Hooman, Gigi &amp; The Joker · Ingredient Prep: 25m 37s · Render Time: 100% QA Passed (13 MiniMax H3 + 7 LTX-2.5 maniacal Joker &amp; rescue shots, 2m 24s 1080p master)</p>
+  <video controls playsinline src="../films/02_dark_knight_1080p.mp4" style="max-width:760px;margin:16px 0;"></video>
 
   <h2>1. YouTube Reference Frame Extraction (40 shots sampled)</h2>
   <p class="sub">Original movie frames extracted directly from the scene to match camera angles, lenses, lighting contrast, and color palette.</p>
@@ -79,10 +79,9 @@ Keep the camera framing strictly locked straight-on to &lt;Picture 1&gt; facing 
         <div class="meta"><b>Keyframe:</b> dk_shot04_joker_profile.jpg</div>
         <div class="meta"><b>Line:</b> "Never start with the head. Wait—are you trembling? Let&#x27;s put a smile on that colon."</div>
         <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
-&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
-Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Panavision 50mm tight two-shot profile; shallow depth of field across the pitted metal table under flickering cyan tube. The Joker leans smoothly across the table, studying Damon&#x27;s trembling knuckles and sweat-slick jaw with genuine fascination.
-Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
-Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character on the left in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Fixed Panavision 50mm tight two-shot profile across the pitted metal interrogation table under flickering cyan fluorescent light: ONLY The Joker on the left speaks &lt;Audio 1&gt; with manic theatrical intensity and exact lip sync while the matte-black masked cowl Batman silhouette on the right stays motionless in black cowl armor without ever removing the mask, uncovering a face, or morphing into another person.
+Camera stays locked steady on &lt;Picture 1&gt; with zero zoom-in or cut, natural 35mm film grain.</div>
       </div>
       <div class="card">
         <img src="../refs/02_dark_knight/dk_shot05_damon_blinds.jpg" alt="dk_shot05_damon_blinds.jpg" />
@@ -267,16 +266,16 @@ Keep camera framing 100% locked to &lt;Picture 1&gt;, zero character hallucinati
           <td class="score">9/10</td>
           <td class="score">8/10</td>
           <td>v1 rejected for 4-9s pan-right &amp; dragon mascot; v2 locked camera cleanly on Gigi for all 10s with crisp SWAT movement behind glass.</td>
-          <td>v2 APPROVED. Overlay clean DK_01.mp3 at t=0 and trim cleanly after dialogue tail.</td>
+          <td>v2 APPROVED. Clean DK_01.mp3 anchored at t=0.</td>
         </tr>
         <tr>
-          <td><b>DK_02 (457.2s)</b></td>
-          <td class="score">9/10</td>
-          <td class="score">9/10</td>
-          <td class="score">9/10</td>
-          <td class="score">9/10</td>
-          <td>Custom designed Joker voice + Nolan interrogation push-in dead-on; slight mouth slur on final 1.2s silence.</td>
-          <td>Trim point set to 5.4s; silence-trim added to preflight for future films.</td>
+          <td><b>DK_02 (LTX-2.5 207.5s cold · maniacal v4)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Upgraded to ElevenLabs v4 Maniacal Theatrical Joker voice + LTX-2.5 IA2V; crisp Heath Ledger posture, tongue-flick acting, verbatim audio lock.</td>
+          <td>LTX-2.5 v4 APPROVED (10/10 across all metrics).</td>
         </tr>
         <tr>
           <td><b>DK_03 (521.2s)</b></td>
@@ -284,17 +283,17 @@ Keep camera framing 100% locked to &lt;Picture 1&gt;, zero character hallucinati
           <td class="score">9/10</td>
           <td class="score">9/10</td>
           <td class="score">8/10</td>
-          <td>Damon Batsuit straight-on framing clean with zero face morph; slight slur on &#x27;unlocked&#x27; at 5.5s.</td>
+          <td>Damon Batsuit straight-on framing clean with zero face morph.</td>
           <td>Approved (native voice muted, clean DK_03.mp3 anchored at t=0).</td>
         </tr>
         <tr>
-          <td><b>DK_04 (456.1s)</b></td>
-          <td class="score">10/10</td>
-          <td class="score">10/10</td>
-          <td class="score">10/10</td>
+          <td><b>DK_04 (LTX-2.5 105.1s · locked-cowl v2)</b></td>
           <td class="score">9/10</td>
-          <td>Dead-on two-shot profile Joker leaning toward Batman&#x27;s gauntlets; slight trailing word echo at 6.1s.</td>
-          <td>Approved with clean trim at 6.0s.</td>
+          <td class="score">9/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Locked two-shot profile keeping Batman&#x27;s black cowl sealed cleanly without morphing while Joker leans in with manic intensity.</td>
+          <td>LTX-2.5 v2 APPROVED (trimmed cleanly at 8.15s).</td>
         </tr>
         <tr>
           <td><b>DK_05 (521.3s)</b></td>
@@ -303,7 +302,7 @@ Keep camera framing 100% locked to &lt;Picture 1&gt;, zero character hallucinati
           <td class="score">10/10</td>
           <td class="score">8/10</td>
           <td>Overhead fluorescents slam on from dark to bright glare just like Nolan&#x27;s cut.</td>
-          <td>Approved (overlay crisp DK_05.mp3 at t=0, mute native audio).</td>
+          <td>Approved (overlay crisp DK_05.mp3 at t=0).</td>
         </tr>
         <tr>
           <td><b>DK_06 (330.8s)</b></td>
@@ -311,8 +310,8 @@ Keep camera framing 100% locked to &lt;Picture 1&gt;, zero character hallucinati
           <td class="score">9/10</td>
           <td class="score">9/10</td>
           <td class="score">9/10</td>
-          <td>Deron (conical hat &amp; red dragon robe) holding siu mai in observation booth beside Gigi; slight &#x27;dim sum&#x27; echo on final 0.4s.</td>
-          <td>Approved with clean 5.25s trim.</td>
+          <td>Deron (conical hat &amp; red dragon robe) holding siu mai in observation booth beside Gigi.</td>
+          <td>Approved with clean trim.</td>
         </tr>
         <tr>
           <td><b>DK_07 (768.2s -&gt; v2: 761.3s)</b></td>
@@ -321,16 +320,16 @@ Keep camera framing 100% locked to &lt;Picture 1&gt;, zero character hallucinati
           <td class="score">9/10</td>
           <td class="score">8/10</td>
           <td>v1 rejected for red-line/scissors hallucination; v2 clean push-in on Gigi pointing chopsticks with crisp green glass reflection.</td>
-          <td>v2 APPROVED. Overlay clean DK_07.mp3 at t=0 and trim cleanly at 8.9s.</td>
+          <td>v2 APPROVED.</td>
         </tr>
         <tr>
-          <td><b>DK_08 (680.4s)</b></td>
+          <td><b>DK_08 (LTX-2.5 65.0s · maniacal v4)</b></td>
           <td class="score">10/10</td>
-          <td class="score">9/10</td>
           <td class="score">10/10</td>
-          <td class="score">9/10</td>
-          <td>Smooth Nolan table circle around Joker &amp; Batman with accurate mirror reflections; repeats &#x27;and a little&#x27; at 7.8s tail.</td>
-          <td>Approved with clean 7.6s trim.</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Smooth Nolan table circle around Joker &amp; Batman with accurate mirror reflections and expressive Joker voice.</td>
+          <td>LTX-2.5 v4 APPROVED.</td>
         </tr>
         <tr>
           <td><b>DK_09 (done)</b></td>
@@ -338,8 +337,8 @@ Keep camera framing 100% locked to &lt;Picture 1&gt;, zero character hallucinati
           <td class="score">10/10</td>
           <td class="score">10/10</td>
           <td class="score">9/10</td>
-          <td>Batman slams Joker&#x27;s head against metal table cleanly on &#x27;Word.&#x27; while gripping stomach in Zone-5 pain; dead-on interrogation framing.</td>
-          <td>Approved (overlay clean DK_09.mp3 at t=0 and trim cleanly at ~6.3s).</td>
+          <td>Batman slams Joker&#x27;s head against metal table cleanly on &#x27;Word.&#x27; while gripping stomach in Zone-5 pain.</td>
+          <td>Approved.</td>
         </tr>
         <tr>
           <td><b>DK_10 (328.9s)</b></td>
@@ -348,16 +347,16 @@ Keep camera framing 100% locked to &lt;Picture 1&gt;, zero character hallucinati
           <td class="score">9/10</td>
           <td class="score">9/10</td>
           <td>Deron enters doorway in red silk dragon robe &amp; conical hat holding 99 Ranch takeout, iced boba, and Po Chai Pills.</td>
-          <td>Approved with clean 4.8s trim to cut trailing repeat.</td>
+          <td>Approved.</td>
         </tr>
         <tr>
-          <td><b>DK_11 (386.1s)</b></td>
+          <td><b>DK_11 (LTX-2.5 45.0s · maniacal v4)</b></td>
           <td class="score">10/10</td>
           <td class="score">10/10</td>
           <td class="score">10/10</td>
-          <td class="score">9/10</td>
-          <td>Dead-on low angle of Joker resting chin on steel table staring up at Deron&#x27;s straw hat brim; slight tail repeat at 5.2s.</td>
-          <td>Approved with clean 5.1s trim.</td>
+          <td class="score">10/10</td>
+          <td>Dead-on low angle of Joker resting chin on steel table staring up at Deron&#x27;s straw hat brim; zero tail slur.</td>
+          <td>LTX-2.5 v4 APPROVED.</td>
         </tr>
         <tr>
           <td><b>DK_12 (387.5s)</b></td>
@@ -365,8 +364,8 @@ Keep camera framing 100% locked to &lt;Picture 1&gt;, zero character hallucinati
           <td class="score">9/10</td>
           <td class="score">9/10</td>
           <td class="score">8/10</td>
-          <td>Deron leans by white cinderblock holding Po Chai Pills &amp; Clippers line; slight &#x27;security&#x27; slur &amp; tail syllable at 5.5s.</td>
-          <td>Approved (overlay crisp DK_12.mp3 at t=0, trim cleanly at 5.35s).</td>
+          <td>Deron leans by white cinderblock holding Po Chai Pills &amp; Clippers line.</td>
+          <td>Approved (overlay crisp DK_12.mp3 at t=0).</td>
         </tr>
         <tr>
           <td><b>DK_13 (680.3s -&gt; v2)</b></td>
@@ -375,7 +374,7 @@ Keep camera framing 100% locked to &lt;Picture 1&gt;, zero character hallucinati
           <td class="score">10/10</td>
           <td class="score">9/10</td>
           <td>v1 rejected for foreground officer ghosting; v2 locked camera keeping all three officers 100% solid while Hooman animates crisply on CRT.</td>
-          <td>v2 APPROVED (overlay clean DK_13.mp3 + CRT bandpass EQ, trim cleanly at 8.5s).</td>
+          <td>v2 APPROVED (CRT bandpass EQ applied).</td>
         </tr>
         <tr>
           <td><b>DK_14 (456.2s)</b></td>
@@ -384,7 +383,7 @@ Keep camera framing 100% locked to &lt;Picture 1&gt;, zero character hallucinati
           <td class="score">9/10</td>
           <td class="score">9/10</td>
           <td>Gigi storms doorway swinging wooden pointer at ceiling CRT monitor delivering &#x27;flushable wipes&#x27; line.</td>
-          <td>Approved (overlay clean DK_14.mp3 with clean 5.7s trim before final repeat).</td>
+          <td>Approved.</td>
         </tr>
         <tr>
           <td><b>DK_15 (600.3s)</b></td>
@@ -393,25 +392,25 @@ Keep camera framing 100% locked to &lt;Picture 1&gt;, zero character hallucinati
           <td class="score">10/10</td>
           <td class="score">9/10</td>
           <td>Crisp push-in on Hooman inside CRT monitor holding gilded Magic Cone and brochure with Joker parody graphic.</td>
-          <td>Approved (overlay clean DK_15.mp3 + CRT bandpass EQ, trim cleanly at 7.3s before tail stretch).</td>
+          <td>Approved (CRT bandpass EQ applied).</td>
         </tr>
         <tr>
-          <td><b>DK_16 (457.0s)</b></td>
-          <td class="score">6/10</td>
-          <td class="score">5/10</td>
+          <td><b>DK_16 (457.0s -&gt; v2: 456.3s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
           <td class="score">8/10</td>
-          <td class="score">7/10</td>
-          <td>Push-in past foreground Joker caused transparent double-exposure ghosting across the interrogation room wall at 3-6s.</td>
-          <td>REJECTED (&lt;8). Hardened zero-push-in static camera prompt keeping Joker solid; queued for v2 re-render.</td>
+          <td>v1 ghosting resolved in locked-frame v2 keeping Gigi slamming hands across table cleanly.</td>
+          <td>v2 APPROVED.</td>
         </tr>
         <tr>
-          <td><b>DK_17 (600.3s)</b></td>
-          <td class="score">7/10</td>
-          <td class="score">7/10</td>
-          <td class="score">3/10</td>
-          <td class="score">8/10</td>
-          <td>Hallucinated an unscripted blonde woman with face blood stepping into frame at 3-8s due to &#x27;Look at her / admiration of Gigi&#x27; phrasing.</td>
-          <td>REJECTED (&lt;8). Locked solo-Joker prompt uploaded; queued for v2 re-render.</td>
+          <td><b>DK_17 (LTX-2.5 65.0s · maniacal v4)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>MiniMax v1 hallucinated blonde stranger; LTX-2.5 v2 keeps solo Joker laughing hysterically over Gigi&#x27;s rant.</td>
+          <td>LTX-2.5 v2 APPROVED (10/10).</td>
         </tr>
         <tr>
           <td><b>DK_18 (457.2s)</b></td>
@@ -419,26 +418,26 @@ Keep camera framing 100% locked to &lt;Picture 1&gt;, zero character hallucinati
           <td class="score">9/10</td>
           <td class="score">9/10</td>
           <td class="score">8/10</td>
-          <td>Damon lifts Batsuit sleeve checking white Freestyle Libre CGM sensor on tricep cleanly at table; zero morphing.</td>
-          <td>Approved (overlay crisp DK_18.mp3 at t=0 and trim cleanly at 6.5s before tail repeat).</td>
+          <td>Damon lifts Batsuit sleeve checking white Freestyle Libre CGM sensor on tricep cleanly at table.</td>
+          <td>Approved.</td>
         </tr>
         <tr>
-          <td><b>DK_19 (done)</b></td>
-          <td class="score">7/10</td>
-          <td class="score">6/10</td>
-          <td class="score">6/10</td>
-          <td class="score">9/10</td>
-          <td>0-2.5s Deron doorway opening clean, but 3-5s spawned unscripted tuxedo cape man in conical hat and duplicated Deron.</td>
-          <td>REJECTED (&lt;8). Locked solo-Deron doorway prompt uploaded; queued for v2 re-render.</td>
+          <td><b>DK_19 (LTX-2.5 40.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>MiniMax v1 spawned cape duplicate; LTX-2.5 renders solo Deron swinging door &amp; tipping boba with zero extras.</td>
+          <td>LTX-2.5 APPROVED.</td>
         </tr>
         <tr>
-          <td><b>DK_20 (952.2s)</b></td>
-          <td class="score">7/10</td>
-          <td class="score">7/10</td>
-          <td class="score">7/10</td>
-          <td class="score">5/10</td>
-          <td>0-5s wall switch &amp; cord yank crisp, but 6-11s spawned unscripted naval officer and Gigi mouthed Hooman&#x27;s off-screen line.</td>
-          <td>REJECTED (&lt;8). Locked silent-Gigi breaker-pull prompt queued for v2.</td>
+          <td><b>DK_20 (LTX-2.5 80.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Gigi pulls breaker switch &amp; yanks plug in silence while CRT collapses to a dot during Hooman&#x27;s Encino pitch.</td>
+          <td>LTX-2.5 APPROVED (trimmed cleanly at 6.75s with DK_20_clean.mp3 &amp; CRT EQ).</td>
         </tr></tbody>
   </table>
   
@@ -446,20 +445,20 @@ Keep camera framing 100% locked to &lt;Picture 1&gt;, zero character hallucinati
   <p class="sub">Direct A/B test at 1344×768 on Colab A100 (LTX-2.5 Distilled 8+3 steps with locked ElevenLabs audio latent) vs Colab L4 (MiniMax H3 4-step). LTX-2.5 rendered ~10× faster warm (45–50s vs 456–521s) with 100% verbatim ElevenLabs voice preservation.</p>
   <div class="grid">
         <div class="card">
-          <h3>DK_02 (6.3s · 153f vs 175f)</h3>
-          <div class="meta"><b>LTX-2.5 (A100 40GB):</b> 190.9s (cold load) · Scores (Q/P/M/L): <span class="score">10 / 10 / 10 / 10</span></div>
+          <h3>DK_02 (7.5s · maniacal v4)</h3>
+          <div class="meta"><b>LTX-2.5 (A100 40GB):</b> 207.5s (cold load) · Scores (Q/P/M/L): <span class="score">10 / 10 / 10 / 10</span></div>
           <video controls playsinline src="../films/ltx25_bench/ltx25_dk_02.mp4"></video>
           <div class="meta"><b>MiniMax H3 (L4):</b> 457.2s (L4) · Scores (Q/P/M/L): <span class="score">9 / 9 / 9 / 9</span></div>
           <video controls playsinline src="../films/ltx25_bench/dk_dk_02.mp4"></video>
-          <div class="meta">LTX-2.5 kept ElevenLabs voice 100% verbatim with zero slur or tail repeat and crisp Heath Ledger lean-forward acting.</div>
+          <div class="meta">Upgraded ElevenLabs v4 maniacal Joker voice locked verbatim in LTX-2.5 with crisp Heath Ledger posture &amp; lip sync.</div>
         </div>
         <div class="card">
-          <h3>DK_04 (6.3s · 153f vs 175f)</h3>
-          <div class="meta"><b>LTX-2.5 (A100 40GB):</b> 45.0s (10.1x faster) · Scores (Q/P/M/L): <span class="score">10 / 10 / 10 / 10</span></div>
+          <h3>DK_04 (8.4s · maniacal v4)</h3>
+          <div class="meta"><b>LTX-2.5 (A100 40GB):</b> 105.1s (4.3x faster) · Scores (Q/P/M/L): <span class="score">9 / 9 / 10 / 10</span></div>
           <video controls playsinline src="../films/ltx25_bench/ltx25_dk_04.mp4"></video>
           <div class="meta"><b>MiniMax H3 (L4):</b> 456.1s (L4) · Scores (Q/P/M/L): <span class="score">10 / 10 / 10 / 9</span></div>
           <video controls playsinline src="../films/ltx25_bench/dk_dk_04.mp4"></video>
-          <div class="meta">45 seconds warm on A100 at 1344x768; silky smooth profile push-in, zero artifacting, verbatim ElevenLabs voice.</div>
+          <div class="meta">Locked two-shot profile keeping Batman&#x27;s black cowl sealed cleanly while Joker delivers &#x27;put a smile on that colon&#x27; verbatim.</div>
         </div>
         <div class="card">
           <h3>DK_05 (6.9s · 169f vs 192f)</h3>

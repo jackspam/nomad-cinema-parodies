@@ -7,7 +7,7 @@
     "audio": "GF_01.mp3",
     "length": 158,
     "seed": 6001,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. UNBROKEN 27mm STEADICAM TRACKING SHOT: glides smoothly behind Henry Hill and Damon weaving past sweating white-apron cooks and glowing copper pans into warm red club light. Henry slips folded bills smoothly into kitchen hands while Damon follows stiffly in his open tuxedo jacket and tri-singlet, pressing one hand quietly against his gut.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium over-the-shoulder shot across a candlelit Copacabana front-row booth table: Henry Hill in an ivory dinner jacket smiles eagerly across the red-shaded table lamp and crystal scotch glasses, gesturing warmly as he speaks.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_02",
@@ -17,7 +17,7 @@
     "audio": "GF_02.mp3",
     "length": 141,
     "seed": 6008,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Steadicam finishes fluidly at front-row velvet booth as red-jacketed waiters drop a linen table; warm crimson shade lamp glows over Deron's conical hat. Deron slides smoothly into the curved crimson banquette in his conical rice paddy hat and red dragon robe, tapping the starched white tablecloth critically.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Warm tungsten Copacabana table medium shot: Deron in a crimson silk dragon robe and conical straw hat sits at the white tablecloth between two mobsters, smiling proudly over a plate of calamari while speaking.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_03",
@@ -27,7 +27,7 @@
     "audio": "GF_03.mp3",
     "length": 141,
     "seed": 6015,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm close-up across candlelit table onto Tommy DeVito; warm amber whiskey highlights catch his diamond pinky ring and narrowing eyes. Tommy swirls Cutty Sark scotch over rocks, eyeing Deron's conical bamboo brim hovering just inches from the glowing red table lamp.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight candlelit table medium shot of Tommy DeVito in dark pinstriped suit leaning forward past the glowing brass lamp and whiskey glass, eyes sharp and narrowing as he delivers his biting line with snappy Brooklyn intensity.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_04",
@@ -37,7 +37,7 @@
     "audio": "GF_04.mp3",
     "length": 243,
     "seed": 6022,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm 50mm side frame on Zach in brown Alo zip-top sitting calmly beside Damon; harsh cool blue iPhone glow clashes with romantic red tungsten. Zach holds his phone out peacefully toward Tommy's plate of sizzling prime strip steak, completely oblivious to mob etiquette.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Side booth shot in warm red Copacabana lighting: Zach in a brown tweed blazer over dark polo stares down calmly at his illuminated smartphone while two suited mobsters lean in mid-debate beside him.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_05",
@@ -47,7 +47,7 @@
     "audio": "GF_05.mp3",
     "length": 175,
     "seed": 6029,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 50mm close-up on Damon's deadpan face gleaming lightly in warm candlelight; dark-teal Wayfarers reflect the glowing table lamp. Damon's knuckles turn bone-white gripping the edge of the linen tablecloth below table level while he maintains calm eye contact.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight close-up across the candlelit white tablecloth: Damon in an open black tuxedo jacket over grey tank top sits gripping his stomach beneath the table under glistening brow sweat and dark-teal Wayfarers, speaking deadpan.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_06",
@@ -57,7 +57,7 @@
     "audio": "GF_06.mp3",
     "length": 158,
     "seed": 6036,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm Arriflex 35BL4 35mm lens medium shot of Deron waving a silver steak knife cheerfully through warm tobacco haze. Deron pokes Tommy's prized dry-aged steak with a breadstick, shaking his head fondly in his red dragon silk sleeves.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium close-up at the Copacabana booth: Deron in crimson silk dragon robe and conical straw hat lifts a ring of fried calamari cleanly with wooden chopsticks beside a red-fringed lamp and scotch glass, beaming warmly as he speaks.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_07",
@@ -67,7 +67,7 @@
     "audio": "GF_07.mp3",
     "length": 175,
     "seed": 6043,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm two-shot on Henry Hill laughing anxiously beside Tommy as the red booth lights feel suddenly ten degrees hotter. Henry grins tightly while gesturing nervously toward Deron, failing to read Tommy's frozen posture.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Warm smoke-filled wide table shot framing all six men around the Copacabana linen table with red lamps and silver champagne bucket: Henry leans in anxiously smiling across the table while addressing the group.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_08",
@@ -77,7 +77,7 @@
     "audio": "GF_08.mp3",
     "length": 175,
     "seed": 6050,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. SCORSESE controlled slow push-in & SLOW DOLLY PUSH: razor-tight 50mm onto Tommy DeVito's stony face under hot red tungsten rim light; grain sharpens. Tommy stops chewing mid-bite, setting his fork down cleanly with a soft porcelain click, boring holes into Deron.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Razor-tight 50mm Scorsese dolly push-in on Tommy DeVito's stony unblinking face beside the glowing red-fringed table lamp in smoky club light, eyes boring coldly forward as he snaps 'Funny how?!'.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_09",
@@ -87,7 +87,7 @@
     "audio": "GF_09.mp3",
     "length": 175,
     "seed": 6057,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm reverse reaction shot across frozen booth; Henry sits petrified mid-sip while Damon adjusts his Wayfarers, completely unmoved. Damon takes a small calm sip of club soda despite his stomach agony, holding Tommy's stare without blinking.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Over-the-shoulder shot across the Copacabana table: Damon in black tuxedo jacket and grey tank top grimaces mildly gripping his cramped stomach across from the back-turned suit shoulder, speaking calmly.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_10",
@@ -97,7 +97,7 @@
     "audio": "GF_10.mp3",
     "length": 141,
     "seed": 6064,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm straight-on close-up of Deron smiling brightly under his conical bamboo hat, raising his left wrist into warm tungsten light. Deron shoves his wrist right near Tommy's wine glass, beaming proudly at his Guangzhou Clean Factory Daytona super-clone.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium booth shot: Deron in red silk dragon robe and straw hat sits happily between two suited mobsters behind a plate of calamari and whiskey glasses, holding up a crisp gesture as he delivers his Rolex line.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_11",
@@ -105,9 +105,9 @@
       "gf_copa_04_tommy_laugh.jpg"
     ],
     "audio": "GF_11.mp3",
-    "length": 158,
+    "length": 175,
     "seed": 6071,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 35mm low-angle push on Tommy exploding half out of the crimson banquette, veins up in his neck under red shade. Tommy slaps the bread plate aside, knocking silverware onto the floor while leaning inches from Deron's conical hat brim.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium close-up at the candlelit Copacabana booth: Tommy DeVito in a grey jacket and open white collar laughs wildly holding his crystal scotch glass beside the smoking ashtray, exploding into volcanic Scorsese energy.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_12",
@@ -117,7 +117,7 @@
     "audio": "GF_12.mp3",
     "length": 192,
     "seed": 6078,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm reaction cut to Zach in brown Alo holding one helpful finger up calmly amid the mob eruption. Zach smiles warmly at the furious gangster, turning his iPhone screen toward Tommy as if showing him a trade catalog.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Two-shot across the red-fringed table lamp: Zach scrolls calmly on his smartphone while Jimmy Conway beside him stares intensely toward Tommy; Zach raises his chin politely and speaks calmly.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_13",
@@ -127,7 +127,7 @@
     "audio": "GF_13.mp3",
     "length": 209,
     "seed": 6085,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm Dutch upward angle onto the wood-paneled Copacabana bar TV bolted over the booth; snow clears abruptly into Hooman's golden blazer. The vintage walnut-trimmed bar TV hijacks mid-ballgame; Hooman leans forward on-screen in his gold Magic Cone blazer, blowing kisses toward the booth.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium Copacabana dining room shot: Hooman in a burgundy tuxedo waiter jacket carries a glowing white Magic Cone upright on a silver tray toward the booth of white-jacketed gangsters, speaking excitedly like a pitchman.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_14",
@@ -137,7 +137,7 @@
     "audio": "GF_14.mp3",
     "length": 192,
     "seed": 6092,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm wide two-shot of Henry Hill and Tommy DeVito both staring straight up at the glowing television in stunned synchronized disbelief. Henry puts his glass down slowly while Tommy stares open-mouthed up at Hooman's face illuminating their dark booth.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Over-the-shoulder shot across the table toward Henry Hill in his ivory dinner jacket looking genuinely baffled over the glowing red lamp and scotch glasses as he asks what is on the tray.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_15",
@@ -147,7 +147,7 @@
     "audio": "GF_15.mp3",
     "length": 209,
     "seed": 6099,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 75mm macro onto the flickering 1990 CRT glass; scanlines ripple across Hooman holding two bizarre inventions. On screen, Hooman fires a spring-loaded carbon-fiber wallet shooting an Amex straight at the webcam while framing his gilded Magic Cone.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium booth shot of Hooman in burgundy waiter jacket standing over the Copacabana table holding his silver platter with the glowing white Magic Cone proudly toward the seated mobsters while delivering his shameless pitch.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_16",
@@ -155,9 +155,9 @@
       "gf_shot01_tommy_funny.jpg"
     ],
     "audio": "GF_16.mp3",
-    "length": 141,
+    "length": 158,
     "seed": 6106,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm low-angle shot on Tommy DeVito sliding violently out of the booth, hand flashing toward his double-breasted jacket. Tommy snatches a heavy green Dom Perignon bottle out of the silver ice bucket, winding up toward the wood-paneled television.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tense candlelit booth shot: Tommy DeVito in a dark striped three-piece suit leans aggressively over his crystal scotch glass beside the brass lamp, erupting in sputtering mob outrage.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_17",
@@ -167,7 +167,7 @@
     "audio": "GF_17.mp3",
     "length": 158,
     "seed": 6113,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm tracking shot as Damon snaps upright out of the booth, pushing calmly past a terrified waiter with a dessert cart. Damon ducks beneath Tommy's swinging bottle without breaking stride, jogging briskly back through the kitchen double doors holding his stomach.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight booth close-up on Damon in open tuxedo jacket and grey tank top clutching his stomach in escalating sweat beside two martini glasses and brass lamp, speaking briskly before pushing up from the seat.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_18",
@@ -177,7 +177,7 @@
     "audio": "GF_18.mp3",
     "length": 141,
     "seed": 6120,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot at the booth; Deron stands waving happily toward the kitchen doors while lifting his dragon sleeve. Deron bows smoothly toward Henry and Tommy, patting his conical hat straight before gliding smoothly toward the front cloakroom.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Medium Copacabana close-up: Deron in red silk dragon robe and conical straw hat raises a crisp calamari ring playfully with his chopsticks beside the red lamp while speaking smoothly to the table.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   },
   {
     "prefix": "gf_gf_19",
@@ -187,7 +187,8 @@
     "audio": "GF_19.mp3",
     "length": 328,
     "seed": 6127,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm tight frame on the CRT screen just before Tommy's green champagne bottle explodes through the glass in slow-motion sparks. Tommy's champagne bottle smashes dead-center through the glowing TV screen, showering blue electrical sparks over Zach's breadsticks.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Silent reaction beat (no on-camera speaking mouth movement) of Hooman in burgundy waiter jacket tilting his silver tray slightly over the white tablecloth with wide bewildered eyes as a heavy bottle shatters off-screen.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>.",
+    "silent_on_camera": true
   },
   {
     "prefix": "gf_gf_20",
@@ -197,6 +198,6 @@
     "audio": "GF_20.mp3",
     "length": 294,
     "seed": 6134,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. CLASSIC SCORSESE SLOW-MOTION DOLLY PUSH & FREEZE-FRAME: Zach checks his phone placidly through blue TV smoke as Henry Hill stares dead down the 35mm lens. Henry stares straight into the camera as red lights catch his eyes; beside him, Zach calmly shows him a Mandeville Canyon olive tree photo while the frame freezes into grainy 35mm film.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Slow Scorsese wide Copacabana table dolly-in through trailing cigarette haze framing Deron, Damon holding his stomach, Henry, and Zach staring intensely around the silver ice bucket and crimson-shaded lamps as Henry delivers his closing line.\nSubtle controlled Scorsese cinema camera push-in, warm 1970s red tungsten tungsten glow, authentic 35mm film grain, exact lip sync to <Audio 1>."
   }
 ]

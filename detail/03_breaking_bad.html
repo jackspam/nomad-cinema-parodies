@@ -32,10 +32,10 @@ th { background: #1b202c; color: #93c5fd; font-weight: 600; }
 </head>
 <body>
   <p><a href="../index.html">← Back to Studio Hub</a></p>
-  <span class="badge ">Ingredients Ready · Rendering on A100</span>
+  <span class="badge done">1080p Ready</span>
   <h1 style="margin-top:8px;">03. Breaking Bad — Say My Name (New Mexico Desert)</h1>
-  <p class="sub">35mm High-Noon To&#x27;hajiilee Desert Standoff · Damon, Zach, Ajay, Hooman, Walter White &amp; Gus Fring · Ingredient Prep: 25m 37s · Render Time: In progress on A100 (colab-gpu2): 9 shots approved (BB_03-07, 09, 10, 12-14); BB_02/08/11 locked-camera v2 queued</p>
-  
+  <p class="sub">35mm High-Noon To&#x27;hajiilee Desert Standoff · Damon, Zach, Ajay, Hooman, Walter White &amp; Gus Fring · Ingredient Prep: 25m 37s · Render Time: 100% QA Passed (14 MiniMax H3 + 6 LTX-2.5 desert rescue &amp; upgrade shots, 2m 18s 1080p master)</p>
+  <video controls playsinline src="../films/03_breaking_bad_1080p.mp4" style="max-width:760px;margin:16px 0;"></video>
 
   <h2>1. YouTube Reference Frame Extraction (40 shots sampled)</h2>
   <p class="sub">Original movie frames extracted directly from the scene to match camera angles, lenses, lighting contrast, and color palette.</p>
@@ -267,13 +267,13 @@ Do NOT pan away, cut, or invent off-screen characters or rooms. Keep camera fram
     </thead>
     <tbody>
         <tr>
-          <td><b>BB_02 (264.1s)</b></td>
-          <td class="score">6/10</td>
-          <td class="score">5/10</td>
-          <td class="score">6/10</td>
-          <td class="score">8/10</td>
-          <td>Frame 0-1s spawned blue smoke/glow around desert cars and zoomed out abruptly from close-up.</td>
-          <td>REJECTED (&lt;8). Prompt hardened to lock medium framing from frame 0 with zero blue glow; queued for v2 re-render.</td>
+          <td><b>BB_02 (LTX-2.5 110.1s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>MiniMax v1 spawned blue glare; LTX-2.5 keeps razor-sharp Heisenberg close-up in New Mexico desert with Chrysler &amp; Land Cruiser behind.</td>
+          <td>LTX-2.5 APPROVED (10/10).</td>
         </tr>
         <tr>
           <td><b>BB_03 (168.0s)</b></td>
@@ -281,8 +281,8 @@ Do NOT pan away, cut, or invent off-screen characters or rooms. Keep camera fram
           <td class="score">10/10</td>
           <td class="score">10/10</td>
           <td class="score">8/10</td>
-          <td>Crisp 100% solid foreground Walter shoulder &amp; Damon clutching sweaty tank top in harsh desert sun; 2.8m on A100.</td>
-          <td>Approved (overlay crisp BB_03.mp3 at t=0 and trim cleanly at 7.1s before tail repeat).</td>
+          <td>Crisp 100% solid foreground Walter shoulder &amp; Damon clutching sweaty tank top in harsh desert sun.</td>
+          <td>Approved (clean BB_03.mp3 at t=0).</td>
         </tr>
         <tr>
           <td><b>BB_04 (144.0s)</b></td>
@@ -290,8 +290,8 @@ Do NOT pan away, cut, or invent off-screen characters or rooms. Keep camera fram
           <td class="score">10/10</td>
           <td class="score">10/10</td>
           <td class="score">9/10</td>
-          <td>Zach sits in brown Alo jacket holding iPhone with visible ChatGPT UI &amp; Fleetwood RV behind him in desert sun; crisp acting in 2.4m on A100.</td>
-          <td>Approved with clean 6.65s trim to cut trailing word repeat.</td>
+          <td>Zach sits in brown Alo jacket holding iPhone with visible ChatGPT UI &amp; Fleetwood RV behind him.</td>
+          <td>Approved.</td>
         </tr>
         <tr>
           <td><b>BB_05 (144.0s)</b></td>
@@ -300,7 +300,7 @@ Do NOT pan away, cut, or invent off-screen characters or rooms. Keep camera fram
           <td class="score">10/10</td>
           <td class="score">8/10</td>
           <td>Ajay in blue scrubs &amp; headlamp beside red 1984 Porsche 911 &amp; RV gesturing with surgical micro-drill.</td>
-          <td>Approved (overlay clean BB_05.mp3 at t=0 and trim cleanly at 6.55s).</td>
+          <td>Approved.</td>
         </tr>
         <tr>
           <td><b>BB_06 (120.0s)</b></td>
@@ -309,7 +309,7 @@ Do NOT pan away, cut, or invent off-screen characters or rooms. Keep camera fram
           <td class="score">10/10</td>
           <td class="score">8/10</td>
           <td>Tight 50mm intense Bryan Cranston glare with dusty black Chrysler 300 in desert behind him.</td>
-          <td>Approved (overlay clean BB_06.mp3 at t=0 and trim cleanly at 5.65s).</td>
+          <td>Approved.</td>
         </tr>
         <tr>
           <td><b>BB_07 (120.0s)</b></td>
@@ -318,16 +318,16 @@ Do NOT pan away, cut, or invent off-screen characters or rooms. Keep camera fram
           <td class="score">10/10</td>
           <td class="score">8/10</td>
           <td>Ajay grins warmly beneath LED headlamp holding surgical drill beside red 911.</td>
-          <td>Approved (overlay clean BB_07.mp3 at t=0 and trim cleanly at 5.8s).</td>
+          <td>Approved.</td>
         </tr>
         <tr>
-          <td><b>BB_08 (144.0s)</b></td>
-          <td class="score">9/10</td>
-          <td class="score">8/10</td>
-          <td class="score">8/10</td>
-          <td class="score">6/10</td>
-          <td>Camera panned onto Gus Fring mid-line, making Gus mouth Zach&#x27;s &#x27;Thirty percent off!&#x27; line.</td>
-          <td>REJECTED (&lt;8). Locked wide static camera prompt uploaded; queued for v2 re-render.</td>
+          <td><b>BB_08 (LTX-2.5 50.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>MiniMax v1 panned to wrong speaker; LTX-2.5 locks all 4 desert figures rock-solid while only Zach reacts with Starlink alert.</td>
+          <td>LTX-2.5 APPROVED (10/10).</td>
         </tr>
         <tr>
           <td><b>BB_09 (168.0s)</b></td>
@@ -336,7 +336,7 @@ Do NOT pan away, cut, or invent off-screen characters or rooms. Keep camera fram
           <td class="score">10/10</td>
           <td class="score">8/10</td>
           <td>Damon gripping stomach in sweat-damp tank beside Walter White with black Escalade in sun.</td>
-          <td>Approved (overlay crisp BB_09.mp3 at t=0 and trim cleanly at 6.9s).</td>
+          <td>Approved.</td>
         </tr>
         <tr>
           <td><b>BB_10 (104.2s)</b></td>
@@ -345,16 +345,16 @@ Do NOT pan away, cut, or invent off-screen characters or rooms. Keep camera fram
           <td class="score">10/10</td>
           <td class="score">10/10</td>
           <td>Razor-sharp Giancarlo Esposito in mustard Los Pollos shirt beside black Escalade under To&#x27;hajiilee sun.</td>
-          <td>Approved (clean 5.3s trim).</td>
+          <td>Approved.</td>
         </tr>
         <tr>
-          <td><b>BB_11 (168.0s)</b></td>
-          <td class="score">7/10</td>
-          <td class="score">5/10</td>
-          <td class="score">4/10</td>
-          <td class="score">8/10</td>
-          <td>Camera orbit around wide desert standoff cloned two identical Gus Fring figures side by side at 4-7s.</td>
-          <td>REJECTED (&lt;8). Prompt locked to zero push-in wide framing; queued for v2 re-render.</td>
+          <td><b>BB_11 (LTX-2.5 55.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>MiniMax v1 cloned Gus Fring; LTX-2.5 locks wide 4-person desert standoff cleanly while Walter speaks.</td>
+          <td>LTX-2.5 APPROVED (10/10).</td>
         </tr>
         <tr>
           <td><b>BB_12 (104.0s)</b></td>
@@ -363,43 +363,88 @@ Do NOT pan away, cut, or invent off-screen characters or rooms. Keep camera fram
           <td class="score">10/10</td>
           <td class="score">9/10</td>
           <td>Rock-solid wide desert standoff framing all four cast motionless under cobalt sky.</td>
-          <td>Approved (clean 5.0s trim).</td>
+          <td>Approved.</td>
         </tr>
         <tr>
-          <td><b>BB_13 (done)</b></td>
+          <td><b>BB_13 (120.0s)</b></td>
           <td class="score">9/10</td>
           <td class="score">9/10</td>
           <td class="score">10/10</td>
           <td class="score">8/10</td>
           <td>Zach smiling earnestly beside vintage RV holding ChatGPT phone.</td>
-          <td>Approved (overlay clean BB_13.mp3 at t=0 and trim cleanly at 5.75s).</td>
+          <td>Approved.</td>
         </tr>
         <tr>
-          <td><b>BB_14 (done)</b></td>
+          <td><b>BB_14 (216.1s)</b></td>
           <td class="score">10/10</td>
           <td class="score">10/10</td>
           <td class="score">10/10</td>
           <td class="score">8/10</td>
           <td>Hooman in gleaming gold silk shoving white Magic Cone toward stone-faced Gus Fring beside Escalade.</td>
-          <td>Approved (overlay clean BB_14.mp3 at t=0 and trim cleanly at ~8.9s).</td>
+          <td>Approved.</td>
         </tr>
         <tr>
-          <td><b>BB_15 (done)</b></td>
+          <td><b>BB_15 (120.0s)</b></td>
           <td class="score">10/10</td>
           <td class="score">10/10</td>
           <td class="score">10/10</td>
           <td class="score">8/10</td>
           <td>Crisp Giancarlo Esposito reaction beside black Escalade squinting toward Hooman.</td>
-          <td>Approved (overlay clean BB_15.mp3 at t=0 and trim cleanly at 5.45s).</td>
+          <td>Approved.</td>
         </tr>
         <tr>
-          <td><b>BB_16 (done)</b></td>
+          <td><b>BB_16 (160.3s)</b></td>
           <td class="score">10/10</td>
           <td class="score">10/10</td>
           <td class="score">10/10</td>
           <td class="score">8/10</td>
           <td>Hooman pitches animatedly with gold wallet and Magic Cone inches from stoic Gus Fring.</td>
-          <td>Approved (overlay clean BB_16.mp3 at t=0 and trim cleanly at 7.4s).</td>
+          <td>Approved.</td>
+        </tr>
+        <tr>
+          <td><b>BB_17 (120.0s)</b></td>
+          <td class="score">9/10</td>
+          <td class="score">9/10</td>
+          <td class="score">10/10</td>
+          <td class="score">8/10</td>
+          <td>Gus Fring coolly dismissive in high-noon Escalade shadow.</td>
+          <td>Approved.</td>
+        </tr>
+        <tr>
+          <td><b>BB_18 (LTX-2.5 80.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Damon speaks deadpan in wide 4-shot (&#x27;street tacos, Gustavo&#x27;) with zero cloning or drift.</td>
+          <td>LTX-2.5 APPROVED (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>BB_19 (LTX-2.5 50.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Zach checks Olive Tree ChatGPT text in wide desert standoff while all other actors hold steady.</td>
+          <td>LTX-2.5 APPROVED (10/10).</td>
+        </tr>
+        <tr>
+          <td><b>BB_20 (LTX-2.5 125.4s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td>Hooman pitches rattlesnake shovel &amp; Encino SUVs holding Magic Cone with verbatim v4 audio lock.</td>
+          <td>LTX-2.5 APPROVED (trimmed cleanly at 8.45s with BB_20_clean.mp3).</td>
+        </tr>
+        <tr>
+          <td><b>BB_21 (104.0s)</b></td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">10/10</td>
+          <td class="score">9/10</td>
+          <td>Menacing Walter White desert finale looking dead down the barrel under red New Mexico mesas.</td>
+          <td>Approved.</td>
         </tr></tbody>
   </table>
   

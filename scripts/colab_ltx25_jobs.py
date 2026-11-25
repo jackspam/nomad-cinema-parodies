@@ -36,7 +36,7 @@ def ltx_num_frames(audio_path: str, fps: int = 24) -> int:
 
 
 def build_ltx_workflow(job):
-    return {
+    g = {
         "1": {"class_type": "UNETLoader", "inputs": {"unet_name": "ltx-2.5-22b-distilled-transformer-comfy-int8-convrot.safetensors", "weight_dtype": "default"}},
         "2": {"class_type": "CLIPLoader", "inputs": {"clip_name": "gemma4-12b-with-proj-ltx-2.5-comfy-int8-convrot.safetensors", "type": "ltxv", "device": "default"}},
         "3": {"class_type": "VAELoader", "inputs": {"vae_name": "ltx-2.5-video-vae-bf16.safetensors"}},
@@ -49,10 +49,6 @@ def build_ltx_workflow(job):
         "10": {"class_type": "LTXVConditioning", "inputs": {"positive": ["8", 0], "negative": ["9", 0], "frame_rate": 24.0}},
         "11": {"class_type": "EmptyLTXVLatentVideo", "inputs": {"width": 672, "height": 384, "length": job["ltx_length"], "batch_size": 1}},
         "12": {"class_type": "LTXVImgToVideoInplace", "inputs": {"vae": ["3", 0], "image": ["7", 0], "latent": ["11", 0], "strength": 0.85, "bypass": False}},
-        "13": {"class_type": "LoadAudio", "inputs": {"audio": job["audio"]}},
-        "14": {"class_type": "LTXVAudioVAEEncode", "inputs": {"audio": ["13", 0], "audio_vae": ["4", 0]}},
-        "15": {"class_type": "SolidMask", "inputs": {"value": 0.0, "width": 512, "height": 512}},
-        "16": {"class_type": "SetLatentNoiseMask", "inputs": {"samples": ["14", 0], "mask": ["15", 0]}},
         "17": {"class_type": "LTXVConcatAVLatent", "inputs": {"video_latent": ["12", 0], "audio_latent": ["16", 0]}},
         "18": {"class_type": "RandomNoise", "inputs": {"noise_seed": job["seed"]}},
         "19": {"class_type": "CFGGuider", "inputs": {"model": ["1", 0], "positive": ["10", 0], "negative": ["10", 1], "cfg": 1.0}},
@@ -74,6 +70,14 @@ def build_ltx_workflow(job):
         "35": {"class_type": "CreateVideo", "inputs": {"images": ["33", 0], "audio": ["34", 0], "fps": 24}},
         "36": {"class_type": "SaveVideo", "inputs": {"video": ["35", 0], "filename_prefix": f"video/{job['out_prefix']}", "format": "auto", "codec": "auto"}},
     }
+    if job.get("silent_on_camera") or not job.get("audio"):
+        g["16"] = {"class_type": "LTXVEmptyLatentAudio", "inputs": {"frames_number": job["ltx_length"], "frame_rate": 24, "batch_size": 1, "audio_vae": ["4", 0]}}
+    else:
+        g["13"] = {"class_type": "LoadAudio", "inputs": {"audio": job["audio"]}}
+        g["14"] = {"class_type": "LTXVAudioVAEEncode", "inputs": {"audio": ["13", 0], "audio_vae": ["4", 0]}}
+        g["15"] = {"class_type": "SolidMask", "inputs": {"value": 0.0, "width": 512, "height": 512}}
+        g["16"] = {"class_type": "SetLatentNoiseMask", "inputs": {"samples": ["14", 0], "mask": ["15", 0]}}
+    return g
 
 
 def submit(wf):
