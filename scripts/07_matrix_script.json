@@ -50,7 +50,7 @@
       ],
       "speaker": "Morpheus",
       "exact_dialogue": "Welcome to the desert of the real, Damon. You feel it, don't you? Something is wrong.",
-      "tts_text": "[deep, resonant, cathedral-solemn Laurence Fishburne gravity] Welcome to the desert of the real, Damon. You feel it, don't you? Something is wrong.",
+      "tts_text": "[booming cathedral-solemn gravitas, rich expressive weight] Welcome to the desert of the real, Damon! You feel that splinter in your mind\u2014and your colon?",
       "tts_direction": "Cathedral-solemn 1999 Laurence Fishburne prophecy",
       "visual_action": "Morpheus stands motionless behind a cracked burgundy leather armchair, water dripping steadily from the peeling ceiling into a metal bucket beside him.",
       "sfx_music_cue": "Heavy rain pounding arched glass; distant rolling thunder; Don Davis icy brass cluster."
@@ -80,7 +80,7 @@
       ],
       "speaker": "Morpheus",
       "exact_dialogue": "The Matrix is a computer-generated dream world built to keep us under control. To turn us into batteries.",
-      "tts_text": "[measured, hypnotic, unshakeable conviction] The Matrix is a computer-generated dream world built to keep us under control. To turn us into batteries.",
+      "tts_text": "[hypnotic magnetic conviction, dramatic rhythmic rise and fall] The Matrix is a computer-generated dream world built to keep us asleep! Look around you!",
       "tts_direction": "Measured hypnotic Morpheus conviction",
       "visual_action": "Morpheus holds up a single coppertop Duracell battery between black-gloved fingers, glowing stark silver in green storm haze.",
       "sfx_music_cue": "Crackling thunder; metallic Don Davis string swell."
@@ -110,7 +110,7 @@
       ],
       "speaker": "Morpheus",
       "exact_dialogue": "Who brought the man in the earth-brown joggers? And why is he praising machines inside my safehouse?",
-      "tts_text": "[low, dangerous, dead-serious Laurence Fishburne disbelief] Who brought the man in the earth-brown joggers? And why is he praising machines inside my safehouse?",
+      "tts_text": "[sharp incredulous command, deep booming bite] Who brought the man in earth-brown joggers?! And WHY is he shopping on a flip-phone inside the Construct?!",
       "tts_direction": "Low dangerous Morpheus disbelief",
       "visual_action": "Morpheus removes nothing, tilting his chin down one cold millimeter while leather trenchcoat lapels creak softly.",
       "sfx_music_cue": "Sharp vinyl leather coat creak; eerie room hush except rain."
@@ -140,7 +140,7 @@
       ],
       "speaker": "Morpheus",
       "exact_dialogue": "Take the blue pill, the story ends. Take the red pill, and I show how deep it goes.",
-      "tts_text": "[slow, velvety, monumental Matrix ultimatum] Take the blue pill, the story ends. Take the red pill, and I show how deep it goes.",
+      "tts_text": "[monumental dramatic ultimatum, resonant theatrical power] Take the blue pill, the story ends. Take the RED pill\u2014and I show you how deep the rabbit hole goes!",
       "tts_direction": "Slow velvety monumental ultimatum",
       "visual_action": "Morpheus holds both open palms steady under lightning flashes, waiting with absolute reverence.",
       "sfx_music_cue": "Deep sub-bass heartbeat pulse; bright crystalline chime over the two pills."
@@ -217,7 +217,7 @@
       ],
       "speaker": "Morpheus",
       "exact_dialogue": "How did an unjacked transmission breach an encrypted construct?! Trinity, trace that signal immediately!",
-      "tts_text": "[sharp, genuinely rattled commander urgency] How did an unjacked transmission breach an encrypted construct?! Trinity, trace that signal immediately!",
+      "tts_text": "[alarmed commanding urgency, explosive disbelief] How did an unjacked transmission breach an encrypted construct?! Kill that monitor immediately!",
       "tts_direction": "Sharp rattled commander urgency",
       "visual_action": "Morpheus whips a gleaming Nokia 8110 banana slider phone out of his coat pocket, snapping the spring keypad open aggressively.",
       "sfx_music_cue": "Crisp spring-loaded Nokia phone SNAP; urgent Don Davis brass sting."
@@ -261,7 +261,7 @@
       ],
       "speaker": "Morpheus",
       "exact_dialogue": "Your mind makes it real, Damon. Now swallow the red pill before the Agents breach the floor.",
-      "tts_text": "[low, prophetic, urgent Laurence Fishburne solemnity] Your mind makes it real, Damon. Now swallow the red pill before the Agents breach the floor.",
+      "tts_text": "[fiery prophetic intensity, deep commanding punch] Your mind makes it real, Damon! Now swallow the red pill before your GI tract drops another second!",
       "tts_direction": "Low prophetic urgency as hotel floorboards shake",
       "visual_action": "Dust trickles off the ceiling plaster as Morpheus nods once firmly toward Damon's hand.",
       "sfx_music_cue": "Distant heavy Agent boots thudding up hotel stairwell; low bass pulse accelerates."
@@ -337,7 +337,7 @@
       ],
       "speaker": "Morpheus",
       "exact_dialogue": "He is beginning to believe... or he desperately needs a plumber. Disconnect the line now.",
-      "tts_text": "[solemn, deadpan, reluctant resignation] He is beginning to believe... or he desperately needs a plumber. Disconnect the line now.",
+      "tts_text": "[deep wry theatrical gravitas turning into dry punchline] He is beginning to believe... or he desperately needs a plumber. Disconnect the construct!",
       "tts_direction": "Solemn reluctant Morpheus resignation",
       "visual_action": "Morpheus clicks his Nokia slider shut cleanly as cascading green Matrix code swallows the bathroom door, Deron's conical hat, and Zach's glowing iPhone into black.",
       "sfx_music_cue": "SCREAMING 56k modem trace shriek snaps violently to dead CRT off-click + bathroom toilet flush echo."

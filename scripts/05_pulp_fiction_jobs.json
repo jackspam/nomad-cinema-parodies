@@ -7,7 +7,7 @@
     "audio": "PF_01.mp3",
     "length": 141,
     "seed": 7001,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Iconic 40mm Panavision Primo Anamorphic hallway tracking shot; warm buzzing bare-bulb tungsten washes over black suits as Damon stiff-walks two paces behind Jules and Vincent. Vincent gestures smoothly down the dingy floral-carpeted corridor while Damon follows stiffly with one hand pressed discreetly below his ribs.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium two-shot anchored strictly to <Picture 1>. Jules (left, holding silver pistol at side) and Vincent (right, leaning in sunlit blind stripes) stand in the olive-green Burbank apartment. Only Vincent turns slightly toward Jules and speaks calmly.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_02",
@@ -17,7 +17,7 @@
     "audio": "PF_02.mp3",
     "length": 328,
     "seed": 7008,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm tight three-shot outside Apartment 49; sickly warm corridor sconce catches sweat on Damon's brow above dark-teal Wayfarers. Damon checks his tricep CGM sensor under his suit cuff while shifting his weight from foot to foot outside the chipped apartment door.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium hallway shot anchored strictly to <Picture 1>. Damon (sweating in black blazer over damp grey tank) clutches his stomach in misery beside stone-faced Vincent Vega in the olive-green hallway. Damon speaks grimly through gritted teeth.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_03",
@@ -25,9 +25,9 @@
       "pf_shot01_jules_vincent.jpg"
     ],
     "audio": "PF_03.mp3",
-    "length": 141,
+    "length": 192,
     "seed": 7015,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 75mm low-angle profile on Jules Winnfield checking his watch and racking his .45 slide under moody amber corridor shadows. Jules grips the brass doorknob with gloved precision, shooting Damon a stern no-nonsense look before kicking the latch cleanly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium two-shot anchored strictly to <Picture 1>. Jules stands straight on the left beside the kitchen doorway gripping his silver pistol at his hip while Vincent watches on the right. Jules addresses the room with commanding authority.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_04",
@@ -37,7 +37,7 @@
     "audio": "PF_04.mp3",
     "length": 141,
     "seed": 7022,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 40mm anamorphic wide sweep inside the sunlit Burbank apartment; morning rays pierce venetian blinds onto Deron's red dragon robe and conical hat at the breakfast table. Deron sits completely unfazed beside half-eaten Big Kahuna Burgers in his conical hat and red dragon robe while Zach leans calmly by the kitchen counter.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium table shot anchored strictly to <Picture 1>. Deron in his red silk dragon robe and conical straw hat sits at the Formica table behind two Big Kahuna wrappers and a red-striped Sprite cup, chewing casually and speaking cheerfully.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_05",
@@ -47,7 +47,7 @@
     "audio": "PF_05.mp3",
     "length": 141,
     "seed": 7029,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm tight reverse on Vincent Vega standing frozen inside the doorway, golden morning haze backlighting his shoulders. Vincent lowers his raised .45 one inch, squinting past the Big Kahuna cup at Deron's bright red silk dragon sleeves.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium two-shot anchored strictly to <Picture 1>. Vincent Vega (right) stands lit by venetian-blind stripes beside Jules (left) in the olive-green apartment. Vincent raises an eyebrow slightly in deadpan perplexity and delivers his line.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_06",
@@ -57,7 +57,7 @@
     "audio": "PF_06.mp3",
     "length": 141,
     "seed": 7036,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm medium close-up across the Formica table; warm window light rims Deron's bamboo hat brim and steaming dumpling tray. Deron pushes a plate of translucent shrimp har gow right past Vincent's dangling gun barrel, beaming warmly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium table shot anchored strictly to <Picture 1>. Deron in red silk dragon robe and conical straw hat holds up his half-eaten Big Kahuna burger behind the Sprite cup and beams warmly while speaking his line.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_07",
@@ -67,7 +67,7 @@
     "audio": "PF_07.mp3",
     "length": 158,
     "seed": 7043,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Classic Tarantino low-angle table shot (40mm anamorphic) looking up as Jules looms over the Big Kahuna wrapper and Sprite cup. Jules takes a huge unhurried bite of burger while staring unwaveringly down at Deron, then lifts the red-striped Sprite cup.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium two-shot anchored strictly to <Picture 1>. Jules stands calmly beside the kitchen doorway holding his pistol downward, head tilted slightly in theatrical menace as he delivers his Big Kahuna line toward the table.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_08",
@@ -77,7 +77,7 @@
     "audio": "PF_08.mp3",
     "length": 226,
     "seed": 7050,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm side frame into the cluttered 1970s kitchen galley; cool blue iPhone glow contrasts warm dusty morning haze on Zach's brown Alo crewneck. Zach steps politely toward Jules holding his phone out like a nutrition consultant, completely unbothered by two cocked pistols.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium kitchen shot anchored strictly to <Picture 1>. Zach in his brown Alo jacket leans calmly against the wooden kitchen counter scrolling his iPhone while Jules stands blur-framed in the foreground left. Zach speaks politely while tapping his phone.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_09",
@@ -87,7 +87,7 @@
     "audio": "PF_09.mp3",
     "length": 158,
     "seed": 7057,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 75mm close-up on Vincent Vega staring blankly at Zach's earth-brown Alo shirt under harsh side-window key light. Vincent turns slowly toward Jules, palm raised slightly in utter existential confusion over Zach's jumpsuit.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium two-shot anchored strictly to <Picture 1>. Vincent Vega (right) turns his eyes toward Jules (left) in utter deadpan confusion inside the olive-green living room and speaks smoothly.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_10",
@@ -97,7 +97,7 @@
     "audio": "PF_10.mp3",
     "length": 192,
     "seed": 7064,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm tight frame at the narrow hallway bathroom door; Damon grips the brass doorknob tightly, silhouetted slightly by dusty blind slats. Damon rattles the locked apartment bathroom handle quietly with his free hand while keeping his other hand pressed over his belt.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium hallway shot anchored strictly to <Picture 1>. Damon bends slightly forward clutching his cramped midsection in the sunlit green apartment hallway beside Vincent. Damon delivers his deadpan line tightly.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_11",
@@ -107,7 +107,7 @@
     "audio": "PF_11.mp3",
     "length": 141,
     "seed": 7071,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 40mm anamorphic low angle: briefcase clicks open on the coffee table, bathing Deron's conical hat and Jules's scowl in unearthly golden glow. Jules kicks the wooden coffee table hard, leaning down inches from Deron's conical bamboo hat as golden briefcase light illuminates both faces.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium two-shot anchored strictly to <Picture 1>. Jules stands taller with intense blazing eyes on the left inside the olive-green room beside Vincent, roaring his line furiously across the room with emphatic chin and brow motion.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_12",
@@ -117,7 +117,7 @@
     "audio": "PF_12.mp3",
     "length": 141,
     "seed": 7078,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 75mm dead-on close-up on Deron smiling politely beneath his conical bamboo hat brim in golden briefcase bounce light. Deron shakes a tiny yellow box of Po Chai Pills calmly under Jules's barrel, nodding cheerfully like he's discussing Intuit Dome tickets.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium table shot anchored strictly to <Picture 1>. Deron sits serenely beneath his conical straw hat behind the Big Kahuna wrappers and Sprite cup, nodding politely and speaking cheerfully across the table.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_13",
@@ -127,17 +127,17 @@
     "audio": "PF_13.mp3",
     "length": 209,
     "seed": 7085,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot on Zach stepping neatly into frame beside the couch, beaming pleasantly while tapping X and ChatGPT. Zach leans comfortably against the bookshelf beside Vincent, nodding sagely about foot-massage jurisprudence and canyon landscaping.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium kitchen shot anchored strictly to <Picture 1>. Zach in his brown jacket rests by the wood-cabinet stove kitchen holding his smartphone, gesturing mildly and speaking calmly while Jules stands in foreground left.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_14",
     "images": [
-      "pf_shot01_jules_vincent.jpg"
+      "pf_shot04_deron_table.jpg"
     ],
     "audio": "PF_14.mp3",
     "length": 209,
     "seed": 7092,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm Dutch tilt onto the dusty wood-grain 1994 Zenith CRT television beside the couch; snow snaps abruptly into Hooman's gold blazer. The Zenith TV turns itself on with an electric crackle; Hooman beams out through static in his gold Magic Cone suit, waving a shiny funnel.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium table shot anchored strictly to <Picture 1>. Deron sits framed by sunlit blinds in red dragon robe and straw hat with burger and Sprite cup, glancing sideways amusedly as a static speaker plays off-camera.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_15",
@@ -147,17 +147,17 @@
     "audio": "PF_15.mp3",
     "length": 158,
     "seed": 7099,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 40mm anamorphic two-shot of Jules and Vincent standing side by side staring downward at the buzzing Zenith set in synchronized stunned silence. Vincent scratches behind his ear carefully with his gun barrel while Jules blinks slowly at the flickering wooden television.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium two-shot anchored strictly to <Picture 1>. Jules (left) and Vincent (right) stand motionless in the olive-green living room exchanging a bewildered glance while Vincent scratches near his collar slowly.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_16",
     "images": [
-      "pf_shot01_jules_vincent.jpg"
+      "pf_shot12_zach_counter.jpg"
     ],
     "audio": "PF_16.mp3",
     "length": 209,
     "seed": 7106,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Macro 75mm straight into the curved Zenith CRT glass; horizontal phosphor lines streak across Hooman holding an Italian silk tie and funnel. On screen, Hooman sprays a tiny jet of water out of a silk necktie and points eagerly at the glowing golden briefcase.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium kitchen shot anchored strictly to <Picture 1>. Zach stares serenely down at his illuminated iPhone against the 1970s kitchen range while Jules stands motionless in foreground left.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_17",
@@ -165,9 +165,9 @@
       "pf_shot01_jules_vincent.jpg"
     ],
     "audio": "PF_17.mp3",
-    "length": 243,
+    "length": 175,
     "seed": 7113,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Classic Tarantino ultra-low 27mm hero angle up at Jules Winnfield leveling both arms across the golden morning haze. Jules squares his stance dead-center on the shag rug, scripture resonating like thunder while Deron calmly packs up his dumplings.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium two-shot anchored strictly to <Picture 1>. Jules levels a fierce preacher glare straight ahead beside Vincent inside the olive-green apartment, projecting thunderous biblical fury cleanly.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_18",
@@ -177,7 +177,7 @@
     "audio": "PF_18.mp3",
     "length": 226,
     "seed": 7120,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot by the apartment bathroom doorway; Damon pops the cheap lock cleanly with one shoulder shove, utterly unbothered by gunfire threat. Damon pushes the hollow-core bathroom door open smoothly and steps inside, shutting it halfway just as Jules pauses mid-verse.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium hallway shot anchored strictly to <Picture 1>. Damon clutches his stomach over his damp grey tank beside stoic Vincent in the warm sunlit hallway, nodding sharply while delivering his exit line.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_19",
@@ -187,7 +187,7 @@
     "audio": "PF_19.mp3",
     "length": 141,
     "seed": 7127,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot at the coffee table; Deron gracefully clicks the golden briefcase shut and lifts his Din Tai Fung bamboo basket. Deron tips his conical rice paddy hat politely to Jules and glides smoothly out the front door beside Zach.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium table shot anchored strictly to <Picture 1>. Deron tips his conical straw hat cheerfully from behind the Big Kahuna burgers and Sprite cup at the sunlit table while saying his goodbye.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_20",
@@ -197,7 +197,7 @@
     "audio": "PF_20.mp3",
     "length": 243,
     "seed": 7134,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm tight frame on the flickering Zenith TV as Zach peeks calmly over the couch arm before Jules raises his .45 dead-center at the glass. Hooman waves both hands frantically on the Zenith CRT until Jules calmly aims straight at the screen.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium two-shot anchored strictly to <Picture 1>. Jules stands calmly holding his pistol downward on the left beside Vincent in the olive-green room, delivering his line with cold precision.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "pf_pf_21",
@@ -207,6 +207,6 @@
     "audio": "PF_21.mp3",
     "length": 158,
     "seed": 7141,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 2.39:1 slow-motion aftermath: CRT glass implodes in blue sparks while Vincent lowers his pistol into thick cordite smoke drifting across sunlit dust motes. Vincent blows a tiny ribbon of smoke off his barrel, gazing blankly at the steaming TV chassis while bathroom water runs behind the closed door.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed medium two-shot anchored strictly to <Picture 1>. Vincent Vega stands in the sunlit stripes on the right beside Jules on the left inside the quiet olive-green living room, letting out a dry quiet chuckle as he speaks.\nKeep camera framing locked to <Picture 1> with ZERO zoom or pan past foreground figures, zero hallucinated TVs/briefcases/extra people, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   }
 ]

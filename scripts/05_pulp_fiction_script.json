@@ -86,7 +86,7 @@
       ],
       "speaker": "Jules Winnfield",
       "exact_dialogue": "Look, seven-twenty-two in the AM. Hold your stomach till we get the briefcase back.",
-      "tts_text": "[commanding, low, dead-serious Samuel L. Jackson authority] Look, seven-twenty-two in the AM. Hold your stomach till we get the briefcase back.",
+      "tts_text": "[booming theatrical preacher cadence, sharp rhythmic punch] Look! Seven twenty-two in the AM! Hold your stomach together, Brett! Today we discuss hospitality!",
       "tts_direction": "Low, commanding Samuel L. Jackson gravitas",
       "visual_action": "Jules grips the brass doorknob with gloved precision, shooting Damon a stern no-nonsense look before kicking the latch cleanly.",
       "sfx_music_cue": "Heavy chrome pistol slide CLACK-CLACK; sharp hallway silence."
@@ -150,7 +150,7 @@
       ],
       "speaker": "Jules Winnfield",
       "exact_dialogue": "Wait. This IS a tasty burger. Mind if I have some of your tasty beverage?",
-      "tts_text": "[smooth, theatrical, deadly calm intimidation] Wait. This IS a tasty burger. Mind if I have some of your tasty beverage?",
+      "tts_text": "[velvet danger suddenly spiking with sly grinning intensity] Wait! This IS a tasty burger! Mind if I have some of your tasty beverage to wash this down?!",
       "tts_direction": "Theatrical, dead-serious Jules intimidation savoring the bite",
       "visual_action": "Jules takes a huge unhurried bite of burger while staring unwaveringly down at Deron, then lifts the red-striped Sprite cup.",
       "sfx_music_cue": "Long, drawn-out hollow straw SLURP; crisp lettuce crunch."
@@ -210,7 +210,7 @@
       ],
       "speaker": "Jules Winnfield",
       "exact_dialogue": "What does Marsellus Wallace look like?! Does he look like a bitch to you, bamboo hat?!",
-      "tts_text": "[thunderous, explosive Jules rage, veins bulging] What does Marsellus Wallace look like?! Does he look like a bitch to you, bamboo hat?!",
+      "tts_text": "[thunderous explosive Jules rage, roaring righteous fury] What does Marsellus Wallace look like?! Does he LOOK like a bitch to you, Damon?!",
       "tts_direction": "Explosive Old Testament Jules rage",
       "visual_action": "Jules kicks the wooden coffee table hard, leaning down inches from Deron's conical bamboo hat as golden briefcase light illuminates both faces.",
       "sfx_music_cue": "LOUD table kick BANG! Glass cup rattling violently on Formica."
@@ -301,7 +301,7 @@
       ],
       "speaker": "Jules Winnfield",
       "exact_dialogue": "English, motherfucker, do you speak it?! Ezekiel twenty-five, seventeen! The path of the righteous man!",
-      "tts_text": "[booming, terrifying biblical fury] English, motherfucker, do you speak it?! Ezekiel twenty-five, seventeen! The path of the righteous man!",
+      "tts_text": "[roaring furious anger, forceful booming shout] English, motherfucker, do you speak it?! Ezekiel twenty-five, seventeen! The path of the righteous man!",
       "tts_direction": "Booming biblical Jules Winnfield wrath",
       "visual_action": "Jules squares his stance dead-center on the shag rug, scripture resonating like thunder while Deron calmly packs up his dumplings.",
       "sfx_music_cue": "Heavy bass chord rumble beneath Jules's booming cadence; crisp coat fabric snap."

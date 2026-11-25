@@ -66,7 +66,7 @@
       ],
       "speaker": "The Joker",
       "exact_dialogue": "Good evening, Commissioner. You brought the big bat... and a detective wearing a silk bathrobe.",
-      "tts_text": "[quiet, raspy, lip-smacking menace, dead serious] Good evening, Commissioner. You brought the big bat... and a detective wearing a silk bathrobe.",
+      "tts_text": "[maniacal sing-song mockery, wild pitch swoops, raspy glee] Good evening, Commissioner! Haha! You brought the big bat... and a detective wearing a silk bathrobe!",
       "tts_direction": "Dead-serious raspy Heath Ledger cadence, lingering calmly on 'silk bathrobe'",
       "visual_action": "The Joker sits slumped forward, eyes flicking from Damon's hunched shadow toward the two-way mirror, tongue flicking at his scarred cheek.",
       "sfx_music_cue": "Single high violin harmonic scrape; damp cloth creak of Joker's purple gloves on steel table."
@@ -96,7 +96,7 @@
       ],
       "speaker": "The Joker",
       "exact_dialogue": "Never start with the head. Wait\u2014are you trembling? Let's put a smile on that colon.",
-      "tts_text": "[delighted, unhurried, deeply sinister curiosity] Never start with the head. Wait\u2014are you trembling? Let's put a smile on that colon.",
+      "tts_text": "[unhinged cackling amusement, snapping from high tease to low snarl] Never start with the head! Wait\u2014are you trembling?! Haha! Let's put a smile on that colon!",
       "tts_direction": "Unhurried, sinister curiosity, savoring Damon's agony completely straight",
       "visual_action": "The Joker leans smoothly across the table, studying Damon's trembling knuckles and sweat-slick jaw with genuine fascination.",
       "sfx_music_cue": "Rising Zimmer razor-string glissando; metallic chair leg scraping slowly on concrete."
@@ -156,7 +156,7 @@
       ],
       "speaker": "The Joker",
       "exact_dialogue": "See, madness is like gravity. All it takes is one bad burrito... and a little push.",
-      "tts_text": "[quiet, theatrical nihilism, slight amused chuckle] See, madness is like gravity. All it takes is one bad burrito... and a little push.",
+      "tts_text": "[erratic theatrical nihilism, wild mocking inflection, dark laugh] See, madness is like gravity! All it takes is one bad burrito and a little... push! Haha!",
       "tts_direction": "Quiet theatrical nihilism, deadpan earnestness",
       "visual_action": "The Joker rests his chin on steepled purple-gloved fingers, tilting his head calmly as Damon breathes slowly through his nose.",
       "sfx_music_cue": "Shepard-tone string tension ticks upward steadily; distant police siren wail outside Gotham MCU."
@@ -202,7 +202,7 @@
       ],
       "speaker": "The Joker",
       "exact_dialogue": "And who are you supposed to be? Do I look like a guy who ordered room service?",
-      "tts_text": "[slow, genuinely bewildered, menacing deadpan] And who are you supposed to be? Do I look like a guy who ordered room service?",
+      "tts_text": "[baffled mocking bark, raspy theatrical swoop, manic incredulity] And who are YOU supposed to be?! Do I look like a guy who ordered room service?!",
       "tts_direction": "Slow, genuinely bewildered menacing deadpan",
       "visual_action": "The Joker blinks slowly beneath smudged black eye paint, staring straight up at Deron's conical bamboo hat brim.",
       "sfx_music_cue": "Awkward fluorescent room buzz; soft ice clink as Deron shakes his boba."
@@ -300,7 +300,7 @@
       ],
       "speaker": "The Joker",
       "exact_dialogue": "She's scarier than you. Look at her. That's pure, unmedicated chaos... I kind of respect it.",
-      "tts_text": "[hushed, genuinely impressed, unnerved whisper toward Batman] She's scarier than you. Look at her. That's pure, unmedicated chaos... I kind of respect it.",
+      "tts_text": "[giddy maniacal delight, wild raspy chuckle, theatrical hype] She's scarier than you! Look at her! That's pure unmedicated chaos\u2014haha, I kinda respect it!",
       "tts_direction": "Hushed, genuinely impressed whisper toward Batman",
       "visual_action": "The Joker leans sideways out of his chair slightly, eyes wide in sincere professional admiration of Gigi's rage.",
       "sfx_music_cue": "Zimmer string riser drops dead into eerie quiet fluorescent hum."

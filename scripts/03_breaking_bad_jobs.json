@@ -67,7 +67,7 @@
     "audio": "BB_08.mp3",
     "length": 175,
     "seed": 5050,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Wide bright desert standoff shot under deep-blue New Mexico sky: Walter, Damon, and Zach stand on the left beside their black sedan facing Gus Fring on the right beside two black Escalades. Zach gestures slightly as he speaks enthusiastically.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the young man in brown (Zach) on the left-center of <Picture 1>.\nFixed wide static desert standoff shot anchored 100% to <Picture 1>. ZERO camera panning. Keep ALL four characters locked in their wide spots: ONLY Zach (the young man in the brown Alo jacket third from left) gestures slightly with his hand and speaks <Audio 1> enthusiastically toward Gus Fring. Keep Gus Fring on the far right standing completely silent with a closed mouth and zero lip movement.\nSubtle 35mm film grain, natural live-action performance, exact lip sync ONLY on Zach."
   },
   {
     "prefix": "bb_bb_09",
@@ -97,7 +97,7 @@
     "audio": "BB_11.mp3",
     "length": 192,
     "seed": 5071,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Wide bright desert standoff framing Walter, Damon, and Zach facing Gus Fring between black vehicles on orange-ochre New Mexico dirt. Walter speaks tightly with nervous diplomatic posture.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed wide static desert standoff shot locked 100% to <Picture 1> with ZERO camera push-in or orbiting. Keep all four characters in their fixed wide spots (Walter, Damon, Zach on the left; ONLY ONE Gus Fring standing still on the right). Walter on the far left speaks tightly while Gus stays completely silent.\nSubtle 35mm film grain, natural live-action performance, exact lip sync ONLY on Walter."
   },
   {
     "prefix": "bb_bb_12",
@@ -167,7 +167,7 @@
     "audio": "BB_18.mp3",
     "length": 277,
     "seed": 5120,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Wide desert standoff shot under cloudless cobalt sky with black sedan and black Escalades on ochre sand: Damon speaks in deadpan stoicism beside Walter and Zach while facing Gus.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed wide static desert standoff shot locked 100% to <Picture 1> with ZERO camera push-in or orbiting. Keep all four characters in their exact spots: Damon (second from left in black windbreaker and grey tank top) speaks in flat deadpan stoicism while Walter, Zach, and Gus stay steady without duplicating.\nSubtle 35mm film grain, natural live-action performance, exact lip sync ONLY on Damon."
   },
   {
     "prefix": "bb_bb_19",
@@ -177,7 +177,7 @@
     "audio": "BB_19.mp3",
     "length": 175,
     "seed": 5127,
-    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Wide desert standoff shot in bright sunlight between black vehicles on sand: Zach speaks with earnest distress beside Damon and Walter while facing Gus.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters or rooms. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Fixed wide static desert standoff shot locked 100% to <Picture 1> with ZERO camera push-in or orbiting. Keep all four characters in their exact spots: Zach (third from left in brown Alo jacket) reacts urgently with earnest distress looking down at his phone while Walter, Damon, and Gus stand steady.\nSubtle 35mm film grain, natural live-action performance, exact lip sync ONLY on Zach."
   },
   {
     "prefix": "bb_bb_20",
