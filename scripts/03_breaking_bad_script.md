@@ -1,0 +1,253 @@
+# 03. Breaking Bad — The RV Cook / Desert Stand-off
+*Vince Gilligan New Mexico Golden-Amber 35mm Parody · To'hajiilee Arroyo*
+
+- **Runtime:** 3m 10s (190 seconds exact)
+- **Shots:** 21
+
+## Cinematography & Sound Bible
+- **Aspect Ratio:** 1.78:1 (16:9 Prestige Television Master)
+- **Cameras & Lenses:** Arricam LT/ST 35mm Kodak Vision3 250D / 500T with Zeiss Ultra Prime (14mm, 24mm, 50mm) & Angenieux Optimo 24-290mm long-lens desert heat compression
+- **Lighting Arc:** Exterior blazes with unforgiving 12-o'clock overhead New Mexico high-desert sun, deep turquoise sky, heat shimmer, and chalky dust; interior RV glows in thick golden-amber sunbeams slicing through taped foil & dusty venetian blinds.
+- **Color Grade:** Michael Slovis hyper-saturated ochre desert yellows, burnt amber lab shadows, crisp cobalt sky, and stark yellow Tyvek / Los Pollos accents.
+- **Score & Sound:** Dave Porter sparse dry acoustic dobro & brooding bass pulse, cicada drone, hissing Bunsen burners, glass beaker clinks, rattlesnake buzz, and RV generator hum.
+
+## Cast & Wardrobe
+- **Walter White** — Heisenberg (100% straight Bryan Cranston desperation & ego) | *Wardrobe:* Green short-sleeve button-down over white undershirt, yellow rubber apron, half-pulled respirator, black porkpie hat in finale
+- **Gus Fring** — Cartel Boss (100% straight Giancarlo Esposito cold precision) | *Wardrobe:* Crisp golden-yellow Los Pollos Hermanos button-down, dark tie, horn-rimmed glasses, immaculate slacks
+- **Damon** — Unwilling Lab Muscle (deadpan triathlete with devastating desert GI crisis) | *Wardrobe:* Zippered yellow Tyvek hazmat suit pulled down to waist showing Team USA triathlon singlet, dark-teal Wayfarers
+- **Zach** — Logistics & Lipid Consultant (ChatGPT / olive trees / X / Alo) | *Wardrobe:* UPS-brown Alo yoga crewneck and matching joggers glistening mildly in 108F desert heat, iPhone locked in hand
+- **Ajay** — Uninvited RV Neurosurgeon (thick Indian-English, DBS obsession) | *Wardrobe:* Blue Kaiser surgical scrubs, stethoscope around neck, wireless LED surgical headlamp, 1984 Guards Red Porsche 911 parked outside
+- **Hooman** — Dashboard CRT Hijacker (Magic Cone & wildlife fixer) | *Wardrobe:* Gold Magic Cone suit (on dusty 9-inch RV CRT TV)
+
+## Shot-by-Shot Script
+
+### `BB_01` (7s)
+- **shot_id:** `BB_01`
+- **duration_sec:** `7`
+- **camera_lens_lighting:** Ultra-wide 14mm Zeiss low-angle ground-level desert shot; blazing turquoise sky above red mesas, 1986 Fleetwood Bounder RV venting yellow smoke beside a dusty 1984 Guards Red Porsche 911.
+- **characters_present:** Walter White, Ajay
+- **speaker:** NONE (Visual / Foley Beat)
+- **exact_dialogue:** *(None — silent beat)*
+- **tts_direction:** Silent atmospheric Gilligan establishing beat
+- **visual_action:** Heat waves shimmer off the dirt arroyo as golden chemical steam puffs out of the RV roof vent; a desert tortoise crawls slowly past the Porsche's forged Fuchs wheel.
+- **sfx_music_cue:** Piercing desert wind, loud cicadas, distant dry generator sputter, single low acoustic dobro pluck.
+
+### `BB_02` (9s)
+- **shot_id:** `BB_02`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** 35mm inside the cramped RV lab; blinding shafts of golden-amber sunlight pierce dusty venetian blinds onto boiling glass flasks.
+- **characters_present:** Walter White, Damon, Zach, Ajay
+- **speaker:** Walter White
+- **exact_dialogue:** "Ninety-nine point one percent pure. Not a single contaminant enters this RV. Do we understand each other?" *(17 words)*
+- **tts_direction:** Tense, clipped Bryan Cranston authority, dead serious
+- **visual_action:** Walter White taps a pressurized 5000ml round-bottom flask aggressively with gloved fingers, eyes darting over his fogged safety glasses.
+- **sfx_music_cue:** Propane burner roar, glass beaker bubbling, ominous low synth hum.
+
+### `BB_03` (9s)
+- **shot_id:** `BB_03`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** Signature Gilligan bottom-up 'RV toilet POV' 18mm wide distortion looking up at Damon in unzipped yellow Tyvek gripping the narrow bathroom door.
+- **characters_present:** Damon, Walter White
+- **speaker:** Damon
+- **exact_dialogue:** "Word. Just finish the cook, Walt. That gas station Pop-Tart spiked my glucose to one-ninety." *(15 words)*
+- **tts_direction:** Dry strained deadpan through gritted teeth
+- **visual_action:** Damon stares straight down toward the tiny plastic RV chemical toilet, dabbing forehead sweat with his nitrile glove while gripping the sink edge.
+- **sfx_music_cue:** Plastic RV stall latch rattle; muffled wet bubbling echo (both flask and gut).
+
+### `BB_04` (9s)
+- **shot_id:** `BB_04`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** Extreme close-up on iPhone screen & Zach's calm face framed through amber beaker liquid distortion in the RV dinette.
+- **characters_present:** Zach
+- **speaker:** Zach
+- **exact_dialogue:** "Dude, I asked ChatGPT about Damon's stomach and these fumes. Also, did my olive crane arrive?" *(16 words)*
+- **tts_direction:** Calm, mildly worried, boyish earnestness
+- **visual_action:** Zach sits serenely in his brown Alo suit beside bubbling meth trays, calmly typing a prompt about Mandeville Canyon soil drainage.
+- **sfx_music_cue:** Soft iOS keyboard clicks clashing against boiling chemical hiss.
+
+### `BB_05` (9s)
+- **shot_id:** `BB_05`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** 35mm Arricam LT 35mm lens low-angle inside narrow RV aisle; blue surgical scrubs pop violently against warm orange-amber meth-lab lighting.
+- **characters_present:** Ajay, Damon, Walter White
+- **speaker:** Ajay
+- **exact_dialogue:** "Forget ChatGPT, yaar! Damon's vagus nerve is misfiring. Hold still, I do deep brain stimulation fast fast!" *(17 words)*
+- **tts_direction:** Thick Indian-English, enthusiastic clinical rush (plain ElevenLabs v2)
+- **visual_action:** Ajay snaps on his wireless surgical headlamp and raises a humming cordless micro-drill and thin DBS electrode wire straight toward Damon's skull.
+- **sfx_music_cue:** High-pitched cordless surgical drill WHIRR; stethoscope clinking against metal flask clamp.
+
+### `BB_06` (9s)
+- **shot_id:** `BB_06`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** Tight 50mm profile on Walter White ripping off his yellow chemical respirator, bathed in sweating amber rim-light.
+- **characters_present:** Walter White, Ajay
+- **speaker:** Walter White
+- **exact_dialogue:** "Put that drill down! This is a methamphetamine laboratory, Doctor, not an operating theater!" *(14 words)*
+- **tts_direction:** Apoplectic tight-jawed Heisenberg fury
+- **visual_action:** Walter White steps between Ajay and Damon, grabbing Ajay's blue-scrubbed wrist inches from a rack of volatile red-phosphorus jars.
+- **sfx_music_cue:** Respirator rubber SNAP; glass jars rattling in metal rack; tense percussive marimba pulse.
+
+### `BB_07` (9s)
+- **shot_id:** `BB_07`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** 35mm medium close-up on Ajay beaming cheerfully beneath his blazing LED headlamp right next to Walt's furious glare.
+- **characters_present:** Ajay, Walter White
+- **speaker:** Ajay
+- **exact_dialogue:** "It is total amazing sterile technique, yaar! One hundred thirty hertz in thalamus, tremor stops like LeBron!" *(17 words)*
+- **tts_direction:** Thick Indian-English, cheerfully oblivious neurosurgeon pride (plain ElevenLabs v2)
+- **visual_action:** Ajay taps his own temple fondly, gesturing with the titanium stereotactic electrode like it's a magic wand.
+- **sfx_music_cue:** Soft drill spin-down; playful stethoscope swing; Walter's heavy irritated exhale.
+
+### `BB_08` (9s)
+- **shot_id:** `BB_08`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** 35mm 28mm tight shot at the RV dinette table; sunbeam slices cleanly across Zach's brown Alo chest logo.
+- **characters_present:** Zach, Walter White
+- **speaker:** Zach
+- **exact_dialogue:** "Wait—o. m. g., Elon just posted on X about Starlink in New Mexico. Thirty percent off!" *(16 words)*
+- **tts_direction:** Placidly delighted, completely unbothered by meth fumes
+- **visual_action:** Zach holds up his iPhone toward Walter White like he's sharing a Restoration Hardware trade coupon.
+- **sfx_music_cue:** Gentle X notification ping; metallic clink of Walt tightening a pipe wrench.
+
+### `BB_09` (9s)
+- **shot_id:** `BB_09`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** Tight framing through the crack of the sliding RV bathroom door; Damon sits hidden inside shadowy golden sweat haze.
+- **characters_present:** Damon
+- **speaker:** Damon
+- **exact_dialogue:** "Not under arrest, Walt, so Miranda never attached. Also, I've survived LA County jail on better plumbing." *(17 words)*
+- **tts_direction:** Bone-dry NJ reentry lawyer deadpan, tight breath control
+- **visual_action:** Through the three-inch door crack, Damon wipes his Wayfarers calmly with a paper towel while bracing his knees.
+- **sfx_music_cue:** Hollow RV toilet pump groan; dry metallic door creak.
+
+### `BB_10` (10s)
+- **shot_id:** `BB_10`
+- **duration_sec:** `10`
+- **camera_lens_lighting:** EXTERIOR: 290mm Angenieux telephoto compression across blinding white desert caliche; a black SUV shimmers in heat distortion before Gus Fring steps out cleanly.
+- **characters_present:** Gus Fring
+- **speaker:** Gus Fring
+- **exact_dialogue:** "I am told there was a delay with the cook. I do not tolerate chaos in my desert." *(18 words)*
+- **tts_direction:** Velvet-smooth, chillingly polite Giancarlo Esposito menace
+- **visual_action:** Gus Fring straightens his immaculate yellow Los Pollos shirt cuffs, stepping over desert scrub with zero dust touching his polished shoes.
+- **sfx_music_cue:** Heavy SUV door THUNK; crisp gravel crunch under leather soles; low menacing bass rumble.
+
+### `BB_11` (9s)
+- **shot_id:** `BB_11`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** Low-angle 24mm exterior shot looking up at the RV screen door as Walter White steps out onto the metal step under harsh sun glare.
+- **characters_present:** Walter White, Gus Fring
+- **speaker:** Walter White
+- **exact_dialogue:** "There's been a slight... gastrointestinal variable, Gus. My partner's associates are having a medical crisis." *(15 words)*
+- **tts_direction:** Strained diplomatic nervousness beneath forced Heisenberg calm
+- **visual_action:** Walter White adjusts his crooked glasses awkwardly, blocking the RV doorway behind him with both hands.
+- **sfx_music_cue:** Squeaky screen door spring; dry desert wind whistling across aluminum.
+
+### `BB_12` (10s)
+- **shot_id:** `BB_12`
+- **duration_sec:** `10`
+- **camera_lens_lighting:** 200mm tight telephoto close-up on Gus Fring's dead-still face; blinding sun outlines his glasses frame against pure cerulean sky.
+- **characters_present:** Gus Fring, Zach
+- **speaker:** Gus Fring
+- **exact_dialogue:** "I do not think we are alike. Look at the man in the brown Alo suit scrolling." *(17 words)*
+- **tts_direction:** Arctic-cold measured disgust, unblinking
+- **visual_action:** Gus doesn't turn his head as Zach wanders casually down the RV steps past Walter, squinting peacefully at his phone.
+- **sfx_music_cue:** Sharp Dave Porter sub-bass drop; ominous cicada swell.
+
+### `BB_13` (9s)
+- **shot_id:** `BB_13`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** 35mm medium two-shot in harsh desert noon sun; shadowless dirt foreground with RV and Porsche behind Zach.
+- **characters_present:** Zach, Gus Fring
+- **speaker:** Zach
+- **exact_dialogue:** "Dude, Gus, I don't think you realize—we'll give you thirty percent off the batch, plus tax!" *(16 words)*
+- **tts_direction:** Boyish, hyper-enthusiastic Restoration Hardware closer earnestness
+- **visual_action:** Zach extends a friendly handshake across five feet of dry scrub toward Gus like he's closing furniture vendor King Jimmy.
+- **sfx_music_cue:** Desert wind gusts; dead silence from Gus as even the cicadas pause a beat.
+
+### `BB_14` (9s)
+- **shot_id:** `BB_14`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** RV cab interior: 35mm tight shot onto the dusty 9-inch CRT TV bolted above the dash; warm cab glare meets green-gold static.
+- **characters_present:** Hooman, Walter White, Gus Fring
+- **speaker:** Hooman
+- **exact_dialogue:** "Hoobeee? Chetoreee?! Walter, baba! Why you cook in nasty RV with diarrhea, dood? Use Magic Cone, huuuuh?" *(17 words)*
+- **tts_direction:** Broken Persian-English, sunny salesman swagger, rising 'huuuuh?' tail (plain v2)
+- **visual_action:** The busted RV dashboard CRT snaps on with an unearthly hum; Hooman beams out of the curved glass in his gold Magic Cone jacket.
+- **sfx_music_cue:** LOUD CRT static pop and high-pitched 15kHz tube whine; bouncy tinny audio through blown RV speaker.
+
+### `BB_15` (9s)
+- **shot_id:** `BB_15`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** Tight 85mm reaction close-up through the dusty RV windshield looking at Gus Fring squinting calmly from outside.
+- **characters_present:** Gus Fring
+- **speaker:** Gus Fring
+- **exact_dialogue:** "Who is on that monitor? And why is he offering me a gilded traffic funnel?" *(15 words)*
+- **tts_direction:** Quiet surgical perplexity, faintly insulted
+- **visual_action:** Gus steps one pace closer to the RV bumper, tilting his head precisely fifteen degrees while staring at the tiny CRT through the cracked glass.
+- **sfx_music_cue:** Gravel crunch; faint rattle of RV radiator cooling tick.
+
+### `BB_16` (10s)
+- **shot_id:** `BB_16`
+- **duration_sec:** `10`
+- **camera_lens_lighting:** Macro 50mm straight onto curved CRT screen pixels; Hooman's face fills the snowy glass frame.
+- **characters_present:** Hooman
+- **speaker:** Hooman
+- **exact_dialogue:** "Gus! You sell chicken, I sell Cone! Zero splashback in desert! Fifty-fifty on the cartel, dood, huuuuh?" *(17 words)*
+- **tts_direction:** Shameless, rapid pitch shifting into big deal, huge rising 'huuuuh?' (plain v2)
+- **visual_action:** Hooman presses a glowing Magic Cone right up against his webcam lens, holding up a crisp Los Pollos paper cup for scale.
+- **sfx_music_cue:** Crackling CRT interference; brief dry rattlesnake rattle off-screen in the desert dirt.
+
+### `BB_17` (9s)
+- **shot_id:** `BB_17`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** 35mm exterior medium shot on the open RV passenger window; Ajay leans halfway out in blue scrubs with headlamp shining in broad daylight.
+- **characters_present:** Ajay, Gus Fring
+- **speaker:** Ajay
+- **exact_dialogue:** "Gus, yaar, zero blinking! Very interesting cranial nerve! Come inside RV, I am checking basal ganglia free!" *(17 words)*
+- **tts_direction:** Thick Indian-English, beaming medical hospitality (plain ElevenLabs v2)
+- **visual_action:** Ajay waves Gus eagerly toward the RV door with one hand while revving his cordless surgical drill affectionately in the other.
+- **sfx_music_cue:** Cordless drill two-second rev; rattle of dry scrub bushes.
+
+### `BB_18` (9s)
+- **shot_id:** `BB_18`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** 35mm low-angle shot on the RV steps; Damon exits into blinding midday sun wearing unzipped Tyvek over his Team USA singlet and Wayfarers.
+- **characters_present:** Damon, Gus Fring, Walter White
+- **speaker:** Damon
+- **exact_dialogue:** "Facts. You try riding fifty-six miles in aero tuck after street tacos, Gustavo. I suck. Moving on." *(17 words)*
+- **tts_direction:** Utterly flat dry triathlete stoicism, zero fear of cartel boss
+- **visual_action:** Damon steps carefully down onto the dirt, wiping his brow with a towel, nodding respectfully to Gus before walking straight toward Ajay's Porsche.
+- **sfx_music_cue:** Hollow aluminum RV step rattle; faint high-altitude jet contrail hum.
+
+### `BB_19` (9s)
+- **shot_id:** `BB_19`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** 35mm sudden close-up on Zach looking down at his phone screen beside a buzzing desert rattlesnake coiled near the rear tire.
+- **characters_present:** Zach, Walter White
+- **speaker:** Zach
+- **exact_dialogue:** "Holy fudge! My wife Sheren just texted—the crane dropped my olive tree! ChatGPT says check the roots!" *(17 words)*
+- **tts_direction:** Calm Mandeville panic, fast earnest lawyerly distress
+- **visual_action:** Zach ignores the three-foot diamondback rattlesnake coiling inches from his brown Alo sneakers, staring horrified at a ring-camera photo on his phone.
+- **sfx_music_cue:** LOUD dry rattlesnake tail buzz; iPhone text chime.
+
+### `BB_20` (9s)
+- **shot_id:** `BB_20`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** 28mm shot framing the open RV windshield with Hooman screaming through the CRT speaker while Gus reaches cleanly toward the battery wire.
+- **characters_present:** Hooman, Gus Fring, Zach
+- **speaker:** Hooman
+- **exact_dialogue:** "Rattlesnake, Zach?! Hit it with shovel, finish! Fuck that shit, dood! My guy in Encino buy RV—" *(17 words)*
+- **tts_direction:** Loud exasperated West LA fixer barking through static, cut clean on cable yank (plain v2)
+- **visual_action:** On the CRT, Hooman swings an imaginary shovel violently until Gus calmly pulls the red jumper wire off the RV battery outside, killing the screen.
+- **sfx_music_cue:** Rattlesnake hiss; CRT electrical SPARK and dead silence; smooth metallic hood close.
+
+### `BB_21` (9s)
+- **shot_id:** `BB_21`
+- **duration_sec:** `9`
+- **camera_lens_lighting:** Ultra-wide 14mm Zeiss sunset-gold Gilligan tableau: Gus walks back to his SUV as Ajay's 400k-mile Guards Red Porsche peels out past Walter White in towering caliche dust.
+- **characters_present:** Walter White, Gus Fring, Ajay, Damon, Zach
+- **speaker:** Walter White
+- **exact_dialogue:** "Stay out of my territory. And somebody get that damn funnel off my dashboard." *(14 words)*
+- **tts_direction:** Low gravel-voiced Heisenberg menace seething into the desert dust
+- **visual_action:** Walter White pulls his black porkpie hat low as Ajay double-clutches the 1984 Porsche 911 into second gear, carrying Damon and Zach off down the dirt road in billowing golden dust.
+- **sfx_music_cue:** Air-cooled 3.2L flat-six Porsche exhaust ROAR fading across canyon; final brooding Vince Gilligan dobro chord.
