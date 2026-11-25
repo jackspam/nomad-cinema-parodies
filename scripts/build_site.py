@@ -32,7 +32,7 @@ FILMS = [
         "status_cls": "",
         "mp4": "films/02_dark_knight_1080p.mp4",
         "prep_time": "25m 37s",
-        "render_time": "In progress on L4: Shots 1-9 approved (v2 DK_01 761.6s, v2 DK_07 761.3s); rendering Shot 10/20",
+        "render_time": "In progress on L4: Shots 1-12 approved (DK_10 328.9s, DK_11 386.1s, DK_12 387.5s); rendering Shot 13/20",
         "audit": [
             {"shot": "DK_01 (800.4s -> v2: 761.6s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "v1 rejected for 4-9s pan-right & dragon mascot; v2 locked camera cleanly on Gigi for all 10s with crisp SWAT movement behind glass.", "revisions": "v2 APPROVED. Overlay clean DK_01.mp3 at t=0 and trim cleanly after dialogue tail."},
             {"shot": "DK_02 (457.2s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Custom designed Joker voice + Nolan interrogation push-in dead-on; slight mouth slur on final 1.2s silence.", "revisions": "Trim point set to 5.4s; silence-trim added to preflight for future films."},
@@ -43,6 +43,9 @@ FILMS = [
             {"shot": "DK_07 (768.2s -> v2: 761.3s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "v1 rejected for red-line/scissors hallucination; v2 clean push-in on Gigi pointing chopsticks with crisp green glass reflection.", "revisions": "v2 APPROVED. Overlay clean DK_07.mp3 at t=0 and trim cleanly at 8.9s."},
             {"shot": "DK_08 (680.4s)", "quality": 10, "physics": 9, "similarity": 10, "lipsync": 9, "notes": "Smooth Nolan table circle around Joker & Batman with accurate mirror reflections; repeats 'and a little' at 7.8s tail.", "revisions": "Approved with clean 7.6s trim."},
             {"shot": "DK_09 (done)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Batman slams Joker's head against metal table cleanly on 'Word.' while gripping stomach in Zone-5 pain; dead-on interrogation framing.", "revisions": "Approved (overlay clean DK_09.mp3 at t=0 and trim cleanly at ~6.3s)."},
+            {"shot": "DK_10 (328.9s)", "quality": 8, "physics": 8, "similarity": 9, "lipsync": 9, "notes": "Deron enters doorway in red silk dragon robe & conical hat holding 99 Ranch takeout, iced boba, and Po Chai Pills.", "revisions": "Approved with clean 4.8s trim to cut trailing repeat."},
+            {"shot": "DK_11 (386.1s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Dead-on low angle of Joker resting chin on steel table staring up at Deron's straw hat brim; slight tail repeat at 5.2s.", "revisions": "Approved with clean 5.1s trim."},
+            {"shot": "DK_12 (387.5s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "Deron leans by white cinderblock holding Po Chai Pills & Clippers line; slight 'security' slur & tail syllable at 5.5s.", "revisions": "Approved (overlay crisp DK_12.mp3 at t=0, trim cleanly at 5.35s)."},
         ],
     },
     {
