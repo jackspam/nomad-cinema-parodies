@@ -32,7 +32,7 @@ FILMS = [
         "status_cls": "",
         "mp4": "films/02_dark_knight_1080p.mp4",
         "prep_time": "25m 37s",
-        "render_time": "In progress on L4: Shot 1 (v2: 761.6s), Shot 2 (457.2s), Shot 3 (521.2s), Shot 4 (456.1s), Shot 5 (521.3s), Shot 6 (330.8s), Shot 8 (680.4s), Shot 9 (done)",
+        "render_time": "In progress on L4: Shots 1-9 approved (v2 DK_01 761.6s, v2 DK_07 761.3s); rendering Shot 10/20",
         "audit": [
             {"shot": "DK_01 (800.4s -> v2: 761.6s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "v1 rejected for 4-9s pan-right & dragon mascot; v2 locked camera cleanly on Gigi for all 10s with crisp SWAT movement behind glass.", "revisions": "v2 APPROVED. Overlay clean DK_01.mp3 at t=0 and trim cleanly after dialogue tail."},
             {"shot": "DK_02 (457.2s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Custom designed Joker voice + Nolan interrogation push-in dead-on; slight mouth slur on final 1.2s silence.", "revisions": "Trim point set to 5.4s; silence-trim added to preflight for future films."},
@@ -40,7 +40,7 @@ FILMS = [
             {"shot": "DK_04 (456.1s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Dead-on two-shot profile Joker leaning toward Batman's gauntlets; slight trailing word echo at 6.1s.", "revisions": "Approved with clean trim at 6.0s."},
             {"shot": "DK_05 (521.3s)", "quality": 9, "physics": 9, "similarity": 10, "lipsync": 8, "notes": "Overhead fluorescents slam on from dark to bright glare just like Nolan's cut.", "revisions": "Approved (overlay crisp DK_05.mp3 at t=0, mute native audio)."},
             {"shot": "DK_06 (330.8s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Deron (conical hat & red dragon robe) holding siu mai in observation booth beside Gigi; slight 'dim sum' echo on final 0.4s.", "revisions": "Approved with clean 5.25s trim."},
-            {"shot": "DK_07 (768.2s)", "quality": 5, "physics": 3, "similarity": 6, "lipsync": 7, "notes": "Literal red lines and floating safety scissors materialized across Gigi's face from simile phrasing in old prompt.", "revisions": "REJECTED (<8). Hardened literal-only prompt currently re-rendering on Colab."},
+            {"shot": "DK_07 (768.2s -> v2: 761.3s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "v1 rejected for red-line/scissors hallucination; v2 clean push-in on Gigi pointing chopsticks with crisp green glass reflection.", "revisions": "v2 APPROVED. Overlay clean DK_07.mp3 at t=0 and trim cleanly at 8.9s."},
             {"shot": "DK_08 (680.4s)", "quality": 10, "physics": 9, "similarity": 10, "lipsync": 9, "notes": "Smooth Nolan table circle around Joker & Batman with accurate mirror reflections; repeats 'and a little' at 7.8s tail.", "revisions": "Approved with clean 7.6s trim."},
             {"shot": "DK_09 (done)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Batman slams Joker's head against metal table cleanly on 'Word.' while gripping stomach in Zone-5 pain; dead-on interrogation framing.", "revisions": "Approved (overlay clean DK_09.mp3 at t=0 and trim cleanly at ~6.3s)."},
         ],
