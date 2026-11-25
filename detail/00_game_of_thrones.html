@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>00. Game of Thrones — The Porcelain Keep (Pilot) — Ingredients &amp; QA</title>
+  <style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0b0d12; color: #e5e7eb; margin: 0; padding: 32px; max-width: 1280px; margin-inline: auto; }
+a { color: #93c5fd; text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: -0.02em; }
+h2 { margin: 28px 0 12px; font-size: 20px; color: #f9fafb; }
+p.sub { color: #9ca3af; margin: 0 0 24px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 24px; }
+.ref-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.card { background: #141720; border: 1px solid #262b38; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+.card h2, .card h3 { margin: 0; font-size: 17px; color: #f9fafb; }
+.badge { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 8px; border-radius: 999px; background: #1f2937; color: #93c5fd; width: fit-content; }
+.badge.done { background: #064e3b; color: #6ee7b7; }
+.meta { font-size: 13px; color: #9ca3af; line-height: 1.5; }
+video, img { width: 100%; border-radius: 8px; background: #000; display: block; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: auto; }
+a.btn { display: inline-block; text-align: center; padding: 9px 14px; border-radius: 8px; background: #2563eb; color: #fff; text-decoration: none; font-weight: 600; font-size: 13px; }
+a.btn.sec { background: #1f2937; color: #e5e7eb; border: 1px solid #374151; }
+a.btn:hover { opacity: 0.9; text-decoration: none; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13px; background: #141720; border-radius: 10px; overflow: hidden; }
+th, td { padding: 10px 12px; border-bottom: 1px solid #262b38; text-align: left; vertical-align: top; }
+th { background: #1b202c; color: #93c5fd; font-weight: 600; }
+.score { font-weight: 700; color: #6ee7b7; }
+.prompt { font-size: 12px; color: #9ca3af; line-height: 1.4; }
+</style>
+</head>
+<body>
+  <p><a href="../index.html">← Back to Studio Hub</a></p>
+  <span class="badge done">1080p Ready</span>
+  <h1 style="margin-top:8px;">00. Game of Thrones — The Porcelain Keep (Pilot)</h1>
+  <p class="sub">HBO Winterfell 35mm Look · Starring Damon · Ingredient Prep: Pilot phase · Render Time: ~26 min (L4, 4 clips)</p>
+  <video controls playsinline src="../films/00_game_of_thrones_1080p.mp4" style="max-width:760px;margin:16px 0;"></video>
+
+  <h2>1. YouTube Reference Frame Extraction (0 shots sampled)</h2>
+  <p class="sub">Original movie frames extracted directly from the scene to match camera angles, lenses, lighting contrast, and color palette.</p>
+  <div class="ref-grid"><div class="card"><div class="meta">Pilot prototype (pre-YouTube sampler).</div></div></div>
+
+  <h2>2. MiniMax H3 Reference Frames &amp; Shot Ingredients (0 shots)</h2>
+  <p class="sub">Every keyframe, spoken line, duration, and prompt queued for MiniMax H3 prior to rendering.</p>
+  <div class="ref-grid"></div>
+
+  <h2>3. Director's QA Audit &amp; Revision History</h2>
+  <table>
+    <thead>
+      <tr><th>Shot</th><th>Quality</th><th>Physics</th><th>Movie Match</th><th>Lip Sync</th><th>Inspection Notes</th><th>Revisions</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><b>GOT_01</b></td>
+          <td class="score">8/10</td>
+          <td class="score">8/10</td>
+          <td class="score">8/10</td>
+          <td class="score">8/10</td>
+          <td>Winterfell courtyard lighting &amp; snow match HBO; initial keyframe revised from illustration to photoreal.</td>
+          <td>v1 illustration rejected -&gt; v2 photoreal HBO grade.</td>
+        </tr>
+        <tr>
+          <td><b>GOT_02</b></td>
+          <td class="score">8/10</td>
+          <td class="score">8/10</td>
+          <td class="score">8/10</td>
+          <td class="score">7/10</td>
+          <td>Good interior candlelight.</td>
+          <td>None.</td>
+        </tr>
+        <tr>
+          <td><b>GOT_03</b></td>
+          <td class="score">7/10</td>
+          <td class="score">7/10</td>
+          <td class="score">7/10</td>
+          <td class="score">7/10</td>
+          <td>Slight AI smoothness late in shot.</td>
+          <td>Unified 35mm grain applied.</td>
+        </tr>
+        <tr>
+          <td><b>GOT_04</b></td>
+          <td class="score">7/10</td>
+          <td class="score">7/10</td>
+          <td class="score">7/10</td>
+          <td class="score">6/10</td>
+          <td>Minor lip-sync drift &amp; double-voice at end.</td>
+          <td>Muted native voice track &amp; trimmed splash tail.</td>
+        </tr></tbody>
+  </table>
+</body>
+</html>

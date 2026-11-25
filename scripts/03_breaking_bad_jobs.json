@@ -7,83 +7,77 @@
     "audio": "BB_02.mp3",
     "length": 192,
     "seed": 5008,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. 35mm inside the cramped RV lab; blinding shafts of golden-amber sunlight pierce dusty venetian blinds onto boiling glass flasks. Walter White taps a pressurized 5000ml round-bottom flask aggressively with gloved fingers, eyes darting over his fogged safety glasses. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm inside the cramped RV lab; blinding shafts of golden-amber sunlight pierce dusty venetian blinds onto boiling glass flasks. Walter White taps a pressurized 5000ml round-bottom flask aggressively with gloved fingers, eyes darting over his fogged safety glasses.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_03",
     "images": [
-      "bb_shot02_damon_rv.jpg",
-      "damon.jpg"
+      "bb_desert_03_damon_ots.jpg"
     ],
     "audio": "BB_03.mp3",
     "length": 192,
     "seed": 5015,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. Signature Gilligan bottom-up 'RV toilet POV' 18mm wide distortion looking up at Damon in unzipped yellow Tyvek gripping the narrow bathroom door. Damon stares straight down toward the tiny plastic RV chemical toilet, dabbing forehead sweat with his nitrile glove while gripping the sink edge. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Signature Gilligan bottom-up 'RV toilet POV' 18mm wide distortion looking up at Damon in unzipped yellow Tyvek gripping the narrow bathroom door. Damon stares straight down toward the tiny plastic RV chemical toilet, dabbing forehead sweat with his nitrile glove while gripping the sink edge.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_04",
     "images": [
-      "bb_shot03_zach_alo.jpg",
-      "zach.jpg"
+      "bb_shot03_zach_alo.jpg"
     ],
     "audio": "BB_04.mp3",
     "length": 175,
     "seed": 5022,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. Extreme close-up on iPhone screen & Zach's calm face framed through amber beaker liquid distortion in the RV dinette. Zach sits serenely in his brown Alo suit beside bubbling meth trays, calmly typing a prompt about Mandeville Canyon soil drainage. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Extreme close-up on iPhone screen & Zach's calm face framed through amber beaker liquid distortion in the RV dinette. Zach sits serenely in his brown Alo suit beside bubbling meth trays, calmly typing a prompt about Mandeville Canyon soil drainage.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_05",
     "images": [
-      "bb_shot04_ajay_porsche.jpg",
-      "ajay.jpg"
+      "bb_shot04_ajay_porsche.jpg"
     ],
     "audio": "BB_05.mp3",
     "length": 175,
     "seed": 5029,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. 35mm Arricam LT 35mm lens low-angle inside narrow RV aisle; blue surgical scrubs pop violently against warm orange-amber meth-lab lighting. Ajay snaps on his wireless surgical headlamp and raises a humming cordless micro-drill and thin DBS electrode wire straight toward Damon's skull. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm Arricam LT 35mm lens low-angle inside narrow RV aisle; blue surgical scrubs pop violently against warm orange-amber meth-lab lighting. Ajay snaps on his wireless surgical headlamp and raises a humming cordless micro-drill and thin DBS electrode wire straight toward Damon's skull.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_06",
     "images": [
-      "bb_shot05_walter_standoff.jpg"
+      "bb_desert_02_walter_cu.jpg"
     ],
     "audio": "BB_06.mp3",
     "length": 175,
     "seed": 5036,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. Tight 50mm profile on Walter White ripping off his yellow chemical respirator, bathed in sweating amber rim-light. Walter White steps between Ajay and Damon, grabbing Ajay's blue-scrubbed wrist inches from a rack of volatile red-phosphorus jars. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 50mm profile on Walter White ripping off his yellow chemical respirator, bathed in sweating amber rim-light. Walter White steps between Ajay and Damon, grabbing Ajay's blue-scrubbed wrist inches from a rack of volatile red-phosphorus jars.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_07",
     "images": [
-      "bb_shot04_ajay_porsche.jpg",
-      "ajay.jpg"
+      "bb_shot04_ajay_porsche.jpg"
     ],
     "audio": "BB_07.mp3",
     "length": 158,
     "seed": 5043,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. 35mm medium close-up on Ajay beaming cheerfully beneath his blazing LED headlamp right next to Walt's furious glare. Ajay taps his own temple fondly, gesturing with the titanium stereotactic electrode like it's a magic wand. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium close-up on Ajay beaming cheerfully beneath his blazing LED headlamp right next to Walt's furious glare. Ajay taps his own temple fondly, gesturing with the titanium stereotactic electrode like it's a magic wand.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_08",
     "images": [
-      "bb_shot03_zach_alo.jpg",
-      "zach.jpg"
+      "bb_desert_01_wide.jpg"
     ],
     "audio": "BB_08.mp3",
     "length": 175,
     "seed": 5050,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. 35mm 28mm tight shot at the RV dinette table; sunbeam slices cleanly across Zach's brown Alo chest logo. Zach holds up his iPhone toward Walter White like he's sharing a Restoration Hardware trade coupon. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm 28mm tight shot at the RV dinette table; sunbeam slices cleanly across Zach's brown Alo chest logo. Zach holds up his iPhone toward Walter White like he's sharing a Restoration Hardware trade coupon.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_09",
     "images": [
-      "bb_shot18_damon_gus.jpg",
-      "damon.jpg"
+      "bb_shot18_damon_gus.jpg"
     ],
     "audio": "BB_09.mp3",
     "length": 192,
     "seed": 5057,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. Tight framing through the crack of the sliding RV bathroom door; Damon sits hidden inside shadowy golden sweat haze. Through the three-inch door crack, Damon wipes his Wayfarers calmly with a paper towel while bracing his knees. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight framing through the crack of the sliding RV bathroom door; Damon sits hidden inside shadowy golden sweat haze. Through the three-inch door crack, Damon wipes his Wayfarers calmly with a paper towel while bracing his knees.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_10",
@@ -93,49 +87,47 @@
     "audio": "BB_10.mp3",
     "length": 158,
     "seed": 5064,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. EXTERIOR: 290mm Angenieux telephoto compression across blinding white desert caliche; a black SUV shimmers in heat distortion before Gus Fring steps out cleanly. Gus Fring straightens his immaculate yellow Los Pollos shirt cuffs, stepping over desert scrub with zero dust touching his polished shoes. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. EXTERIOR: 290mm Angenieux telephoto compression across blinding white desert caliche; a black SUV shimmers in heat distortion before Gus Fring steps out cleanly. Gus Fring straightens his immaculate yellow Los Pollos shirt cuffs, stepping over desert scrub with zero dust touching his polished shoes.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_11",
     "images": [
-      "bb_shot05_walter_standoff.jpg"
+      "bb_desert_01_wide.jpg"
     ],
     "audio": "BB_11.mp3",
     "length": 209,
     "seed": 5071,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. Low-angle 24mm exterior shot looking up at the RV screen door as Walter White steps out onto the metal step under harsh sun glare. Walter White adjusts his crooked glasses awkwardly, blocking the RV doorway behind him with both hands. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Low-angle 24mm exterior shot looking up at the RV screen door as Walter White steps out onto the metal step under harsh sun glare. Walter White adjusts his crooked glasses awkwardly, blocking the RV doorway behind him with both hands.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_12",
     "images": [
-      "bb_shot10_gus_fring.jpg"
+      "bb_desert_01_wide.jpg"
     ],
     "audio": "BB_12.mp3",
     "length": 158,
     "seed": 5078,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. 200mm tight telephoto close-up on Gus Fring's dead-still face; blinding sun outlines his glasses frame against pure cerulean sky. Gus doesn't turn his head as Zach wanders casually down the RV steps past Walter, squinting peacefully at his phone. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 200mm tight telephoto close-up on Gus Fring's dead-still face; blinding sun outlines his glasses frame against pure cerulean sky. Gus doesn't turn his head as Zach wanders casually down the RV steps past Walter, squinting peacefully at his phone.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_13",
     "images": [
-      "bb_shot03_zach_alo.jpg",
-      "zach.jpg"
+      "bb_shot03_zach_alo.jpg"
     ],
     "audio": "BB_13.mp3",
     "length": 158,
     "seed": 5085,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. 35mm medium two-shot in harsh desert noon sun; shadowless dirt foreground with RV and Porsche behind Zach. Zach extends a friendly handshake across five feet of dry scrub toward Gus like he's closing furniture vendor King Jimmy. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium two-shot in harsh desert noon sun; shadowless dirt foreground with RV and Porsche behind Zach. Zach extends a friendly handshake across five feet of dry scrub toward Gus like he's closing furniture vendor King Jimmy.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_14",
     "images": [
-      "bb_shot13_hooman_tablet.jpg",
-      "hooman.jpg"
+      "bb_desert_04_hooman_desert.jpg"
     ],
     "audio": "BB_14.mp3",
     "length": 260,
     "seed": 5092,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. RV cab interior: 35mm tight shot onto the dusty 9-inch CRT TV bolted above the dash; warm cab glare meets green-gold static. The busted RV dashboard CRT snaps on with an unearthly hum; Hooman beams out of the curved glass in his gold Magic Cone jacket. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. RV cab interior: 35mm tight shot onto the dusty 9-inch CRT TV bolted above the dash; warm cab glare meets green-gold static. The busted RV dashboard CRT snaps on with an unearthly hum; Hooman beams out of the curved glass in his gold Magic Cone jacket.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_15",
@@ -145,62 +137,57 @@
     "audio": "BB_15.mp3",
     "length": 141,
     "seed": 5099,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. Tight 85mm reaction close-up through the dusty RV windshield looking at Gus Fring squinting calmly from outside. Gus steps one pace closer to the RV bumper, tilting his head precisely fifteen degrees while staring at the tiny CRT through the cracked glass. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 85mm reaction close-up through the dusty RV windshield looking at Gus Fring squinting calmly from outside. Gus steps one pace closer to the RV bumper, tilting his head precisely fifteen degrees while staring at the tiny CRT through the cracked glass.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_16",
     "images": [
-      "bb_shot13_hooman_tablet.jpg",
-      "hooman.jpg"
+      "bb_desert_04_hooman_desert.jpg"
     ],
     "audio": "BB_16.mp3",
     "length": 209,
     "seed": 5106,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. Macro 50mm straight onto curved CRT screen pixels; Hooman's face fills the snowy glass frame. Hooman presses a glowing Magic Cone right up against his webcam lens, holding up a crisp Los Pollos paper cup for scale. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Macro 50mm straight onto curved CRT screen pixels; Hooman's face fills the snowy glass frame. Hooman presses a glowing Magic Cone right up against his webcam lens, holding up a crisp Los Pollos paper cup for scale.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_17",
     "images": [
-      "bb_shot04_ajay_porsche.jpg",
-      "ajay.jpg"
+      "bb_shot04_ajay_porsche.jpg"
     ],
     "audio": "BB_17.mp3",
     "length": 175,
     "seed": 5113,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. 35mm exterior medium shot on the open RV passenger window; Ajay leans halfway out in blue scrubs with headlamp shining in broad daylight. Ajay waves Gus eagerly toward the RV door with one hand while revving his cordless surgical drill affectionately in the other. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm exterior medium shot on the open RV passenger window; Ajay leans halfway out in blue scrubs with headlamp shining in broad daylight. Ajay waves Gus eagerly toward the RV door with one hand while revving his cordless surgical drill affectionately in the other.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_18",
     "images": [
-      "bb_shot18_damon_gus.jpg",
-      "damon.jpg"
+      "bb_desert_01_wide.jpg"
     ],
     "audio": "BB_18.mp3",
     "length": 277,
     "seed": 5120,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. 35mm low-angle shot on the RV steps; Damon exits into blinding midday sun wearing unzipped Tyvek over his Team USA singlet and Wayfarers. Damon steps carefully down onto the dirt, wiping his brow with a towel, nodding respectfully to Gus before walking straight toward Ajay's Porsche. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm low-angle shot on the RV steps; Damon exits into blinding midday sun wearing unzipped Tyvek over his Team USA singlet and Wayfarers. Damon steps carefully down onto the dirt, wiping his brow with a towel, nodding respectfully to Gus before walking straight toward Ajay's Porsche.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_19",
     "images": [
-      "bb_shot03_zach_alo.jpg",
-      "zach.jpg"
+      "bb_desert_01_wide.jpg"
     ],
     "audio": "BB_19.mp3",
     "length": 192,
     "seed": 5127,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. 35mm sudden close-up on Zach looking down at his phone screen beside a buzzing desert rattlesnake coiled near the rear tire. Zach ignores the three-foot diamondback rattlesnake coiling inches from his brown Alo sneakers, staring horrified at a ring-camera photo on his phone. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm sudden close-up on Zach looking down at his phone screen beside a buzzing desert rattlesnake coiled near the rear tire. Zach ignores the three-foot diamondback rattlesnake coiling inches from his brown Alo sneakers, staring horrified at a ring-camera photo on his phone.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_20",
     "images": [
-      "bb_shot13_hooman_tablet.jpg",
-      "hooman.jpg"
+      "bb_desert_04_hooman_desert.jpg"
     ],
     "audio": "BB_20.mp3",
     "length": 243,
     "seed": 5134,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. 28mm shot framing the open RV windshield with Hooman screaming through the CRT speaker while Gus reaches cleanly toward the battery wire. On the CRT, Hooman swings an imaginary shovel violently until Gus calmly pulls the red jumper wire off the RV battery outside, killing the screen. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 28mm shot framing the open RV windshield with Hooman screaming through the CRT speaker while Gus reaches cleanly toward the battery wire. On the CRT, Hooman swings an imaginary shovel violently until Gus calmly pulls the red jumper wire off the RV battery outside, killing the screen.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   },
   {
     "prefix": "bb_bb_21",
@@ -210,6 +197,6 @@
     "audio": "BB_21.mp3",
     "length": 141,
     "seed": 5141,
-    "prompt": "Photorealistic 35mm live-action film scene, Breaking Bad New Mexico desert cinematography, harsh high-noon sunlight, natural 35mm film grain, zero cartoon look. Ultra-wide 14mm Zeiss sunset-gold Gilligan tableau: Gus walks back to his SUV as Ajay's 400k-mile Guards Red Porsche peels out past Walter White in towering caliche dust. Walter White pulls his black porkpie hat low as Ajay double-clutches the 1984 Porsche 911 into second gear, carrying Damon and Zach off down the dirt road in billowing golden dust. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Ultra-wide 14mm Zeiss sunset-gold Gilligan tableau: Gus walks back to his SUV as Ajay's 400k-mile Guards Red Porsche peels out past Walter White in towering caliche dust. Walter White pulls his black porkpie hat low as Ajay double-clutches the 1984 Porsche 911 into second gear, carrying Damon and Zach off down the dirt road in billowing golden dust.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain.\nDo NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to <Picture 1> with subtle natural 35mm movement and exact lip sync."
   }
 ]

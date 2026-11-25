@@ -7,18 +7,17 @@
     "audio": "MX_01.mp3",
     "length": 192,
     "seed": 9001,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. Symmetrical 27mm Super 35 wide frame inside crumbling Lafayette Hotel; rain sheets down arched windows while green-tinted lightning illuminates Morpheus, Damon, Deron, and Zach. Morpheus stands motionless behind a cracked burgundy leather armchair, water dripping steadily from the peeling ceiling into a metal bucket beside him. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Symmetrical 27mm Super 35 wide frame inside crumbling Lafayette Hotel; rain sheets down arched windows while green-tinted lightning illuminates Morpheus, Damon, Deron, and Zach. Morpheus stands motionless behind a cracked burgundy leather armchair, water dripping steadily from the peeling ceiling into a metal bucket beside him.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_02",
     "images": [
-      "mx_shot02_damon_chair.jpg",
-      "damon.jpg"
+      "mx_shot02_damon_chair.jpg"
     ],
     "audio": "MX_02.mp3",
     "length": 226,
     "seed": 9008,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 50mm tight push onto Damon hunched forward in the crumbling red armchair; green storm light catches sweat over his dark-teal Wayfarers. Damon grips both torn velvet armrests white-knuckled, keeping his spine straight like he's sitting in the aero tuck despite a massive gut cramp. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm tight push onto Damon hunched forward in the crumbling red armchair; green storm light catches sweat over his dark-teal Wayfarers. Damon grips both torn velvet armrests white-knuckled, keeping his spine straight like he's sitting in the aero tuck despite a massive gut cramp.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_03",
@@ -28,18 +27,17 @@
     "audio": "MX_03.mp3",
     "length": 209,
     "seed": 9015,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 75mm symmetrical close-up on Morpheus; pale emerald lightning flashes behind his silhouette as rain streams across the pane. Morpheus holds up a single coppertop Duracell battery between black-gloved fingers, glowing stark silver in green storm haze. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 75mm symmetrical close-up on Morpheus; pale emerald lightning flashes behind his silhouette as rain streams across the pane. Morpheus holds up a single coppertop Duracell battery between black-gloved fingers, glowing stark silver in green storm haze.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_04",
     "images": [
-      "mx_shot02_damon_chair.jpg",
-      "zach.jpg"
+      "mx_shot02_damon_chair.jpg"
     ],
     "audio": "MX_04.mp3",
     "length": 209,
     "seed": 9022,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 35mm cut to Zach lounging comfortably on the damp hotel divan in his UPS-brown Alo suit; bright blue iPhone screen pierces the Matrix-green room. Zach holds his phone up cheerfully toward Morpheus, scrolling X calmly while ignoring the peeling wallpaper and storm. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm cut to Zach lounging comfortably on the damp hotel divan in his UPS-brown Alo suit; bright blue iPhone screen pierces the Matrix-green room. Zach holds his phone up cheerfully toward Morpheus, scrolling X calmly while ignoring the peeling wallpaper and storm.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_05",
@@ -49,18 +47,17 @@
     "audio": "MX_05.mp3",
     "length": 175,
     "seed": 9029,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 75mm razor-tight turn onto Morpheus; armless pince-nez sunglasses reflect Zach's brown hoodie and glowing phone screen in pure green-tinted scorn. Morpheus removes nothing, tilting his chin down one cold millimeter while leather trenchcoat lapels creak softly. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 75mm razor-tight turn onto Morpheus; armless pince-nez sunglasses reflect Zach's brown hoodie and glowing phone screen in pure green-tinted scorn. Morpheus removes nothing, tilting his chin down one cold millimeter while leather trenchcoat lapels creak softly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_06",
     "images": [
-      "mx_shot06_deron_corner.jpg",
-      "deron-robe.jpg"
+      "mx_shot06_deron_corner.jpg"
     ],
     "audio": "MX_06.mp3",
     "length": 175,
     "seed": 9036,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 35mm medium shot beside the crumbling marble hearth; Deron's bright red silk dragon robe clashes violently with the monochrome 1999 green grade. Deron leans over Damon's shoulder under his conical bamboo hat, inspecting Morpheus's outstretched hands like an unimpressed tea-shop critic. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot beside the crumbling marble hearth; Deron's bright red silk dragon robe clashes violently with the monochrome 1999 green grade. Deron leans over Damon's shoulder under his conical bamboo hat, inspecting Morpheus's outstretched hands like an unimpressed tea-shop critic.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_07",
@@ -70,51 +67,47 @@
     "audio": "MX_07.mp3",
     "length": 192,
     "seed": 9043,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. ICONIC 75mm MACRO SUNGLASS REFLECTION SHOT: crimson pill in right leather palm, cobalt pill in left, both reflected symmetrically inside Morpheus's armless pince-nez lenses. Morpheus holds both open palms steady under lightning flashes, waiting with absolute reverence. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. ICONIC 75mm MACRO SUNGLASS REFLECTION SHOT: crimson pill in right leather palm, cobalt pill in left, both reflected symmetrically inside Morpheus's armless pince-nez lenses. Morpheus holds both open palms steady under lightning flashes, waiting with absolute reverence.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_08",
     "images": [
-      "mx_shot02_damon_chair.jpg",
-      "damon.jpg"
+      "mx_shot02_damon_chair.jpg"
     ],
     "audio": "MX_08.mp3",
     "length": 175,
     "seed": 9050,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 50mm tight reverse on Damon glancing between Morpheus's palms and the Freestyle Libre CGM sensor on his left arm. Damon narrows his dark-teal Wayfarers closely at the blue capsule, squinting like he's reading a pharmacy label. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm tight reverse on Damon glancing between Morpheus's palms and the Freestyle Libre CGM sensor on his left arm. Damon narrows his dark-teal Wayfarers closely at the blue capsule, squinting like he's reading a pharmacy label.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_09",
     "images": [
-      "mx_shot06_deron_corner.jpg",
-      "deron-robe.jpg"
+      "mx_shot06_deron_corner.jpg"
     ],
     "audio": "MX_09.mp3",
     "length": 158,
     "seed": 9057,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 35mm sudden intrusion frame: Deron thrusts a bright yellow box of Po Chai Pills straight between the Red Pill and Blue Pill! Deron shakes tiny brown herbal micro-pills out of a plastic vial right next to Morpheus's crimson Red Pill. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm sudden intrusion frame: Deron thrusts a bright yellow box of Po Chai Pills straight between the Red Pill and Blue Pill! Deron shakes tiny brown herbal micro-pills out of a plastic vial right next to Morpheus's crimson Red Pill.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_10",
     "images": [
-      "mx_shot02_damon_chair.jpg",
-      "zach.jpg"
+      "mx_shot02_damon_chair.jpg"
     ],
     "audio": "MX_10.mp3",
     "length": 192,
     "seed": 9064,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 35mm medium shot on Zach resting calmly on the green-lit divan, typing seriously into ChatGPT while lightning flickers outside. Zach holds up a tree-crane blueprint on his iPhone toward the storm window as if checking hovercraft cargo clearance. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot on Zach resting calmly on the green-lit divan, typing seriously into ChatGPT while lightning flickers outside. Zach holds up a tree-crane blueprint on his iPhone toward the storm window as if checking hovercraft cargo clearance.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_11",
     "images": [
-      "mx_shot11_hooman_pills.jpg",
-      "hooman.jpg"
+      "mx_shot11_hooman_pills.jpg"
     ],
     "audio": "MX_11.mp3",
     "length": 379,
     "seed": 9071,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 40mm Dutch pan to the cracked corner Sony CRT television; phosphor green snow bursts alive into Hooman's beaming gold Magic Cone suit! The ancient corner hotel TV flickers violently; Hooman beams out through emerald scanlines framing a glowing Magic Cone. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 40mm Dutch pan to the cracked corner Sony CRT television; phosphor green snow bursts alive into Hooman's beaming gold Magic Cone suit! The ancient corner hotel TV flickers violently; Hooman beams out through emerald scanlines framing a glowing Magic Cone.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_12",
@@ -124,29 +117,27 @@
     "audio": "MX_12.mp3",
     "length": 158,
     "seed": 9078,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 50mm tight shot on Morpheus snapping upright, heavy black trench flaring dramatically as green lightning illuminates his jaw. Morpheus whips a gleaming Nokia 8110 banana slider phone out of his coat pocket, snapping the spring keypad open aggressively. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm tight shot on Morpheus snapping upright, heavy black trench flaring dramatically as green lightning illuminates his jaw. Morpheus whips a gleaming Nokia 8110 banana slider phone out of his coat pocket, snapping the spring keypad open aggressively.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_13",
     "images": [
-      "mx_shot11_hooman_pills.jpg",
-      "hooman.jpg"
+      "mx_shot11_hooman_pills.jpg"
     ],
     "audio": "MX_13.mp3",
     "length": 226,
     "seed": 9085,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. Macro 75mm onto emerald CRT glass; Hooman leans right against the phosphor screen shaking his funnel toward the camera. On the Sony CRT, Hooman slaps a sticker reading 'MAGIC CONE' onto a glowing pink battery pod mock-up. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Macro 75mm onto emerald CRT glass; Hooman leans right against the phosphor screen shaking his funnel toward the camera. On the Sony CRT, Hooman slaps a sticker reading 'MAGIC CONE' onto a glowing pink battery pod mock-up.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_14",
     "images": [
-      "mx_shot02_damon_chair.jpg",
-      "damon.jpg"
+      "mx_shot02_damon_chair.jpg"
     ],
     "audio": "MX_14.mp3",
     "length": 175,
     "seed": 9092,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 50mm close-up on Damon pinching the crimson Red Pill between wet gloved fingers, peering skeptically at Morpheus. Damon pulls his wet trench lapel slightly back revealing his soaked tri-singlet while staring hard into Morpheus's sunglasses. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm close-up on Damon pinching the crimson Red Pill between wet gloved fingers, peering skeptically at Morpheus. Damon pulls his wet trench lapel slightly back revealing his soaked tri-singlet while staring hard into Morpheus's sunglasses.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_15",
@@ -156,51 +147,47 @@
     "audio": "MX_15.mp3",
     "length": 158,
     "seed": 9099,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 75mm symmetrical close-up on Morpheus leaning downward through green storm gloom, absolute gravity restored. Dust trickles off the ceiling plaster as Morpheus nods once firmly toward Damon's hand. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 75mm symmetrical close-up on Morpheus leaning downward through green storm gloom, absolute gravity restored. Dust trickles off the ceiling plaster as Morpheus nods once firmly toward Damon's hand.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_16",
     "images": [
-      "mx_shot06_deron_corner.jpg",
-      "deron-robe.jpg"
+      "mx_shot06_deron_corner.jpg"
     ],
     "audio": "MX_16.mp3",
     "length": 158,
     "seed": 9106,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 35mm medium shot beside the armchair: Deron pops open a red stainless thermos under his conical hat, pouring steaming hot water calmly. Deron hands Damon a steaming paper cup straight out of his red silk dragon sleeve, grinning cheerfully. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot beside the armchair: Deron pops open a red stainless thermos under his conical hat, pouring steaming hot water calmly. Deron hands Damon a steaming paper cup straight out of his red silk dragon sleeve, grinning cheerfully.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_17",
     "images": [
-      "mx_shot02_damon_chair.jpg",
-      "damon.jpg"
+      "mx_shot02_damon_chair.jpg"
     ],
     "audio": "MX_17.mp3",
     "length": 175,
     "seed": 9113,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 35mm fast whip-pan tracking Damon swallowing the Red Pill dry and bolting straight toward the cracked hotel bathroom door in full race stride! Damon kicks the peeling green bathroom door halfway off its rusted hinges, vanishing inside in a blur of wet black wool. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm fast whip-pan tracking Damon swallowing the Red Pill dry and bolting straight toward the cracked hotel bathroom door in full race stride! Damon kicks the peeling green bathroom door halfway off its rusted hinges, vanishing inside in a blur of wet black wool.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_18",
     "images": [
-      "mx_shot02_damon_chair.jpg",
-      "zach.jpg"
+      "mx_shot02_damon_chair.jpg"
     ],
     "audio": "MX_18.mp3",
     "length": 192,
     "seed": 9120,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 50mm surreal close-up on the cracked wall mirror turning into liquid silver mercury as Zach calmly holds up his iPhone beside it. Liquid silver mercury ripples across the glass behind Zach as he steps neatly back toward the divan, typing fast. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm surreal close-up on the cracked wall mirror turning into liquid silver mercury as Zach calmly holds up his iPhone beside it. Liquid silver mercury ripples across the glass behind Zach as he steps neatly back toward the divan, typing fast.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_19",
     "images": [
-      "mx_shot11_hooman_pills.jpg",
-      "hooman.jpg"
+      "mx_shot11_hooman_pills.jpg"
     ],
     "audio": "MX_19.mp3",
     "length": 192,
     "seed": 9127,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. 35mm frame on the corner Sony CRT glowing bright gold against cascading emerald Matrix code beginning to drip down the crumbling walls. Glowing green Matrix characters dissolve the hotel lamps around the TV while Hooman waves frantically from inside the shrinking screen. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm frame on the corner Sony CRT glowing bright gold against cascading emerald Matrix code beginning to drip down the crumbling walls. Glowing green Matrix characters dissolve the hotel lamps around the TV while Hooman waves frantically from inside the shrinking screen.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "mx_mx_20",
@@ -210,6 +197,6 @@
     "audio": "MX_20.mp3",
     "length": 192,
     "seed": 9134,
-    "prompt": "Photorealistic 1999 35mm live-action film scene, The Matrix emerald-green noir cinematography, rain-streaked Lafayette Hotel room, natural film grain, zero cartoon look. ICONIC 1999 FINALE: 2.39:1 wide symmetrical shot as cascading green digital rain swallows the room; Morpheus stands motionless while Deron calmly slurps boba through falling code! Morpheus clicks his Nokia slider shut cleanly as cascading green Matrix code swallows the bathroom door, Deron's conical hat, and Zach's glowing iPhone into black. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. ICONIC 1999 FINALE: 2.39:1 wide symmetrical shot as cascading green digital rain swallows the room; Morpheus stands motionless while Deron calmly slurps boba through falling code! Morpheus clicks his Nokia slider shut cleanly as cascading green Matrix code swallows the bathroom door, Deron's conical hat, and Zach's glowing iPhone into black.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   }
 ]

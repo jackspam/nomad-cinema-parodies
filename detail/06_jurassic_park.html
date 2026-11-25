@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>06. Jurassic Park — T-Rex Paddock Attack — Ingredients &amp; QA</title>
+  <style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0b0d12; color: #e5e7eb; margin: 0; padding: 32px; max-width: 1280px; margin-inline: auto; }
+a { color: #93c5fd; text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: -0.02em; }
+h2 { margin: 28px 0 12px; font-size: 20px; color: #f9fafb; }
+p.sub { color: #9ca3af; margin: 0 0 24px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 24px; }
+.ref-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.card { background: #141720; border: 1px solid #262b38; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+.card h2, .card h3 { margin: 0; font-size: 17px; color: #f9fafb; }
+.badge { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 8px; border-radius: 999px; background: #1f2937; color: #93c5fd; width: fit-content; }
+.badge.done { background: #064e3b; color: #6ee7b7; }
+.meta { font-size: 13px; color: #9ca3af; line-height: 1.5; }
+video, img { width: 100%; border-radius: 8px; background: #000; display: block; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: auto; }
+a.btn { display: inline-block; text-align: center; padding: 9px 14px; border-radius: 8px; background: #2563eb; color: #fff; text-decoration: none; font-weight: 600; font-size: 13px; }
+a.btn.sec { background: #1f2937; color: #e5e7eb; border: 1px solid #374151; }
+a.btn:hover { opacity: 0.9; text-decoration: none; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13px; background: #141720; border-radius: 10px; overflow: hidden; }
+th, td { padding: 10px 12px; border-bottom: 1px solid #262b38; text-align: left; vertical-align: top; }
+th { background: #1b202c; color: #93c5fd; font-weight: 600; }
+.score { font-weight: 700; color: #6ee7b7; }
+.prompt { font-size: 12px; color: #9ca3af; line-height: 1.4; }
+</style>
+</head>
+<body>
+  <p><a href="../index.html">← Back to Studio Hub</a></p>
+  <span class="badge ">Ingredients Ready · Queued</span>
+  <h1 style="margin-top:8px;">06. Jurassic Park — T-Rex Paddock Attack</h1>
+  <p class="sub">1993 Spielberg Tropical Night Storm · Damon, Gigi, Ajay &amp; Sheren · Ingredient Prep: 25m 37s · Render Time: Queued for G4</p>
+  
+
+  <h2>1. YouTube Reference Frame Extraction (16 shots sampled)</h2>
+  <p class="sub">Original movie frames extracted directly from the scene to match camera angles, lenses, lighting contrast, and color palette.</p>
+  <div class="ref-grid"><div class="card"><img src="../refs/yt/06_jurassic_park/yt_01.jpg" alt="yt_01.jpg" /><div class="meta">yt_01.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_02.jpg" alt="yt_02.jpg" /><div class="meta">yt_02.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_03.jpg" alt="yt_03.jpg" /><div class="meta">yt_03.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_04.jpg" alt="yt_04.jpg" /><div class="meta">yt_04.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_05.jpg" alt="yt_05.jpg" /><div class="meta">yt_05.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_06.jpg" alt="yt_06.jpg" /><div class="meta">yt_06.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_07.jpg" alt="yt_07.jpg" /><div class="meta">yt_07.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_08.jpg" alt="yt_08.jpg" /><div class="meta">yt_08.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_09.jpg" alt="yt_09.jpg" /><div class="meta">yt_09.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_10.jpg" alt="yt_10.jpg" /><div class="meta">yt_10.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_11.jpg" alt="yt_11.jpg" /><div class="meta">yt_11.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_12.jpg" alt="yt_12.jpg" /><div class="meta">yt_12.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_13.jpg" alt="yt_13.jpg" /><div class="meta">yt_13.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_14.jpg" alt="yt_14.jpg" /><div class="meta">yt_14.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_15.jpg" alt="yt_15.jpg" /><div class="meta">yt_15.jpg</div></div><div class="card"><img src="../refs/yt/06_jurassic_park/yt_16.jpg" alt="yt_16.jpg" /><div class="meta">yt_16.jpg</div></div></div>
+
+  <h2>2. MiniMax H3 Reference Frames &amp; Shot Ingredients (18 shots)</h2>
+  <p class="sub">Every keyframe, spoken line, duration, and prompt queued for MiniMax H3 prior to rendering.</p>
+  <div class="ref-grid">
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot09_trex_roar.jpg" alt="jp_shot09_trex_roar.jpg" />
+        <h3>JP_JP_01 · Ajay (5.9s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot09_trex_roar.jpg</div>
+        <div class="meta"><b>Line:</b> "One minute, yaar! Those shockwaves in the water cup—classic subthalamic tremor! Wait till I check!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Iconic 1993 Dean Cundey 50mm dashboard close-up inside dark Ford Explorer #04; rain streaks violently outside in cold blue-green floodlights as concentric ripples shake two plastic water cups. Ajay leans right over the dashboard plastic cups with his LED surgical headlamp flashing onto the rippling water rings.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot05_gigi_flashlight.jpg" alt="jp_shot05_gigi_flashlight.jpg" />
+        <h3>JP_JP_02 · Sheren (5.9s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot05_gigi_flashlight.jpg</div>
+        <div class="meta"><b>Line:</b> "Why are we going three miles an hour? Relax. I&#x27;m taking us off the track. No brakes."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm inside the cramped green-yellow Explorer cabin; piercing yellow headlamp glare reflects off rain droplets across Sheren&#x27;s impatient face. Sheren yanks the steering wheel hard off the electric guide rail, flooring the accelerator through deep mud without glancing at the brake pedal.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot05_gigi_flashlight.jpg" alt="jp_shot05_gigi_flashlight.jpg" />
+        <h3>JP_JP_03 · Gigi (6.6s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot05_gigi_flashlight.jpg</div>
+        <div class="meta"><b>Line:</b> "Sheren, slow down! Keep your hands at ten and two, and put that red flare away!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm passenger close-up on Gigi clutching her laminated Boonton behavior chart as blue-green electric fence power surges dead outside. Gigi braces against the grab handle while glaring sideways at a sputtering magnesium road flare burning in Sheren&#x27;s spare hand.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot05_gigi_flashlight.jpg" alt="jp_shot05_gigi_flashlight.jpg" />
+        <h3>JP_JP_04 · Sheren (6.6s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot05_gigi_flashlight.jpg</div>
+        <div class="meta"><b>Line:</b> "Obviously I know how to drive. Plus that flare light is way too orange. Watch this."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm tight profile on Sheren tossing the blazing crimson flare half out the cracked window; harsh red light washes across her cheek. Sheren pitches the hissing flare straight into the flooded ferns and drifts the Explorer sideways right beside the wooden bathroom shack.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot01_ford_rain.jpg" alt="jp_shot01_ford_rain.jpg" />
+        <h3>JP_JP_05 · Damon (7.3s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot01_ford_rain.jpg</div>
+        <div class="meta"><b>Line:</b> "Word. Track power failed and my glucose hit one-ninety. Look, I&#x27;ve raced Placid on worse."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. CUT INSIDE THATCHED RESTROOM STALL: 27mm tight shot under single swinging amber bulb; rain leaks through palm fronds onto Damon on the toilet. Damon sits in his soaked open rain jacket and Team USA singlet gripping his knees, checking the Freestyle Libre sensor on his arm calmly.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot09_trex_roar.jpg" alt="jp_shot09_trex_roar.jpg" />
+        <h3>JP_JP_07 · Ajay (5.9s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot09_trex_roar.jpg</div>
+        <div class="meta"><b>Line:</b> "Arre baap re! Look at that jaw tension, yaar! Pure basal ganglia hyperactivity! Hold still, dinosaur!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Low-angle inside Explorer looking up through shattering plexiglass moonroof as the giant dinosaur snout presses into yellow beam bounce. Ajay aims his bright LED surgical headlamp straight through the cracking roof glass into the T-Rex&#x27;s massive yellow iris.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot05_gigi_flashlight.jpg" alt="jp_shot05_gigi_flashlight.jpg" />
+        <h3>JP_JP_08 · Sheren (6.6s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot05_gigi_flashlight.jpg</div>
+        <div class="meta"><b>Line:</b> "Yikes, a forty-foot lizard in our lane. Relax, everybody, I&#x27;m going ninety in reverse right now."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm side-window tracking shot as Sheren violently spins the Explorer in blinding white headlights, mud flying past dinosaur claws. Sheren cranks the Explorer hard backward with one palm on the wheel, sliding inches past the T-Rex&#x27;s giant clawed foot.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot05_gigi_flashlight.jpg" alt="jp_shot05_gigi_flashlight.jpg" />
+        <h3>JP_JP_09 · Gigi (8.0s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot05_gigi_flashlight.jpg</div>
+        <div class="meta"><b>Line:</b> "One, two, three, eyes on me! Put that bumper down right now, mister! Inside voices!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 27mm dramatic low-angle in flooded mud outside Explorer; blue-green xenon light catches Gigi stepping boldly out under the pouring storm. Gigi storms right into the mud puddles holding her laminated clip-chart high like a crossing guard stopping traffic, scolding the 40-foot predator.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot01_ford_rain.jpg" alt="jp_shot01_ford_rain.jpg" />
+        <h3>JP_JP_11 · Damon (6.6s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot01_ford_rain.jpg</div>
+        <div class="meta"><b>Line:</b> "Not ideal. I&#x27;m locked inside a stall with zero toilet paper and a Jurassic emergency."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm inside the flimsy wooden restroom stall as the sliding Explorer clips the corner post—warm bulb swings wildly over Damon&#x27;s head. Splinters rain onto Damon&#x27;s shoulders as he braces calmly on the toilet seat, turning an empty cardboard toilet-paper roll slowly.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot05_gigi_flashlight.jpg" alt="jp_shot05_gigi_flashlight.jpg" />
+        <h3>JP_JP_12 · Gigi (7.3s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot05_gigi_flashlight.jpg</div>
+        <div class="meta"><b>Line:</b> "Do NOT chew that roof! This park runs worse than Elon Musk&#x27;s ugly dumpster truck!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. ICONIC 27mm DEAN CUNDEY REVEAL: T-Rex tears the entire thatch roof clean away above Damon! Blinding white lightning illuminates monster jaws directly over the porcelain toilet! As the thatch roof disintegrates in rain, Gigi marches straight beside the roofless stall doorway, blasting the dinosaur&#x27;s manners.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot09_trex_roar.jpg" alt="jp_shot09_trex_roar.jpg" />
+        <h3>JP_JP_13 · Ajay (5.9s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot09_trex_roar.jpg</div>
+        <div class="meta"><b>Line:</b> "T-Rex, yaar! I am Chief of Neurosurgery! Let me put hundred-thirty hertz DBS in your thalamus!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm low-angle shot of Ajay climbing boldly onto the wet yellow hood of Explorer #04 in blue surgical scrubs, cordless drill whirring. Ajay waves a thin titanium electrode wire and spinning micro-drill up toward the T-Rex&#x27;s massive cranium like a fearless field doctor.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot01_ford_rain.jpg" alt="jp_shot01_ford_rain.jpg" />
+        <h3>JP_JP_14 · Damon (8.0s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot01_ford_rain.jpg</div>
+        <div class="meta"><b>Line:</b> "Listen, lizard. I survived LA County jail—jail, never prison. Give me two minutes to finish."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Tight 50mm upward POV from behind the porcelain toilet; rain pours straight onto Damon&#x27;s Wayfarers with dinosaur jaws hovering two feet overhead. Damon points two steady fingers upward at the T-Rex&#x27;s nose without flinching, utterly refusing to rush his dignity.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot05_gigi_flashlight.jpg" alt="jp_shot05_gigi_flashlight.jpg" />
+        <h3>JP_JP_15 · Sheren (5.9s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot05_gigi_flashlight.jpg</div>
+        <div class="meta"><b>Line:</b> "Damon, hurry up! Who approved a straw bathroom in a hurricane? Get in the car!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm medium shot at Explorer driver window; Sheren leans halfway out into the downpour, scowling past mud-splattered glass. Sheren taps the Explorer horn aggressively while pointing at the collapsed timber bathroom wall like a bad renovation contractor.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot05_gigi_flashlight.jpg" alt="jp_shot05_gigi_flashlight.jpg" />
+        <h3>JP_JP_16 · Gigi (6.6s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot05_gigi_flashlight.jpg</div>
+        <div class="meta"><b>Line:</b> "Your clip is on RED! Straight to the Isla Nublar thinking mat until recess is over!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 27mm dramatic upward angle: Gigi stands inches below the dinosaur chin in blinding xenon floodlights, pinning a red clip straight onto its snout scale. Gigi snaps her wooden behavior clothespin firmly onto a muddy fern beside the dinosaur&#x27;s massive toe, folding her arms dead-serious.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot09_trex_roar.jpg" alt="jp_shot09_trex_roar.jpg" />
+        <h3>JP_JP_17 · Ajay (5.9s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot09_trex_roar.jpg</div>
+        <div class="meta"><b>Line:</b> "Total amazing! Look at that eye blink, yaar! Even without electrode, Gigi cured its aggression!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 50mm tight close-up on Ajay beaming brightly beside the Explorer windshield as the T-Rex actually takes one hesitant step backward into the storm. Ajay pumps his fist in triumph, draping his stethoscope back smoothly over his soaked blue scrubs.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot01_ford_rain.jpg" alt="jp_shot01_ford_rain.jpg" />
+        <h3>JP_JP_18 · Damon (7.3s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot01_ford_rain.jpg</div>
+        <div class="meta"><b>Line:</b> "Facts. Zone-four adrenaline cleared my stomach completely. Somebody toss me a towel and let&#x27;s roll."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm medium tracking shot through splintered cedar framing as Damon rises cleanly off the porcelain seat, zipping his slicker. Damon steps gracefully over collapsed thatch beams, snapping his Wayfarers dry before jogging briskly toward the roaring Explorer.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot05_gigi_flashlight.jpg" alt="jp_shot05_gigi_flashlight.jpg" />
+        <h3>JP_JP_19 · Sheren (7.3s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot05_gigi_flashlight.jpg</div>
+        <div class="meta"><b>Line:</b> "Seatbelts optional! No brakes! Look at my tire tracks—cleaner than matte nickel tile, obviously!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 27mm low mud-level tracking shot: Sheren drifts the Ford Explorer through a wide arc, scooping Gigi, Ajay, and Damon aboard mid-roll! Explorer doors slam shut in rapid succession while Sheren hits full throttle through mud spray, tail-sliding away from the paddock.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/06_jurassic_park/jp_shot05_gigi_flashlight.jpg" alt="jp_shot05_gigi_flashlight.jpg" />
+        <h3>JP_JP_20 · Gigi (6.6s)</h3>
+        <div class="meta"><b>Keyframe:</b> jp_shot05_gigi_flashlight.jpg</div>
+        <div class="meta"><b>Line:</b> "Gold stars for staying seated, Damon! And nobody tells Zach about that road flare!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 18mm closing Dean Cundey rain-swept hero shot: Explorer vanishes into emerald jungle mist while the T-Rex stands quietly beside the ruined stall under flashing blue xenon. Through the streaked rear Explorer window, Gigi waves fondly back at the T-Rex as it unleashes one final majestic Jurassic roar into the lightning storm.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.</div>
+      </div></div>
+
+  <h2>3. Director's QA Audit &amp; Revision History</h2>
+  <table>
+    <thead>
+      <tr><th>Shot</th><th>Quality</th><th>Physics</th><th>Movie Match</th><th>Lip Sync</th><th>Inspection Notes</th><th>Revisions</th></tr>
+    </thead>
+    <tbody><tr><td colspan="7" class="meta">Pending render — clip-by-clip QA scores and revision notes will populate as each shot finishes.</td></tr></tbody>
+  </table>
+</body>
+</html>

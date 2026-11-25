@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>02. The Dark Knight — The Interrogation Room — Ingredients &amp; QA</title>
+  <style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0b0d12; color: #e5e7eb; margin: 0; padding: 32px; max-width: 1280px; margin-inline: auto; }
+a { color: #93c5fd; text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: -0.02em; }
+h2 { margin: 28px 0 12px; font-size: 20px; color: #f9fafb; }
+p.sub { color: #9ca3af; margin: 0 0 24px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 24px; }
+.ref-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.card { background: #141720; border: 1px solid #262b38; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+.card h2, .card h3 { margin: 0; font-size: 17px; color: #f9fafb; }
+.badge { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 8px; border-radius: 999px; background: #1f2937; color: #93c5fd; width: fit-content; }
+.badge.done { background: #064e3b; color: #6ee7b7; }
+.meta { font-size: 13px; color: #9ca3af; line-height: 1.5; }
+video, img { width: 100%; border-radius: 8px; background: #000; display: block; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: auto; }
+a.btn { display: inline-block; text-align: center; padding: 9px 14px; border-radius: 8px; background: #2563eb; color: #fff; text-decoration: none; font-weight: 600; font-size: 13px; }
+a.btn.sec { background: #1f2937; color: #e5e7eb; border: 1px solid #374151; }
+a.btn:hover { opacity: 0.9; text-decoration: none; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13px; background: #141720; border-radius: 10px; overflow: hidden; }
+th, td { padding: 10px 12px; border-bottom: 1px solid #262b38; text-align: left; vertical-align: top; }
+th { background: #1b202c; color: #93c5fd; font-weight: 600; }
+.score { font-weight: 700; color: #6ee7b7; }
+.prompt { font-size: 12px; color: #9ca3af; line-height: 1.4; }
+</style>
+</head>
+<body>
+  <p><a href="../index.html">← Back to Studio Hub</a></p>
+  <span class="badge ">Ingredients Ready · Rendering on G4</span>
+  <h1 style="margin-top:8px;">02. The Dark Knight — The Interrogation Room</h1>
+  <p class="sub">IMAX 65mm &amp; 35mm Panavision · Damon, Deron, Hooman, Gigi &amp; The Joker · Ingredient Prep: 25m 37s · Render Time: Pending G4 batch</p>
+  
+
+  <h2>1. YouTube Reference Frame Extraction (40 shots sampled)</h2>
+  <p class="sub">Original movie frames extracted directly from the scene to match camera angles, lenses, lighting contrast, and color palette.</p>
+  <div class="ref-grid"><div class="card"><img src="../refs/yt/02_dark_knight/yt_01.jpg" alt="yt_01.jpg" /><div class="meta">yt_01.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_02.jpg" alt="yt_02.jpg" /><div class="meta">yt_02.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_03.jpg" alt="yt_03.jpg" /><div class="meta">yt_03.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_04.jpg" alt="yt_04.jpg" /><div class="meta">yt_04.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_05.jpg" alt="yt_05.jpg" /><div class="meta">yt_05.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_06.jpg" alt="yt_06.jpg" /><div class="meta">yt_06.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_07.jpg" alt="yt_07.jpg" /><div class="meta">yt_07.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_08.jpg" alt="yt_08.jpg" /><div class="meta">yt_08.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_09.jpg" alt="yt_09.jpg" /><div class="meta">yt_09.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_10.jpg" alt="yt_10.jpg" /><div class="meta">yt_10.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_11.jpg" alt="yt_11.jpg" /><div class="meta">yt_11.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_12.jpg" alt="yt_12.jpg" /><div class="meta">yt_12.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_13.jpg" alt="yt_13.jpg" /><div class="meta">yt_13.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_14.jpg" alt="yt_14.jpg" /><div class="meta">yt_14.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_15.jpg" alt="yt_15.jpg" /><div class="meta">yt_15.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_16.jpg" alt="yt_16.jpg" /><div class="meta">yt_16.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_17.jpg" alt="yt_17.jpg" /><div class="meta">yt_17.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_18.jpg" alt="yt_18.jpg" /><div class="meta">yt_18.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_19.jpg" alt="yt_19.jpg" /><div class="meta">yt_19.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_20.jpg" alt="yt_20.jpg" /><div class="meta">yt_20.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_21.jpg" alt="yt_21.jpg" /><div class="meta">yt_21.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_22.jpg" alt="yt_22.jpg" /><div class="meta">yt_22.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_23.jpg" alt="yt_23.jpg" /><div class="meta">yt_23.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_24.jpg" alt="yt_24.jpg" /><div class="meta">yt_24.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_25.jpg" alt="yt_25.jpg" /><div class="meta">yt_25.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_26.jpg" alt="yt_26.jpg" /><div class="meta">yt_26.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_27.jpg" alt="yt_27.jpg" /><div class="meta">yt_27.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_28.jpg" alt="yt_28.jpg" /><div class="meta">yt_28.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_29.jpg" alt="yt_29.jpg" /><div class="meta">yt_29.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_30.jpg" alt="yt_30.jpg" /><div class="meta">yt_30.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_31.jpg" alt="yt_31.jpg" /><div class="meta">yt_31.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_32.jpg" alt="yt_32.jpg" /><div class="meta">yt_32.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_33.jpg" alt="yt_33.jpg" /><div class="meta">yt_33.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_34.jpg" alt="yt_34.jpg" /><div class="meta">yt_34.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_35.jpg" alt="yt_35.jpg" /><div class="meta">yt_35.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_36.jpg" alt="yt_36.jpg" /><div class="meta">yt_36.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_37.jpg" alt="yt_37.jpg" /><div class="meta">yt_37.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_38.jpg" alt="yt_38.jpg" /><div class="meta">yt_38.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_39.jpg" alt="yt_39.jpg" /><div class="meta">yt_39.jpg</div></div><div class="card"><img src="../refs/yt/02_dark_knight/yt_40.jpg" alt="yt_40.jpg" /><div class="meta">yt_40.jpg</div></div></div>
+
+  <h2>2. MiniMax H3 Reference Frames &amp; Shot Ingredients (20 shots)</h2>
+  <p class="sub">Every keyframe, spoken line, duration, and prompt queued for MiniMax H3 prior to rendering.</p>
+  <div class="ref-grid">
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot01_gigi_obs.jpg" alt="dk_shot01_gigi_obs.jpg" />
+        <h3>DK_DK_01 · Gigi (10.1s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot01_gigi_obs.jpg</div>
+        <div class="meta"><b>Line:</b> "One, two, three, eyes on me. Inside voices behind the glass, Deron. Criss-cross your tactical vest."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm Panavision Primo 35mm lens, slow push inside dark MCU observation room behind two-way mirror; cool cyan-slate reflection on glass, dim practical desk glow. Gigi taps a laminated red/green behavior clip-chart against the two-way glass while Deron eats takeout beside her in a conical bamboo hat and red dragon robe; beyond the glass, Damon looms in the dark Batsuit over a seated Joker.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot02_joker_table.jpg" alt="dk_shot02_joker_table.jpg" />
+        <h3>DK_DK_02 · The Joker (8.0s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot02_joker_table.jpg</div>
+        <div class="meta"><b>Line:</b> "Good evening, Commissioner. You brought the big bat... and a detective wearing a silk bathrobe."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. IMAX 65mm 50mm close-up inside dark interrogation room; Joker&#x27;s face half-carved in sickly overhead green-cyan pools against pitch-black cinderblock. The Joker sits slumped forward, eyes flicking from Damon&#x27;s hunched shadow toward the two-way mirror, tongue flicking at his scarred cheek.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot03_damon_batman.jpg" alt="dk_shot03_damon_batman.jpg" />
+        <h3>DK_DK_03 · Damon (8.0s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot03_damon_batman.jpg</div>
+        <div class="meta"><b>Line:</b> "Where is Harvey Dent? Also, hypothetically, where is the nearest unlocked bathroom on this floor?"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. IMAX 65mm 75mm tight reverse over Joker&#x27;s shoulder onto Damon; dark teal-black shadows hide cowl sweat until cheek gleams faintly. Damon plants armored gauntlets onto the steel table to stay upright, shoulders rigid, silently clenching through a violent gut spasm.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot04_joker_profile.jpg" alt="dk_shot04_joker_profile.jpg" />
+        <h3>DK_DK_04 · The Joker (8.0s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot04_joker_profile.jpg</div>
+        <div class="meta"><b>Line:</b> "Never start with the head. Wait—are you trembling? Let&#x27;s put a smile on that colon."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Panavision 50mm tight two-shot profile; shallow depth of field across the pitted metal table under flickering cyan tube. The Joker leans smoothly across the table, studying Damon&#x27;s trembling knuckles and sweat-slick jaw with genuine fascination.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot05_damon_blinds.jpg" alt="dk_shot05_damon_blinds.jpg" />
+        <h3>DK_DK_05 · Damon (8.0s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot05_damon_blinds.jpg</div>
+        <div class="meta"><b>Line:</b> "Not trembling. I took two expired Maurten hydrogels before patrol. I&#x27;ve raced Lake Placid on worse."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. HARD CUT TO FULL FLUORESCENT BLAST: 35mm wide 28mm shot as overhead sodium-vapor and unfiltered white tubes slam on, flooding the concrete room in brutal clinical glare. Blinded momentarily by the sudden white glare, Damon grips his stomach over the kevlar bat-symbol, glaring down at Joker with zero loss of composure.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot06_deron_obs.jpg" alt="dk_shot06_deron_obs.jpg" />
+        <h3>DK_DK_06 · Deron (5.9s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot06_deron_obs.jpg</div>
+        <div class="meta"><b>Line:</b> "Aiya, Damon! Why you no drink hot water lah? Inside look worse than San Gabriel dim sum rush!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Observation room 35mm tight two-shot; harsh white spill from the two-way glass illuminates Deron&#x27;s conical hat brim and red silk dragon embroidery. Deron taps the glass anxiously with bamboo chopsticks holding a steamed siu mai while peering into the bright interrogation room.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot07_gigi_chopsticks.jpg" alt="dk_shot07_gigi_chopsticks.jpg" />
+        <h3>DK_DK_07 · Gigi (10.1s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot07_gigi_chopsticks.jpg</div>
+        <div class="meta"><b>Line:</b> "No dim sum in observation, Deron! Your behavior clip goes straight to red if you touch that glass."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm close-up on Gigi in dark observation slate-blue spill; hard top rim-light catches her furious expression. Gigi confiscates Deron&#x27;s chopsticks with one brisk swipe like contraband safety scissors and clips a wooden clothespin onto the red zone of her chart.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot08_joker_bright.jpg" alt="dk_shot08_joker_bright.jpg" />
+        <h3>DK_DK_08 · The Joker (8.7s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot08_joker_bright.jpg</div>
+        <div class="meta"><b>Line:</b> "See, madness is like gravity. All it takes is one bad burrito... and a little push."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. IMAX 65mm 50mm circling slowly behind The Joker in stark white overhead interrogation light; crisp metallic bokeh on cinderblock paint. The Joker rests his chin on steepled purple-gloved fingers, tilting his head calmly as Damon breathes slowly through his nose.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot09_damon_bright.jpg" alt="dk_shot09_damon_bright.jpg" />
+        <h3>DK_DK_09 · Damon (7.3s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot09_damon_bright.jpg</div>
+        <div class="meta"><b>Line:</b> "Word. Keep talking while I hold a Zone-five core brace. You think you scare me, clown?"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Handheld 35mm 40mm tight shoulder-height smash-angle as Damon braces over the steel table under blistering top light. Damon slams Joker&#x27;s forehead gently onto the metal tabletop, then freezes stiff as a deep rumble shakes his own utility belt.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot04_deron_door.jpg" alt="dk_shot04_deron_door.jpg" />
+        <h3>DK_DK_10 · Deron (5.9s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot04_deron_door.jpg</div>
+        <div class="meta"><b>Line:</b> "Wah, Joker! You look hungry lah! Eat my Monterey Park siu mai and Po Chai Pill, good or not?"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Wide 28mm interrogation room shot toward heavy steel entry door; clinical fluorescent light hits Deron&#x27;s vibrant crimson dragon robe and straw conical hat. Deron kicks open the heavy steel door holding a crinkly 99 Ranch bag, an iced brown sugar boba cup, and tiny yellow-boxed Po Chai Pills, offering them straight to Joker.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot11_joker_low.jpg" alt="dk_shot11_joker_low.jpg" />
+        <h3>DK_DK_11 · The Joker (6.6s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot11_joker_low.jpg</div>
+        <div class="meta"><b>Line:</b> "And who are you supposed to be? Do I look like a guy who ordered room service?"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. IMAX 65mm 75mm dead-on close-up of The Joker staring up from the steel table in sterile top light. The Joker blinks slowly beneath smudged black eye paint, staring straight up at Deron&#x27;s conical bamboo hat brim.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot12_deron_pills.jpg" alt="dk_shot12_deron_pills.jpg" />
+        <h3>DK_DK_12 · Deron (6.6s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot12_deron_pills.jpg</div>
+        <div class="meta"><b>Line:</b> "You got zero ring, like Clippers in May lah! Even BLACKPINK concert got better security than Gotham!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm low-angle medium shot of Deron leaning against the stark white cinderblocks, looking down like a basketball analyst. Deron points sternly at Joker with a small vial of herbal stomach pills, adjusting his red silk dragon sleeve over his GCPD badge.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot05_hooman_tv.jpg" alt="dk_shot05_hooman_tv.jpg" />
+        <h3>DK_DK_13 · Hooman (9.4s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot05_hooman_tv.jpg</div>
+        <div class="meta"><b>Line:</b> "Chee-chee-chettore! Damon, baba, you have diarrhea in Batsuit, dood? Why you no wear Magic Cone, huuuuh?"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm Dutch tilt up toward the corner-mounted CRT CCTV monitor and steel intercom speaker; sickly green scanlines clash with white room glare. The precinct monitor glitches violently; Hooman&#x27;s face fills the grainy 4:3 screen in his gold Magic Cone blazer, grinning warmly through intercom static.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot14_gigi_interrogation.jpg" alt="dk_shot14_gigi_interrogation.jpg" />
+        <h3>DK_DK_14 · Gigi (7.3s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot14_gigi_interrogation.jpg</div>
+        <div class="meta"><b>Line:</b> "Turn that monitor off right now, Hooman! In Gotham Police we sit down and use flushable wipes!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm medium tracking shot as Gigi strides into the interrogation room doorway under blinding ceiling lights, face thunderous. Gigi points her wooden classroom pointer straight up at the corner CCTV monitor, ignoring Joker completely.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot15_hooman_crt_tight.jpg" alt="dk_shot15_hooman_crt_tight.jpg" />
+        <h3>DK_DK_15 · Hooman (8.7s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot15_hooman_crt_tight.jpg</div>
+        <div class="meta"><b>Line:</b> "Joker, dood! Fuck that shit, dood! Fifty-fifty on Magic Cone Personal—even Elon Musk want one, huuuuh?"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Tight 75mm telephoto crop onto the buzzing CRT monitor glass; Hooman&#x27;s gold suit glows against scanline phosphor flicker. On the CCTV screen, Hooman waves a gleaming gilded Magic Cone in one hand and a brochure toward the Joker.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot16_gigi_table.jpg" alt="dk_shot16_gigi_table.jpg" />
+        <h3>DK_DK_16 · Gigi (7.3s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot16_gigi_table.jpg</div>
+        <div class="meta"><b>Line:</b> "Do NOT say Elon Musk in my precinct! His ugly dumpster truck is on the Boonton thinking mat!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. IMAX 65mm 35mm whip-zoom onto Gigi as she slams both palms onto the interrogation table, lighting her face in harsh clinical under-bounce. Gigi leans right over the steel table, rattling Joker&#x27;s water cup and making even Batman flinch slightly.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot17_joker_sideways.jpg" alt="dk_shot17_joker_sideways.jpg" />
+        <h3>DK_DK_17 · The Joker (8.7s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot17_joker_sideways.jpg</div>
+        <div class="meta"><b>Line:</b> "She&#x27;s scarier than you. Look at her. That&#x27;s pure, unmedicated chaos... I kind of respect it."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm close-up on The Joker looking sideways at Gigi, bathed in ruthless overhead white shadows. The Joker leans sideways out of his chair slightly, eyes wide in sincere professional admiration of Gigi&#x27;s rage.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot18_damon_cgm.jpg" alt="dk_shot18_damon_cgm.jpg" />
+        <h3>DK_DK_18 · Damon (7.3s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot18_damon_cgm.jpg</div>
+        <div class="meta"><b>Line:</b> "My glucose is one-ninety and this suit fits like wet neoprene. Open that door. Right now."</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. IMAX 65mm 50mm tight push-in on Damon rising slowly above the table; white light reflects off his dark-teal Wayfarer cowl lenses and sweat. Damon checks the Freestyle Libre CGM sensor on his tricep under the split kevlar plate, standing stiffly like a speed-walker at T2.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot19_deron_exit.jpg" alt="dk_shot19_deron_exit.jpg" />
+        <h3>DK_DK_19 · Deron (5.9s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot19_deron_exit.jpg</div>
+        <div class="meta"><b>Line:</b> "Aiya, go toilet fast fast lah! After, Din Tai Fung soup dumpling in Alhambra on me!"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. 35mm Panavision Primo 35mm lens medium shot by the doorway; Deron steps aside bowing smoothly in red silk while gripping his boba cup. Deron swings the heavy steel door wide open, holding his conical bamboo hat steady as Damon stiff-walks briskly past him in full flowing cape.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div>
+      <div class="card">
+        <img src="../refs/02_dark_knight/dk_shot20_lights_out.jpg" alt="dk_shot20_lights_out.jpg" />
+        <h3>DK_DK_20 · Hooman (11.5s)</h3>
+        <div class="meta"><b>Keyframe:</b> dk_shot20_lights_out.jpg</div>
+        <div class="meta"><b>Line:</b> "Wait, Damon, dood! Ten billion dollar Bat-Cone! Tell Darren I got guy in Encino! Fuck that shi—"</div>
+        <div class="prompt"><b>Prompt:</b> &lt;Picture 1&gt; is the exact starting frame of this photorealistic 35mm live-action movie scene.
+&lt;Audio 1&gt; is the exact spoken dialogue audio track for the speaking character in &lt;Picture 1&gt; and is reused verbatim.
+Keep every character face, costume, lighting, lens, and set geometry strictly faithful to &lt;Picture 1&gt;. Wide 28mm IMAX closing frame: Gigi snaps the light switch DOWN, plunging Joker and Deron back into dark cyan shadow as the CCTV monitor flickers out. Gigi yanks the monitor power cord out of the wall mid-sentence; the CRT collapses to a bright cyan dot while Joker sits baffled beside Deron slurping boba in the dark.
+Subtle controlled cinema camera movement, natural live-action performance, exact lip sync to &lt;Audio 1&gt;, subtle 35mm film grain.
+Do NOT pan away, cut, or invent off-screen characters. Keep camera framing tightly anchored to &lt;Picture 1&gt; with only a slow 3-5% cinema push-in and natural realistic body/mouth physics.</div>
+      </div></div>
+
+  <h2>3. Director's QA Audit &amp; Revision History</h2>
+  <table>
+    <thead>
+      <tr><th>Shot</th><th>Quality</th><th>Physics</th><th>Movie Match</th><th>Lip Sync</th><th>Inspection Notes</th><th>Revisions</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><b>DK_01 (L4 test)</b></td>
+          <td class="score">6/10</td>
+          <td class="score">5/10</td>
+          <td class="score">7/10</td>
+          <td class="score">8/10</td>
+          <td>0-3s Gigi good, 4-9s panned right and morphed Deron/Batman.</td>
+          <td>Flagged for locked-camera single-keyframe re-render on G4.</td>
+        </tr>
+        <tr>
+          <td><b>DK_02 (L4 test)</b></td>
+          <td class="score">9/10</td>
+          <td class="score">9/10</td>
+          <td class="score">9/10</td>
+          <td class="score">9/10</td>
+          <td>Dead-on Heath Ledger Joker lighting and lip sync up to 6.1s; repeated &#x27;silk bathrobe&#x27; at 6.3-7.8s.</td>
+          <td>Trim point set to 6.45s; re-rendering full clean batch on G4.</td>
+        </tr>
+        <tr>
+          <td><b>DK_03 (L4 test)</b></td>
+          <td class="score">6/10</td>
+          <td class="score">5/10</td>
+          <td class="score">7/10</td>
+          <td class="score">8/10</td>
+          <td>0-3.5s morphed through back of Joker&#x27;s head into Damon.</td>
+          <td>Flagged for locked-camera re-render on G4.</td>
+        </tr></tbody>
+  </table>
+</body>
+</html>

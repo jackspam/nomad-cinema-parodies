@@ -2,199 +2,181 @@
   {
     "prefix": "jp_jp_01",
     "images": [
-      "jp_shot09_trex_roar.jpg",
-      "ajay.jpg"
+      "jp_shot09_trex_roar.jpg"
     ],
     "audio": "JP_01.mp3",
     "length": 141,
     "seed": 8001,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. Iconic 1993 Dean Cundey 50mm dashboard close-up inside dark Ford Explorer #04; rain streaks violently outside in cold blue-green floodlights as concentric ripples shake two plastic water cups. Ajay leans right over the dashboard plastic cups with his LED surgical headlamp flashing onto the rippling water rings. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Iconic 1993 Dean Cundey 50mm dashboard close-up inside dark Ford Explorer #04; rain streaks violently outside in cold blue-green floodlights as concentric ripples shake two plastic water cups. Ajay leans right over the dashboard plastic cups with his LED surgical headlamp flashing onto the rippling water rings.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_02",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg",
-      "sheren.jpg"
+      "jp_shot05_gigi_flashlight.jpg"
     ],
     "audio": "JP_02.mp3",
     "length": 141,
     "seed": 8008,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. 35mm inside the cramped green-yellow Explorer cabin; piercing yellow headlamp glare reflects off rain droplets across Sheren's impatient face. Sheren yanks the steering wheel hard off the electric guide rail, flooring the accelerator through deep mud without glancing at the brake pedal. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm inside the cramped green-yellow Explorer cabin; piercing yellow headlamp glare reflects off rain droplets across Sheren's impatient face. Sheren yanks the steering wheel hard off the electric guide rail, flooring the accelerator through deep mud without glancing at the brake pedal.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_03",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg",
-      "gigi.jpg"
+      "jp_shot05_gigi_flashlight.jpg"
     ],
     "audio": "JP_03.mp3",
     "length": 158,
     "seed": 8015,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. 35mm passenger close-up on Gigi clutching her laminated Boonton behavior chart as blue-green electric fence power surges dead outside. Gigi braces against the grab handle while glaring sideways at a sputtering magnesium road flare burning in Sheren's spare hand. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm passenger close-up on Gigi clutching her laminated Boonton behavior chart as blue-green electric fence power surges dead outside. Gigi braces against the grab handle while glaring sideways at a sputtering magnesium road flare burning in Sheren's spare hand.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_04",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg",
-      "sheren.jpg"
+      "jp_shot05_gigi_flashlight.jpg"
     ],
     "audio": "JP_04.mp3",
     "length": 158,
     "seed": 8022,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. 35mm tight profile on Sheren tossing the blazing crimson flare half out the cracked window; harsh red light washes across her cheek. Sheren pitches the hissing flare straight into the flooded ferns and drifts the Explorer sideways right beside the wooden bathroom shack. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm tight profile on Sheren tossing the blazing crimson flare half out the cracked window; harsh red light washes across her cheek. Sheren pitches the hissing flare straight into the flooded ferns and drifts the Explorer sideways right beside the wooden bathroom shack.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_05",
     "images": [
-      "jp_shot01_ford_rain.jpg",
-      "damon.jpg"
+      "jp_shot01_ford_rain.jpg"
     ],
     "audio": "JP_05.mp3",
     "length": 175,
     "seed": 8029,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. CUT INSIDE THATCHED RESTROOM STALL: 27mm tight shot under single swinging amber bulb; rain leaks through palm fronds onto Damon on the toilet. Damon sits in his soaked open rain jacket and Team USA singlet gripping his knees, checking the Freestyle Libre sensor on his arm calmly. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. CUT INSIDE THATCHED RESTROOM STALL: 27mm tight shot under single swinging amber bulb; rain leaks through palm fronds onto Damon on the toilet. Damon sits in his soaked open rain jacket and Team USA singlet gripping his knees, checking the Freestyle Libre sensor on his arm calmly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_07",
     "images": [
-      "jp_shot09_trex_roar.jpg",
-      "ajay.jpg"
+      "jp_shot09_trex_roar.jpg"
     ],
     "audio": "JP_07.mp3",
     "length": 141,
     "seed": 8043,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. Low-angle inside Explorer looking up through shattering plexiglass moonroof as the giant dinosaur snout presses into yellow beam bounce. Ajay aims his bright LED surgical headlamp straight through the cracking roof glass into the T-Rex's massive yellow iris. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Low-angle inside Explorer looking up through shattering plexiglass moonroof as the giant dinosaur snout presses into yellow beam bounce. Ajay aims his bright LED surgical headlamp straight through the cracking roof glass into the T-Rex's massive yellow iris.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_08",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg",
-      "sheren.jpg"
+      "jp_shot05_gigi_flashlight.jpg"
     ],
     "audio": "JP_08.mp3",
     "length": 158,
     "seed": 8050,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. 35mm side-window tracking shot as Sheren violently spins the Explorer in blinding white headlights, mud flying past dinosaur claws. Sheren cranks the Explorer hard backward with one palm on the wheel, sliding inches past the T-Rex's giant clawed foot. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm side-window tracking shot as Sheren violently spins the Explorer in blinding white headlights, mud flying past dinosaur claws. Sheren cranks the Explorer hard backward with one palm on the wheel, sliding inches past the T-Rex's giant clawed foot.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_09",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg",
-      "gigi.jpg"
+      "jp_shot05_gigi_flashlight.jpg"
     ],
     "audio": "JP_09.mp3",
     "length": 192,
     "seed": 8057,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. 27mm dramatic low-angle in flooded mud outside Explorer; blue-green xenon light catches Gigi stepping boldly out under the pouring storm. Gigi storms right into the mud puddles holding her laminated clip-chart high like a crossing guard stopping traffic, scolding the 40-foot predator. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 27mm dramatic low-angle in flooded mud outside Explorer; blue-green xenon light catches Gigi stepping boldly out under the pouring storm. Gigi storms right into the mud puddles holding her laminated clip-chart high like a crossing guard stopping traffic, scolding the 40-foot predator.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_11",
     "images": [
-      "jp_shot01_ford_rain.jpg",
-      "damon.jpg"
+      "jp_shot01_ford_rain.jpg"
     ],
     "audio": "JP_11.mp3",
     "length": 158,
     "seed": 8071,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. 35mm inside the flimsy wooden restroom stall as the sliding Explorer clips the corner post\u2014warm bulb swings wildly over Damon's head. Splinters rain onto Damon's shoulders as he braces calmly on the toilet seat, turning an empty cardboard toilet-paper roll slowly. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm inside the flimsy wooden restroom stall as the sliding Explorer clips the corner post\u2014warm bulb swings wildly over Damon's head. Splinters rain onto Damon's shoulders as he braces calmly on the toilet seat, turning an empty cardboard toilet-paper roll slowly.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_12",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg",
-      "gigi.jpg"
+      "jp_shot05_gigi_flashlight.jpg"
     ],
     "audio": "JP_12.mp3",
     "length": 175,
     "seed": 8078,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. ICONIC 27mm DEAN CUNDEY REVEAL: T-Rex tears the entire thatch roof clean away above Damon! Blinding white lightning illuminates monster jaws directly over the porcelain toilet! As the thatch roof disintegrates in rain, Gigi marches straight beside the roofless stall doorway, blasting the dinosaur's manners. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. ICONIC 27mm DEAN CUNDEY REVEAL: T-Rex tears the entire thatch roof clean away above Damon! Blinding white lightning illuminates monster jaws directly over the porcelain toilet! As the thatch roof disintegrates in rain, Gigi marches straight beside the roofless stall doorway, blasting the dinosaur's manners.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_13",
     "images": [
-      "jp_shot09_trex_roar.jpg",
-      "ajay.jpg"
+      "jp_shot09_trex_roar.jpg"
     ],
     "audio": "JP_13.mp3",
     "length": 141,
     "seed": 8085,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. 35mm low-angle shot of Ajay climbing boldly onto the wet yellow hood of Explorer #04 in blue surgical scrubs, cordless drill whirring. Ajay waves a thin titanium electrode wire and spinning micro-drill up toward the T-Rex's massive cranium like a fearless field doctor. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm low-angle shot of Ajay climbing boldly onto the wet yellow hood of Explorer #04 in blue surgical scrubs, cordless drill whirring. Ajay waves a thin titanium electrode wire and spinning micro-drill up toward the T-Rex's massive cranium like a fearless field doctor.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_14",
     "images": [
-      "jp_shot01_ford_rain.jpg",
-      "damon.jpg"
+      "jp_shot01_ford_rain.jpg"
     ],
     "audio": "JP_14.mp3",
     "length": 192,
     "seed": 8092,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. Tight 50mm upward POV from behind the porcelain toilet; rain pours straight onto Damon's Wayfarers with dinosaur jaws hovering two feet overhead. Damon points two steady fingers upward at the T-Rex's nose without flinching, utterly refusing to rush his dignity. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. Tight 50mm upward POV from behind the porcelain toilet; rain pours straight onto Damon's Wayfarers with dinosaur jaws hovering two feet overhead. Damon points two steady fingers upward at the T-Rex's nose without flinching, utterly refusing to rush his dignity.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_15",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg",
-      "sheren.jpg"
+      "jp_shot05_gigi_flashlight.jpg"
     ],
     "audio": "JP_15.mp3",
     "length": 141,
     "seed": 8099,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. 35mm medium shot at Explorer driver window; Sheren leans halfway out into the downpour, scowling past mud-splattered glass. Sheren taps the Explorer horn aggressively while pointing at the collapsed timber bathroom wall like a bad renovation contractor. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium shot at Explorer driver window; Sheren leans halfway out into the downpour, scowling past mud-splattered glass. Sheren taps the Explorer horn aggressively while pointing at the collapsed timber bathroom wall like a bad renovation contractor.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_16",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg",
-      "gigi.jpg"
+      "jp_shot05_gigi_flashlight.jpg"
     ],
     "audio": "JP_16.mp3",
     "length": 158,
     "seed": 8106,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. 27mm dramatic upward angle: Gigi stands inches below the dinosaur chin in blinding xenon floodlights, pinning a red clip straight onto its snout scale. Gigi snaps her wooden behavior clothespin firmly onto a muddy fern beside the dinosaur's massive toe, folding her arms dead-serious. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 27mm dramatic upward angle: Gigi stands inches below the dinosaur chin in blinding xenon floodlights, pinning a red clip straight onto its snout scale. Gigi snaps her wooden behavior clothespin firmly onto a muddy fern beside the dinosaur's massive toe, folding her arms dead-serious.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_17",
     "images": [
-      "jp_shot09_trex_roar.jpg",
-      "ajay.jpg"
+      "jp_shot09_trex_roar.jpg"
     ],
     "audio": "JP_17.mp3",
     "length": 141,
     "seed": 8113,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. 50mm tight close-up on Ajay beaming brightly beside the Explorer windshield as the T-Rex actually takes one hesitant step backward into the storm. Ajay pumps his fist in triumph, draping his stethoscope back smoothly over his soaked blue scrubs. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 50mm tight close-up on Ajay beaming brightly beside the Explorer windshield as the T-Rex actually takes one hesitant step backward into the storm. Ajay pumps his fist in triumph, draping his stethoscope back smoothly over his soaked blue scrubs.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_18",
     "images": [
-      "jp_shot01_ford_rain.jpg",
-      "damon.jpg"
+      "jp_shot01_ford_rain.jpg"
     ],
     "audio": "JP_18.mp3",
     "length": 175,
     "seed": 8120,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. 35mm medium tracking shot through splintered cedar framing as Damon rises cleanly off the porcelain seat, zipping his slicker. Damon steps gracefully over collapsed thatch beams, snapping his Wayfarers dry before jogging briskly toward the roaring Explorer. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 35mm medium tracking shot through splintered cedar framing as Damon rises cleanly off the porcelain seat, zipping his slicker. Damon steps gracefully over collapsed thatch beams, snapping his Wayfarers dry before jogging briskly toward the roaring Explorer.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_19",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg",
-      "sheren.jpg"
+      "jp_shot05_gigi_flashlight.jpg"
     ],
     "audio": "JP_19.mp3",
     "length": 175,
     "seed": 8127,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. 27mm low mud-level tracking shot: Sheren drifts the Ford Explorer through a wide arc, scooping Gigi, Ajay, and Damon aboard mid-roll! Explorer doors slam shut in rapid succession while Sheren hits full throttle through mud spray, tail-sliding away from the paddock. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 27mm low mud-level tracking shot: Sheren drifts the Ford Explorer through a wide arc, scooping Gigi, Ajay, and Damon aboard mid-roll! Explorer doors slam shut in rapid succession while Sheren hits full throttle through mud spray, tail-sliding away from the paddock.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   },
   {
     "prefix": "jp_jp_20",
     "images": [
-      "jp_shot05_gigi_flashlight.jpg",
-      "gigi.jpg"
+      "jp_shot05_gigi_flashlight.jpg"
     ],
     "audio": "JP_20.mp3",
     "length": 158,
     "seed": 8134,
-    "prompt": "Photorealistic 1993 35mm live-action film scene, Steven Spielberg Jurassic Park T-Rex night rainstorm cinematography, pouring tropical rain, flashlight beams, natural film grain, zero cartoon look. 18mm closing Dean Cundey rain-swept hero shot: Explorer vanishes into emerald jungle mist while the T-Rex stands quietly beside the ruined stall under flashing blue xenon. Through the streaked rear Explorer window, Gigi waves fondly back at the T-Rex as it unleashes one final majestic Jurassic roar into the lightning storm. Natural human acting with exact lip sync to audio."
+    "prompt": "<Picture 1> is the exact starting frame of this photorealistic 35mm live-action movie scene.\n<Audio 1> is the exact spoken dialogue audio track for the speaking character in <Picture 1> and is reused verbatim.\nKeep every character face, costume, lighting, lens, and set geometry strictly faithful to <Picture 1>. 18mm closing Dean Cundey rain-swept hero shot: Explorer vanishes into emerald jungle mist while the T-Rex stands quietly beside the ruined stall under flashing blue xenon. Through the streaked rear Explorer window, Gigi waves fondly back at the T-Rex as it unleashes one final majestic Jurassic roar into the lightning storm.\nSubtle controlled cinema camera movement, natural live-action performance, exact lip sync to <Audio 1>, subtle 35mm film grain."
   }
 ]
