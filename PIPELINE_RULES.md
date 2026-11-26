@@ -1,4 +1,4 @@
-# Nomad Cinema Parodies — Pipeline Rules & Hardened Quality Gates (v2.1)
+# Nomad Cinema Parodies — Pipeline Rules & Hardened Quality Gates (v2.2)
 
 _Living engineering standard. Every gate, threshold, and lesson below is automatically published to the live studio Process Handbook and updated whenever a failure mode is discovered and fixed._
 
@@ -6,6 +6,11 @@ _Living engineering standard. Every gate, threshold, and lesson below is automat
 
 ## Version & Hardening Changelog
 
+- **v2.2 (2026-11-25) — Cinematography Grammar, YouTube Optical-Flow Analysis & Camera Control Architecture:**
+  - Responded to director critique on Act 1 Gigi hair jumps across cuts and repetitive standalone camera push-ins (`01 -> 02 -> 04 -> 06 -> 08`) making consecutive shots feel disconnected rather than one continuous Nolan scene.
+  - Added **Stage 1.5 (Automated YouTube Cinematography & Optical-Flow Decomposition)** measuring `zoom_rate (ds/dt)`, `pan/tilt (dx/dt, dy/dt)`, `handheld_jitter`, shot scale (`ECU..WIDE`), and 180° eye-line blocking per cut from reference frames.
+  - Added **Gate 8 (Sequence-Level Camera Grammar & Hair/Silhouette Lock)** banning default `"slow dolly push-in"` prompts, prohibiting consecutive unmotivated push-ins across `A -> B -> A -> B` coverage, and requiring hair part/silhouette continuity checks.
+  - Documented **LTX-2.5 Static/Dolly Camera Control LoRAs**, **IC-LoRA Cameraman** reference motion transfer, **Two-Stage Motion + V2V InfiniteTalk** (`Camera Motion -> Wav2Vec2 Lip-Sync`), and calibrated **Editorial 35 mm Handheld Micro-Weave**.
 - **v2.1 (2026-11-25) — Brutal Cinema QA, Living Process Page & Media Deploy Verification:**
   - Anchored `/clips/` and `/audio/` in `.gitignore` after unanchored `clips/` silently dropped `preview/clips/` on GitHub Pages (`HTTP 404`); moved web preview assets to `preview_media/` with generated `.jpg` poster stills and mandated **HTTP 200 verification on both HTML pages AND actual `.mp4` media URLs** before reporting live.
   - Enforced zero-tolerance acting/artifact review on every passing SyncNet clip (caught and queued `DK2_18` for an unmotivated `0:00` blurry hand-drop swipe despite `LSE-C 6.91`).
@@ -26,6 +31,12 @@ _Living engineering standard. Every gate, threshold, and lesson below is automat
 - Inspect source scene cut-by-cut and extract 250–350+ clean reference frames from the original film (`refs/yt/<slug>/`) to match camera blocking, focal lengths, cyan-dark vs clinical fluorescent lighting transitions, and shot pacing.
 - Build a structured 40-shot shot list (`scripts/<slug>_script.json`) preserving exact emotional beats, two-shot spatial continuity (left/right eye-line), and scene transitions.
 
+### Stage 1.5 — Automated YouTube Cinematography & Optical-Flow Analysis
+- Do not prompt camera movement blindly. Analyze the extracted source YouTube shots cut-by-cut (`scripts/analyze_yt_camera.py`) before writing any video generation prompt:
+  - **Optical-Flow Motion Vector Profile:** Fit frame-to-frame affine homographies within each cut to measure `zoom_rate (ds/dt)`, `pan/tilt velocity (dx/dt, dy/dt)`, and `high-frequency handheld jitter`.
+  - **Cinematography Classification Tag:** Label every shot explicitly as `STATIC_LOCKED`, `HANDHELD_35MM`, `SLOW_DOLLY_IN`, `SLOW_DOLLY_OUT`, `PAN_ORBIT`, or `IMPACT_SHAKE` (only shots with genuine source camera motion get movement directives).
+  - **Shot Scale & 180° Eye-Line Matrix:** Measure face-height / frame-height ratio (`ECU`, `CU`, `MCU`, `MS`, `OTS`, `WIDE`) and lock camera-side eye-lines so returning cuts on the same speaker hold identical focal length and screen direction.
+
 ### Stage 2 — Nomads-Only Casting & Voice Generation
 - **100% Nomad Cast Rule:** Every speaking role is played by a verified Nomad cast member anchored to high-res studio likeness refs — zero generic stock strangers in dialogue shots.
 - Generate clean dialogue stems with **ElevenLabs** (`scripts/gen_*_audio.py`) with authentic vocal delivery (crisp pronunciation, zero trailing gibberish, matched emotional intensity).
@@ -38,6 +49,10 @@ _Living engineering standard. Every gate, threshold, and lesson below is automat
 
 ### Stage 4 — Hybrid Video Rendering (`LTX-2.5` + `InfiniteTalk` on Colab G4 RTX PRO 6000)
 - **Single-Anchor Rule on Tight Close-Ups:** Omit `end_image` (`end_image = null`) on tight talking close-ups so end-frame blending never causes double-exposure dissolves or abrupt tail expression shifts.
+- **Technical Camera-Control Architecture (No Default Push-Ins):**
+  - **LTX-2.5 Static & Directional Camera LoRAs:** Never let text prompts default to `"slow dolly push-in"`. Use Lightricks' `LTX-2/2.5` Static Camera LoRA (plus explicit negative `"dolly in, zoom in, push in"`) for locked dialogue coverage, and use Directional Dolly/Jib LoRAs *only* on beats matching Stage 1.5 motion vectors.
+  - **IC-LoRA Cameraman (Reference Video Motion Transfer):** For handheld tension, table orbits, or whip pans matching real cinema photography, drive `LTX-2.5` with `IC-LoRA Cameraman` at `>= 960x512` Stage 1 using a clean reference motion clip extracted from the source YouTube cut.
+  - **Two-Stage Motion + Lip-Sync (`Camera Motion -> V2V InfiniteTalk`):** When a shot requires both dramatic camera choreography (handheld tracking, orbital push, physical struggle) and tight lip sync on painted makeup, generate the clean camera/body performance first in `LTX-2.5`, then run **V2V InfiniteTalk** (`Wan2.1-14B`) so Wav2Vec2 drives the lips while inheriting the exact camera trajectory.
 - **LTX-2.5 Dev BF16 (`scripts/colab_ltx25_v2.py`):** Used for Start+End camera choreography and physical action (`960x416` 24-step `euler` -> Stage 2 Distilled LoRA `450` x2 latent upscale -> `1920x832`). Always freeze custom audio with `LTXVFreezeLatent`, use zero-latency linear `volume` scaling (never `loudnorm`), and **never enable `LTXVModalityGuidance`**.
 - **InfiniteTalk Wan2.1-14B (`scripts/colab_infinitetalk_v2.py`):** Used for phoneme-locked close-up dialogue, tilted/expressive heads, and heavy prosthetic makeup (`960x416` `dpm++_sde` `6`-step `LightX2V` + `Wav2Vec2` audio embeddings -> Lanczos/unsharp x2 to `1920x832` muxed with exact clean WAV).
 - Keep GPU alive continuously through full QA, continuity checks, and master screening; never leave stale `_00001_.mp4` prefixes when re-rendering.
@@ -54,6 +69,7 @@ Every single rendered MP4 must pass ALL clip gates below (zero exceptions — fa
 | **5. Silent-Listener Discipline** | Full-MP4 inspection on all 2-shots and group shots | Listening characters keep **mouths 100% sealed**, zero echoing, zero phantom lip twitches |
 | **6. Makeup, Texture & Physics** | Full-MP4 inspection (`read_file` native video audit) | Natural skin pores, intact paint/scars/glasses, zero blurry hand swipes (`DK2_18` caught), zero wall wobble |
 | **7. Zero Post-Hoc Mouth Patching** | Pipeline ban on SD1.5 face-inpainting refiners | Never run `LatentSync` on heavy greasepaint or detailed facial stubble |
+| **8. Camera Grammar & Silhouette Lock** | Stage 1.5 motion match + pre-render returning-coverage check | Zero consecutive unmotivated push-ins (`A -> B -> A -> B`); hair parting, ear visibility, and glasses stay locked across cuts |
 
 ### Stage 6 — Post-Render Video Continuity & Adjacent Cut-Pair Audit
 - Run `scripts/qa_video_continuity.py` on **all 40 final rendered MP4s** (not source stills):
@@ -64,7 +80,7 @@ Every single rendered MP4 must pass ALL clip gates below (zero exceptions — fa
 - **Tight Nolan Cut Pacing:** Detect true last vocal energy (`> -38 dB`) per clip and trim cleanly to **`speech_end + 0.20s`** (`0.35s` dramatic hold on Act breaks) — zero dead-air frozen tails, zero clipped final consonants.
 - **Broadcast Dialogue Leveling (`-16 LUFS`):** Measure per-stem integrated loudness and apply zero-latency linear gain so every cast member speaks at uniform cinema presence, plus `15 ms` audio micro-fades at cuts.
 - **Cinematic Sound Design:** Subtle room tone bed + sidechain-ducked score (`score_dk_tension.mp3`) + crisp hard SFX hits synced cleanly to visual actions (overhead lights slam ON, heavy table slam, precinct door rattle).
-- **Unified 35 mm Panavision Finishing:** Color/contrast/sharpness normalization + fine 35 mm film grain + matte Scope letterbox inside **`1920x1080`** (`< 90 MB`, `-movflags +faststart` web streaming).
+- **Unified 35 mm Panavision Finishing & Organic Handheld Weave:** Color/contrast/sharpness normalization + fine 35 mm film grain + calibrated organic handheld micro-drift (`0.35%–0.55%` dual-sine weave inside `1.016x` overscan on handheld scenes so locked shots breathe instead of freezing) + matte Scope letterbox inside **`1920x1080`** (`< 90 MB`, `-movflags +faststart` web streaming).
 
 ### Stage 8 — Segmented Director's Cut Screening & Live Deploy Verification
 - Split the assembled 1080p master into **45-second high-density segments** and screen **every segment end-to-end** while the GPU is still warm; fix any edit, audio, or shot flaw immediately.
