@@ -29,17 +29,52 @@ FILMS = [
         "num": "02",
         "title": "The Dark Knight — The Interrogation Room (v2)",
         "subtitle": "35mm Panavision Scope · Hooman, Damon, Gigi, Deron & Zach",
-        "status": "In Progress — 23/40 Shots Verified",
+        "status": "1080p Ready",
         "status_cls": "done",
-        "hide_video": True,
-        "preview_url": "preview.html",
         "mp4": "films/02_dark_knight_1080p.mp4",
-        "prep_time": "v2 Rebuild Active",
-        "render_time": "23/40 SyncNet + Visual QA Verified (LTX-2.5 + InfiniteTalk Hybrid)",
+        "prep_time": "71 Hero-Anchor 21:9 Keyframes + 5 Continuity Grids",
+        "render_time": "40/40 Verified Hybrid Render (LTX-2.5 + InfiniteTalk on Colab G4)",
         "audit": [
-            {"shot": "DK2_01..04", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Act 1 opening Gigi & Hooman dark interrogation table confrontation (DK2_04 offset tightening queued).", "revisions": "LTX-2.5 VERIFIED (LSE-C 5.61, 7.53, 6.52, 7.34)."},
-            {"shot": "DK2_05..10", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Hooman Encino escrow pitch, Gigi closing night shift, and fluorescent reveal.", "revisions": "Hybrid LTX-2.5 + InfiniteTalk VERIFIED (LSE-C 7.69, 8.38, 6.19, 6.70, 4.95, 7.21)."},
-            {"shot": "DK2_11..13, 15..17, 19..20, 22..23, 25..26, 28", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Act 2 interrogation escalation: Damon, Hooman, and Zach (DK2_18 caught for 0:00 hand swipe & queued for retry).", "revisions": "Batch A SyncNet 10/10 PASS (LSE-C 5.52–7.70, |off|<=2f). Batch B/C finishing now."},
+            {"shot": "DK2_01 (Gigi)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "One, two, three, eyes on me, Joker. Where is Harvey Dent? And why does it smell like burnt saffron in here?", "revisions": "LTX-2.5 | LSE-C 5.62, LSE-D 9.81, off +0f"},
+            {"shot": "DK2_02 (Gigi)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "I don't play games after recess, mister. Start talking before Batman steps through that door.", "revisions": "LTX-2.5 | LSE-C 7.53, LSE-D 8.28, off +0f"},
+            {"shot": "DK2_03 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Chay-chay-chetori, Commissioner! Nobody give Hooman coffee, nobody take fifty-fifty deal, huuuuh?", "revisions": "LTX-2.5 | LSE-C 6.52, LSE-D 7.67, off -1f"},
+            {"shot": "DK2_04 (Gigi)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Nobody is cutting a fifty-fifty real estate deal in Gotham Police. Hands flat on the steel table right now.", "revisions": "LTX-2.5 | LSE-C 7.51, LSE-D 8.41, off -1f (stern LTX restored + -83ms audio align -> -1f)"},
+            {"shot": "DK2_05 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Strict teacher routine very scary, dood! Call Zach, check Encino escrow before midnight!", "revisions": "InfiniteTalk | LSE-C 7.69, LSE-D 7.88, off -1f"},
+            {"shot": "DK2_06 (Gigi)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Leave Zach out of this basement. Tell me where Harvey Dent is before I turn on the lights.", "revisions": "LTX-2.5 | LSE-C 8.38, LSE-D 7.98, off +1f"},
+            {"shot": "DK2_07 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Oh, Harvey in lovely Westside spot, dood! Zero HOA fee, tiny bit asbestos, no problem!", "revisions": "InfiniteTalk | LSE-C 6.19, LSE-D 9.04, off -2f"},
+            {"shot": "DK2_08 (Gigi)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Fine. You lost your green behavior star for the week. Let's see how you handle the night shift.", "revisions": "LTX-2.5 | LSE-C 6.70, LSE-D 8.34, off -2f"},
+            {"shot": "DK2_09 (Gigi)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Good luck explaining escrow to him, Hooman. The lights are coming on now.", "revisions": "LTX-2.5 | LSE-C 4.95, LSE-D 9.92, off -2f"},
+            {"shot": "DK2_10 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Fuck that shit, Batman! Why you stand behind people in dark like Encino valet, dood?!", "revisions": "InfiniteTalk | LSE-C 7.21, LSE-D 8.04, off +0f"},
+            {"shot": "DK2_11 (Damon)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Where is Harvey Dent. And back up two inches—I'm fasting on cold Maurten hydrogels.", "revisions": "LTX-2.5 | LSE-C 7.23, LSE-D 8.13, off -1f"},
+            {"shot": "DK2_12 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Never start with the head, dood! You mess up hairline—you know Beverly Hills hair plug cost?", "revisions": "InfiniteTalk | LSE-C 6.56, LSE-D 8.68, off -1f"},
+            {"shot": "DK2_13 (Damon)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Don't test my patience, Hooman. I raced Lake Placid Aquabike in pouring rain on worse.", "revisions": "InfiniteTalk | LSE-C 7.13, LSE-D 9.05, off -2f"},
+            {"shot": "DK2_14 (Deron)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Aiya! Look at Damon shoulders so stiff lah! Somebody bring hot water and Po Chai Pill!", "revisions": "InfiniteTalk | LSE-C 6.74, LSE-D 8.65, off +1f (feathered listener-lock composite)"},
+            {"shot": "DK2_15 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Your friends behind mirror eating dumplings, baba! Tell Deron stop breathing on glass!", "revisions": "InfiniteTalk | LSE-C 6.81, LSE-D 7.99, off -1f"},
+            {"shot": "DK2_16 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Wait a second... why your voice sound like treadmill at Equinox, dood? You sweating inside rubber suit?", "revisions": "InfiniteTalk | LSE-C 6.51, LSE-D 8.13, off -1f"},
+            {"shot": "DK2_17 (Damon)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Word. It's a Zone-five core hold and I had bad shrimp. Now give me Harvey's address.", "revisions": "LTX-2.5 | LSE-C 7.07, LSE-D 8.85, off +0f"},
+            {"shot": "DK2_18 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Bad shrimp in neoprene suit? Brother, you need Magic Cone! Clean every pipe in one minute, dood!", "revisions": "InfiniteTalk | LSE-C 6.17, LSE-D 8.59, off +0f (chin-free anchor frame -> zero 0:00 swipe)"},
+            {"shot": "DK2_19 (Damon)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Keep your funnel out of my interrogation. You have ten seconds before I lose my grip.", "revisions": "LTX-2.5 | LSE-C 6.75, LSE-D 7.62, off +1f"},
+            {"shot": "DK2_20 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Ooh! Big tough lawyer gonna lose grip! What you gonna do, sue me in Superior Court, huuuuh?", "revisions": "InfiniteTalk | LSE-C 5.52, LSE-D 9.15, off -1f"},
+            {"shot": "DK2_21 (Damon)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "I survived L.A. County jail—jail, never prison. You don't rattle me. Where are they?", "revisions": "InfiniteTalk | LSE-C 4.90, LSE-D 9.55, off -2f"},
+            {"shot": "DK2_22 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Listen, baby—jail good for character! Tell Darren let's go fifty-fifty on Arkham parking structure!", "revisions": "InfiniteTalk | LSE-C 6.74, LSE-D 7.82, off -1f"},
+            {"shot": "DK2_23 (Damon)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Enough with Darren. Their clock is running out right now. Which warehouse?", "revisions": "InfiniteTalk | LSE-C 7.70, LSE-D 7.87, off -2f"},
+            {"shot": "DK2_24 (Damon)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Every second you stall, my stomach gets worse and your face hits this table harder.", "revisions": "InfiniteTalk | LSE-C 6.41, LSE-D 8.17, off -1f"},
+            {"shot": "DK2_25 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "See, madness like Encino brunch line, dood! All it takes is one bad burrito and little push!", "revisions": "InfiniteTalk | LSE-C 5.61, LSE-D 9.33, off +0f"},
+            {"shot": "DK2_26 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Plus you have choice tonight, my friend... Harvey on Tenth Street, or Rachel eating warm guacamole!", "revisions": "InfiniteTalk | LSE-C 7.58, LSE-D 7.45, off -1f"},
+            {"shot": "DK2_27 (Damon)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Tell me which one is where! Right now, Hooman!", "revisions": "LTX-2.5 ACTION BEAT | Visual Pass (physical wall-slam; -16 LUFS leveled + wall-slam SFX)"},
+            {"shot": "DK2_28 (Zach)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "OMG, wait—ChatGPT says throwing people into cinderblock walls spikes cortisol like crazy, literally lol!", "revisions": "InfiniteTalk | LSE-C 6.95, LSE-D 8.25, off -1f"},
+            {"shot": "DK2_29 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Ask Elon, dood! He already quote-tweeted Rachel address on X with blue check, huuuuh?!", "revisions": "InfiniteTalk | LSE-C 5.29, LSE-D 9.45, off -1f"},
+            {"shot": "DK2_30 (Damon)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Shut up about X. Give me both street names before I tear this wall down.", "revisions": "InfiniteTalk | LSE-C 8.05, LSE-D 8.16, off -1f"},
+            {"shot": "DK2_31 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Careful baby, you wrinkle tailored shirt! Harvey at Two-Fifty Fifty-Second, Rachel at Cicero dock!", "revisions": "InfiniteTalk | LSE-C 5.97, LSE-D 9.06, off -1f"},
+            {"shot": "DK2_32 (Gigi)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Did that clown just brag about Elon Musk on police CCTV?! Breach that door immediately!", "revisions": "InfiniteTalk | LSE-C 8.28, LSE-D 7.37, off +0f (feathered listener-lock composite)"},
+            {"shot": "DK2_33 (Damon)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "I'm going for Rachel. Stay right where you are.", "revisions": "InfiniteTalk | LSE-C 7.73, LSE-D 7.61, off -1f"},
+            {"shot": "DK2_34 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Hahaha! Don't forget stop at Sherman Oaks valet on way! And grab toilet paper, dood!", "revisions": "InfiniteTalk | LSE-C 5.71, LSE-D 9.59, off -1f (verified CW +0.95 rad sideways)"},
+            {"shot": "DK2_35 (Deron)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Aiya! Why Batman wedge cheap folding chair under doorknob lah?! Worse security than Clippers bench!", "revisions": "InfiniteTalk | LSE-C 6.92, LSE-D 8.72, off -2f (feathered listener-lock composite)"},
+            {"shot": "DK2_36 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "You see, Damon, their rules drop like old fiber bar! Look at them banging door outside!", "revisions": "InfiniteTalk | LSE-C 7.17, LSE-D 7.95, off -1f"},
+            {"shot": "DK2_37 (Damon)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "You think any of this is funny? My glucose hit two hundred and I still run faster than them.", "revisions": "InfiniteTalk | LSE-C 7.09, LSE-D 8.66, off -2f"},
+            {"shot": "DK2_38 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Hahaha! Nobody got anything to threaten Hooman with! Wait—tell Zach buy Magic Cone stock!", "revisions": "InfiniteTalk | LSE-C 6.50, LSE-D 8.34, off -2f"},
+            {"shot": "DK2_39 (Damon)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "I'm done talking. Enjoy solitary and stale meatloaf.", "revisions": "InfiniteTalk | LSE-C 7.96, LSE-D 7.57, off -1f"},
+            {"shot": "DK2_40 (Hooman)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Don't leave so angry, baby! You complete Hooman... call Darren when bathroom break finish, huuuuh?", "revisions": "InfiniteTalk | LSE-C 6.58, LSE-D 8.78, off -1f"},
         ],
     },
     {
@@ -308,7 +343,7 @@ def build():
                 smeta = shots_by_id.get(sid, {})
                 rel = f"../refs/{data_slug}/{img_name}"
                 spk = smeta.get("speaker", "")
-                line = smeta.get("exact_dialogue", "")
+                line = smeta.get("exact_dialogue") or smeta.get("dialogue", "")
                 mm_cards.append(f"""
       <div class="card">
         <img src="{rel}" alt="{html_mod.escape(img_name)}" />
@@ -376,8 +411,8 @@ def build():
   <p class="sub">Original movie frames extracted directly from the scene to match camera angles, lenses, lighting contrast, and color palette.</p>
   <div class="ref-grid">{''.join(yt_cards)}</div>
 
-  <h2>2. MiniMax H3 Reference Frames &amp; Shot Ingredients ({len(jobs) or len(ref_frames)} shots)</h2>
-  <p class="sub">Every keyframe, spoken line, duration, and prompt queued for MiniMax H3 prior to rendering.</p>
+  <h2>2. Keyframe Anchors &amp; Shot Ingredients ({len(jobs) or len(ref_frames)} shots)</h2>
+  <p class="sub">Every locked 21:9 keyframe anchor, dialogue line, and motion directive queued for rendering.</p>
   <div class="ref-grid">{''.join(mm_cards)}</div>
 
   <h2>3. Director's QA Audit &amp; Revision History</h2>
@@ -407,7 +442,6 @@ def build():
       <p class="sub" style="margin-bottom:0;">Shot-for-shot 1080p Scope movie scene recreations starring the Nomads · LTX-2.5 + InfiniteTalk Hybrid · 7 Hardened Cinema Gates</p>
     </div>
     <div style="display:flex;gap:10px;flex-wrap:wrap;">
-      <a class="btn" href="preview.html">Verified Shots Preview (23/40) →</a>
       <a class="btn sec" href="process.html">Living Process &amp; Quality Gates</a>
     </div>
   </div>
@@ -510,7 +544,6 @@ def build_process_page():
   <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px;">
     <div style="display:flex;gap:10px;flex-wrap:wrap;">
       <a class="btn sec" href="./">&larr; Main Showcase</a>
-      <a class="btn" href="preview.html">Verified Shots Preview →</a>
     </div>
     <span class="badge done">Living Engineering Spec · Auto-Synced</span>
   </div>

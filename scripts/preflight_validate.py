@@ -73,9 +73,23 @@ def trim_trailing_silence(mp3_path: str) -> tuple[float, float]:
 
 def validate_and_prepare(slug: str) -> list[str]:
     issues = []
-    yt_frames = glob.glob(f"{BASE}/refs/yt/{slug}/*.jpg")
-    if len(yt_frames) < 40:
-        issues.append(f"{slug}: only {len(yt_frames)} YT frames (need >= 40)")
+    yt_root = f"{BASE}/refs/yt/{slug}"
+    yt_frames = glob.glob(f"{yt_root}/*.jpg")
+    yt_sub_frames = glob.glob(f"{yt_root}/frames/*.jpg")
+    yt_sheets = glob.glob(f"{yt_root}/sheets/*.jpg")
+
+    if yt_sub_frames:
+        if len(yt_sub_frames) < 300:
+            issues.append(f"{slug}: only {len(yt_sub_frames)} YT raw frames (need >= 300)")
+        yt_count_msg = f"{len(yt_sub_frames)} YT frames + {len(yt_sheets)} sheets"
+    elif yt_sheets:
+        if len(yt_sheets) < 10:
+            issues.append(f"{slug}: only {len(yt_sheets)} YT contact sheets (need >= 10)")
+        yt_count_msg = f"{len(yt_sheets)} YT sheets"
+    else:
+        if len(yt_frames) < 40:
+            issues.append(f"{slug}: only {len(yt_frames)} YT frames (need >= 40)")
+        yt_count_msg = f"{len(yt_frames)} YT frames"
 
     jobs_path = f"{BASE}/scripts/{slug}_jobs.json"
     script_path = f"{BASE}/scripts/{slug}_script.json"
@@ -83,43 +97,75 @@ def validate_and_prepare(slug: str) -> list[str]:
     script_shots = {}
     if os.path.exists(script_path):
         script_shots = {s["shot_id"].lower(): s for s in json.load(open(script_path)).get("shots", [])}
+
+    is_v2_schema = bool(jobs) and ("shot_id" in jobs[0] or "start_image" in jobs[0])
     trimmed_count = 0
 
     for j in jobs:
-        prefix = j["prefix"]
-        imgs = j.get("images", [])
-        if len(imgs) != 1:
-            issues.append(f"{prefix}: expected 1 bespoke keyframe, found {len(imgs)}")
-        for im in imgs:
-            im_path = f"{BASE}/refs/{slug}/{im}"
-            if not os.path.exists(im_path) or os.path.getsize(im_path) < 1000:
-                issues.append(f"{prefix}: missing or empty keyframe refs/{slug}/{im}")
-
-        prompt = j.get("prompt", "")
-        if "<Picture 1>" not in prompt:
-            issues.append(f"{prefix}: missing <Picture 1> tag")
-        if not j.get("silent_on_camera") and "<Audio 1>" not in prompt:
-            issues.append(f"{prefix}: missing <Audio 1> tag")
-        for pat in BANNED_PROMPT_PATTERNS:
-            if re.search(pat, prompt, re.I):
-                issues.append(f"{prefix}: risky motion/physics phrase matched '{pat}'")
-
-        au = f"{BASE}/audio/{slug}/{j['audio']}"
-        if not os.path.exists(au) or os.path.getsize(au) < 1000:
-            issues.append(f"{prefix}: missing audio {au}")
+        if is_v2_schema:
+            prefix = j["shot_id"]
+            imgs = [j["start_image"]] + ([j["end_image"]] if j.get("end_image") else [])
+            for im in imgs:
+                im_path = f"{BASE}/refs/{slug}/{im}"
+                if not os.path.exists(im_path) or os.path.getsize(im_path) < 1000:
+                    issues.append(f"{prefix}: missing or empty keyframe refs/{slug}/{im}")
+            prompt = j.get("ltx_prompt", "")
+            if not prompt.strip():
+                issues.append(f"{prefix}: empty ltx_prompt")
+            for pat in BANNED_PROMPT_PATTERNS:
+                if re.search(pat, prompt, re.I):
+                    issues.append(f"{prefix}: risky motion/physics phrase matched '{pat}'")
+            au = f"{BASE}/audio/{slug}/{j['audio']}"
+            if not os.path.exists(au) or os.path.getsize(au) < 1000:
+                issues.append(f"{prefix}: missing audio {au}")
+            else:
+                a = ffprobe_dur(au)
+                shot_id = prefix.lower()
+                smeta = script_shots.get(shot_id, {})
+                words = len((smeta.get("exact_dialogue") or smeta.get("dialogue", "")).split())
+                if words > 0 and a > max(10.0, words * 0.55 + 2.5):
+                    print(f"  WARN (long audio check): {prefix} audio {a:.2f}s looks unusually long for {words} words")
         else:
-            b, a = trim_trailing_silence(au)
-            if a < b:
-                trimmed_count += 1
-            shot_id = prefix.split("_", 1)[1].lower() if "_" in prefix else prefix.lower()
-            words = len(script_shots.get(shot_id, {}).get("exact_dialogue", "").split())
-            if words > 0 and a > max(10.0, words * 0.55 + 2.5):
-                print(f"  WARN (long audio check): {prefix} audio {a:.2f}s looks unusually long for {words} words (inspect for ElevenLabs repeat or gibberish tail)")
-            nf = valid_h3_frames(a + 0.45)
-            j["length"] = nf
+            prefix = j["prefix"]
+            imgs = j.get("images", [])
+            if len(imgs) != 1:
+                issues.append(f"{prefix}: expected 1 bespoke keyframe, found {len(imgs)}")
+            for im in imgs:
+                im_path = f"{BASE}/refs/{slug}/{im}"
+                if not os.path.exists(im_path) or os.path.getsize(im_path) < 1000:
+                    issues.append(f"{prefix}: missing or empty keyframe refs/{slug}/{im}")
 
-    json.dump(jobs, open(jobs_path, "w"), indent=2)
-    print(f"[PREFLIGHT] {slug}: {len(jobs)} jobs, {len(yt_frames)} YT frames, {trimmed_count} MP3s silence-trimmed, total video {sum(x['length'] for x in jobs)/24:.1f}s")
+            prompt = j.get("prompt", "")
+            if "<Picture 1>" not in prompt:
+                issues.append(f"{prefix}: missing <Picture 1> tag")
+            if not j.get("silent_on_camera") and "<Audio 1>" not in prompt:
+                issues.append(f"{prefix}: missing <Audio 1> tag")
+            for pat in BANNED_PROMPT_PATTERNS:
+                if re.search(pat, prompt, re.I):
+                    issues.append(f"{prefix}: risky motion/physics phrase matched '{pat}'")
+
+            au = f"{BASE}/audio/{slug}/{j['audio']}"
+            if not os.path.exists(au) or os.path.getsize(au) < 1000:
+                issues.append(f"{prefix}: missing audio {au}")
+            else:
+                b, a = trim_trailing_silence(au)
+                if a < b:
+                    trimmed_count += 1
+                shot_id = prefix.split("_", 1)[1].lower() if "_" in prefix else prefix.lower()
+                words = len(script_shots.get(shot_id, {}).get("exact_dialogue", "").split())
+                if words > 0 and a > max(10.0, words * 0.55 + 2.5):
+                    print(f"  WARN (long audio check): {prefix} audio {a:.2f}s looks unusually long for {words} words (inspect for ElevenLabs repeat or gibberish tail)")
+                nf = valid_h3_frames(a + 0.45)
+                j["length"] = nf
+
+    if not is_v2_schema:
+        json.dump(jobs, open(jobs_path, "w"), indent=2)
+        tot_s = sum(x["length"] for x in jobs) / 24.0
+        print(f"[PREFLIGHT] {slug}: {len(jobs)} jobs, {yt_count_msg}, {trimmed_count} MP3s silence-trimmed, total video {tot_s:.1f}s")
+    else:
+        tot_s = sum(ffprobe_dur(f"{BASE}/audio/{slug}/{x['audio']}") for x in jobs if os.path.exists(f"{BASE}/audio/{slug}/{x['audio']}"))
+        print(f"[PREFLIGHT v2] {slug}: {len(jobs)} jobs, {yt_count_msg}, {len(jobs)} audio stems totaling {tot_s:.1f}s")
+
     if issues:
         for iss in issues:
             print("  WARN/FAIL:", iss)
