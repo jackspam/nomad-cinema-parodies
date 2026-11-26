@@ -1,10 +1,15 @@
-# Nomad Cinema Parodies — Pipeline Rules & Hardened Quality Gates (v2.3)
+# Nomad Cinema Parodies — Pipeline Rules & Hardened Quality Gates (v2.4)
 
 _Living engineering standard. Every gate, threshold, and lesson below is automatically published to the live studio Process Handbook and updated whenever a failure mode is discovered and fixed._
 
 ---
 
 ## Version & Hardening Changelog
+
+- **v2.4 (2026-11-26) — Measured-LUFS Mix Leveling, Mandatory Silent-Listener Spatial Locking & Anti-Extreme-Zoom Rule:**
+  - **Measured-LUFS Music & SFX Leveling:** Never apply raw scalar gain (`* 0.22`) or blind heavy sidechain compression onto music/SFX stems. Measure every dialogue, music, and SFX stem's integrated LUFS with `ffmpeg loudnorm ... print_format=json` first, apply linear gain to exact cinema targets (music bed `-21.5` to `-22.5 LUFS` gently ducked `~-3.5 dB` under `-16 LUFS` dialogue; hard SFX at `-13` to `-18 LUFS`), and trim reverb tails cleanly with triangular `acrossfade` for seamless score loops (`score_dk_act1_dark` -> `score_dk_act2_intense`).
+  - **Mandatory Silent-Listener Spatial Lock Audit (Gate 5):** Inspect EVERY multi-face InfiniteTalk clip end-to-end (`read_file` MP4) and composite horizontal cosine-feathered spatial reference locks (`scripts/lock_listeners_dk2.py`) onto any secondary face showing sympathetic lip bleed (`DK2_14, 23, 28, 31, 32, 35`), then re-run SyncNet to confirm zero seam and preserved speaker lip score.
+  - **Anti-Extreme-Zoom Opening Rule (Gate 8):** Ban `> 20%/s` wide-to-ECU LTX-2.5 camera zooms starting from `< 100px` background faces (which trigger facial aging/morph hallucinations as in original `DK2_01`). Anchor opening/establishing dialogue lines at a matched medium close-up keyframe routed cleanly through InfiniteTalk (`DK2_01` fixed to match Shots `02–09` 1:1).
 
 - **v2.3 (2026-11-25) — Optical-Flow YouTube Camera Decomposition, Camera Control LoRAs & Return-Cut Hair/Makeup Locking:**
   - Built automated RANSAC optical-flow cinematography analyzer (`scripts/analyze_yt_camera.py`) to inspect extracted source scenes cut-by-cut and convert real movie camera trajectories (`zoom_rate`, `pan/tilt`, `handheld_jitter`, shot scale, screen side) into structured JSON specs and explicit preflight grammar validation (`scripts/preflight_validate.py`).
@@ -81,10 +86,10 @@ Every single rendered MP4 must pass ALL clip gates below (zero exceptions — fa
 | **2. Audio-Video Timing Offset** | SyncNet temporal lag check | **`|offset| <= 2` frames (`±83 ms`)** — no `±3f+` lag tolerated (`DK2_04` tightened) |
 | **3. Feature Distance** | SyncNet audio-visual embedding distance | **`LSE-D <= 10.2`** (target `<= 9.5`) |
 | **4. Final-1.2s Expression Strip** | 6-frame visual inspection across final 1.2s (`strips/<SID>_tail.jpg`) | Clean mouth closure at end of dialogue; **zero unprompted tail smiles, grins, or frozen teeth** |
-| **5. Silent-Listener Discipline** | Full-MP4 inspection on all 2-shots and group shots | Listening characters keep **mouths 100% sealed**, zero echoing, zero phantom lip twitches |
+| **5. Silent-Listener Discipline** | Full-MP4 audit + horizontal cosine-feathered spatial lock across EVERY multi-face InfiniteTalk clip | Listening characters keep **mouths 100% sealed**, zero sympathetic lip echo (`lock_listeners` verified + SyncNet re-passed) |
 | **6. Makeup, Texture & Physics** | Full-MP4 inspection (`read_file` native video audit) | Natural skin pores, intact paint/scars/glasses, zero blurry hand swipes (`DK2_18` caught), zero wall wobble |
 | **7. Zero Post-Hoc Mouth Patching** | Pipeline ban on SD1.5 face-inpainting refiners | Never run `LatentSync` on heavy greasepaint or detailed facial stubble |
-| **8. Camera Grammar & Return-Cut Hair/Makeup Lock** | Stage 1.5 motion match + preflight camera-grammar gate + return-cut side-by-side diff | Zero consecutive unmotivated push-ins (`A -> B -> A -> B`), zero negative camera phrasing (`no zoom`), and identical hair part, glasses & makeup density across cuts |
+| **8. Camera Grammar & Return-Cut Lock** | Stage 1.5 motion match + preflight camera-grammar gate + return-cut side-by-side diff | Zero consecutive unmotivated push-ins (`A -> B -> A -> B`), **no `> 20%/s` LTX zooms from `< 100px` faces**, zero negative camera phrasing (`no zoom`), and identical hair/glasses/makeup density across cuts |
 
 ### Stage 6 — Post-Render Video Continuity & Adjacent Cut-Pair Audit
 - Run `scripts/qa_video_continuity.py` on **all 40 final rendered MP4s** (not source stills):
@@ -94,7 +99,7 @@ Every single rendered MP4 must pass ALL clip gates below (zero exceptions — fa
 ### Stage 7 — Hollywood Editorial Assembly, Broadcast Mix & 35mm Grade
 - **Tight Nolan Cut Pacing:** Detect true last vocal energy (`> -38 dB`) per clip and trim cleanly to **`speech_end + 0.20s`** (`0.35s` dramatic hold on Act breaks) — zero dead-air frozen tails, zero clipped final consonants.
 - **Broadcast Dialogue Leveling (`-16 LUFS`):** Measure per-stem integrated loudness and apply zero-latency linear gain so every cast member speaks at uniform cinema presence, plus `15 ms` audio micro-fades at cuts.
-- **Cinematic Sound Design:** Subtle room tone bed + sidechain-ducked score (`score_dk_tension.mp3`) + crisp hard SFX hits synced cleanly to visual actions (overhead lights slam ON, heavy table slam, precinct door rattle).
+- **Cinematic Sound Design (Measured LUFS Only):** Subtle room tone bed (`-32` to `-36 LUFS`) + pre-measured LUFS score (`-21.5` to `-22.5 LUFS`, light `ratio=2.2` ducking `-3.5 dB` under `-16 LUFS` speech) + measured-LUFS hard SFX (`-13` to `-18 LUFS`) synced cleanly to visual actions (overhead lights slam ON, heavy table slam, precinct door rattle) — never use blind raw scalar multipliers.
 - **Unified 35 mm Panavision Finishing & Organic Handheld Weave:** Color/contrast/sharpness normalization + fine 35 mm film grain + calibrated organic handheld micro-drift (`0.35%–0.55%` dual-sine weave inside `1.016x` overscan on handheld scenes so locked shots breathe instead of freezing) + matte Scope letterbox inside **`1920x1080`** (`< 90 MB`, `-movflags +faststart` web streaming).
 
 ### Stage 8 — Segmented Director's Cut Screening & Live Deploy Verification

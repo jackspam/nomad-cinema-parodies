@@ -13,6 +13,9 @@ BASE = "/Users/jack/.gemini/antigravity/scratch/nomad-cinema-parodies"
 #   "left_of":  freeze x <= boundary_x from ref still (smooth ramp from boundary_x-feather .. boundary_x+feather)
 LOCK_SPECS = {
     "DK2_14": ("refs/02_dark_knight_v2/dk2_shot14_start.jpg", [("right_of", 765, 20)]),
+    "DK2_23": ("refs/02_dark_knight_v2/dk2_shot23_start.jpg", [("left_of", 680, 20)]),
+    "DK2_28": ("refs/02_dark_knight_v2/dk2_shot28_start.jpg", [("left_of", 1050, 20)]),
+    "DK2_31": ("refs/02_dark_knight_v2/dk2_shot31_start.jpg", [("right_of", 1045, 25)]),
     "DK2_32": ("refs/02_dark_knight_v2/dk2_shot32_start.jpg", [("left_of", 485, 25), ("right_of", 1015, 20)]),
     "DK2_35": ("refs/02_dark_knight_v2/dk2_shot35_start.jpg", [("right_of", 1605, 15)]),
 }

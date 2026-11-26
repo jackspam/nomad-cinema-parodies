@@ -97,11 +97,27 @@ def build_prompt_for_wan(job: dict) -> tuple[str, str]:
     return pos, neg
 
 
+def detect_low_vram() -> bool:
+    if os.environ.get("INFINITETALK_LOW_VRAM") == "1":
+        return True
+    try:
+        out = subprocess.check_output(
+            ["nvidia-smi", "--query-gpu=memory.total", "--format=csv,noheader,nounits"],
+            text=True,
+        ).strip().splitlines()[0]
+        return float(out) < 32000.0
+    except Exception:
+        return False
+
+
 def build_workflow(job: dict, num_frames: int, wav_rel: str) -> dict:
     w_gen, h_gen = 960, 416  # Exact 1920x832 / 2 Scope resolution
     seed = int(job["seed"])
     pos, neg = build_prompt_for_wan(job)
     out_prefix_raw = f"{job['out_prefix']}_raw"
+    low_vram = detect_low_vram()
+    if low_vram:
+        print("  [VRAM Guard] Low VRAM (<32GB) detected: enabling offload_device + CPU T5 + tiled VAE", flush=True)
 
     g = {
         "1": {"class_type": "LoadImage", "inputs": {"image": job["start_image"]}},
@@ -125,13 +141,13 @@ def build_workflow(job: dict, num_frames: int, wav_rel: str) -> dict:
         "5": {"class_type": "WanVideoVAELoader", "inputs": {
             "model_name": "Wan2_1_VAE_bf16.safetensors",
             "precision": "bf16",
-            "use_cpu_cache": False,
+            "use_cpu_cache": low_vram,
             "verbose": False,
         }},
         "6": {"class_type": "WanVideoLoraSelect", "inputs": {
             "lora": "lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors",
             "strength": float(job.get("wan_lora_strength", 1.0)),
-            "low_mem_load": False,
+            "low_mem_load": low_vram,
             "merge_loras": False,
         }},
         "7": {"class_type": "MultiTalkModelLoader", "inputs": {
@@ -141,7 +157,7 @@ def build_workflow(job: dict, num_frames: int, wav_rel: str) -> dict:
             "model": "Wan2_1-I2V-14B-480p_fp8_e4m3fn_scaled_KJ.safetensors",
             "base_precision": "bf16",
             "quantization": "fp8_e4m3fn_scaled",
-            "load_device": "main_device",
+            "load_device": "offload_device" if low_vram else "main_device",
             "attention_mode": "sdpa",
             "lora": ["6", 0],
             "multitalk_model": ["7", 0],
@@ -149,7 +165,7 @@ def build_workflow(job: dict, num_frames: int, wav_rel: str) -> dict:
         "9": {"class_type": "Wav2VecModelLoader", "inputs": {
             "model": "wav2vec2-chinese-base_fp16.safetensors",
             "base_precision": "fp16",
-            "load_device": "main_device",
+            "load_device": "offload_device" if low_vram else "main_device",
         }},
         "10": {"class_type": "LoadAudio", "inputs": {"audio": wav_rel}},
         "11": {"class_type": "MultiTalkWav2VecEmbeds", "inputs": {
@@ -171,7 +187,7 @@ def build_workflow(job: dict, num_frames: int, wav_rel: str) -> dict:
             "negative_prompt": neg,
             "quantization": "disabled",
             "use_disk_cache": True,
-            "device": "gpu",
+            "device": "cpu" if low_vram else "gpu",
         }},
         "13": {"class_type": "WanVideoImageToVideoMultiTalk", "inputs": {
             "vae": ["5", 0],
@@ -179,10 +195,10 @@ def build_workflow(job: dict, num_frames: int, wav_rel: str) -> dict:
             "height": h_gen,
             "frame_window_size": 81,
             "motion_frame": 9,
-            "force_offload": False,
+            "force_offload": low_vram,
             "colormatch": "disabled",
             "start_image": ["2", 0],
-            "tiled_vae": False,
+            "tiled_vae": low_vram,
             "clip_embeds": ["4", 0],
             "mode": "infinitetalk",
             "output_path": "",
@@ -194,7 +210,7 @@ def build_workflow(job: dict, num_frames: int, wav_rel: str) -> dict:
             "cfg": float(job.get("wan_cfg", 1.0)),
             "shift": float(job.get("wan_shift", 11.0)),
             "seed": seed,
-            "force_offload": False,
+            "force_offload": low_vram,
             "scheduler": "dpm++_sde",
             "riflex_freq_index": 0,
             "text_embeds": ["12", 0],
@@ -209,7 +225,7 @@ def build_workflow(job: dict, num_frames: int, wav_rel: str) -> dict:
         "15": {"class_type": "WanVideoDecode", "inputs": {
             "vae": ["5", 0],
             "samples": ["14", 0],
-            "enable_vae_tiling": False,
+            "enable_vae_tiling": low_vram,
             "tile_x": 272,
             "tile_y": 272,
             "tile_stride_x": 144,
@@ -228,6 +244,16 @@ def build_workflow(job: dict, num_frames: int, wav_rel: str) -> dict:
             "codec": "auto",
         }},
     }
+    if low_vram:
+        g["18"] = {
+            "class_type": "WanVideoBlockSwap",
+            "inputs": {
+                "blocks_to_swap": 20,
+                "offload_img_emb": False,
+                "offload_txt_emb": False,
+            },
+        }
+        g["8"]["inputs"]["block_swap_args"] = ["18", 0]
     return g
 
 
