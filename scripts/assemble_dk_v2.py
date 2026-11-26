@@ -1,4 +1,4 @@
-"""Assemble the 40-shot Hollywood 1080p Scope master for Dark Knight v2 with leveled Two-Act Zimmer score & cinema SFX."""
+"""Assemble the 40-shot Hollywood 1080p Scope master for Dark Knight v2 with Lyria 3.5 Two-Act score & peak-safe cinema SFX."""
 import json
 import math
 import os
@@ -12,11 +12,12 @@ CLIPS_DIR = f"{BASE}/clips/02_dark_knight_v2"
 AUDIO_DIR = f"{BASE}/audio/02_dark_knight_v2"
 OUT_MP4 = f"{BASE}/films/02_dark_knight_1080p.mp4"
 TMP_DIR = f"{CLIPS_DIR}/_assembled_parts"
+QA_BUS_DIR = "/tmp/qa_buses"
 
-# DK2_01 now rendered on InfiniteTalk with dk2_shot01_fixed.jpg so Gigi matches DK2_02..09 seamlessly
-LTX_SHOTS = {2, 3, 4, 6, 8, 9, 11, 17, 19, 27}
+# DK2_01 & DK2_08 now rendered on InfiniteTalk with matched hair-down keyframes
+LTX_SHOTS = {2, 3, 4, 6, 9, 11, 17, 19, 27}
 BEAT_HOLD_SHOTS = {9, 10, 27, 40}
-AUDIO_START_OFFSET = {"DK2_04": 0.083}
+AUDIO_START_OFFSET = {"DK2_04": 0.083, "DK2_08": 0.083}
 PER_SHOT_GRADE = {}
 
 
@@ -61,64 +62,75 @@ def measure_lufs(audio_path: str, audio_offset: float = 0.0) -> float:
     return float(json.loads(m.group(0))["input_i"]) if m else -20.0
 
 
+def measure_peak_db(audio_path: str) -> float:
+    res = subprocess.run(
+        ["ffmpeg", "-i", audio_path, "-af", "volumedetect", "-f", "null", "-"],
+        capture_output=True, text=True, check=True,
+    )
+    m = re.search(r"max_volume:\s*([-\d.]+)\s*dB", res.stderr)
+    return float(m.group(1)) if m else 0.0
+
+
 def build_seamless_score_bed(act1_dur: float, total_dur: float, out_wav: str):
-    """Build continuous seam-free Two-Act Hans Zimmer underscore leveled to -22.5 LUFS (Act 1) / -21.5 LUFS (Act 2/3)."""
+    """Build continuous Lyria 3.5 Two-Act score leveled to -19.5 LUFS (Act 1) / -18.0 LUFS (Act 2/3)."""
     s1_mp3 = f"{AUDIO_DIR}/score_dk_act1_dark.mp3"
     s2_mp3 = f"{AUDIO_DIR}/score_dk_act2_intense.mp3"
 
-    def make_loop_wav(src_mp3: str, target_lufs: float, needed_dur: float, dst_wav: str):
-        in_lufs = measure_lufs(src_mp3)
-        gain_db = max(-18.0, min(18.0, target_lufs - in_lufs))
-        # Trim the natural 22s generation before its end fade-out (keep active 18.0s core) and crossfade loops cleanly
-        seg_len = 17.5
-        tile_wav = dst_wav + ".tile.wav"
-        subprocess.run(
-            [
-                "ffmpeg", "-y", "-i", src_mp3,
-                "-af", f"atrim=0:{seg_len},asetpts=PTS-STARTPTS,volume={gain_db:.2f}dB,aresample=48000",
-                "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", tile_wav,
-            ],
-            check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-        )
-        # Concatenate with 1.2s acrossfade to eliminate loop seams until > needed_dur
-        cur = tile_wav
-        reps = int(math.ceil((needed_dur + 3.0) / (seg_len - 1.2)))
-        inputs = []
-        fparts = []
-        for idx in range(max(2, reps)):
-            inputs += ["-i", tile_wav]
-        chain = "[0:a][1:a]acrossfade=d=1.2:c1=tri:c2=tri[a1]"
-        for idx in range(2, max(2, reps)):
-            prev = f"a{idx-1}"
-            nxt = f"a{idx}" if idx < max(2, reps) - 1 else "aout"
-            chain += f";[{prev}][{idx}:a]acrossfade=d=1.2:c1=tri:c2=tri[{nxt}]"
-        if max(2, reps) == 2:
-            chain = "[0:a][1:a]acrossfade=d=1.2:c1=tri:c2=tri[aout]"
-        subprocess.run(
-            [
-                "ffmpeg", "-y", *inputs, "-filter_complex", chain, "-map", "[aout]",
-                "-t", f"{needed_dur + 0.8:.4f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", dst_wav,
-            ],
-            check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-        )
-        os.remove(tile_wav)
-        print(f"  SCORE BED {os.path.basename(src_mp3)}: raw={in_lufs:.1f} LUFS -> leveled={target_lufs:.1f} LUFS ({gain_db:+.1f} dB)")
-
+    # Extract rich solo-cello/ticking interrogation core starting at t=12.0s (covers ~52s Act 1 without looping)
+    s1_in_lufs = measure_lufs(s1_mp3, 12.0)
+    s1_gain = max(-18.0, min(12.0, -19.5 - s1_in_lufs))
     act1_wav = f"{TMP_DIR}/score_act1.wav"
-    act2_wav = f"{TMP_DIR}/score_act2.wav"
-    act2_needed = max(5.0, total_dur - act1_dur + 1.5)
-    make_loop_wav(s1_mp3, -22.5, act1_dur + 0.8, act1_wav)
-    make_loop_wav(s2_mp3, -21.5, act2_needed, act2_wav)
+    subprocess.run(
+        [
+            "ffmpeg", "-y", "-ss", "12.0", "-i", s1_mp3,
+            "-af", f"atrim=0:{act1_dur + 1.5:.4f},asetpts=PTS-STARTPTS,volume={s1_gain:.2f}dB,aresample=48000",
+            "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", act1_wav,
+        ],
+        check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+    )
+    print(f"  SCORE ACT 1 {os.path.basename(s1_mp3)} (ss=12s): raw={s1_in_lufs:.1f} -> -19.5 LUFS ({s1_gain:+.1f} dB)")
 
-    fade_out_bgm = max(1.0, total_dur - 1.4)
-    # Crossfade cleanly right when fluorescent lights slam ON (t = act1_dur)
+    # Extract driving orchestral intense core starting at t=8.0s; crossfade once cleanly to cover Act 2/3
+    s2_dur = ffprobe_dur(s2_mp3)
+    s2_seg_len = min(145.0, max(30.0, s2_dur - 16.0))
+    s2_in_lufs = measure_lufs(s2_mp3, 8.0)
+    s2_gain = max(-18.0, min(12.0, -18.0 - s2_in_lufs))
+    s2_seg = f"{TMP_DIR}/score_act2_seg.wav"
+    subprocess.run(
+        [
+            "ffmpeg", "-y", "-ss", "8.0", "-i", s2_mp3,
+            "-af", f"atrim=0:{s2_seg_len:.4f},asetpts=PTS-STARTPTS,volume={s2_gain:.2f}dB,aresample=48000",
+            "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", s2_seg,
+        ],
+        check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+    )
+    act2_needed = max(5.0, total_dur - act1_dur + 2.0)
+    act2_wav = f"{TMP_DIR}/score_act2.wav"
+    if act2_needed <= s2_seg_len:
+        subprocess.run(
+            ["ffmpeg", "-y", "-i", s2_seg, "-t", f"{act2_needed:.4f}", "-c:a", "copy", act2_wav],
+            check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+        )
+    else:
+        subprocess.run(
+            [
+                "ffmpeg", "-y", "-i", s2_seg, "-i", s2_seg,
+                "-filter_complex", "[0:a][1:a]acrossfade=d=3.0:c1=tri:c2=tri[aout]",
+                "-map", "[aout]", "-t", f"{act2_needed:.4f}",
+                "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", act2_wav,
+            ],
+            check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+        )
+    print(f"  SCORE ACT 2/3 {os.path.basename(s2_mp3)} (ss=8s): raw={s2_in_lufs:.1f} -> -18.0 LUFS ({s2_gain:+.1f} dB)")
+
+    fade_out_bgm = max(1.0, total_dur - 1.6)
     subprocess.run(
         [
             "ffmpeg", "-y", "-i", act1_wav, "-i", act2_wav,
             "-filter_complex", (
-                f"[0:a]atrim=0:{act1_dur + 0.5:.4f},asetpts=PTS-STARTPTS[s1];"
-                f"[s1][1:a]acrossfade=d=0.6:c1=tri:c2=tri,atrim=0:{total_dur:.6f},"
-                f"afade=t=in:st=0:d=0.8,afade=t=out:st={fade_out_bgm:.3f}:d=1.4[bout]"
+                f"[0:a]atrim=0:{act1_dur + 0.6:.4f},asetpts=PTS-STARTPTS[s1];"
+                f"[s1][1:a]acrossfade=d=1.0:c1=tri:c2=tri,atrim=0:{total_dur:.6f},"
+                f"afade=t=in:st=0:d=0.6,afade=t=out:st={fade_out_bgm:.3f}:d=1.6[bout]"
             ),
             "-map", "[bout]", "-t", f"{total_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", out_wav,
         ],
@@ -126,23 +138,70 @@ def build_seamless_score_bed(act1_dur: float, total_dur: float, out_wav: str):
     )
 
 
+def build_continuous_room_tone(total_dur: float, out_wav: str):
+    """Build ONE continuous <240Hz clean room ambience bed across full runtime (no per-shot cuts)."""
+    src = f"{AUDIO_DIR}/sfx_room_tone_clean.wav"
+    in_lufs = measure_lufs(src)
+    gain = max(-24.0, min(12.0, -42.0 - in_lufs))
+    fade_st = max(0.5, total_dur - 1.0)
+    subprocess.run(
+        [
+            "ffmpeg", "-y", "-stream_loop", "-1", "-t", f"{total_dur:.6f}", "-i", src,
+            "-af", f"aresample=48000,highpass=f=45,lowpass=f=240,volume={gain:.2f}dB,afade=t=in:st=0:d=0.5,afade=t=out:st={fade_st:.3f}:d=1.0",
+            "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", out_wav,
+        ],
+        check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+    )
+    print(f"  ROOM TONE continuous {os.path.basename(src)}: raw={in_lufs:.1f} -> -42.0 LUFS ({gain:+.1f} dB)")
+
+
+def build_timeline_sfx_bus(shot_timing: dict, total_dur: float, out_wav: str):
+    """Place strictly visually-verified, peak-normalized SFX cues at exact timeline timestamps."""
+    cues = [
+        # (shot_num, offset_fn, path, target_peak_db, trim_dur_or_None)
+        (9, lambda s, d: s + max(0.0, d - 0.85), f"{AUDIO_DIR}/sfx_dk_door_latch.mp3", -14.0, None),
+        (10, lambda s, d: s + 0.0, f"{AUDIO_DIR}/sfx_dk_light_thunk.mp3", -11.0, 0.55),
+        (27, lambda s, d: s + 0.15, f"{AUDIO_DIR}/sfx_dk_wall_thud.mp3", -8.0, None),
+        (35, lambda s, d: s + 0.08, f"{AUDIO_DIR}/sfx_dk_knob_rattle.mp3", -14.0, None),
+    ]
+    inputs = ["-f", "lavfi", "-t", f"{total_dur:.6f}", "-i", "anullsrc=r=48000:cl=stereo"]
+    filter_parts = ["[0:a]aresample=48000[base]"]
+    mix_labels = ["[base]"]
+
+    for idx, (snum, off_fn, spath, target_pk, trim_d) in enumerate(cues, start=1):
+        st, sd = shot_timing[snum]
+        at_sec = max(0.0, off_fn(st, sd))
+        delay_ms = int(round(at_sec * 1000.0))
+        pk = measure_peak_db(spath)
+        gain_db = max(-24.0, min(12.0, target_pk - pk))
+        inputs += ["-i", spath]
+        chain = f"[{idx}:a]aresample=48000"
+        if trim_d is not None:
+            fade_t = max(0.08, trim_d - 0.30)
+            chain += f",atrim=0:{trim_d:.3f},asetpts=PTS-STARTPTS,afade=t=out:st={fade_t:.3f}:d=0.30"
+        chain += f",volume={gain_db:.2f}dB,adelay={delay_ms}|{delay_ms},apad=whole_dur={total_dur:.6f},atrim=0:{total_dur:.6f}[c{idx}]"
+        filter_parts.append(chain)
+        mix_labels.append(f"[c{idx}]")
+        print(f"  SFX CUE [DK2_{snum:02d}] @{at_sec:6.2f}s {os.path.basename(spath)} (pk={pk:+.1f}->{target_pk:+.1f}dBFS, gain={gain_db:+.1f}dB)")
+
+    filter_parts.append(f"{''.join(mix_labels)}amix=inputs={len(mix_labels)}:normalize=0:duration=first,atrim=0:{total_dur:.6f}[sout]")
+    subprocess.run(
+        ["ffmpeg", "-y", *inputs, "-filter_complex", ";".join(filter_parts), "-map", "[sout]", "-t", f"{total_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", out_wav],
+        check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+    )
+    return [(snum, off_fn(*shot_timing[snum])) for snum, off_fn, _, _, _ in cues]
+
+
 def main():
     os.makedirs(TMP_DIR, exist_ok=True)
+    os.makedirs(QA_BUS_DIR, exist_ok=True)
     os.makedirs(os.path.dirname(OUT_MP4), exist_ok=True)
     shots = json.load(open(SCRIPT_PATH))["shots"]
 
-    # Cache measured LUFS of all SFX stems
-    sfx_lufs_cache = {}
-    def get_sfx_gain(path: str, target_lufs: float) -> float:
-        if path not in sfx_lufs_cache:
-            sfx_lufs_cache[path] = measure_lufs(path)
-        return max(-24.0, min(18.0, target_lufs - sfx_lufs_cache[path]))
-
-    room_buzz = f"{AUDIO_DIR}/sfx_fluorescent_buzz.mp3"
-
-    v_parts, d_parts, s_parts = [], [], []
+    v_parts, d_parts = [], []
     total_frames = 0
     act1_frames = 0
+    shot_timing = {}
 
     for idx, sh in enumerate(shots):
         sid = sh["shot_id"]
@@ -167,6 +226,7 @@ def main():
         if n_frames / 24.0 > clip_dur:
             n_frames = max(24, int(math.floor(clip_dur * 24.0)))
         exact_dur = n_frames / 24.0
+        shot_timing[n] = (total_frames / 24.0, exact_dur)
         total_frames += n_frames
         if sh["act"] == 1:
             act1_frames += n_frames
@@ -191,10 +251,8 @@ def main():
 
         v_part = f"{TMP_DIR}/v_{idx:02d}.mp4"
         d_part = f"{TMP_DIR}/d_{idx:02d}.wav"
-        s_part = f"{TMP_DIR}/s_{idx:02d}.wav"
         v_parts.append(v_part)
         d_parts.append(d_part)
-        s_parts.append(s_part)
 
         subprocess.run(
             [
@@ -219,50 +277,7 @@ def main():
             "-t", f"{exact_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", d_part,
         ]
         subprocess.run(d_cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-
-        # 3) Leveled room tone + beat-synced cinema SFX WAV
-        buzz_target = -36.0 if sh["act"] == 1 else -32.0
-        buzz_gain = get_sfx_gain(room_buzz, buzz_target)
-
-        sfx_map = {
-            1: (f"{AUDIO_DIR}/sfx_door_heavy_enter.mp3", -17.0, 0),
-            8: (f"{AUDIO_DIR}/sfx_handcuffs_unlock.mp3", -17.0, 300),
-            9: (f"{AUDIO_DIR}/sfx_door_exit_switch.mp3", -16.0, int(max(0.0, exact_dur - 2.6) * 1000)),
-            10: (f"{AUDIO_DIR}/sfx_light_slam_v2.mp3", -13.0, 0),
-            12: (f"{AUDIO_DIR}/sfx_table_slam.mp3", -14.0, 0),
-            27: (f"{AUDIO_DIR}/sfx_wall_slam.mp3", -13.0, 80),
-            29: (f"{AUDIO_DIR}/sfx_collar_scuffle.mp3", -18.0, 0),
-            31: (f"{AUDIO_DIR}/sfx_collar_scuffle.mp3", -18.0, 150),
-            34: (f"{AUDIO_DIR}/sfx_table_crash.mp3", -14.0, 0),
-            35: (f"{AUDIO_DIR}/sfx_door_clank.mp3", -14.0, 120),
-            39: (f"{AUDIO_DIR}/sfx_batman_exit.mp3", -17.0, int(max(0.0, exact_dur - 2.4) * 1000)),
-        }
-
-        if n in sfx_map and os.path.exists(sfx_map[n][0]):
-            sp, tgt_lufs, delay_ms = sfx_map[n]
-            hit_gain = get_sfx_gain(sp, tgt_lufs)
-            s_af = (
-                f"[0:a]aresample=48000,volume={buzz_gain:.2f}dB[rz];"
-                f"[1:a]aresample=48000,volume={hit_gain:.2f}dB,adelay={delay_ms}|{delay_ms},apad=whole_dur={exact_dur:.6f}[hit];"
-                f"[rz][hit]amix=inputs=2:duration=first:normalize=0,atrim=0:{exact_dur:.6f},"
-                f"afade=t=in:st=0:d=0.015,afade=t=out:st={fade_out_st:.6f}:d=0.015[sout]"
-            )
-            s_cmd = [
-                "ffmpeg", "-y", "-stream_loop", "-1", "-t", f"{exact_dur:.6f}", "-i", room_buzz,
-                "-i", sp, "-filter_complex", s_af, "-map", "[sout]",
-                "-t", f"{exact_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", s_part,
-            ]
-        else:
-            s_cmd = [
-                "ffmpeg", "-y", "-stream_loop", "-1", "-t", f"{exact_dur:.6f}", "-i", room_buzz,
-                "-af", (
-                    f"aresample=48000,volume={buzz_gain:.2f}dB,atrim=0:{exact_dur:.6f},"
-                    f"afade=t=in:st=0:d=0.015,afade=t=out:st={fade_out_st:.6f}:d=0.015"
-                ),
-                "-t", f"{exact_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", s_part,
-            ]
-        subprocess.run(s_cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        print(f"  [{sid}] cut={exact_dur:.2f}s ({n_frames}f) dlg={lufs:.1f}->{gain_db:+.1f}dB" + (f" +SFX({os.path.basename(sfx_map[n][0])})" if n in sfx_map else ""), flush=True)
+        print(f"  [{sid}] @{shot_timing[n][0]:6.2f}s cut={exact_dur:.2f}s ({n_frames}f) dlg={lufs:.1f}->{gain_db:+.1f}dB", flush=True)
 
     def concat_list(paths: list[str], txt_p: str, out_p: str):
         with open(txt_p, "w") as f:
@@ -270,49 +285,46 @@ def main():
                 f.write(f"file '{p}'\n")
         subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", txt_p, "-c", "copy", out_p], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
-    v_cat, d_cat, s_cat = f"{TMP_DIR}/v_cat.mp4", f"{TMP_DIR}/d_cat.wav", f"{TMP_DIR}/s_cat.wav"
+    v_cat, d_cat = f"{TMP_DIR}/v_cat.mp4", f"{TMP_DIR}/d_cat.wav"
     concat_list(v_parts, f"{TMP_DIR}/v_list.txt", v_cat)
     concat_list(d_parts, f"{TMP_DIR}/d_list.txt", d_cat)
-    concat_list(s_parts, f"{TMP_DIR}/s_list.txt", s_cat)
 
     total_dur = total_frames / 24.0
     act1_dur = act1_frames / 24.0
     score_bed = f"{TMP_DIR}/score_bed.wav"
+    room_cat = f"{TMP_DIR}/room_cat.wav"
+    sfx_cat = f"{TMP_DIR}/sfx_cat.wav"
+
     build_seamless_score_bed(act1_dur, total_dur, score_bed)
+    build_continuous_room_tone(total_dur, room_cat)
+    cue_times = build_timeline_sfx_bus(shot_timing, total_dur, sfx_cat)
 
     fade_out_vid = max(0.5, total_dur - 1.0)
     pre_mix = f"{TMP_DIR}/pre_mix.wav"
-    # Gentle -3.5dB sidechain ducking under active dialogue so score breathes clearly between lines & stays audible under speech
+    # Light ratio=1.8 ducking under speech keeps Lyria score clearly audible while never pumping dynamics
     mix_filter = (
         f"[0:a]asplit=2[dlg_main][dlg_sc];"
-        f"[2:a][dlg_sc]sidechaincompress=threshold=0.05:ratio=2.2:attack=35:release=400[bgm_ducked];"
-        f"[dlg_main][1:a][bgm_ducked]amix=inputs=3:duration=first:normalize=0[aout]"
+        f"[3:a][dlg_sc]sidechaincompress=threshold=0.06:ratio=1.8:attack=40:release=450[bgm_ducked];"
+        f"[dlg_main][1:a][2:a][bgm_ducked]amix=inputs=4:duration=first:normalize=0[aout]"
     )
     subprocess.run(
         [
-            "ffmpeg", "-y", "-i", d_cat, "-i", s_cat, "-i", score_bed,
+            "ffmpeg", "-y", "-i", d_cat, "-i", room_cat, "-i", sfx_cat, "-i", score_bed,
             "-filter_complex", mix_filter, "-map", "[aout]",
             "-t", f"{total_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", pre_mix,
         ],
         check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
     )
 
-    m_res = subprocess.run(
-        ["ffmpeg", "-i", pre_mix, "-af", "loudnorm=I=-14:TP=-1.5:LRA=9:print_format=json", "-f", "null", "-"],
-        capture_output=True, text=True, check=True,
-    )
-    stats = json.loads(re.search(r"\{[\s\S]*?\}", m_res.stderr).group(0))
-    ln_filter = (
-        f"loudnorm=I=-14:TP=-1.5:LRA=9:linear=true:"
-        f"measured_I={stats['input_i']}:measured_TP={stats['input_tp']}:"
-        f"measured_LRA={stats['input_lra']}:measured_thresh={stats['input_thresh']}:"
-        f"offset={stats['target_offset']}"
-    )
+    # Pure linear master gain (-15.0 LUFS) + transparent safety limiter (-2.0 dBFS): leaves AAC headroom & preserves dynamics!
+    raw_i = measure_lufs(pre_mix)
+    master_gain = max(-8.0, min(8.0, -15.0 - raw_i))
+    print(f"  MASTER LINEAR GAIN: pre_mix={raw_i:.2f} LUFS -> -15.0 LUFS (gain={master_gain:+.2f} dB)")
 
     subprocess.run(
         [
             "ffmpeg", "-y", "-i", v_cat, "-i", pre_mix,
-            "-filter_complex", f"[0:v]fade=t=in:st=0:d=0.4,fade=t=out:st={fade_out_vid:.3f}:d=1.0[vout];[1:a]{ln_filter}[aout]",
+            "-filter_complex", f"[0:v]fade=t=in:st=0:d=0.4,fade=t=out:st={fade_out_vid:.3f}:d=1.0[vout];[1:a]volume={master_gain:.2f}dB,alimiter=limit=-2.0dB:attack=5:release=50:level=disabled[aout]",
             "-map", "[vout]", "-map", "[aout]",
             "-c:v", "libx264", "-preset", "slow", "-crf", "19", "-maxrate", "2550k", "-bufsize", "8000k",
             "-movflags", "+faststart", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
@@ -320,8 +332,24 @@ def main():
         ],
         check=True,
     )
+
+    # Export isolated v2.5 QA buses + phone simulation before cleanup
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", "0", "-t", "90", "-i", score_bed, "-c:a", "libmp3lame", "-b:a", "192k", f"{QA_BUS_DIR}/score_only.mp3"], check=True)
+    # Concatenate 4s isolated SFX+room windows around every cue
+    sfx_slices = []
+    for i, (_, ct) in enumerate(cue_times):
+        ss = max(0.0, ct - 1.0)
+        sl = f"{TMP_DIR}/sfx_win_{i}.wav"
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", f"{ss:.2f}", "-t", "4.0", "-i", sfx_cat, "-i", room_cat, "-filter_complex", "[0:a][1:a]amix=inputs=2:normalize=0[w]", "-map", "[w]", "-c:a", "pcm_s16le", sl], check=True)
+        sfx_slices.append(sl)
+    concat_list(sfx_slices, f"{TMP_DIR}/sfx_win_list.txt", f"{TMP_DIR}/sfx_win_all.wav")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", f"{TMP_DIR}/sfx_win_all.wav", "-c:a", "libmp3lame", "-b:a", "192k", f"{QA_BUS_DIR}/sfx_only.mp3"], check=True)
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", "0", "-t", "75", "-i", OUT_MP4, "-vn", "-af", "highpass=f=220,lowpass=f=7000", "-c:a", "libmp3lame", "-b:a", "192k", f"{QA_BUS_DIR}/final_phone_220hz.mp3"], check=True)
+    for tag, ss, dur_s in [("final_00_25", 0, 25), ("final_48_75", 48, 27), ("final_155_185", 155, 30)]:
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", str(ss), "-t", str(dur_s), "-i", OUT_MP4, "-vn", "-c:a", "libmp3lame", "-b:a", "192k", f"{QA_BUS_DIR}/{tag}.mp3"], check=True)
+
     size_mb = os.path.getsize(OUT_MP4) / (1024 * 1024)
-    print(f"MASTER_READY {OUT_MP4} -> {total_dur:.2f}s ({total_frames}f), {size_mb:.2f} MB")
+    print(f"MASTER_READY {OUT_MP4} -> {total_dur:.2f}s ({total_frames}f), {size_mb:.2f} MB (QA buses saved in {QA_BUS_DIR})")
 
 
 if __name__ == "__main__":

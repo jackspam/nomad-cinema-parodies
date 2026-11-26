@@ -192,6 +192,12 @@ def validate_and_prepare(slug: str) -> list[str]:
         tot_s = sum(ffprobe_dur(f"{BASE}/audio/{slug}/{x['audio']}") for x in jobs if os.path.exists(f"{BASE}/audio/{slug}/{x['audio']}"))
         print(f"[PREFLIGHT v2] {slug}: {len(jobs)} jobs, {yt_count_msg}, {len(jobs)} audio stems totaling {tot_s:.1f}s")
 
+    # v2.5 Automated Audio Spectrum & Peak Gate on any score_* / sfx_* stems
+    audio_dir = f"{BASE}/audio/{slug}"
+    if glob.glob(f"{audio_dir}/score_*") or glob.glob(f"{audio_dir}/sfx_*"):
+        from qa_audio_v25 import check_stems
+        issues.extend(check_stems(audio_dir))
+
     if issues:
         for iss in issues:
             print("  WARN/FAIL:", iss)

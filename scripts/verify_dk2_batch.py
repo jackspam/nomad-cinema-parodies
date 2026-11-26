@@ -15,8 +15,8 @@ STRIPS = f"{CLIPS}/strips"
 RESULTS_JSON = f"{CLIPS}/syncnet_40_verified.json"
 
 ENGINE_BY_SHOT = {
-    "DK2_01": "LTX-2.5", "DK2_02": "LTX-2.5", "DK2_03": "LTX-2.5", "DK2_04": "LTX-2.5",
-    "DK2_05": "InfiniteTalk", "DK2_06": "LTX-2.5", "DK2_07": "InfiniteTalk", "DK2_08": "LTX-2.5",
+    "DK2_01": "InfiniteTalk", "DK2_02": "LTX-2.5", "DK2_03": "LTX-2.5", "DK2_04": "LTX-2.5",
+    "DK2_05": "InfiniteTalk", "DK2_06": "LTX-2.5", "DK2_07": "InfiniteTalk", "DK2_08": "InfiniteTalk",
     "DK2_09": "LTX-2.5", "DK2_10": "InfiniteTalk", "DK2_11": "LTX-2.5", "DK2_12": "InfiniteTalk",
     "DK2_13": "InfiniteTalk", "DK2_14": "InfiniteTalk", "DK2_15": "InfiniteTalk", "DK2_16": "InfiniteTalk",
     "DK2_17": "LTX-2.5", "DK2_18": "InfiniteTalk", "DK2_19": "LTX-2.5", "DK2_20": "InfiniteTalk",
@@ -56,9 +56,9 @@ def main():
             min_conf = 4.5
             max_offset = 2
 
-            if sid == "DK2_04":
-                # Test with -ss 0.083 audio shift matching editorial assembly
-                shifted_mp3 = os.path.join(td, "DK2_04_ashift.wav")
+            if sid in ("DK2_04", "DK2_08"):
+                # Test with -ss 0.083 audio shift matching editorial assembly (strips leading MP3 pad/breath)
+                shifted_mp3 = os.path.join(td, f"{sid}_ashift.wav")
                 subprocess.run(
                     ["ffmpeg", "-y", "-ss", "0.083", "-i", vo, "-ar", "16000", "-ac", "1", shifted_mp3],
                     check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,

@@ -114,7 +114,7 @@
   {
     "shot_id": "DK2_08",
     "out_prefix": "dk2_DK2_08",
-    "start_image": "dk2_shot08_start.jpg",
+    "start_image": "dk2_shot08_fixed.jpg",
     "end_image": null,
     "audio": "DK2_08.mp3",
     "seed": 5108,
@@ -498,7 +498,7 @@
   {
     "shot_id": "DK2_32",
     "out_prefix": "dk2_DK2_32",
-    "start_image": "dk2_shot32_start.jpg",
+    "start_image": "dk2_shot32_fixed.jpg",
     "end_image": null,
     "audio": "DK2_32.mp3",
     "seed": 5132,
