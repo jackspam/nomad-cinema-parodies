@@ -9,6 +9,7 @@ BASE_DIR = "/Users/jack/.gemini/antigravity/scratch/nomad-cinema-parodies"
 LOOK_GRADES = {
     "star_wars": "scale=1920:1080:flags=lanczos,eq=contrast=1.08:brightness=-0.02:saturation=0.95,colorbalance=rs=0.02:gs=0.0:bs=-0.02:rh=0.03:gh=0.01:bh=-0.02,noise=alls=4:allf=t+u,unsharp=5:5:0.45:5:5:0.0",
     "dark_knight": "scale=1920:1080:flags=lanczos,eq=contrast=1.10:brightness=-0.03:saturation=0.82,colorbalance=rs=-0.04:gs=0.01:bs=0.04:rm=-0.02:gm=0.01:bm=0.02,noise=alls=4:allf=t+u,unsharp=5:5:0.5:5:5:0.0",
+    "dark_knight_v2": "pad=1920:1080:(ow-iw)/2:(oh-ih)/2:black,noise=alls=2:allf=t+u",
     "breaking_bad": "scale=1920:1080:flags=lanczos,eq=contrast=1.08:brightness=0.0:saturation=1.06,colorbalance=rs=0.04:gs=0.01:bs=-0.05:rh=0.04:gh=0.02:bh=-0.03,noise=alls=4:allf=t+u,unsharp=5:5:0.5:5:5:0.0",
     "goodfellas": "scale=1920:1080:flags=lanczos,eq=contrast=1.09:brightness=-0.02:saturation=1.04,colorbalance=rs=0.05:gs=-0.01:bs=-0.04:rm=0.03:gm=-0.01:bm=-0.02,noise=alls=5:allf=t+u,unsharp=5:5:0.45:5:5:0.0",
     "pulp_fiction": "scale=1920:1080:flags=lanczos,eq=contrast=1.08:brightness=-0.01:saturation=1.05,colorbalance=rs=0.04:gs=0.01:bs=-0.03,noise=alls=4:allf=t+u,unsharp=5:5:0.45:5:5:0.0",
@@ -32,7 +33,7 @@ def valid_h3_frames(min_seconds: float) -> int:
     return 5 + 17 * k
 
 
-def assemble_film(film_slug: str, look_key: str, shot_specs: list, score_path: str, out_mp4: str, score_vol: float = 0.22):
+def assemble_film(film_slug: str, look_key: str, shot_specs: list, score_path: str, out_mp4: str, score_vol: float = 0.22, maxrate: str = "4200k"):
     """
     shot_specs: list of dicts:
       {
@@ -131,7 +132,7 @@ def assemble_film(film_slug: str, look_key: str, shot_specs: list, score_path: s
             "ffmpeg", "-y", "-i", raw_concat, *score_in,
             "-filter_complex", f"[0:v]fade=t=in:st=0:d=0.4,fade=t=out:st={fade_out_start:.2f}:d=1.0[vout];{af}",
             "-map", "[vout]", "-map", "[aout]",
-            "-c:v", "libx264", "-preset", "slow", "-crf", "19", "-maxrate", "4200k", "-bufsize", "8400k",
+            "-c:v", "libx264", "-preset", "slow", "-crf", "19", "-maxrate", maxrate, "-bufsize", "8400k",
             "-movflags", "+faststart",
             "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
             "-t", f"{total_dur:.3f}", out_mp4,

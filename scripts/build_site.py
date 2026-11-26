@@ -25,67 +25,21 @@ FILMS = [
     },
     {
         "slug": "02_dark_knight",
+        "data_slug": "02_dark_knight_v2",
         "num": "02",
-        "title": "The Dark Knight — The Interrogation Room",
-        "subtitle": "IMAX 65mm & 35mm Panavision · Damon, Deron, Hooman, Gigi & The Joker",
-        "status": "1080p Ready",
+        "title": "The Dark Knight — The Interrogation Room (v2)",
+        "subtitle": "35mm Panavision Scope · Hooman, Damon, Gigi, Deron & Zach",
+        "status": "In Progress — 14/40 Shots Verified",
         "status_cls": "done",
+        "hide_video": True,
+        "preview_url": "preview.html",
         "mp4": "films/02_dark_knight_1080p.mp4",
-        "prep_time": "25m 37s",
-        "render_time": "100% QA Passed (13 MiniMax H3 + 7 LTX-2.5 maniacal Joker & rescue shots, 2m 24s 1080p master)",
+        "prep_time": "v2 Rebuild Active",
+        "render_time": "14/40 SyncNet + Expression Verified (LTX-2.5 + InfiniteTalk Hybrid)",
         "audit": [
-            {"shot": "DK_01 (800.4s -> v2: 761.6s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "v1 rejected for 4-9s pan-right & dragon mascot; v2 locked camera cleanly on Gigi for all 10s with crisp SWAT movement behind glass.", "revisions": "v2 APPROVED. Clean DK_01.mp3 anchored at t=0."},
-            {"shot": "DK_02 (LTX-2.5 207.5s cold · maniacal v4)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Upgraded to ElevenLabs v4 Maniacal Theatrical Joker voice + LTX-2.5 IA2V; crisp Heath Ledger posture, tongue-flick acting, verbatim audio lock.", "revisions": "LTX-2.5 v4 APPROVED (10/10 across all metrics)."},
-            {"shot": "DK_03 (521.2s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "Damon Batsuit straight-on framing clean with zero face morph.", "revisions": "Approved (native voice muted, clean DK_03.mp3 anchored at t=0)."},
-            {"shot": "DK_04 (LTX-2.5 105.1s · locked-cowl v2)", "quality": 9, "physics": 9, "similarity": 10, "lipsync": 10, "notes": "Locked two-shot profile keeping Batman's black cowl sealed cleanly without morphing while Joker leans in with manic intensity.", "revisions": "LTX-2.5 v2 APPROVED (trimmed cleanly at 8.15s)."},
-            {"shot": "DK_05 (521.3s)", "quality": 9, "physics": 9, "similarity": 10, "lipsync": 8, "notes": "Overhead fluorescents slam on from dark to bright glare just like Nolan's cut.", "revisions": "Approved (overlay crisp DK_05.mp3 at t=0)."},
-            {"shot": "DK_06 (330.8s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Deron (conical hat & red dragon robe) holding siu mai in observation booth beside Gigi.", "revisions": "Approved with clean trim."},
-            {"shot": "DK_07 (768.2s -> v2: 761.3s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "v1 rejected for red-line/scissors hallucination; v2 clean push-in on Gigi pointing chopsticks with crisp green glass reflection.", "revisions": "v2 APPROVED."},
-            {"shot": "DK_08 (LTX-2.5 65.0s · maniacal v4)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Smooth Nolan table circle around Joker & Batman with accurate mirror reflections and expressive Joker voice.", "revisions": "LTX-2.5 v4 APPROVED."},
-            {"shot": "DK_09 (done)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Batman slams Joker's head against metal table cleanly on 'Word.' while gripping stomach in Zone-5 pain.", "revisions": "Approved."},
-            {"shot": "DK_10 (328.9s)", "quality": 8, "physics": 8, "similarity": 9, "lipsync": 9, "notes": "Deron enters doorway in red silk dragon robe & conical hat holding 99 Ranch takeout, iced boba, and Po Chai Pills.", "revisions": "Approved."},
-            {"shot": "DK_11 (LTX-2.5 45.0s · maniacal v4)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Dead-on low angle of Joker resting chin on steel table staring up at Deron's straw hat brim; zero tail slur.", "revisions": "LTX-2.5 v4 APPROVED."},
-            {"shot": "DK_12 (387.5s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "Deron leans by white cinderblock holding Po Chai Pills & Clippers line.", "revisions": "Approved (overlay crisp DK_12.mp3 at t=0)."},
-            {"shot": "DK_13 (680.3s -> v2)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "v1 rejected for foreground officer ghosting; v2 locked camera keeping all three officers 100% solid while Hooman animates crisply on CRT.", "revisions": "v2 APPROVED (CRT bandpass EQ applied)."},
-            {"shot": "DK_14 (456.2s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 9, "notes": "Gigi storms doorway swinging wooden pointer at ceiling CRT monitor delivering 'flushable wipes' line.", "revisions": "Approved."},
-            {"shot": "DK_15 (600.3s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Crisp push-in on Hooman inside CRT monitor holding gilded Magic Cone and brochure with Joker parody graphic.", "revisions": "Approved (CRT bandpass EQ applied)."},
-            {"shot": "DK_16 (457.0s -> v2: 456.3s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 8, "notes": "v1 ghosting resolved in locked-frame v2 keeping Gigi slamming hands across table cleanly.", "revisions": "v2 APPROVED."},
-            {"shot": "DK_17 (LTX-2.5 65.0s · maniacal v4)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "MiniMax v1 hallucinated blonde stranger; LTX-2.5 v2 keeps solo Joker laughing hysterically over Gigi's rant.", "revisions": "LTX-2.5 v2 APPROVED (10/10)."},
-            {"shot": "DK_18 (457.2s)", "quality": 9, "physics": 9, "similarity": 9, "lipsync": 8, "notes": "Damon lifts Batsuit sleeve checking white Freestyle Libre CGM sensor on tricep cleanly at table.", "revisions": "Approved."},
-            {"shot": "DK_19 (LTX-2.5 40.0s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "MiniMax v1 spawned cape duplicate; LTX-2.5 renders solo Deron swinging door & tipping boba with zero extras.", "revisions": "LTX-2.5 APPROVED."},
-            {"shot": "DK_20 (LTX-2.5 80.0s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Gigi pulls breaker switch & yanks plug in silence while CRT collapses to a dot during Hooman's Encino pitch.", "revisions": "LTX-2.5 APPROVED (trimmed cleanly at 6.75s with DK_20_clean.mp3 & CRT EQ)."},
-        ],
-        "bench": [
-            {
-                "shot": "DK_02 (7.5s · maniacal v4)",
-                "ltx_time": "207.5s (cold load)",
-                "mm_time": "457.2s (L4)",
-                "ltx_scores": "10 / 10 / 10 / 10",
-                "mm_scores": "9 / 9 / 9 / 9",
-                "ltx_mp4": "../films/ltx25_bench/ltx25_dk_02.mp4",
-                "mm_mp4": "../films/ltx25_bench/dk_dk_02.mp4",
-                "notes": "Upgraded ElevenLabs v4 maniacal Joker voice locked verbatim in LTX-2.5 with crisp Heath Ledger posture & lip sync.",
-            },
-            {
-                "shot": "DK_04 (8.4s · maniacal v4)",
-                "ltx_time": "105.1s (4.3x faster)",
-                "mm_time": "456.1s (L4)",
-                "ltx_scores": "9 / 9 / 10 / 10",
-                "mm_scores": "10 / 10 / 10 / 9",
-                "ltx_mp4": "../films/ltx25_bench/ltx25_dk_04.mp4",
-                "mm_mp4": "../films/ltx25_bench/dk_dk_04.mp4",
-                "notes": "Locked two-shot profile keeping Batman's black cowl sealed cleanly while Joker delivers 'put a smile on that colon' verbatim.",
-            },
-            {
-                "shot": "DK_05 (6.9s · 169f vs 192f)",
-                "ltx_time": "50.0s (10.4x faster)",
-                "mm_time": "521.3s (L4)",
-                "ltx_scores": "9 / 10 / 9 / 10",
-                "mm_scores": "9 / 9 / 10 / 8",
-                "ltx_mp4": "../films/ltx25_bench/ltx25_dk_05.mp4",
-                "mm_mp4": "../films/ltx25_bench/dk_dk_05.mp4",
-                "notes": "50 seconds on A100; Damon slams gauntlets on table with crisp facial likeness & dead-on lip sync (no voice slurring).",
-            },
+            {"shot": "DK2_01..04", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Act 1 opening Gigi & Hooman dark interrogation table confrontation.", "revisions": "LTX-2.5 VERIFIED (LSE-C 5.61, 7.53, 6.52, 7.34)."},
+            {"shot": "DK2_05..10", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Hooman Encino escrow pitch, Gigi closing night shift, and fluorescent reveal.", "revisions": "Hybrid LTX-2.5 + InfiniteTalk VERIFIED (LSE-C 7.69, 8.38, 6.19, 6.70, 4.95, 7.21)."},
+            {"shot": "DK2_11..12, 17, 19", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Cowl-less Damon confrontation & Hooman Beverly Hills hair-plugs retort.", "revisions": "VERIFIED (LSE-C 7.23, 6.56, 7.07, 6.75). Remaining 26 shots rendering now."},
         ],
     },
     {
@@ -93,11 +47,12 @@ FILMS = [
         "num": "03",
         "title": "Breaking Bad — Say My Name (New Mexico Desert)",
         "subtitle": "35mm High-Noon To'hajiilee Desert Standoff · Damon, Zach, Ajay, Hooman, Walter White & Gus Fring",
-        "status": "1080p Ready",
-        "status_cls": "done",
+        "status": "Rejected — Queued for v2 Rebuild",
+        "status_cls": "rejected",
+        "hide_video": True,
         "mp4": "films/03_breaking_bad_1080p.mp4",
-        "prep_time": "25m 37s",
-        "render_time": "100% QA Passed (14 MiniMax H3 + 6 LTX-2.5 desert rescue & upgrade shots, 2m 18s 1080p master)",
+        "prep_time": "v1 Archived",
+        "render_time": "Queued for v2 rebuild with Nomads-only casting & SyncNet gating",
         "audit": [
             {"shot": "BB_02 (LTX-2.5 110.1s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "MiniMax v1 spawned blue glare; LTX-2.5 keeps razor-sharp Heisenberg close-up in New Mexico desert with Chrysler & Land Cruiser behind.", "revisions": "LTX-2.5 APPROVED (10/10)."},
             {"shot": "BB_03 (168.0s)", "quality": 9, "physics": 10, "similarity": 10, "lipsync": 8, "notes": "Crisp 100% solid foreground Walter shoulder & Damon clutching sweaty tank top in harsh desert sun.", "revisions": "Approved (clean BB_03.mp3 at t=0)."},
@@ -126,11 +81,12 @@ FILMS = [
         "num": "04",
         "title": "Goodfellas — \"Funny How?\" (Copacabana)",
         "subtitle": "Scorsese 1970s 35mm · Damon, Hooman, Deron, Zach, Tommy DeVito & Henry Hill",
-        "status": "1080p Ready",
-        "status_cls": "done",
+        "status": "Rejected — Queued for v2 Rebuild",
+        "status_cls": "rejected",
+        "hide_video": True,
         "mp4": "films/04_goodfellas_1080p.mp4",
-        "prep_time": "25m 37s",
-        "render_time": "100% LTX-2.5 on A100 (~20m + 3m GF_04/12 fixes, 2m 08s 1080p master)",
+        "prep_time": "v1 Archived",
+        "render_time": "Queued for v2 rebuild with Nomads-only casting & SyncNet gating",
         "audit": [
             {"shot": "GF_01 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Smooth Scorsese booth push-in across Henry Hill under Copacabana tungsten lamp.", "revisions": "Approved (10/10)."},
             {"shot": "GF_02 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Deron between Paulie and Henry with calamari plate & chopsticks.", "revisions": "Approved (10/10)."},
@@ -159,11 +115,12 @@ FILMS = [
         "num": "05",
         "title": "Pulp Fiction — Ezekiel 25:17 (Brett's Apartment)",
         "subtitle": "Tarantino 35mm Panavision · Damon, Deron, Zach, Jules Winnfield & Vincent Vega",
-        "status": "1080p Ready",
-        "status_cls": "done",
+        "status": "Rejected — Queued for v2 Rebuild",
+        "status_cls": "rejected",
+        "hide_video": True,
         "mp4": "films/05_pulp_fiction_1080p.mp4",
-        "prep_time": "25m 37s",
-        "render_time": "100% LTX-2.5 split L4+A100 (~22m + 25s G4 PF_20 fix, 2m 08s 1080p master)",
+        "prep_time": "v1 Archived",
+        "render_time": "Queued for v2 rebuild with Nomads-only casting & SyncNet gating",
         "audit": [
             {"shot": "PF_01 (LTX-2.5 191.0s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Jules Winnfield doorway interrogation ('Royale with Cheese') with dead-on Samuel L. Jackson cadence.", "revisions": "Approved (10/10)."},
             {"shot": "PF_02 (LTX-2.5 420.4s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Damon holding stomach in apartment hallway next to Vincent Vega.", "revisions": "Approved (trimmed cleanly at 7.50s with PF_02_clean.mp3)."},
@@ -193,11 +150,12 @@ FILMS = [
         "num": "06",
         "title": "Jurassic Park — T-Rex Paddock Attack",
         "subtitle": "1993 Spielberg Tropical Night Storm · Damon, Gigi, Ajay, Sheren & T-Rex",
-        "status": "1080p Ready",
-        "status_cls": "done",
+        "status": "Rejected — Queued for v2 Rebuild",
+        "status_cls": "rejected",
+        "hide_video": True,
         "mp4": "films/06_jurassic_park_1080p.mp4",
-        "prep_time": "25m 37s",
-        "render_time": "100% LTX-2.5 + Qwen-Image-Edit keyframes across RTX PRO 6000 & L4 (~16m total)",
+        "prep_time": "v1 Archived",
+        "render_time": "Queued for v2 rebuild with Nomads-only casting & SyncNet gating",
         "audit": [
             {"shot": "JP_01 (LTX-2.5 95.0s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Ajay with glowing LED headlamp diagnosing visible ripples in plastic water cups inside wet Explorer.", "revisions": "Approved (seismic bass thump layered)."},
             {"shot": "JP_02 (LTX-2.5 20.0s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Sheren behind Explorer #04 steering wheel ('No brakes!') with wipers sweeping rain.", "revisions": "Approved (10/10)."},
@@ -224,11 +182,12 @@ FILMS = [
         "num": "07",
         "title": "The Matrix — Red Pill / Magic Cone",
         "subtitle": "1999 Emerald-Green Noir · Damon, Deron, Hooman, Zach & Morpheus",
-        "status": "1080p Ready",
-        "status_cls": "done",
+        "status": "Rejected — Queued for v2 Rebuild",
+        "status_cls": "rejected",
+        "hide_video": True,
         "mp4": "films/07_matrix_1080p.mp4",
-        "prep_time": "25m 37s",
-        "render_time": "100% LTX-2.5 on RTX PRO 6000 (~10m total incl. 3 Qwen Zach/solo fixes, 2m 24s 1080p)",
+        "prep_time": "v1 Archived",
+        "render_time": "Queued for v2 rebuild with Nomads-only casting & SyncNet gating",
         "audit": [
             {"shot": "MX_01 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Morpheus in alligator leather armchair inside crumbling emerald Lafayette Hotel.", "revisions": "Approved (10/10)."},
             {"shot": "MX_02 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Damon hunched in crimson chair gripping stomach ('Zion shrimp burrito mile 56').", "revisions": "Approved (10/10)."},
@@ -267,6 +226,7 @@ p.sub { color: #9ca3af; margin: 0 0 24px; }
 .card h2, .card h3 { margin: 0; font-size: 17px; color: #f9fafb; }
 .badge { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 8px; border-radius: 999px; background: #1f2937; color: #93c5fd; width: fit-content; }
 .badge.done { background: #064e3b; color: #6ee7b7; }
+.badge.rejected { background: #7f1d1d; color: #fca5a5; }
 .meta { font-size: 13px; color: #9ca3af; line-height: 1.5; }
 video, img { width: 100%; border-radius: 8px; background: #000; display: block; }
 .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: auto; }
@@ -287,12 +247,13 @@ def build():
 
     for f in FILMS:
         slug = f["slug"]
-        has_mp4 = os.path.exists(f"{BASE}/{f['mp4']}")
-        yt_frames = sorted(glob.glob(f"{BASE}/refs/yt/{slug}/*.jpg"))
-        ref_frames = sorted(glob.glob(f"{BASE}/refs/{slug}/*.jpg"))
+        data_slug = f.get("data_slug", slug)
+        has_mp4 = (not f.get("hide_video")) and os.path.exists(f"{BASE}/{f['mp4']}")
+        yt_frames = sorted(glob.glob(f"{BASE}/refs/yt/{data_slug}/*.jpg")) or sorted(glob.glob(f"{BASE}/refs/yt/{data_slug}/sheets/*.jpg"))
+        ref_frames = sorted(glob.glob(f"{BASE}/refs/{data_slug}/*.jpg"))
 
-        jobs_path = f"{BASE}/scripts/{slug}_jobs.json"
-        script_path = f"{BASE}/scripts/{slug}_script.json"
+        jobs_path = f"{BASE}/scripts/{data_slug}_jobs.json"
+        script_path = f"{BASE}/scripts/{data_slug}_script.json"
         jobs = json.load(open(jobs_path)) if os.path.exists(jobs_path) else []
         script = json.load(open(script_path)) if os.path.exists(script_path) else {}
         shots_by_id = {s["shot_id"].lower(): s for s in script.get("shots", [])}
@@ -303,6 +264,7 @@ def build():
         if has_mp4:
             video_block = f'<video controls playsinline src="{f["mp4"]}"></video>'
             dl_btn = f'<a class="btn" href="{f["mp4"]}" download="{os.path.basename(f["mp4"])}">Download 1080p MP4</a>'
+        preview_btn = f'<a class="btn" href="{f["preview_url"]}">Preview Passed Shots (14/40) →</a>' if f.get("preview_url") else ""
 
         cards_html.append(f"""
     <div class="card">
@@ -313,6 +275,7 @@ def build():
       </div>
       {video_block}
       <div class="actions">
+        {preview_btn}
         {dl_btn}
         <a class="btn sec" href="detail/{slug}.html">References &amp; QA Audit →</a>
       </div>
@@ -321,7 +284,8 @@ def build():
         # Detail page
         yt_cards = []
         for yp in yt_frames:
-            rel = f"../refs/yt/{slug}/{os.path.basename(yp)}"
+            sub = "sheets/" if f"{os.sep}sheets{os.sep}" in yp else ""
+            rel = f"../refs/yt/{data_slug}/{sub}{os.path.basename(yp)}"
             yt_cards.append(f'<div class="card"><img src="{rel}" alt="{os.path.basename(yp)}" /><div class="meta">{os.path.basename(yp)}</div></div>')
         if not yt_cards:
             yt_cards.append('<div class="card"><div class="meta">Pilot prototype (pre-YouTube sampler).</div></div>')
@@ -329,24 +293,33 @@ def build():
         mm_cards = []
         if jobs:
             for j in jobs:
-                sid = j["prefix"].split("_", 1)[1] if "_" in j["prefix"] else j["prefix"]
+                if "shot_id" in j:
+                    sid = j["shot_id"].lower()
+                    title_id = j["shot_id"]
+                    img_name = j["start_image"]
+                    dur_txt = f"{j.get('ltx_length', 121)/24.0:.1f}s"
+                    prompt_txt = j.get("ltx_prompt", "")
+                else:
+                    sid = j["prefix"].split("_", 1)[1] if "_" in j["prefix"] else j["prefix"]
+                    title_id = j["prefix"].upper()
+                    img_name = j["images"][0]
+                    dur_txt = f"{j['length']/24.0:.1f}s"
+                    prompt_txt = j.get("prompt", "")
                 smeta = shots_by_id.get(sid, {})
-                img_name = j["images"][0]
-                rel = f"../refs/{slug}/{img_name}"
-                dur_s = j["length"] / 24.0
+                rel = f"../refs/{data_slug}/{img_name}"
                 spk = smeta.get("speaker", "")
                 line = smeta.get("exact_dialogue", "")
                 mm_cards.append(f"""
       <div class="card">
         <img src="{rel}" alt="{html_mod.escape(img_name)}" />
-        <h3>{html_mod.escape(j['prefix'].upper())} · {html_mod.escape(spk)} ({dur_s:.1f}s)</h3>
+        <h3>{html_mod.escape(title_id)} · {html_mod.escape(spk)} ({dur_txt})</h3>
         <div class="meta"><b>Keyframe:</b> {html_mod.escape(img_name)}</div>
         <div class="meta"><b>Line:</b> "{html_mod.escape(line)}"</div>
-        <div class="prompt"><b>Prompt:</b> {html_mod.escape(j['prompt'])}</div>
+        <div class="prompt"><b>Prompt:</b> {html_mod.escape(prompt_txt)}</div>
       </div>""")
         else:
             for rp in ref_frames:
-                rel = f"../refs/{slug}/{os.path.basename(rp)}"
+                rel = f"../refs/{data_slug}/{os.path.basename(rp)}"
                 mm_cards.append(f'<div class="card"><img src="{rel}" alt="{os.path.basename(rp)}" /><div class="meta">{os.path.basename(rp)}</div></div>')
 
         audit_rows = []

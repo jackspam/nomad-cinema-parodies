@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dark Knight v2 — Verified Shots Preview (14/40 Ready)</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0b0d12; color: #e5e7eb; max-width: 1320px; margin: 0 auto; padding: 20px; }
+  h1 { margin: 0 0 6px; font-size: clamp(20px, 3vw, 28px); }
+  p.sub { color: #9ca3af; margin: 0 0 18px; line-height: 1.5; }
+  .toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
+  button, a.btn { background: #2563eb; color: #fff; border: none; border-radius: 8px; padding: 10px 16px; font-size: 14px; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; }
+  button.sec, a.btn.sec { background: #1f2937; border: 1px solid #374151; }
+  button:hover, a.btn:hover { opacity: 0.92; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 18px; }
+  .card { background: #141720; border: 1px solid #262b38; border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+  .card.active { border-color: #60a5fa; box-shadow: 0 0 0 2px rgba(96,165,250,0.35); }
+  .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .badge { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 999px; letter-spacing: 0.05em; }
+  .badge.pass { background: #064e3b; color: #6ee7b7; }
+  .sid { font-size: 13px; color: #93c5fd; font-weight: 600; }
+  h3 { margin: 0; font-size: 16px; color: #f9fafb; }
+  .line { font-size: 13px; color: #d1d5db; line-height: 1.4; min-height: 36px; }
+  video { width: 100%; border-radius: 8px; background: #000; }
+  .metrics { font-size: 12px; color: #9ca3af; font-family: ui-monospace, SFMono-Regular, monospace; }
+</style>
+</head>
+<body>
+  <h1>The Dark Knight (v2) — SyncNet &amp; Visual QA Passed (14/40 Shots)</h1>
+  <p class="sub">Complete Act 1 (Shots 1–12) plus early Act 2 Damon shots passed SyncNet lip-sync checks, final-1.2s expression strips, and full visual inspection. Remaining shots rendering in parallel.</p>
+  <div class="toolbar">
+    <button onclick="playAll()">&#9654; Play All 14 Passed Shots</button>
+    <button class="sec" onclick="stopAll()">Stop</button>
+    <a class="btn sec" href="./">&larr; Main Showcase</a>
+    <span id="nowPlaying" class="metrics"></span>
+  </div>
+  <div class="grid">
+    <div class="card" data-idx="0">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_01 · LTX-2.5</span>
+      </div>
+      <h3>Gigi (Gordon)</h3>
+      <div class="line">"One, two, three, eyes on me, Joker. Where is Harvey Dent? And why does it smell like burnt saffron in here?"</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_01.mp4"></video>
+      <div class="metrics">LSE-C 5.61 · offset 0f</div>
+    </div>
+    <div class="card" data-idx="1">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_02 · LTX-2.5</span>
+      </div>
+      <h3>Gigi (Gordon)</h3>
+      <div class="line">"I don&#x27;t play games after recess, mister. Start talking before Batman steps through that door."</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_02.mp4"></video>
+      <div class="metrics">LSE-C 7.53 · offset 0f</div>
+    </div>
+    <div class="card" data-idx="2">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_03 · LTX-2.5</span>
+      </div>
+      <h3>Hooman (Joker)</h3>
+      <div class="line">"Chay-chay-chetori, Commissioner! Nobody give Hooman coffee, nobody take fifty-fifty deal, huuuuh?"</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_03.mp4"></video>
+      <div class="metrics">LSE-C 6.52 · offset -1f</div>
+    </div>
+    <div class="card" data-idx="3">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_04 · LTX-2.5</span>
+      </div>
+      <h3>Gigi (Gordon)</h3>
+      <div class="line">"Nobody is cutting a fifty-fifty real estate deal in Gotham Police. Hands flat on the steel table right now."</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_04.mp4"></video>
+      <div class="metrics">LSE-C 7.34 · offset -3f</div>
+    </div>
+    <div class="card" data-idx="4">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_05 · InfiniteTalk</span>
+      </div>
+      <h3>Hooman (Joker)</h3>
+      <div class="line">"Strict teacher routine very scary, dood! Call Zach, check Encino escrow before midnight!"</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_05.mp4"></video>
+      <div class="metrics">LSE-C 7.69 · offset -1f</div>
+    </div>
+    <div class="card" data-idx="5">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_06 · LTX-2.5</span>
+      </div>
+      <h3>Gigi (Gordon)</h3>
+      <div class="line">"Leave Zach out of this basement. Tell me where Harvey Dent is before I turn on the lights."</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_06.mp4"></video>
+      <div class="metrics">LSE-C 8.38 · offset +1f</div>
+    </div>
+    <div class="card" data-idx="6">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_07 · InfiniteTalk</span>
+      </div>
+      <h3>Hooman (Joker)</h3>
+      <div class="line">"Oh, Harvey in lovely Westside spot, dood! Zero HOA fee, tiny bit asbestos, no problem!"</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_07.mp4"></video>
+      <div class="metrics">LSE-C 6.19 · offset -2f</div>
+    </div>
+    <div class="card" data-idx="7">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_08 · LTX-2.5</span>
+      </div>
+      <h3>Gigi (Gordon)</h3>
+      <div class="line">"Fine. You lost your green behavior star for the week. Let&#x27;s see how you handle the night shift."</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_08.mp4"></video>
+      <div class="metrics">LSE-C 6.70 · offset -2f</div>
+    </div>
+    <div class="card" data-idx="8">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_09 · LTX-2.5</span>
+      </div>
+      <h3>Gigi (Gordon)</h3>
+      <div class="line">"Good luck explaining escrow to him, Hooman. The lights are coming on now."</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_09.mp4"></video>
+      <div class="metrics">LSE-C 4.95 · offset -2f</div>
+    </div>
+    <div class="card" data-idx="9">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_10 · InfiniteTalk</span>
+      </div>
+      <h3>Hooman (Joker)</h3>
+      <div class="line">"Fuck that shit, Batman! Why you stand behind people in dark like Encino valet, dood?!"</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_10.mp4"></video>
+      <div class="metrics">LSE-C 7.21 · offset 0f</div>
+    </div>
+    <div class="card" data-idx="10">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_11 · LTX-2.5</span>
+      </div>
+      <h3>Damon (Batman)</h3>
+      <div class="line">"Where is Harvey Dent. And back up two inches—I&#x27;m fasting on cold Maurten hydrogels."</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_11.mp4"></video>
+      <div class="metrics">LSE-C 7.23 · offset -1f</div>
+    </div>
+    <div class="card" data-idx="11">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_12 · InfiniteTalk</span>
+      </div>
+      <h3>Hooman (Joker)</h3>
+      <div class="line">"Never start with the head, dood! You mess up hairline—you know Beverly Hills hair plug cost?"</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_12.mp4"></video>
+      <div class="metrics">LSE-C 6.56 · offset -1f</div>
+    </div>
+    <div class="card" data-idx="12">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_17 · LTX-2.5</span>
+      </div>
+      <h3>Damon (Batman)</h3>
+      <div class="line">"Word. It&#x27;s a Zone-five core hold and I had bad shrimp. Now give me Harvey&#x27;s address."</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_17.mp4"></video>
+      <div class="metrics">LSE-C 7.07 · offset 0f</div>
+    </div>
+    <div class="card" data-idx="13">
+      <div class="top">
+        <span class="badge pass">PASSED ALL GATES</span>
+        <span class="sid">DK2_19 · LTX-2.5</span>
+      </div>
+      <h3>Damon (Batman)</h3>
+      <div class="line">"Keep your funnel out of my interrogation. You have ten seconds before I lose my grip."</div>
+      <video controls playsinline preload="metadata" src="preview/clips/dk2_DK2_19.mp4"></video>
+      <div class="metrics">LSE-C 6.75 · offset +1f</div>
+    </div>
+  </div>
+<script>
+const vids = Array.from(document.querySelectorAll('.grid .card video'));
+const cards = Array.from(document.querySelectorAll('.grid .card'));
+const label = document.getElementById('nowPlaying');
+let chain = false;
+function clearActive() { cards.forEach(c => c.classList.remove('active')); }
+function stopAll() { chain = false; vids.forEach(v => v.pause()); clearActive(); label.textContent = ''; }
+function playAt(i) {
+  if (i >= vids.length) { chain = false; clearActive(); label.textContent = 'Finished all 14 clips'; return; }
+  stopAll(); chain = true;
+  cards[i].classList.add('active');
+  cards[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
+  label.textContent = 'Playing ' + (i+1) + ' / ' + vids.length;
+  vids[i].currentTime = 0;
+  vids[i].play().catch(() => { label.textContent = 'Tap video to start playback on mobile'; });
+}
+function playAll() { playAt(0); }
+vids.forEach((v, i) => v.addEventListener('ended', () => { if (chain) playAt(i + 1); }));
+</script>
+</body>
+</html>

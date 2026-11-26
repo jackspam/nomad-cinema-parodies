@@ -1,0 +1,17 @@
+[
+  {
+    "shot_id": "DK2_12",
+    "out_prefix": "dk2_DK2_12_tuned",
+    "start_image": "dk2_shot12_start.jpg",
+    "end_image": "dk2_shot12_end.jpg",
+    "audio": "DK2_12.mp3",
+    "seed": 5112,
+    "speaker_side": "center",
+    "s1_img_strength": 0.6,
+    "end_guide_strength": 0.55,
+    "cfg": 3.5,
+    "steps": 24,
+    "ltx_prompt": "Photorealistic 2008 35mm movie scene matching the starting frame. Tight bright clinical close-up inside the pale greenish-beige painted interrogation room of the man in flaky cracked white Joker greasepaint, blackened eye paint, smeared crimson mouth scars, mustache/goatee stubble under paint, patterned grey-lavender shirt, and dark green vest. He lowers his raised hand smoothly to match the ending keyframe with natural head tilt while his lips, mouth shapes, teeth, and jaw articulate actively and accurately in exact lip-sync with every syllable of his taunting Persian-accented speech: \"Never start with the head, dood! You mess up hairline\u2014you know Beverly Hills hair plug cost?\" Realistic greasepaint cracks, pores, 35mm grain.",
+    "negative_prompt": "frozen lips, mouth not moving, closed mouth while speaking, bad lip sync, off-timing lip sync, static face freeze, waxy skin, plastic skin, smooth airbrushed face, face morphing, extra hands, subtitles, watermark, blurry"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "scene": "The Dark Knight (2008) — Interrogation Room",
+  "youtube_source": "https://www.youtube.com/watch?v=_DZ7pOVQgqo",
+  "frame_resolution": "1920x832",
+  "total_extracted_frames": 345,
+  "acts": [
+    {
+      "act": 1,
+      "name": "Dark Room Opening (Gordon & Joker)",
+      "time_range_sec": [0, 93],
+      "lighting": "Murky slate-cyan shadows under dim frosted ceiling fixtures and black desk lamp",
+      "wardrobe_continuity": "Joker wears purple trench/coat over green waistcoat; Gordon wears dark trench and tortoiseshell glasses",
+      "key_frames": ["dk2_yt_0004.jpg", "dk2_yt_0016.jpg", "dk2_yt_0032.jpg", "dk2_yt_0045.jpg", "dk2_yt_0052.jpg", "dk2_yt_0061.jpg", "dk2_yt_0071.jpg", "dk2_yt_0079.jpg", "dk2_yt_0096.jpg"]
+    },
+    {
+      "act": 2,
+      "name": "Hard Light Blast & Table Interrogation (Batman & Joker + Observation Room)",
+      "time_range_sec": [94, 204],
+      "lighting": "Blinding clinical cool-white overhead fluorescents bouncing off flat greenish-beige painted cinderblock walls; dark MCU observation room on reverse cuts",
+      "wardrobe_continuity": "Joker purple coat is OFF, wearing hex-patterned grey-lilac dress shirt and green waistcoat; Batman in matte-black armored Batsuit with Damon's visible face/glasses",
+      "key_frames": ["dk2_yt_0102.jpg", "dk2_yt_0109.jpg", "dk2_yt_0111.jpg", "dk2_yt_0121.jpg", "dk2_yt_0125.jpg", "dk2_yt_0128.jpg", "dk2_yt_0135.jpg", "dk2_yt_0142.jpg", "dk2_yt_0146.jpg", "dk2_yt_0154.jpg", "dk2_yt_0161.jpg", "dk2_yt_0164.jpg", "dk2_yt_0168.jpg", "dk2_yt_0173.jpg", "dk2_yt_0184.jpg", "dk2_yt_0191.jpg", "dk2_yt_0224.jpg"]
+    },
+    {
+      "act": 3,
+      "name": "Wall Slam, Door Barricade & Floor Confrontation",
+      "time_range_sec": [205, 298],
+      "lighting": "Unforgiving bright greenish-beige concrete/brick walls under overhead fluorescent banks; dark hallway & glass door cut on MCU rush",
+      "wardrobe_continuity": "Same coatless Joker shirt/vest progressively disheveled on wall/floor; Batman looming in cape and armor",
+      "key_frames": ["dk2_yt_0234.jpg", "dk2_yt_0242.jpg", "dk2_yt_0243.jpg", "dk2_yt_0246.jpg", "dk2_yt_0252.jpg", "dk2_yt_0258.jpg", "dk2_yt_0275.jpg", "dk2_yt_0285.jpg", "dk2_yt_0287.jpg", "dk2_yt_0291.jpg", "dk2_yt_0306.jpg", "dk2_yt_0318.jpg", "dk2_yt_0321.jpg", "dk2_yt_0338.jpg"]
+    }
+  ]
+}
