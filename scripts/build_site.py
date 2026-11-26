@@ -29,17 +29,17 @@ FILMS = [
         "num": "02",
         "title": "The Dark Knight — The Interrogation Room (v2)",
         "subtitle": "35mm Panavision Scope · Hooman, Damon, Gigi, Deron & Zach",
-        "status": "In Progress — 14/40 Shots Verified",
+        "status": "In Progress — 23/40 Shots Verified",
         "status_cls": "done",
         "hide_video": True,
         "preview_url": "preview.html",
         "mp4": "films/02_dark_knight_1080p.mp4",
         "prep_time": "v2 Rebuild Active",
-        "render_time": "14/40 SyncNet + Expression Verified (LTX-2.5 + InfiniteTalk Hybrid)",
+        "render_time": "23/40 SyncNet + Visual QA Verified (LTX-2.5 + InfiniteTalk Hybrid)",
         "audit": [
-            {"shot": "DK2_01..04", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Act 1 opening Gigi & Hooman dark interrogation table confrontation.", "revisions": "LTX-2.5 VERIFIED (LSE-C 5.61, 7.53, 6.52, 7.34)."},
+            {"shot": "DK2_01..04", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 9, "notes": "Act 1 opening Gigi & Hooman dark interrogation table confrontation (DK2_04 offset tightening queued).", "revisions": "LTX-2.5 VERIFIED (LSE-C 5.61, 7.53, 6.52, 7.34)."},
             {"shot": "DK2_05..10", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Hooman Encino escrow pitch, Gigi closing night shift, and fluorescent reveal.", "revisions": "Hybrid LTX-2.5 + InfiniteTalk VERIFIED (LSE-C 7.69, 8.38, 6.19, 6.70, 4.95, 7.21)."},
-            {"shot": "DK2_11..12, 17, 19", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Cowl-less Damon confrontation & Hooman Beverly Hills hair-plugs retort.", "revisions": "VERIFIED (LSE-C 7.23, 6.56, 7.07, 6.75). Remaining 26 shots rendering now."},
+            {"shot": "DK2_11..13, 15..17, 19..20, 22..23, 25..26, 28", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Act 2 interrogation escalation: Damon, Hooman, and Zach (DK2_18 caught for 0:00 hand swipe & queued for retry).", "revisions": "Batch A SyncNet 10/10 PASS (LSE-C 5.52–7.70, |off|<=2f). Batch B/C finishing now."},
         ],
     },
     {
@@ -264,7 +264,7 @@ def build():
         if has_mp4:
             video_block = f'<video controls playsinline src="{f["mp4"]}"></video>'
             dl_btn = f'<a class="btn" href="{f["mp4"]}" download="{os.path.basename(f["mp4"])}">Download 1080p MP4</a>'
-        preview_btn = f'<a class="btn" href="{f["preview_url"]}">Preview Passed Shots (14/40) →</a>' if f.get("preview_url") else ""
+        preview_btn = f'<a class="btn" href="{f["preview_url"]}">Preview Verified Shots (23/40) →</a>' if f.get("preview_url") else ""
 
         cards_html.append(f"""
     <div class="card">
@@ -401,14 +401,125 @@ def build():
   <style>{CSS}</style>
 </head>
 <body>
-  <h1>Nomad Cinema Parodies</h1>
-  <p class="sub">Shot-for-shot 1080p iconic movie scene recreations starring the Nomads · MiniMax H3 + ElevenLabs + YouTube Frame Sampling</p>
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:10px;">
+    <div>
+      <h1>Nomad Cinema Parodies</h1>
+      <p class="sub" style="margin-bottom:0;">Shot-for-shot 1080p Scope movie scene recreations starring the Nomads · LTX-2.5 + InfiniteTalk Hybrid · 7 Hardened Cinema Gates</p>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a class="btn" href="preview.html">Verified Shots Preview (23/40) →</a>
+      <a class="btn sec" href="process.html">Living Process &amp; Quality Gates</a>
+    </div>
+  </div>
+  <div style="height:18px;"></div>
   <div class="grid" id="films">{''.join(cards_html)}
   </div>
 </body>
 </html>"""
     open(f"{BASE}/index.html", "w").write(index_html)
+    build_process_page()
     print("SITE_BUILT_SUCCESSFULLY")
+
+
+def md_inline_to_html(text: str) -> str:
+    import re
+    s = html_mod.escape(text)
+    s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+    s = re.sub(r"_(.+?)_", r"<em>\1</em>", s)
+    s = re.sub(r"`([^`]+)`", r"<code style='background:#1e293b;padding:2px 6px;border-radius:4px;font-size:12px;color:#93c5fd;'>\1</code>", s)
+    return s
+
+
+def build_process_page():
+    """Render process.html directly from PIPELINE_RULES.md so deployed docs stay synced."""
+    rules_path = f"{BASE}/PIPELINE_RULES.md"
+    lines = open(rules_path).read().splitlines()
+    blocks = []
+    in_ul = False
+    in_table = False
+    table_rows = []
+
+    def close_ul():
+        nonlocal in_ul
+        if in_ul:
+            blocks.append("</ul>")
+            in_ul = False
+
+    def flush_table():
+        nonlocal in_table, table_rows
+        if not in_table or not table_rows:
+            in_table = False
+            table_rows = []
+            return
+        hdr = table_rows[0]
+        body = [r for r in table_rows[1:] if not all(set(c.strip()) <= set("-: ") for c in r)]
+        ths = "".join(f"<th>{md_inline_to_html(c.strip())}</th>" for c in hdr)
+        trs = []
+        for r in body:
+            tds = "".join(f"<td>{md_inline_to_html(c.strip())}</td>" for c in r)
+            trs.append(f"<tr>{tds}</tr>")
+        blocks.append(f"<table><thead><tr>{ths}</tr></thead><tbody>{''.join(trs)}</tbody></table>")
+        in_table = False
+        table_rows = []
+
+    for ln in lines:
+        s = ln.strip()
+        if s.startswith("|") and s.endswith("|"):
+            close_ul()
+            in_table = True
+            table_rows.append([c for c in s.strip("|").split("|")])
+            continue
+        elif in_table:
+            flush_table()
+
+        if not s:
+            close_ul()
+            continue
+        if s == "---":
+            close_ul()
+            blocks.append("<hr style='border:none;border-top:1px solid #262b38;margin:24px 0;'/>")
+        elif s.startswith("# "):
+            close_ul()
+            blocks.append(f"<h1>{md_inline_to_html(s[2:])}</h1>")
+        elif s.startswith("## "):
+            close_ul()
+            blocks.append(f"<h2>{md_inline_to_html(s[3:])}</h2>")
+        elif s.startswith("### "):
+            close_ul()
+            blocks.append(f"<h3 style='margin:20px 0 8px;color:#93c5fd;font-size:16px;'>{md_inline_to_html(s[4:])}</h3>")
+        elif s.startswith("- "):
+            if not in_ul:
+                blocks.append("<ul style='margin:8px 0 16px;padding-left:20px;line-height:1.65;color:#d1d5db;'>")
+                in_ul = True
+            blocks.append(f"<li style='margin-bottom:6px;'>{md_inline_to_html(s[2:])}</li>")
+        else:
+            close_ul()
+            blocks.append(f"<p style='color:#d1d5db;line-height:1.6;margin:10px 0;'>{md_inline_to_html(s)}</p>")
+
+    close_ul()
+    flush_table()
+    page = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nomad Cinema Parodies — Process &amp; Hardened Quality Gates</title>
+  <style>{CSS}</style>
+</head>
+<body>
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px;">
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a class="btn sec" href="./">&larr; Main Showcase</a>
+      <a class="btn" href="preview.html">Verified Shots Preview →</a>
+    </div>
+    <span class="badge done">Living Engineering Spec · Auto-Synced</span>
+  </div>
+  <div class="card" style="padding:26px;">
+    {''.join(blocks)}
+  </div>
+</body>
+</html>"""
+    open(f"{BASE}/process.html", "w").write(page)
 
 
 if __name__ == "__main__":

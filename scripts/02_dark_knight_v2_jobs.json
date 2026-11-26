@@ -61,7 +61,7 @@
     "steps": 24,
     "ltx_prompt": "Photorealistic 2008 35mm movie scene matching the starting frame. Inside the pitch-dark cyan-slate shadowed interrogation room under dim frosted ceiling glow and black desk lamp. Keep camera framing closely locked to the starting frame with natural subtle dolly breathing and genuine upper-body acting. ONLY the 67-year-old woman with weathered skin, red-framed glasses, and strawberry-blonde hair wearing a dark charcoal GCPD trench coat in the center of frame actively speaks, moving his or her lips, mouth shapes, teeth, and jaw clearly and precisely in real-time lip synchronization with every syllable of the dialogue: \"Nobody is cutting a fifty-fifty real estate deal in Gotham Police. Hands flat on the steel table right now.\" All other characters in the frame keep their mouths completely CLOSED and listen silently without speaking. Real human skin pores, authentic natural facial expressions, subtle 2008 35mm film grain. Maintain a stern, tense, dead-serious facial expression all the way through the final frame; close mouth cleanly when dialogue finishes \u2014 NEVER smile or grin.",
     "negative_prompt": "frozen lips, mouth not moving, closed mouth while speaking, bad lip sync, off-timing lip sync, static freeze, everyone mouthing, listener talking, waxy skin, plastic face, airbrushed smooth skin, face morphing, Batman wearing cowl mask, Heath Ledger blond hair, extra limbs, subtitles, watermark, blurry, smiling, grinning, happy expression, smirking at end, laughing, cheerful",
-    "force": false
+    "force": true
   },
   {
     "shot_id": "DK2_05",
@@ -205,7 +205,7 @@
     "steps": 24,
     "ltx_prompt": "Photorealistic 2008 35mm movie scene matching the starting frame. Inside the blinding clinical fluorescent-lit interrogation room against pale greenish-beige painted cinderblocks and white painted brick. Keep camera framing closely locked to the starting frame with natural subtle dolly breathing and genuine upper-body acting. ONLY the bald man with heavy black-framed glasses, tanned weathered skin pores, and salt-and-pepper stubble wearing matte-black armored Dark Knight Batsuit plates and black cape with NO mask cowl on the left actively speaks, moving his or her lips, mouth shapes, teeth, and jaw clearly and precisely in real-time lip synchronization with every syllable of the dialogue: \"Don't test my patience, Hooman. I raced Lake Placid Aquabike in pouring rain on worse.\" All other characters in the frame keep their mouths completely CLOSED and listen silently without speaking. Real human skin pores, authentic natural facial expressions, subtle 2008 35mm film grain. Maintain a stern, tense, dead-serious facial expression all the way through the final frame; close mouth cleanly when dialogue finishes \u2014 NEVER smile or grin.",
     "negative_prompt": "frozen lips, mouth not moving, closed mouth while speaking, bad lip sync, off-timing lip sync, static freeze, everyone mouthing, listener talking, waxy skin, plastic face, airbrushed smooth skin, face morphing, Batman wearing cowl mask, Heath Ledger blond hair, extra limbs, subtitles, watermark, blurry, smiling, grinning, happy expression, smirking at end, laughing, cheerful",
-    "force": true
+    "force": false
   },
   {
     "shot_id": "DK2_14",
@@ -237,7 +237,7 @@
     "steps": 24,
     "ltx_prompt": "Photorealistic 2008 35mm movie scene matching the starting frame. Inside the blinding clinical fluorescent-lit interrogation room against pale greenish-beige painted cinderblocks and white painted brick. Keep camera framing closely locked to the starting frame with natural subtle dolly breathing and genuine upper-body acting. ONLY the coatless man in flaky cracked white Joker greasepaint, blackened eye paint, smeared crimson mouth scars, shorter dark-green streaked curly hair, subtle mustache/goatee stubble under paint, patterned grey-lavender dress shirt, and dark green waistcoat in the center of frame actively speaks, moving his or her lips, mouth shapes, teeth, and jaw clearly and precisely in real-time lip synchronization with every syllable of the dialogue: \"Your friends behind mirror eating dumplings, baba! Tell Deron stop breathing on glass!\" All other characters in the frame keep their mouths completely CLOSED and listen silently without speaking. Real human skin pores, authentic natural facial expressions, subtle 2008 35mm film grain.",
     "negative_prompt": "frozen lips, mouth not moving, closed mouth while speaking, bad lip sync, off-timing lip sync, static freeze, everyone mouthing, listener talking, waxy skin, plastic face, airbrushed smooth skin, face morphing, Batman wearing cowl mask, Heath Ledger blond hair, extra limbs, subtitles, watermark, blurry",
-    "force": true
+    "force": false
   },
   {
     "shot_id": "DK2_16",
@@ -253,7 +253,7 @@
     "steps": 24,
     "ltx_prompt": "Photorealistic 2008 35mm movie scene matching the starting frame. Inside the blinding clinical fluorescent-lit interrogation room against pale greenish-beige painted cinderblocks and white painted brick. Keep camera framing closely locked to the starting frame with natural subtle dolly breathing and genuine upper-body acting. ONLY the coatless man in flaky cracked white Joker greasepaint, blackened eye paint, smeared crimson mouth scars, shorter dark-green streaked curly hair, subtle mustache/goatee stubble under paint, patterned grey-lavender dress shirt, and dark green waistcoat in the center of frame actively speaks, moving his or her lips, mouth shapes, teeth, and jaw clearly and precisely in real-time lip synchronization with every syllable of the dialogue: \"Wait a second... why your voice sound like treadmill at Equinox, dood? You sweating inside rubber suit?\" All other characters in the frame keep their mouths completely CLOSED and listen silently without speaking. Real human skin pores, authentic natural facial expressions, subtle 2008 35mm film grain.",
     "negative_prompt": "frozen lips, mouth not moving, closed mouth while speaking, bad lip sync, off-timing lip sync, static freeze, everyone mouthing, listener talking, waxy skin, plastic face, airbrushed smooth skin, face morphing, Batman wearing cowl mask, Heath Ledger blond hair, extra limbs, subtitles, watermark, blurry",
-    "force": true
+    "force": false
   },
   {
     "shot_id": "DK2_17",
@@ -317,7 +317,7 @@
     "steps": 24,
     "ltx_prompt": "Photorealistic 2008 35mm movie scene matching the starting frame. Inside the blinding clinical fluorescent-lit interrogation room against pale greenish-beige painted cinderblocks and white painted brick. Keep camera framing closely locked to the starting frame with natural subtle dolly breathing and genuine upper-body acting. ONLY the coatless man in flaky cracked white Joker greasepaint, blackened eye paint, smeared crimson mouth scars, shorter dark-green streaked curly hair, subtle mustache/goatee stubble under paint, patterned grey-lavender dress shirt, and dark green waistcoat in the center of frame actively speaks, moving his or her lips, mouth shapes, teeth, and jaw clearly and precisely in real-time lip synchronization with every syllable of the dialogue: \"Ooh! Big tough lawyer gonna lose grip! What you gonna do, sue me in Superior Court, huuuuh?\" All other characters in the frame keep their mouths completely CLOSED and listen silently without speaking. Real human skin pores, authentic natural facial expressions, subtle 2008 35mm film grain.",
     "negative_prompt": "frozen lips, mouth not moving, closed mouth while speaking, bad lip sync, off-timing lip sync, static freeze, everyone mouthing, listener talking, waxy skin, plastic face, airbrushed smooth skin, face morphing, Batman wearing cowl mask, Heath Ledger blond hair, extra limbs, subtitles, watermark, blurry",
-    "force": true
+    "force": false
   },
   {
     "shot_id": "DK2_21",
@@ -349,7 +349,7 @@
     "steps": 24,
     "ltx_prompt": "Photorealistic 2008 35mm movie scene matching the starting frame. Inside the blinding clinical fluorescent-lit interrogation room against pale greenish-beige painted cinderblocks and white painted brick. Keep camera framing closely locked to the starting frame with natural subtle dolly breathing and genuine upper-body acting. ONLY the coatless man in flaky cracked white Joker greasepaint, blackened eye paint, smeared crimson mouth scars, shorter dark-green streaked curly hair, subtle mustache/goatee stubble under paint, patterned grey-lavender dress shirt, and dark green waistcoat in the center of frame actively speaks, moving his or her lips, mouth shapes, teeth, and jaw clearly and precisely in real-time lip synchronization with every syllable of the dialogue: \"Listen, baby\u2014jail good for character! Tell Darren let's go fifty-fifty on Arkham parking structure!\" All other characters in the frame keep their mouths completely CLOSED and listen silently without speaking. Real human skin pores, authentic natural facial expressions, subtle 2008 35mm film grain.",
     "negative_prompt": "frozen lips, mouth not moving, closed mouth while speaking, bad lip sync, off-timing lip sync, static freeze, everyone mouthing, listener talking, waxy skin, plastic face, airbrushed smooth skin, face morphing, Batman wearing cowl mask, Heath Ledger blond hair, extra limbs, subtitles, watermark, blurry",
-    "force": true
+    "force": false
   },
   {
     "shot_id": "DK2_23",
@@ -365,7 +365,7 @@
     "steps": 24,
     "ltx_prompt": "Photorealistic 2008 35mm movie scene matching the starting frame. Inside the blinding clinical fluorescent-lit interrogation room against pale greenish-beige painted cinderblocks and white painted brick. Keep camera framing closely locked to the starting frame with only subtle realistic cinema breathing and micro-movement. ONLY the bald man with heavy black-framed glasses, tanned weathered skin pores, and salt-and-pepper stubble wearing matte-black armored Dark Knight Batsuit plates and black cape with NO mask cowl on the right actively speaks, moving his or her lips, mouth shapes, teeth, and jaw clearly and precisely in real-time lip synchronization with every syllable of the dialogue: \"Enough with Darren. Their clock is running out right now. Which warehouse?\" All other characters in the frame keep their mouths completely CLOSED and listen silently without speaking. Real human skin pores, authentic natural facial expressions, subtle 2008 35mm film grain. Maintain a stern, tense, dead-serious facial expression all the way through the final frame; close mouth cleanly when dialogue finishes \u2014 NEVER smile or grin.",
     "negative_prompt": "frozen lips, mouth not moving, closed mouth while speaking, bad lip sync, off-timing lip sync, static freeze, everyone mouthing, listener talking, waxy skin, plastic face, airbrushed smooth skin, face morphing, Batman wearing cowl mask, Heath Ledger blond hair, extra limbs, subtitles, watermark, blurry, smiling, grinning, happy expression, smirking at end, laughing, cheerful",
-    "force": true
+    "force": false
   },
   {
     "shot_id": "DK2_24",
@@ -397,7 +397,7 @@
     "steps": 24,
     "ltx_prompt": "Photorealistic 2008 35mm movie scene matching the starting frame. Inside the blinding clinical fluorescent-lit interrogation room against pale greenish-beige painted cinderblocks and white painted brick. Keep camera framing closely locked to the starting frame with natural subtle dolly breathing and genuine upper-body acting. ONLY the coatless man in flaky cracked white Joker greasepaint, blackened eye paint, smeared crimson mouth scars, shorter dark-green streaked curly hair, subtle mustache/goatee stubble under paint, patterned grey-lavender dress shirt, and dark green waistcoat in the center of frame actively speaks, moving his or her lips, mouth shapes, teeth, and jaw clearly and precisely in real-time lip synchronization with every syllable of the dialogue: \"See, madness like Encino brunch line, dood! All it takes is one bad burrito and little push!\" All other characters in the frame keep their mouths completely CLOSED and listen silently without speaking. Real human skin pores, authentic natural facial expressions, subtle 2008 35mm film grain.",
     "negative_prompt": "frozen lips, mouth not moving, closed mouth while speaking, bad lip sync, off-timing lip sync, static freeze, everyone mouthing, listener talking, waxy skin, plastic face, airbrushed smooth skin, face morphing, Batman wearing cowl mask, Heath Ledger blond hair, extra limbs, subtitles, watermark, blurry",
-    "force": true
+    "force": false
   },
   {
     "shot_id": "DK2_26",
@@ -413,7 +413,7 @@
     "steps": 24,
     "ltx_prompt": "Photorealistic 2008 35mm movie scene matching the starting frame. Inside the blinding clinical fluorescent-lit interrogation room against pale greenish-beige painted cinderblocks and white painted brick. Keep camera framing closely locked to the starting frame with natural subtle dolly breathing and genuine upper-body acting. ONLY the coatless man in flaky cracked white Joker greasepaint, blackened eye paint, smeared crimson mouth scars, shorter dark-green streaked curly hair, subtle mustache/goatee stubble under paint, patterned grey-lavender dress shirt, and dark green waistcoat in the center of frame actively speaks, moving his or her lips, mouth shapes, teeth, and jaw clearly and precisely in real-time lip synchronization with every syllable of the dialogue: \"Plus you have choice tonight, my friend... Harvey on Tenth Street, or Rachel eating warm guacamole!\" All other characters in the frame keep their mouths completely CLOSED and listen silently without speaking. Real human skin pores, authentic natural facial expressions, subtle 2008 35mm film grain.",
     "negative_prompt": "frozen lips, mouth not moving, closed mouth while speaking, bad lip sync, off-timing lip sync, static freeze, everyone mouthing, listener talking, waxy skin, plastic face, airbrushed smooth skin, face morphing, Batman wearing cowl mask, Heath Ledger blond hair, extra limbs, subtitles, watermark, blurry",
-    "force": true
+    "force": false
   },
   {
     "shot_id": "DK2_27",
@@ -445,7 +445,7 @@
     "steps": 24,
     "ltx_prompt": "Photorealistic 2008 35mm movie scene matching the starting frame. Inside the dark green-shadowed police observation room behind the two-way mirrored glass. Keep camera framing closely locked to the starting frame with only subtle realistic cinema breathing and micro-movement. ONLY the curly-haired bearded tech officer in dark-framed glasses and a brown jacket on the right actively speaks, moving his or her lips, mouth shapes, teeth, and jaw clearly and precisely in real-time lip synchronization with every syllable of the dialogue: \"OMG, wait\u2014ChatGPT says throwing people into cinderblock walls spikes cortisol like crazy, literally lol!\" All other characters in the frame keep their mouths completely CLOSED and listen silently without speaking. Real human skin pores, authentic natural facial expressions, subtle 2008 35mm film grain. Maintain a stern, tense, dead-serious facial expression all the way through the final frame; close mouth cleanly when dialogue finishes \u2014 NEVER smile or grin.",
     "negative_prompt": "frozen lips, mouth not moving, closed mouth while speaking, bad lip sync, off-timing lip sync, static freeze, everyone mouthing, listener talking, waxy skin, plastic face, airbrushed smooth skin, face morphing, Batman wearing cowl mask, Heath Ledger blond hair, extra limbs, subtitles, watermark, blurry, smiling, grinning, happy expression, smirking at end, laughing, cheerful",
-    "force": true
+    "force": false
   },
   {
     "shot_id": "DK2_29",

@@ -2,8 +2,8 @@
 __pycache__/
 *.pyc
 *.tar.gz
-clips/
-audio/
+/clips/
+/audio/
 refs/yt_src/
 refs/yt/02_dark_knight_v2/frames/
 .DS_Store
