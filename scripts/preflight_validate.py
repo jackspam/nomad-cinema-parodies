@@ -17,6 +17,13 @@ BANNED_PROMPT_PATTERNS = [
     r"\bmarch(?:ing)? past\b",
 ]
 
+NEGATIVE_CAMERA_PHRASINGS = [
+    r"\bno zoom\b",
+    r"\bdon'?t move\b",
+    r"\bno camera movement\b",
+    r"\bdo not zoom\b",
+]
+
 
 def ffprobe_dur(path: str) -> float:
     return float(
@@ -99,9 +106,13 @@ def validate_and_prepare(slug: str) -> list[str]:
         script_shots = {s["shot_id"].lower(): s for s in json.load(open(script_path)).get("shots", [])}
 
     is_v2_schema = bool(jobs) and ("shot_id" in jobs[0] or "start_image" in jobs[0])
+    cam_spec_path = f"{yt_root}/camera_spec.json"
+    has_cam_spec = os.path.exists(cam_spec_path)
     trimmed_count = 0
+    push_streak = 0
+    early_pushes = 0
 
-    for j in jobs:
+    for idx, j in enumerate(jobs):
         if is_v2_schema:
             prefix = j["shot_id"]
             imgs = [j["start_image"]] + ([j["end_image"]] if j.get("end_image") else [])
@@ -115,6 +126,21 @@ def validate_and_prepare(slug: str) -> list[str]:
             for pat in BANNED_PROMPT_PATTERNS:
                 if re.search(pat, prompt, re.I):
                     issues.append(f"{prefix}: risky motion/physics phrase matched '{pat}'")
+            for npat in NEGATIVE_CAMERA_PHRASINGS:
+                if re.search(npat, prompt, re.I):
+                    issues.append(f"{prefix}: LTX-2.5 negative camera phrase matched '{npat}' (use positive 'static lock-off camera')")
+            if re.search(r"\b(dolly push-in|slow push-in|slow cinema dolly push-in)\b", prompt, re.I):
+                push_streak += 1
+                if idx < 10:
+                    early_pushes += 1
+                if push_streak == 2:
+                    print(f"  [CAMERA GRAMMAR WARN] {prefix}: consecutive dolly push-in detected (risk of repetitive disconnected push-ins)")
+            else:
+                push_streak = 0
+            if early_pushes == 3 and idx < 10:
+                print(f"  [CAMERA GRAMMAR WARN] {slug}: >= 3 dolly push-ins inside first 10 shots (verify Stage 1.5 camera_spec.json)")
+            if has_cam_spec and not j.get("camera_motion"):
+                issues.append(f"{prefix}: missing required camera_motion tag (camera_spec.json present)")
             au = f"{BASE}/audio/{slug}/{j['audio']}"
             if not os.path.exists(au) or os.path.getsize(au) < 1000:
                 issues.append(f"{prefix}: missing audio {au}")
