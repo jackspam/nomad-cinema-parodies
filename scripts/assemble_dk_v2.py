@@ -71,78 +71,68 @@ def measure_peak_db(audio_path: str) -> float:
     return float(m.group(1)) if m else 0.0
 
 
-def build_seamless_score_bed(act1_dur: float, total_dur: float, out_wav: str):
-    """Build continuous Lyria 3.5 Two-Act score leveled to -19.5 LUFS (Act 1) / -18.0 LUFS (Act 2/3)."""
-    s1_mp3 = f"{AUDIO_DIR}/score_dk_act1_dark.mp3"
-    s2_mp3 = f"{AUDIO_DIR}/score_dk_act2_intense.mp3"
-
-    # Extract rich solo-cello/ticking interrogation core starting at t=12.0s (covers ~52s Act 1 without looping)
-    s1_in_lufs = measure_lufs(s1_mp3, 12.0)
-    s1_gain = max(-18.0, min(12.0, -19.5 - s1_in_lufs))
-    act1_wav = f"{TMP_DIR}/score_act1.wav"
+def build_seamless_score_bed(act1_dur: float, act2_end_dur: float, total_dur: float, out_wav: str):
+    """Spotted directly from original Nolan YT scene:
+    - Act 1 (0..act1_dur): ZERO music (dry claustrophobic interrogation silence)
+    - Act 2 (act1_dur+2s..act2_end_dur): Razor-thin discordant minimalist tension (-26.0 LUFS)
+    - Act 3 (act2_end_dur..total_dur): Oppressive minimalist Zimmer dread swell (-18.5 LUFS)
+    """
+    src = f"{AUDIO_DIR}/score_dk_minimal_tension.mp3"
+    # Extract pure sparse minimalist discordant core [4s..48s] (zero melodic chorus)
+    seg = f"{TMP_DIR}/dk_min_seg.wav"
+    in_lufs = measure_lufs(src, 4.0)
     subprocess.run(
         [
-            "ffmpeg", "-y", "-ss", "12.0", "-i", s1_mp3,
-            "-af", f"atrim=0:{act1_dur + 1.5:.4f},asetpts=PTS-STARTPTS,volume={s1_gain:.2f}dB,aresample=48000",
-            "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", act1_wav,
+            "ffmpeg", "-y", "-ss", "4.0", "-i", src,
+            "-af", "atrim=0:44.0,asetpts=PTS-STARTPTS,aresample=48000",
+            "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", seg,
         ],
         check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
     )
-    print(f"  SCORE ACT 1 {os.path.basename(s1_mp3)} (ss=12s): raw={s1_in_lufs:.1f} -> -19.5 LUFS ({s1_gain:+.1f} dB)")
+    # Crossfade cleanly into a continuous tension bed covering Act 2 + Act 3 (~195s -> 5x41.5s tiles)
+    reps = 5
+    inputs = []
+    for _ in range(reps):
+        inputs += ["-i", seg]
+    chain = "[0:a][1:a]acrossfade=d=2.5:c1=tri:c2=tri[a1];[a1][2:a]acrossfade=d=2.5:c1=tri:c2=tri[a2];[a2][3:a]acrossfade=d=2.5:c1=tri:c2=tri[a3];[a3][4:a]acrossfade=d=2.5:c1=tri:c2=tri[abed]"
+    bed_raw = f"{TMP_DIR}/dk_min_loop.wav"
+    subprocess.run(
+        ["ffmpeg", "-y", *inputs, "-filter_complex", chain, "-map", "[abed]", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", bed_raw],
+        check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+    )
+    bed_lufs = measure_lufs(bed_raw)
+    g_act2 = max(-24.0, min(12.0, -26.0 - bed_lufs))
+    g_act3 = max(-24.0, min(12.0, -18.5 - bed_lufs))
 
-    # Extract driving orchestral intense core starting at t=8.0s; crossfade once cleanly to cover Act 2/3
-    s2_dur = ffprobe_dur(s2_mp3)
-    s2_seg_len = min(145.0, max(30.0, s2_dur - 16.0))
-    s2_in_lufs = measure_lufs(s2_mp3, 8.0)
-    s2_gain = max(-18.0, min(12.0, -18.0 - s2_in_lufs))
-    s2_seg = f"{TMP_DIR}/score_act2_seg.wav"
+    act2_start = act1_dur + 2.0  # Starts 2s after lights slam ON
+    act2_len = max(2.0, act2_end_dur - act2_start + 0.8)
+    act3_len = max(2.0, total_dur - act2_end_dur + 1.0)
+    fade_out_bgm = max(1.0, total_dur - 1.5)
+
+    # Silent Act 1 -> gentle 4s creep into Act 2 (-26 LUFS) -> sharp 0.8s dread swell into Act 3 (-18.5 LUFS)
+    fc = (
+        f"[0:a]atrim=0:{act2_start:.4f},asetpts=PTS-STARTPTS[s_dry];"
+        f"[1:a]atrim=0:{act2_len:.4f},asetpts=PTS-STARTPTS,volume={g_act2:.2f}dB,afade=t=in:st=0:d=4.0[s_a2];"
+        f"[1:a]atrim=start={act2_len:.4f}:duration={act3_len:.4f},asetpts=PTS-STARTPTS,volume={g_act3:.2f}dB[s_a3];"
+        f"[s_a2][s_a3]acrossfade=d=0.8:c1=tri:c2=tri[s_23];"
+        f"[s_dry][s_23]concat=n=2:v=0:a=1,atrim=0:{total_dur:.6f},afade=t=out:st={fade_out_bgm:.3f}:d=1.5[bout]"
+    )
     subprocess.run(
         [
-            "ffmpeg", "-y", "-ss", "8.0", "-i", s2_mp3,
-            "-af", f"atrim=0:{s2_seg_len:.4f},asetpts=PTS-STARTPTS,volume={s2_gain:.2f}dB,aresample=48000",
-            "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", s2_seg,
+            "ffmpeg", "-y", "-f", "lavfi", "-t", f"{act2_start + 1.0:.4f}", "-i", "anullsrc=r=48000:cl=stereo",
+            "-i", bed_raw, "-filter_complex", fc, "-map", "[bout]",
+            "-t", f"{total_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", out_wav,
         ],
         check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
     )
-    act2_needed = max(5.0, total_dur - act1_dur + 2.0)
-    act2_wav = f"{TMP_DIR}/score_act2.wav"
-    if act2_needed <= s2_seg_len:
-        subprocess.run(
-            ["ffmpeg", "-y", "-i", s2_seg, "-t", f"{act2_needed:.4f}", "-c:a", "copy", act2_wav],
-            check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-        )
-    else:
-        subprocess.run(
-            [
-                "ffmpeg", "-y", "-i", s2_seg, "-i", s2_seg,
-                "-filter_complex", "[0:a][1:a]acrossfade=d=3.0:c1=tri:c2=tri[aout]",
-                "-map", "[aout]", "-t", f"{act2_needed:.4f}",
-                "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", act2_wav,
-            ],
-            check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-        )
-    print(f"  SCORE ACT 2/3 {os.path.basename(s2_mp3)} (ss=8s): raw={s2_in_lufs:.1f} -> -18.0 LUFS ({s2_gain:+.1f} dB)")
-
-    fade_out_bgm = max(1.0, total_dur - 1.6)
-    subprocess.run(
-        [
-            "ffmpeg", "-y", "-i", act1_wav, "-i", act2_wav,
-            "-filter_complex", (
-                f"[0:a]atrim=0:{act1_dur + 0.6:.4f},asetpts=PTS-STARTPTS[s1];"
-                f"[s1][1:a]acrossfade=d=1.0:c1=tri:c2=tri,atrim=0:{total_dur:.6f},"
-                f"afade=t=in:st=0:d=0.6,afade=t=out:st={fade_out_bgm:.3f}:d=1.6[bout]"
-            ),
-            "-map", "[bout]", "-t", f"{total_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", out_wav,
-        ],
-        check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-    )
+    print(f"  SCORE SPOTTING (YT Nolan Minimalist): Act1=DRY(0..{act2_start:.1f}s), Act2=-26.0 LUFS ({g_act2:+.1f}dB), Act3=-18.5 LUFS ({g_act3:+.1f}dB)")
 
 
 def build_continuous_room_tone(total_dur: float, out_wav: str):
     """Build ONE continuous <240Hz clean room ambience bed across full runtime (no per-shot cuts)."""
     src = f"{AUDIO_DIR}/sfx_room_tone_clean.wav"
     in_lufs = measure_lufs(src)
-    gain = max(-24.0, min(12.0, -42.0 - in_lufs))
+    gain = max(-24.0, min(12.0, -39.0 - in_lufs))
     fade_st = max(0.5, total_dur - 1.0)
     subprocess.run(
         [
@@ -152,7 +142,7 @@ def build_continuous_room_tone(total_dur: float, out_wav: str):
         ],
         check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
     )
-    print(f"  ROOM TONE continuous {os.path.basename(src)}: raw={in_lufs:.1f} -> -42.0 LUFS ({gain:+.1f} dB)")
+    print(f"  ROOM TONE continuous {os.path.basename(src)}: raw={in_lufs:.1f} -> -39.0 LUFS ({gain:+.1f} dB)")
 
 
 def build_timeline_sfx_bus(shot_timing: dict, total_dur: float, out_wav: str):
@@ -193,6 +183,8 @@ def build_timeline_sfx_bus(shot_timing: dict, total_dur: float, out_wav: str):
 
 
 def main():
+    import sys
+    audio_remux = "--audio-remux" in sys.argv and os.path.exists(OUT_MP4)
     os.makedirs(TMP_DIR, exist_ok=True)
     os.makedirs(QA_BUS_DIR, exist_ok=True)
     os.makedirs(os.path.dirname(OUT_MP4), exist_ok=True)
@@ -201,6 +193,7 @@ def main():
     v_parts, d_parts = [], []
     total_frames = 0
     act1_frames = 0
+    act2_end_frames = 0
     shot_timing = {}
 
     for idx, sh in enumerate(shots):
@@ -230,37 +223,39 @@ def main():
         total_frames += n_frames
         if sh["act"] == 1:
             act1_frames += n_frames
+        if sh["act"] <= 2:
+            act2_end_frames += n_frames
 
-        # 1) Video chain
-        vf_steps = ["fps=24"]
-        if n not in LTX_SHOTS:
-            p1 = (n * 1.37) % (2 * math.pi)
-            p2 = (n * 2.51 + 0.8) % (2 * math.pi)
-            vf_steps.append(
-                f"scale=3904:1692:flags=lanczos,"
-                f"crop=3840:1664:x='32+10*sin(0.85*t+{p1:.3f})+5*sin(1.9*t+{p2:.3f})':"
-                f"y='14+5*cos(0.70*t+{p1:.3f})+3*sin(1.6*t+{p2:.3f})':exact=1,"
-                f"scale=1920:832:flags=lanczos"
+        if not audio_remux:
+            vf_steps = ["fps=24"]
+            if n not in LTX_SHOTS:
+                p1 = (n * 1.37) % (2 * math.pi)
+                p2 = (n * 2.51 + 0.8) % (2 * math.pi)
+                vf_steps.append(
+                    f"scale=3904:1692:flags=lanczos,"
+                    f"crop=3840:1664:x='32+10*sin(0.85*t+{p1:.3f})+5*sin(1.9*t+{p2:.3f})':"
+                    f"y='14+5*cos(0.70*t+{p1:.3f})+3*sin(1.6*t+{p2:.3f})':exact=1,"
+                    f"scale=1920:832:flags=lanczos"
+                )
+            else:
+                vf_steps.append("scale=1920:832:flags=lanczos")
+
+            if sid in PER_SHOT_GRADE:
+                vf_steps.append(PER_SHOT_GRADE[sid])
+            vf_steps += ["pad=1920:1080:(ow-iw)/2:(oh-ih)/2:black", "noise=alls=2:allf=t+u", "format=yuv420p"]
+
+            v_part = f"{TMP_DIR}/v_{idx:02d}.mp4"
+            v_parts.append(v_part)
+            subprocess.run(
+                [
+                    "ffmpeg", "-y", "-i", clip_p, "-vf", ",".join(vf_steps), "-an",
+                    "-frames:v", str(n_frames), "-c:v", "libx264", "-preset", "fast", "-crf", "14", "-pix_fmt", "yuv420p", v_part,
+                ],
+                check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
             )
-        else:
-            vf_steps.append("scale=1920:832:flags=lanczos")
 
-        if sid in PER_SHOT_GRADE:
-            vf_steps.append(PER_SHOT_GRADE[sid])
-        vf_steps += ["pad=1920:1080:(ow-iw)/2:(oh-ih)/2:black", "noise=alls=2:allf=t+u", "format=yuv420p"]
-
-        v_part = f"{TMP_DIR}/v_{idx:02d}.mp4"
         d_part = f"{TMP_DIR}/d_{idx:02d}.wav"
-        v_parts.append(v_part)
         d_parts.append(d_part)
-
-        subprocess.run(
-            [
-                "ffmpeg", "-y", "-i", clip_p, "-vf", ",".join(vf_steps), "-an",
-                "-frames:v", str(n_frames), "-c:v", "libx264", "-preset", "fast", "-crf", "14", "-pix_fmt", "yuv420p", v_part,
-            ],
-            check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-        )
 
         # 2) Zero-latency -16 LUFS dialogue WAV
         fade_out_st = max(0.02, exact_dur - 0.015)
@@ -285,23 +280,26 @@ def main():
                 f.write(f"file '{p}'\n")
         subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", txt_p, "-c", "copy", out_p], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
-    v_cat, d_cat = f"{TMP_DIR}/v_cat.mp4", f"{TMP_DIR}/d_cat.wav"
-    concat_list(v_parts, f"{TMP_DIR}/v_list.txt", v_cat)
+    d_cat = f"{TMP_DIR}/d_cat.wav"
     concat_list(d_parts, f"{TMP_DIR}/d_list.txt", d_cat)
+    if not audio_remux:
+        v_cat = f"{TMP_DIR}/v_cat.mp4"
+        concat_list(v_parts, f"{TMP_DIR}/v_list.txt", v_cat)
 
     total_dur = total_frames / 24.0
     act1_dur = act1_frames / 24.0
+    act2_end_dur = act2_end_frames / 24.0
     score_bed = f"{TMP_DIR}/score_bed.wav"
     room_cat = f"{TMP_DIR}/room_cat.wav"
     sfx_cat = f"{TMP_DIR}/sfx_cat.wav"
 
-    build_seamless_score_bed(act1_dur, total_dur, score_bed)
+    build_seamless_score_bed(act1_dur, act2_end_dur, total_dur, score_bed)
     build_continuous_room_tone(total_dur, room_cat)
     cue_times = build_timeline_sfx_bus(shot_timing, total_dur, sfx_cat)
 
     fade_out_vid = max(0.5, total_dur - 1.0)
     pre_mix = f"{TMP_DIR}/pre_mix.wav"
-    # Light ratio=1.8 ducking under speech keeps Lyria score clearly audible while never pumping dynamics
+    # Light ratio=1.8 ducking under speech keeps minimalist tension palpable without pumping
     mix_filter = (
         f"[0:a]asplit=2[dlg_main][dlg_sc];"
         f"[3:a][dlg_sc]sidechaincompress=threshold=0.06:ratio=1.8:attack=40:release=450[bgm_ducked];"
@@ -316,40 +314,49 @@ def main():
         check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
     )
 
-    # Pure linear master gain (-15.0 LUFS) + transparent safety limiter (-2.0 dBFS): leaves AAC headroom & preserves dynamics!
     raw_i = measure_lufs(pre_mix)
     master_gain = max(-8.0, min(8.0, -15.0 - raw_i))
     print(f"  MASTER LINEAR GAIN: pre_mix={raw_i:.2f} LUFS -> -15.0 LUFS (gain={master_gain:+.2f} dB)")
 
-    subprocess.run(
-        [
-            "ffmpeg", "-y", "-i", v_cat, "-i", pre_mix,
-            "-filter_complex", f"[0:v]fade=t=in:st=0:d=0.4,fade=t=out:st={fade_out_vid:.3f}:d=1.0[vout];[1:a]volume={master_gain:.2f}dB,alimiter=limit=-2.0dB:attack=5:release=50:level=disabled[aout]",
-            "-map", "[vout]", "-map", "[aout]",
-            "-c:v", "libx264", "-preset", "slow", "-crf", "19", "-maxrate", "2550k", "-bufsize", "8000k",
-            "-movflags", "+faststart", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
-            "-t", f"{total_dur:.6f}", OUT_MP4,
-        ],
-        check=True,
-    )
+    if audio_remux:
+        tmp_mp4 = OUT_MP4 + ".remux.mp4"
+        subprocess.run(
+            [
+                "ffmpeg", "-y", "-i", OUT_MP4, "-i", pre_mix,
+                "-filter_complex", f"[1:a]volume={master_gain:.2f}dB,alimiter=limit=-2.0dB:attack=5:release=50:level=disabled[aout]",
+                "-map", "0:v:0", "-map", "[aout]",
+                "-c:v", "copy", "-movflags", "+faststart",
+                "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
+                "-t", f"{total_dur:.6f}", tmp_mp4,
+            ],
+            check=True,
+        )
+        os.replace(tmp_mp4, OUT_MP4)
+    else:
+        subprocess.run(
+            [
+                "ffmpeg", "-y", "-i", v_cat, "-i", pre_mix,
+                "-filter_complex", f"[0:v]fade=t=in:st=0:d=0.4,fade=t=out:st={fade_out_vid:.3f}:d=1.0[vout];[1:a]volume={master_gain:.2f}dB,alimiter=limit=-2.0dB:attack=5:release=50:level=disabled[aout]",
+                "-map", "[vout]", "-map", "[aout]",
+                "-c:v", "libx264", "-preset", "slow", "-crf", "19", "-maxrate", "2550k", "-bufsize", "8000k",
+                "-movflags", "+faststart", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
+                "-t", f"{total_dur:.6f}", OUT_MP4,
+            ],
+            check=True,
+        )
 
-    # Export isolated v2.5 QA buses + phone simulation before cleanup
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", "0", "-t", "90", "-i", score_bed, "-c:a", "libmp3lame", "-b:a", "192k", f"{QA_BUS_DIR}/score_only.mp3"], check=True)
-    # Concatenate 4s isolated SFX+room windows around every cue
-    sfx_slices = []
-    for i, (_, ct) in enumerate(cue_times):
-        ss = max(0.0, ct - 1.0)
-        sl = f"{TMP_DIR}/sfx_win_{i}.wav"
-        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", f"{ss:.2f}", "-t", "4.0", "-i", sfx_cat, "-i", room_cat, "-filter_complex", "[0:a][1:a]amix=inputs=2:normalize=0[w]", "-map", "[w]", "-c:a", "pcm_s16le", sl], check=True)
-        sfx_slices.append(sl)
-    concat_list(sfx_slices, f"{TMP_DIR}/sfx_win_list.txt", f"{TMP_DIR}/sfx_win_all.wav")
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", f"{TMP_DIR}/sfx_win_all.wav", "-c:a", "libmp3lame", "-b:a", "192k", f"{QA_BUS_DIR}/sfx_only.mp3"], check=True)
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", "0", "-t", "75", "-i", OUT_MP4, "-vn", "-af", "highpass=f=220,lowpass=f=7000", "-c:a", "libmp3lame", "-b:a", "192k", f"{QA_BUS_DIR}/final_phone_220hz.mp3"], check=True)
-    for tag, ss, dur_s in [("final_00_25", 0, 25), ("final_48_75", 48, 27), ("final_155_185", 155, 30)]:
-        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", str(ss), "-t", str(dur_s), "-i", OUT_MP4, "-vn", "-c:a", "libmp3lame", "-b:a", "192k", f"{QA_BUS_DIR}/{tag}.mp3"], check=True)
+    # Export isolated v2.6 QA buses (Act 1 dry, Act 2 creep, Act 3 swell, phone Act 3)
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", "162", "-t", "55", "-i", score_bed, "-c:a", "libmp3lame", "-b:a", "192k", f"{QA_BUS_DIR}/dk_score_act3.mp3"], check=True)
+    for tag, ss, dur_s, extra in [
+        ("dk_minimal_00_25", 0, 25, []),
+        ("dk_minimal_55_80", 55, 25, []),
+        ("dk_minimal_162_205", 162, 43, []),
+        ("dk_minimal_phone_act3", 165, 50, ["-af", "highpass=f=220,lowpass=f=7000"]),
+    ]:
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", str(ss), "-t", str(dur_s), "-i", OUT_MP4, "-vn", *extra, "-c:a", "libmp3lame", "-b:a", "192k", f"{QA_BUS_DIR}/{tag}.mp3"], check=True)
 
     size_mb = os.path.getsize(OUT_MP4) / (1024 * 1024)
-    print(f"MASTER_READY {OUT_MP4} -> {total_dur:.2f}s ({total_frames}f), {size_mb:.2f} MB (QA buses saved in {QA_BUS_DIR})")
+    print(f"MASTER_READY {OUT_MP4} -> {total_dur:.2f}s ({total_frames}f), {size_mb:.2f} MB (v2.6 QA buses in {QA_BUS_DIR})")
 
 
 if __name__ == "__main__":

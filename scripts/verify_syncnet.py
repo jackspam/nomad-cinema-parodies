@@ -21,6 +21,8 @@ def crop_speaker_video(src_mp4: str, speaker_side: str, dst_mp4: str) -> str:
         vf = "crop=iw*0.60:ih:0:0"
     elif speaker_side == "right":
         vf = "crop=iw*0.60:ih:iw*0.40:0"
+    elif speaker_side == "far_right":
+        vf = "crop=iw*0.32:ih:iw*0.68:0"
     elif speaker_side == "center":
         vf = "crop=iw*0.72:ih:iw*0.14:0"
     else:
@@ -57,6 +59,8 @@ def make_tail_strip(clip_mp4: str, speaker_side: str, out_png: str, label: str, 
         x1, x2 = 0, int(W * 0.58)
     elif speaker_side == "right":
         x1, x2 = int(W * 0.42), W
+    elif speaker_side == "far_right":
+        x1, x2 = int(W * 0.68), W
     else:
         x1, x2 = int(W * 0.16), int(W * 0.84)
 
@@ -82,7 +86,7 @@ def make_tail_strip(clip_mp4: str, speaker_side: str, out_png: str, label: str, 
 
 def verify_one(pipeline: SyncNetPipeline, clip_mp4: str, vo_mp3: str, out_tail_png: str, speaker_side: str = "auto", label: str = "", min_conf: float = 4.5, max_offset: int = 2, max_dist: float = 10.2):
     with tempfile.TemporaryDirectory() as td:
-        vid_for_sync = crop_speaker_video(clip_mp4, speaker_side, os.path.join(td, "spk.mp4")) if speaker_side in ("left", "right", "center") else clip_mp4
+        vid_for_sync = crop_speaker_video(clip_mp4, speaker_side, os.path.join(td, "spk.mp4")) if speaker_side in ("left", "right", "far_right", "center") else clip_mp4
         try:
             offsets, confs, dists, max_conf, min_dist, s3fd_json, has_face = pipeline.inference(video_path=vid_for_sync, audio_path=vo_mp3)
         except Exception as e:
@@ -113,7 +117,7 @@ if __name__ == "__main__":
     ap.add_argument("clip_mp4")
     ap.add_argument("vo_mp3")
     ap.add_argument("out_tail_strip")
-    ap.add_argument("--speaker-side", default="auto", choices=["auto", "left", "center", "right"])
+    ap.add_argument("--speaker-side", default="auto", choices=["auto", "left", "center", "right", "far_right"])
     ap.add_argument("--label", default="")
     ap.add_argument("--min-conf", type=float, default=4.5)
     ap.add_argument("--max-offset", type=int, default=2)

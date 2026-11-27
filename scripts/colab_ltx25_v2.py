@@ -207,9 +207,22 @@ def wait_done(pid):
         time.sleep(3)
 
 
+def detect_ltx_int8() -> bool:
+    try:
+        out = subprocess.check_output(
+            ["nvidia-smi", "--query-gpu=memory.total", "--format=csv,noheader,nounits"],
+            text=True,
+        ).strip().splitlines()[0]
+        return float(out) < 60000.0
+    except Exception:
+        return True
+
+
 def main():
     jobs_path = sys.argv[1]
     only_ids = set(sys.argv[2].split(",")) if len(sys.argv) > 2 and sys.argv[2] else None
+    use_dev_int8 = detect_ltx_int8()
+    print(f"LTX-2.5 Dev mode: use_dev_int8={use_dev_int8}", flush=True)
 
     ensure_comfy()
     jobs = json.load(open(jobs_path))
@@ -228,9 +241,14 @@ def main():
         if existing and not job.get("force"):
             print(f"=== Skipping {out_prefix} (already rendered: {existing[-1]}) ===", flush=True)
             continue
+        for old in existing:
+            os.remove(old)
 
         src_au = os.path.join(INPUT_DIR, job["audio"])
-        num_frames = ltx_num_frames(src_au)
+        min_ltx = ltx_num_frames(src_au)
+        raw_len = job.get("ltx_length") or min_ltx
+        snapped_len = 1 + ((max(raw_len, min_ltx) - 1 + 7) // 8) * 8
+        num_frames = snapped_len
         wav_rel = prep_exact_wav(src_au, num_frames, f"wav/{sid}.wav")
 
         j = dict(job)
@@ -238,14 +256,14 @@ def main():
         j["wav_rel"] = wav_rel
 
         t0 = time.time()
-        print(f"=== LTX-2.5 Dev BF16 Starting {out_prefix} (frames={num_frames}, end_guide={bool(j.get('end_image'))}) ===", flush=True)
-        wf = build_workflow(j, add_guide_info)
+        print(f"=== LTX-2.5 Dev Starting {out_prefix} (frames={num_frames}, int8={use_dev_int8}, end_guide={bool(j.get('end_image'))}) ===", flush=True)
+        wf = build_workflow(j, add_guide_info, use_dev_int8=use_dev_int8)
         pid = submit(wf)
         out = wait_done(pid)
         elapsed = round(time.time() - t0, 1)
         timings[out_prefix] = {"elapsed_sec": elapsed, "frames": num_frames, "outputs": out.get("36", {}).get("images", [])}
         json.dump(timings, open(timings_path, "w"), indent=2)
-        print(f"=== LTX-2.5 Dev BF16 Finished {out_prefix} in {elapsed}s ===", flush=True)
+        print(f"=== LTX-2.5 Dev Finished {out_prefix} in {elapsed}s ===", flush=True)
 
 
 if __name__ == "__main__":
