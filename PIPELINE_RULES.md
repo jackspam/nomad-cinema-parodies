@@ -1,10 +1,15 @@
-# Nomad Cinema Parodies — Pipeline Rules & Hardened Quality Gates (v2.6)
+# Nomad Cinema Parodies — Pipeline Rules & Hardened Quality Gates (v2.7)
 
 _Living engineering standard. Every gate, threshold, and lesson below is automatically published to the live studio Process Handbook and updated whenever a failure mode is discovered and fixed._
 
 ---
 
 ## Version & Hardening Changelog
+
+- **v2.7 (2026-11-27) — Tight-Cast Narrative Coherence (Max 3 Characters), Canonical Speech Fidelity & Pre-Render Radio-Play Audio Gate:**
+  - **Strict 3-Character Maximum per Film:** Every film stars at most 3 Nomad characters around a single continuous escalating dramatic conflict, eliminating crowded ensembles and non-sequitur catchphrase mashups while locking genuine emotional cause-and-effect from beat 1 to the climax.
+  - **Canonical Broken English, Wardrobe & Plot-Integral Stakes:** Preserve every Nomad's authentic speech patterns and signature idioms (broken English & catchphrases for Hooman, Deron, and Ajay), dress every cast member accurately to their movie role except Deron (always locked in his woven bamboo conical rice paddy hat and ornate red dragon Chinese silk robe), and ensure gastrointestinal agony + practical diarrhea crises are woven directly into the plot stakes alongside stoic prestige delivery.
+  - **Pre-Render Radio-Play Audio QA:** Before generating any keyframe or GPU video, stitch all trimmed dialogue stems per film into a single continuous radio-play MP3 and listen end-to-end so narrative flow, comedic timing, pronunciation, and trailing-syllable cleanliness are 100% verified upfront.
 
 - **v2.6 (2026-11-26) — Original YouTube Audio & Music Spotting Analysis (Stage 1.6):**
   - **Match Real Film Spotting Instead of Over-Scoring:** Before generating a single music cue or foley track, extract the original YouTube scene's audio (`yt-dlp -x --audio-format mp3`), listen directly, and map out **where the original director used stark silence / dry room tone**, the **exact musical texture** (e.g., Nolan/Zimmer's oppressive, discordant minimalist interrogation dread starting dry in Act 1 and swelling only in Act 3 vs. Tarantino's cool surf-rock cold-open/outro needle drops with dry banter in between), and every physical foley beat.
