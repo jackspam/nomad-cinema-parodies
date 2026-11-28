@@ -6,11 +6,11 @@ from v27_assemble_common import measure_lufs, place_sfx_cues, run_standard_assem
 def build_ambience(shot_timing, total_dur, out_wav, tmp_dir, audio_dir):
     src = f"{audio_dir}/sfx_mx2_rain_clean.wav"
     in_i = measure_lufs(src)
-    g = max(-24.0, min(12.0, -30.5 - in_i))
+    g = max(-24.0, min(38.0, -30.5 - in_i))
     fade_st = max(0.5, total_dur - 1.0)
     subprocess.run([
         "ffmpeg", "-y", "-stream_loop", "-1", "-t", f"{total_dur + 0.5:.4f}", "-i", src,
-        "-af", f"aresample=48000,highpass=f=45,lowpass=f=320,volume={g:.2f}dB,atrim=0:{total_dur:.6f},afade=t=in:st=0:d=0.4,afade=t=out:st={fade_st:.3f}:d=1.0",
+        "-af", f"aresample=48000,highpass=f=45,lowpass=f=320,volume={g:.2f}dB,alimiter=limit=-14dB:level=disabled,atrim=0:{total_dur:.6f},afade=t=in:st=0:d=0.4,afade=t=out:st={fade_st:.3f}:d=1.0",
         "-t", f"{total_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", out_wav,
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 

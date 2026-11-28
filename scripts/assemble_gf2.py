@@ -7,12 +7,12 @@ def build_ambience(shot_timing, total_dur, out_wav, tmp_dir, audio_dir):
     # Room tone continuous all film (-38 LUFS) + supper-club walla strictly on GF2_01..04 cutting HARD SILENT at GF2_05!
     src_room = f"{audio_dir}/sfx_gf2_room_clean.wav"
     in_r = measure_lufs(src_room)
-    g_r = max(-24.0, min(12.0, -38.0 - in_r))
+    g_r = max(-24.0, min(38.0, -34.0 - in_r))
     fade_st = max(0.5, total_dur - 1.0)
     r_wav = f"{tmp_dir}/amb_room.wav"
     subprocess.run([
         "ffmpeg", "-y", "-stream_loop", "-1", "-t", f"{total_dur + 0.5:.4f}", "-i", src_room,
-        "-af", f"aresample=48000,highpass=f=45,lowpass=f=240,volume={g_r:.2f}dB,atrim=0:{total_dur:.6f},afade=t=in:st=0:d=0.4,afade=t=out:st={fade_st:.3f}:d=1.0",
+        "-af", f"aresample=48000,highpass=f=50,lowpass=f=240,volume={g_r:.2f}dB,alimiter=limit=-14dB:level=disabled,atrim=0:{total_dur:.6f},afade=t=in:st=0:d=0.4,afade=t=out:st={fade_st:.3f}:d=1.0",
         "-t", f"{total_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", r_wav,
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
@@ -78,6 +78,7 @@ if __name__ == "__main__":
         "sfx_shots": [2, 19],
         "beat_holds": [4, 5, 16, 18, 24],
         "impact_shots": [19],
+        "start_trims": {"GF2_20": 0.16},
         "audio_offsets": {"GF2_04": 0.042, "GF2_13": 0.042},
         "fx_durations": {2: 3.30, 19: 3.70},
         "grade_filter": "eq=contrast=1.02:saturation=1.02",

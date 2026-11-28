@@ -11,10 +11,10 @@
     "camera_motion": "STATIC_LOCKED",
     "speaker": "fx",
     "speaker_side": "center",
-    "seed": 8001,
-    "ltx_prompt": "Photorealistic 2012 35mm New Mexico desert crime drama matching the starting frame. Wide static high-noon desert standoff framing matching the starting frame: desert heat shimmers faintly across ochre sand beside parked black sedan loaded with golden-brown crystal meth bags and black SUV while Damon, Zach, and Hooman hold a tense motionless standoff in crisp desert breeze. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, 1990s-style 35mm film grain.",
+    "seed": 8091,
+    "ltx_prompt": "Photorealistic 2012 35mm New Mexico desert crime drama matching the starting frame. Wide static high-noon desert standoff framing matching the starting frame: desert heat shimmers faintly across ochre sand beside parked black sedan loaded with golden-brown crystal meth bags and black SUV while Damon, Zach, and Hooman (holding the gleaming stainless-steel silver Magic Cone with curved D-handle) hold a tense motionless standoff in crisp desert breeze. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, 1990s-style 35mm film grain.",
     "negative_prompt": "waxy skin, smooth plastic surface, nudity, flickering background, gold brocade pants, patterned trousers, extra limbs, subtitles, watermark, blurry",
-    "force": false
+    "force": true
   },
   {
     "shot_id": "BB2_02",
@@ -181,10 +181,12 @@
     "camera_motion": "STATIC_LOCKED",
     "speaker": "damon",
     "speaker_side": "center",
-    "seed": 8011,
-    "ltx_prompt": "Photorealistic 2012 35mm New Mexico desert crime drama matching the starting frame. blazing noon overhead desert sun, turquoise sky, heat haze. Set context: Tight MCU on Damon (Heisenberg: black porkpie hat, dark rectangular glasses, black zip jacket) framed left-center against blazing turquoise New Mexico sky and ochre desert horizon.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the bald Black man wearing rectangular dark glasses, black Heisenberg porkpie hat, and black zip jacket in frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"Nope. Stay out of it, Zach. Hooman, I trained six months for Aquabike\u2014pure swim and bike, no run, zero margin. You're not taking half my empire.\" maintaining stoic deadpan prestige gravity and closing mouth cleanly when dialogue finishes. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, micro-head emphasis on stressed words, and expressive jaw articulation (never frozen, never goofy smiling). Rising desert heat haze shimmers over mesas and matte-black SUV while hot noon breeze lightly brushes collar edges. Real human skin pores, 1990s-style 35mm film grain.",
-    "negative_prompt": "frozen lips, closed mouth while speaking, listener talking, unprompted grin at end, waxy skin, dragon robe, bamboo hat, subtitles, watermark, blurry, stiff robot pose, frozen eyes, blank mannequin stare",
-    "force": false
+    "seed": 8113,
+    "wan_cfg": 1.6,
+    "wan_steps": 6,
+    "ltx_prompt": "Photorealistic 2012 35mm New Mexico desert crime drama matching the starting frame. blazing noon overhead desert sun, turquoise sky, heat haze. Set context: Tight MCU on Damon (Heisenberg: black porkpie hat, dark rectangular glasses, black zip jacket) framed left-center against blazing turquoise New Mexico sky and ochre desert horizon.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the bald Black man wearing rectangular dark glasses, black Heisenberg porkpie hat, and black zip jacket in frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"Nope. Stay out of it, Zach. Hooman, I trained six months for Aquabike\u2014pure swim and bike, no run, zero margin. You're not taking half my empire.\" maintaining a cold stern grim Heisenberg scowl, somber furious deadpan poker face, and tense downward-set closed mouth when finished. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, and micro-head emphasis on stressed words. Rising desert heat haze shimmers over mesas while hot noon breeze lightly brushes collar edges. Real human skin pores, 1990s-style 35mm film grain.",
+    "negative_prompt": "smiling, smile, grin, grinning, smirk, happy, cheerful, laughing, teeth showing, wide smile, upturned mouth corners, friendly expression, frozen lips, closed mouth while speaking, listener talking, waxy skin, blurry, stiff robot pose",
+    "force": true
   },
   {
     "shot_id": "BB2_12",
@@ -283,10 +285,10 @@
     "camera_motion": "STATIC_LOCKED",
     "speaker": "fx",
     "speaker_side": "center",
-    "seed": 8017,
-    "ltx_prompt": "Photorealistic 2012 35mm New Mexico desert crime drama matching the starting frame. Static lock-off wide desert practical-FX shot matching the starting frame: Damon stands utterly rigid and deadpan beneath his black Heisenberg porkpie hat as a catastrophic pressurized torrent of thick brown muddy diarrhea explodes violently out from behind his trousers across the desert sand onto Hooman's black leather loafers and SUV wheel while Zach and Hooman freeze in stunned stillness. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, 1990s-style 35mm film grain.",
-    "negative_prompt": "waxy skin, smooth plastic surface, nudity, flickering background, gold brocade pants, patterned trousers, extra limbs, subtitles, watermark, blurry",
-    "force": false
+    "seed": 8177,
+    "ltx_prompt": "Photorealistic 2012 35mm New Mexico desert crime drama matching the starting frame. Static lock-off wide desert practical-FX shot matching the starting frame: pivoted Damon glares coldly over his shoulder under his black Heisenberg porkpie hat as a catastrophic pressurized horizontal torrent of thick brown muddy diarrhea blasts straight to the RIGHT from behind Damon's trousers across the desert sand, violently drenching Hooman's black leather loafers, splattering onto Hooman's silver D-handled Magic Cone, leather jacket lapel, and matte-black SUV front bumper while Zach and Hooman flinch back in horror. Trunk on left stays completely clean. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, 1990s-style 35mm film grain.",
+    "negative_prompt": "spraying left, hitting sedan trunk, clean Hooman, beige cone, waxy skin, smooth plastic surface, nudity, flickering background, gold brocade pants, patterned trousers, extra limbs, subtitles, watermark, blurry",
+    "force": true
   },
   {
     "shot_id": "BB2_18",
@@ -317,9 +319,11 @@
     "camera_motion": "STATIC_LOCKED",
     "speaker": "damon",
     "speaker_side": "center",
-    "seed": 9197,
-    "ltx_prompt": "Photorealistic 2012 35mm New Mexico desert crime drama matching the starting frame. blazing noon overhead desert sun, turquoise sky, heat haze. Set context: Tight stern ECU on Damon (Heisenberg: black porkpie hat, dark rectangular glasses, black zip jacket) framed left-center against blazing turquoise New Mexico sky and ochre desert horizon.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the bald Black man wearing rectangular dark glasses, black Heisenberg porkpie hat, and black zip jacket in frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"Facts. System cleared. Race weight locked. My Aquabike bike split just dropped four minutes.\" maintaining cold stern grim Heisenberg scowl, somber intense poker face, flat firm closed lips at the end. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, micro-head emphasis on stressed words, and stern deadpan jaw control. Rising desert heat haze shimmers over mesas and matte-black SUV while hot noon breeze lightly brushes collar edges. Real human skin pores, 1990s-style 35mm film grain.",
-    "negative_prompt": "frozen lips, closed mouth while speaking, listener talking, happy expression, cheerful face, waxy skin, dragon robe, bamboo hat, subtitles, watermark, blurry, stiff robot pose, frozen eyes, blank mannequin stare",
+    "seed": 9299,
+    "wan_cfg": 1.6,
+    "wan_steps": 6,
+    "ltx_prompt": "Photorealistic 2012 35mm New Mexico desert crime drama matching the starting frame. blazing noon overhead desert sun, turquoise sky, heat haze. Set context: Tight stern ECU on Damon (Heisenberg: black porkpie hat, dark rectangular glasses, black zip jacket) framed left-center against blazing turquoise New Mexico sky and ochre desert horizon.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the bald Black man wearing rectangular dark glasses, black Heisenberg porkpie hat, and black zip jacket in frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"Facts. System cleared. Race weight locked. My Aquabike bike split just dropped four minutes.\" maintaining a cold stern grim Heisenberg scowl, somber furious deadpan poker face, and tense downward-set closed mouth at the end. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, micro-head emphasis on stressed words, and stern deadpan jaw control. Rising desert heat haze shimmers over mesas while hot noon breeze lightly brushes collar edges. Real human skin pores, 1990s-style 35mm film grain.",
+    "negative_prompt": "smiling, smile, grin, grinning, smirk, happy, cheerful, laughing, teeth showing, wide smile, upturned mouth corners, friendly expression, frozen lips, closed mouth while speaking, listener talking, waxy skin, blurry, stiff robot pose",
     "force": true
   },
   {
@@ -420,9 +424,11 @@
     "camera_motion": "STATIC_LOCKED",
     "speaker": "damon",
     "speaker_side": "center",
-    "seed": 8025,
-    "ltx_prompt": "Photorealistic 2012 35mm New Mexico desert crime drama matching the starting frame. blazing noon overhead desert sun, turquoise sky, heat haze. Set context: Tight MCU on Damon (Heisenberg: black porkpie hat, dark rectangular glasses, black zip jacket) framed left-center against blazing turquoise New Mexico sky and ochre desert horizon.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the bald Black man wearing rectangular dark glasses, black Heisenberg porkpie hat, and black zip jacket in frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"You're goddamn right.\" maintaining stoic deadpan prestige gravity and closing mouth cleanly when dialogue finishes. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, micro-head emphasis on stressed words, and expressive jaw articulation (never frozen, never goofy smiling). Shallow f/1.8 anamorphic focus isolating razor-sharp skin pores and eyes over creamy background bokeh. Rising desert heat haze shimmers over mesas and matte-black SUV while hot noon breeze lightly brushes collar edges. Real human skin pores, 1990s-style 35mm film grain.",
-    "negative_prompt": "frozen lips, closed mouth while speaking, listener talking, unprompted grin at end, waxy skin, dragon robe, bamboo hat, subtitles, watermark, blurry, stiff robot pose, frozen eyes, blank mannequin stare",
-    "force": false
+    "seed": 8257,
+    "wan_cfg": 1.6,
+    "wan_steps": 6,
+    "ltx_prompt": "Photorealistic 2012 35mm New Mexico desert crime drama matching the starting frame. blazing noon overhead desert sun, turquoise sky, heat haze. Set context: Tight MCU on Damon (Heisenberg: black porkpie hat, dark rectangular glasses, black zip jacket) framed left-center against blazing turquoise New Mexico sky and ochre desert horizon.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the bald Black man wearing rectangular dark glasses, black Heisenberg porkpie hat, and black zip jacket in frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"You're goddamn right.\" maintaining a cold stern grim Heisenberg scowl, somber furious deadpan poker face, and tense downward-set closed mouth at the end. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, and micro-head emphasis on stressed words. Shallow f/1.8 anamorphic focus isolating razor-sharp skin pores and eyes over creamy background bokeh. Rising desert heat haze shimmers over mesas while hot noon breeze lightly brushes collar edges. Real human skin pores, 1990s-style 35mm film grain.",
+    "negative_prompt": "smiling, smile, grin, grinning, smirk, happy, cheerful, laughing, teeth showing, wide smile, upturned mouth corners, friendly expression, frozen lips, closed mouth while speaking, listener talking, waxy skin, blurry, stiff robot pose",
+    "force": true
   }
 ]

@@ -6,11 +6,11 @@ from v27_assemble_common import measure_lufs, place_sfx_cues, run_standard_assem
 def build_ambience(shot_timing, total_dur, out_wav, tmp_dir, audio_dir):
     src = f"{audio_dir}/sfx_bb2_desert_clean.wav"
     in_i = measure_lufs(src)
-    g = max(-24.0, min(12.0, -34.0 - in_i))
+    g = max(-24.0, min(38.0, -32.0 - in_i))
     fade_st = max(0.5, total_dur - 1.0)
     subprocess.run([
         "ffmpeg", "-y", "-stream_loop", "-1", "-t", f"{total_dur + 0.5:.4f}", "-i", src,
-        "-af", f"aresample=48000,highpass=f=45,lowpass=f=240,volume={g:.2f}dB,atrim=0:{total_dur:.6f},afade=t=in:st=0:d=0.4,afade=t=out:st={fade_st:.3f}:d=1.0",
+        "-af", f"aresample=48000,highpass=f=60,lowpass=f=320,volume={g:.2f}dB,alimiter=limit=-14dB:level=disabled,atrim=0:{total_dur:.6f},afade=t=in:st=0:d=0.4,afade=t=out:st={fade_st:.3f}:d=1.0",
         "-t", f"{total_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", out_wav,
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
@@ -39,11 +39,10 @@ def build_score(shot_timing, total_dur, out_wav, tmp_dir, audio_dir):
 
 def build_foley(shot_timing, total_dur, out_wav, audio_dir):
     cues = [
-        (1,  lambda s, d: s + 0.15,               f"{audio_dir}/sfx_bb2_gravel_steps.mp3", -15.0, 2.5),
-        (4,  lambda s, d: s + 0.25,               f"{audio_dir}/sfx_bb2_bag_rustle.mp3",   -16.0, 1.8),
         (6,  lambda s, d: s + max(0.0, d - 1.50), f"{audio_dir}/sfx_stomach_groan.mp3",    -12.5, 1.6),
-        (7,  lambda s, d: s + 0.20,               f"{audio_dir}/sfx_bb2_cone_tap.mp3",     -15.0, 1.4),
-        (12, lambda s, d: s + 0.10,               f"{audio_dir}/sfx_stomach_groan.mp3",    -11.5, 1.8),
+        (7,  lambda s, d: s + 0.10,               f"{audio_dir}/sfx_bb2_cone_tap.mp3",     -9.5, 1.2),
+        (9,  lambda s, d: s + 0.10,               f"{audio_dir}/sfx_bb2_cone_tap.mp3",     -9.5, 1.2),
+        (12, lambda s, d: s + 0.05,               f"{audio_dir}/sfx_stomach_groan.mp3",    -11.0, 1.8),
         (15, lambda s, d: s + max(0.0, d - 1.40), f"{audio_dir}/sfx_stomach_groan.mp3",    -10.5, 1.8),
         (17, lambda s, d: s + 0.00,               f"{audio_dir}/sfx_diarrhea_torrent.mp3",  -4.0, 3.6),
     ]
@@ -57,8 +56,9 @@ if __name__ == "__main__":
         "clip_prefix": "bb2",
         "out_name": "03_breaking_bad_1080p.mp4",
         "sfx_shots": [1, 17],
-        "beat_holds": [16, 23, 25],
+        "beat_holds": [16, 23],
         "impact_shots": [17],
+        "start_trims": {"BB2_10": 0.185},
         "fx_durations": {1: 3.30, 17: 3.70},
         "grade_filter": "eq=contrast=1.02:saturation=1.02",
         "sidechain_ratio": 1.9,

@@ -199,6 +199,7 @@ def run_standard_assembly(cfg: dict):
     beat_holds = set(cfg.get("beat_holds", ()))
     impact_shots = set(cfg.get("impact_shots", ()))
     au_offsets = cfg.get("audio_offsets", {})
+    start_trims = cfg.get("start_trims", {})
     grade_filter = cfg.get("grade_filter", "")
 
     v_parts, d_parts = [], []
@@ -212,8 +213,9 @@ def run_standard_assembly(cfg: dict):
         clip_p = f"{clips_dir}/{prefix}_{sid}_00001_.mp4"
         vo_p = f"{audio_dir}/{sid}.mp3"
 
-        clip_dur = ffprobe_dur(clip_p)
-        au_off = au_offsets.get(sid, 0.0)
+        st_trim = float(start_trims.get(sid, 0.0))
+        clip_dur = max(0.5, ffprobe_dur(clip_p) - st_trim)
+        au_off = float(au_offsets.get(sid, 0.0)) + st_trim
         if n in sfx_shots:
             target_dur = min(clip_dur, cfg.get("fx_durations", {}).get(n, 3.60))
             lufs, gain_db = -99.0, 0.0
@@ -266,10 +268,14 @@ def run_standard_assembly(cfg: dict):
         v_parts.append(v_part)
         d_parts.append(d_part)
 
-        subprocess.run([
-            "ffmpeg", "-y", "-i", clip_p, "-vf", ",".join(vf_steps), "-an",
+        v_cmd = ["ffmpeg", "-y"]
+        if st_trim > 0:
+            v_cmd += ["-ss", f"{st_trim:.4f}"]
+        v_cmd += [
+            "-i", clip_p, "-vf", ",".join(vf_steps), "-an",
             "-frames:v", str(n_frames), "-c:v", "libx264", "-preset", "fast", "-crf", "14", "-pix_fmt", "yuv420p", v_part,
-        ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        ]
+        subprocess.run(v_cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
         fade_out_st = max(0.02, exact_dur - 0.015)
         if n in sfx_shots:
