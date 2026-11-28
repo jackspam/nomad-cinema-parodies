@@ -1,0 +1,218 @@
+{
+  "MX2_02": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 9.025,
+    "lse_d": 6.842,
+    "offset": -1,
+    "shot_id": "MX2_02",
+    "engine": "infinitetalk"
+  },
+  "MX2_03": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 5.287,
+    "lse_d": 9.195,
+    "offset": -1,
+    "shot_id": "MX2_03",
+    "engine": "infinitetalk"
+  },
+  "MX2_04": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 8.545,
+    "lse_d": 7.101,
+    "offset": -1,
+    "shot_id": "MX2_04",
+    "engine": "infinitetalk"
+  },
+  "MX2_05": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 5.993,
+    "lse_d": 8.874,
+    "offset": -2,
+    "shot_id": "MX2_05",
+    "engine": "infinitetalk"
+  },
+  "MX2_06": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.674,
+    "lse_d": 7.44,
+    "offset": -1,
+    "shot_id": "MX2_06",
+    "engine": "infinitetalk"
+  },
+  "MX2_07": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.266,
+    "lse_d": 8.238,
+    "offset": -1,
+    "shot_id": "MX2_07",
+    "engine": "infinitetalk"
+  },
+  "MX2_08": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.852,
+    "lse_d": 7.935,
+    "offset": -1,
+    "shot_id": "MX2_08",
+    "engine": "infinitetalk"
+  },
+  "MX2_09": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.637,
+    "lse_d": 8.251,
+    "offset": -1,
+    "shot_id": "MX2_09",
+    "engine": "infinitetalk"
+  },
+  "MX2_10": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.277,
+    "lse_d": 7.856,
+    "offset": -1,
+    "shot_id": "MX2_10",
+    "engine": "infinitetalk"
+  },
+  "MX2_11": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 5.74,
+    "lse_d": 9.038,
+    "offset": -2,
+    "shot_id": "MX2_11",
+    "engine": "infinitetalk"
+  },
+  "MX2_12": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 9.176,
+    "lse_d": 6.51,
+    "offset": -1,
+    "shot_id": "MX2_12",
+    "engine": "infinitetalk"
+  },
+  "MX2_13": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 8.541,
+    "lse_d": 7.918,
+    "offset": 0,
+    "shot_id": "MX2_13",
+    "engine": "infinitetalk"
+  },
+  "MX2_14": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 8.289,
+    "lse_d": 7.866,
+    "offset": -1,
+    "shot_id": "MX2_14",
+    "engine": "infinitetalk"
+  },
+  "MX2_15": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.53,
+    "lse_d": 7.373,
+    "offset": 0,
+    "shot_id": "MX2_15",
+    "engine": "infinitetalk"
+  },
+  "MX2_16": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 6.229,
+    "lse_d": 9.447,
+    "offset": 0,
+    "shot_id": "MX2_16",
+    "engine": "infinitetalk"
+  },
+  "MX2_17": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.788,
+    "lse_d": 7.656,
+    "offset": -1,
+    "shot_id": "MX2_17",
+    "engine": "infinitetalk"
+  },
+  "MX2_18": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 5.468,
+    "lse_d": 8.494,
+    "offset": -2,
+    "shot_id": "MX2_18",
+    "engine": "infinitetalk"
+  },
+  "MX2_21": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 5.689,
+    "lse_d": 9.194,
+    "offset": -1,
+    "shot_id": "MX2_21",
+    "engine": "infinitetalk"
+  },
+  "MX2_22": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 8.052,
+    "lse_d": 7.475,
+    "offset": -2,
+    "shot_id": "MX2_22",
+    "engine": "infinitetalk"
+  },
+  "MX2_23": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.09,
+    "lse_d": 7.76,
+    "offset": -1,
+    "shot_id": "MX2_23",
+    "engine": "infinitetalk"
+  },
+  "MX2_24": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 5.801,
+    "lse_d": 8.786,
+    "offset": -1,
+    "shot_id": "MX2_24",
+    "engine": "infinitetalk"
+  },
+  "MX2_01": {
+    "passed": true,
+    "status": "PASS (LTX-2.5 Visual QA)",
+    "lse_c": null,
+    "lse_d": null,
+    "offset": 0,
+    "shot_id": "MX2_01",
+    "engine": "ltx25"
+  },
+  "MX2_19": {
+    "passed": true,
+    "status": "PASS (LTX-2.5 Visual QA)",
+    "lse_c": null,
+    "lse_d": null,
+    "offset": 0,
+    "shot_id": "MX2_19",
+    "engine": "ltx25"
+  },
+  "MX2_20": {
+    "passed": true,
+    "status": "PASS (LTX-2.5 Visual QA)",
+    "lse_c": null,
+    "lse_d": null,
+    "offset": 0,
+    "shot_id": "MX2_20",
+    "engine": "ltx25"
+  }
+}

@@ -321,10 +321,13 @@
     "camera_motion": "STATIC_LOCKED",
     "speaker": "zach",
     "speaker_side": "right",
-    "seed": 8218,
+    "seed": 9818,
     "ltx_prompt": "Photorealistic 1999 Wachowski 35mm emerald-tinted cyberpunk noir matching the starting frame. moody green-tinted storm lightning through rain-lashed arched hotel windows. Set context: Edited from MX2_ZACH: phone lying face-down on dark side table as Zach lifts the single red pill capsule in storm lightning.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the brown-bearded man in a rain-damp black wool 1999 Matrix coat sweating inside the cracked burgundy wingback chair on the right of frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"...Fine. No ChatGPT. Give me the red pill.\" maintaining stoic deadpan prestige gravity and closing mouth cleanly when dialogue finishes. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, micro-head emphasis on stressed words, and expressive jaw articulation (never frozen, never goofy smiling). Steady storm rain streaks down arched gothic windowpanes while faint emerald-white lightning flickers off wet coats and eyewear. Real human skin pores, subtle 1999 Super 35 anamorphic film grain.",
     "negative_prompt": "frozen lips, closed mouth while speaking, listener talking, unprompted grin at end, waxy skin, dragon robe, bamboo hat, subtitles, watermark, blurry, stiff robot pose, frozen eyes, blank mannequin stare",
-    "force": false
+    "force": true,
+    "wan_cfg": 1.5,
+    "wan_steps": 6,
+    "wan_audio_scale": 1.15
   },
   {
     "shot_id": "MX2_19",
@@ -392,10 +395,13 @@
     "camera_motion": "STATIC_LOCKED",
     "speaker": "zach",
     "speaker_side": "right",
-    "seed": 8222,
-    "ltx_prompt": "Photorealistic 1999 Wachowski 35mm emerald-tinted cyberpunk noir matching the starting frame. moody green-tinted storm lightning through rain-lashed arched hotel windows. Set context: Edited from MX2_ZACH: stunned clear-eyed Zach exhaling softly in emerald storm afterglow with faint dark splatters on background baseboard.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the brown-bearded man in a rain-damp black wool 1999 Matrix coat sweating inside the cracked burgundy wingback chair on the right of frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"Holy fudge... I didn't ask ChatGPT. Not even once.\" maintaining stoic deadpan prestige gravity and closing mouth cleanly when dialogue finishes. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, micro-head emphasis on stressed words, and expressive jaw articulation (never frozen, never goofy smiling). Steady storm rain streaks down arched gothic windowpanes while faint emerald-white lightning flickers off wet coats and eyewear. Real human skin pores, subtle 1999 Super 35 anamorphic film grain.",
+    "seed": 9822,
+    "ltx_prompt": "Photorealistic 1999 Wachowski 35mm emerald-tinted cyberpunk noir matching the starting frame. moody green-tinted storm lightning through rain-lashed arched hotel windows. Set context: Edited from MX2_ZACH: stunned clear-eyed Zach exhaling softly in emerald storm afterglow with heavy thick wet chunky dark-brown diarrhea splatters coating the burgundy leather armchair backrest, side wings, and peeling green wall behind him.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the brown-bearded man in a rain-damp black wool 1999 Matrix coat sweating inside the cracked burgundy wingback chair on the right of frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"Holy fudge... I didn't ask ChatGPT. Not even once.\" maintaining stoic deadpan prestige gravity and closing mouth cleanly when dialogue finishes. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, micro-head emphasis on stressed words, and expressive jaw articulation (never frozen, never goofy smiling). Steady storm rain streaks down arched gothic windowpanes while faint emerald-white lightning flickers off wet coats and eyewear. Real human skin pores, subtle 1999 Super 35 anamorphic film grain.",
     "negative_prompt": "frozen lips, closed mouth while speaking, listener talking, unprompted grin at end, waxy skin, dragon robe, bamboo hat, subtitles, watermark, blurry, stiff robot pose, frozen eyes, blank mannequin stare",
-    "force": false
+    "force": true,
+    "wan_cfg": 1.5,
+    "wan_steps": 6,
+    "wan_audio_scale": 1.08
   },
   {
     "shot_id": "MX2_23",

@@ -13,6 +13,8 @@ PREFIX_MAP = {
     "03_breaking_bad_v2": "bb2",
     "04_goodfellas_v2": "gf2",
     "07_matrix_v2": "mx2",
+    "08_heat_v2": "ht2",
+    "09_no_country_v2": "nc2",
 }
 AUDIO_START_OFFSET = {"GF2_04": 0.042, "GF2_13": 0.042}
 

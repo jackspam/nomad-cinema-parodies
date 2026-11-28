@@ -1,0 +1,184 @@
+{
+  "NC2_02": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 5.378,
+    "lse_d": 9.875,
+    "offset": 1,
+    "shot_id": "NC2_02",
+    "engine": "infinitetalk"
+  },
+  "NC2_03": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 6.492,
+    "lse_d": 9.297,
+    "offset": -1,
+    "shot_id": "NC2_03",
+    "engine": "infinitetalk"
+  },
+  "NC2_04": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.309,
+    "lse_d": 8.669,
+    "offset": -2,
+    "shot_id": "NC2_04",
+    "engine": "infinitetalk"
+  },
+  "NC2_05": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.176,
+    "lse_d": 8.15,
+    "offset": -1,
+    "shot_id": "NC2_05",
+    "engine": "infinitetalk"
+  },
+  "NC2_06": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.006,
+    "lse_d": 8.148,
+    "offset": -1,
+    "shot_id": "NC2_06",
+    "engine": "infinitetalk"
+  },
+  "NC2_07": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 6.736,
+    "lse_d": 8.488,
+    "offset": -2,
+    "shot_id": "NC2_07",
+    "engine": "infinitetalk"
+  },
+  "NC2_08": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.838,
+    "lse_d": 8.101,
+    "offset": -2,
+    "shot_id": "NC2_08",
+    "engine": "infinitetalk"
+  },
+  "NC2_09": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 8.083,
+    "lse_d": 8.157,
+    "offset": 0,
+    "shot_id": "NC2_09",
+    "engine": "infinitetalk"
+  },
+  "NC2_10": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.354,
+    "lse_d": 8.494,
+    "offset": -1,
+    "shot_id": "NC2_10",
+    "engine": "infinitetalk"
+  },
+  "NC2_11": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.507,
+    "lse_d": 8.444,
+    "offset": -1,
+    "shot_id": "NC2_11",
+    "engine": "infinitetalk"
+  },
+  "NC2_12": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 6.612,
+    "lse_d": 9.123,
+    "offset": -1,
+    "shot_id": "NC2_12",
+    "engine": "infinitetalk"
+  },
+  "NC2_13": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 8.689,
+    "lse_d": 8.117,
+    "offset": 0,
+    "shot_id": "NC2_13",
+    "engine": "infinitetalk"
+  },
+  "NC2_14": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.783,
+    "lse_d": 8.244,
+    "offset": -1,
+    "shot_id": "NC2_14",
+    "engine": "infinitetalk"
+  },
+  "NC2_15": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.515,
+    "lse_d": 8.723,
+    "offset": 0,
+    "shot_id": "NC2_15",
+    "engine": "infinitetalk"
+  },
+  "NC2_16": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.263,
+    "lse_d": 9.023,
+    "offset": -1,
+    "shot_id": "NC2_16",
+    "engine": "infinitetalk"
+  },
+  "NC2_17": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 6.634,
+    "lse_d": 8.718,
+    "offset": -1,
+    "shot_id": "NC2_17",
+    "engine": "infinitetalk"
+  },
+  "NC2_19": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 7.999,
+    "lse_d": 7.942,
+    "offset": -1,
+    "shot_id": "NC2_19",
+    "engine": "infinitetalk"
+  },
+  "NC2_20": {
+    "passed": true,
+    "status": "PASS",
+    "lse_c": 9.431,
+    "lse_d": 7.524,
+    "offset": -2,
+    "shot_id": "NC2_20",
+    "engine": "infinitetalk"
+  },
+  "NC2_01": {
+    "shot_id": "NC2_01",
+    "engine": "ltx25",
+    "passed": true,
+    "status": "PRACTICAL_FX_BEAT",
+    "lse_c": null,
+    "lse_d": null,
+    "offset": 0,
+    "note": "Non-speaking / practical SFX shot."
+  },
+  "NC2_18": {
+    "shot_id": "NC2_18",
+    "engine": "ltx25",
+    "passed": true,
+    "status": "PRACTICAL_FX_BEAT",
+    "lse_c": null,
+    "lse_d": null,
+    "offset": 0,
+    "note": "Non-speaking / practical SFX shot."
+  }
+}

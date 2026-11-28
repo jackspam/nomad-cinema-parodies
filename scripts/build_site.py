@@ -228,15 +228,43 @@ FILMS = [
         "slug": "07_matrix",
         "data_slug": "07_matrix_v2",
         "num": "07",
-        "title": "The Matrix — Prompt Zero: The Red Pill Purge (v2.7)",
-        "subtitle": "1999 Emerald-Green Noir · Tight-Cast v2.7: Gigi, Damon & Zach",
+        "title": "The Matrix — Prompt Zero: The Red Pill Purge (v2.8 Climax Redo)",
+        "subtitle": "1999 Emerald-Green Noir · Tight-Cast v2.8: Gigi, Damon & Zach",
         "status": "1080p Ready",
         "status_cls": "done",
         "mp4": "films/07_matrix_1080p.mp4",
         "youtube_4k_url": "https://github.com/jackspam/nomad-cinema-parodies/releases/download/masters-v2.7/07_matrix_4k_youtube.mp4",
         "prep_time": "11 Gold-Master + Derived ECU/OTS 21:9 Keyframes + Radio-Play QA + Wachowski Dry-Act & Don Davis Finale Spotting",
-        "render_time": "24/24 Verified Hybrid Render (21 InfiniteTalk + 3 LTX-2.5 Dev)",
+        "render_time": "24/24 Verified Hybrid Render (21 InfiniteTalk + 3 LTX-2.5 Dev · Chained Rear-Blast Climax & Stained-Chair Continuity)",
         "audit": _v27_audit_rows("07_matrix_v2"),
+    },
+    {
+        "slug": "08_heat",
+        "data_slug": "08_heat_v2",
+        "num": "08",
+        "title": "Heat — Thirty Seconds Flat (v2.8)",
+        "subtitle": "1995 Michael Mann Midnight Diner Noir · Tight 2-Person v2.8: Damon & Deron (Zero Crowd)",
+        "status": "1080p Ready",
+        "status_cls": "done",
+        "mp4": "films/08_heat_1080p.mp4",
+        "youtube_4k_url": "https://github.com/jackspam/nomad-cinema-parodies/releases/download/masters-v2.8/08_heat_4k_youtube.mp4",
+        "prep_time": "YouTube 1995 Diner Reference Analysis + 2-Person Gold-Master 21:9 Keyframes + Continuous 2-Act Lyria 3.5 Noir Score",
+        "render_time": "20/20 Verified Hybrid Render (18 InfiniteTalk + 2 LTX-2.5 Dev · Hostile QA PASS)",
+        "audit": _v27_audit_rows("08_heat_v2"),
+    },
+    {
+        "slug": "09_no_country",
+        "data_slug": "09_no_country_v2",
+        "num": "09",
+        "title": "No Country for Old Men — Call It (v2.8)",
+        "subtitle": "1980 Coen Brothers West Texas Texaco · Tight 2-Person v2.8: Damon & Zach (Zero Crowd)",
+        "status": "1080p Ready",
+        "status_cls": "done",
+        "mp4": "films/09_no_country_1080p.mp4",
+        "youtube_4k_url": "https://github.com/jackspam/nomad-cinema-parodies/releases/download/masters-v2.8/09_no_country_4k_youtube.mp4",
+        "prep_time": "YouTube 1980 Coin-Toss Reference Analysis + 2-Person Gold-Master 21:9 Keyframes + Continuous 2-Act Lyria 3.5 Desert Tension Score",
+        "render_time": "20/20 Verified Hybrid Render (18 InfiniteTalk + 2 LTX-2.5 Dev · Hostile QA PASS)",
+        "audit": _v27_audit_rows("09_no_country_v2"),
     },
 ]
 
@@ -329,7 +357,8 @@ def build():
                     sid = j["shot_id"].lower()
                     title_id = j["shot_id"]
                     img_name = j["start_image"]
-                    dur_txt = f"{j.get('ltx_length', 121)/24.0:.1f}s"
+                    raw_len = j.get("ltx_length")
+                    dur_txt = f"{raw_len/24.0:.1f}s" if raw_len else j.get("engine", "infinitetalk")
                     prompt_txt = j.get("ltx_prompt", "")
                 else:
                     sid = j["prefix"].split("_", 1)[1] if "_" in j["prefix"] else j["prefix"]

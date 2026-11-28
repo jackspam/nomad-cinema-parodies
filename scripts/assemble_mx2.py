@@ -54,8 +54,8 @@ def build_foley(shot_timing, total_dur, out_wav, audio_dir):
         (3,  lambda s, d: s + 2.00, f"{audio_dir}/sfx_mx2_phone_tap.mp3",       -16.5, 1.6),
         (12, lambda s, d: s + 0.35, f"{audio_dir}/sfx_mx2_thunder_crack.mp3",   -13.5, 2.8),
         (19, lambda s, d: s + 1.10, f"{audio_dir}/sfx_mx2_thunder_crack.mp3",   -12.5, 2.2),
-        (20, lambda s, d: s + 0.02, f"{audio_dir}/sfx_mx2_diarrhea_torrent.mp3", -4.0, 3.15),
-        (20, lambda s, d: s + 0.00, f"{audio_dir}/sfx_mx2_thunder_crack.mp3",    -9.0, 3.20),
+        (20, lambda s, d: s + 4.25, f"{audio_dir}/sfx_mx2_diarrhea_torrent.mp3", -4.0, 3.00),
+        (20, lambda s, d: s + 4.20, f"{audio_dir}/sfx_mx2_thunder_crack.mp3",    -9.0, 3.05),
     ]
     return place_sfx_cues(cues, shot_timing, total_dur, out_wav, "MX2")
 
@@ -68,9 +68,9 @@ if __name__ == "__main__":
         "out_name": "07_matrix_1080p.mp4",
         "sfx_shots": [1, 19, 20],
         "beat_holds": [12, 17, 18, 22, 24],
-        "impact_shots": [20],
-        "start_trims": {"MX2_20": 0.97},
-        "fx_durations": {1: 3.40, 19: 3.30, 20: 3.35},
+        "impact_shots": [],
+        "start_trims": {},
+        "fx_durations": {1: 3.40, 19: 3.30, 20: 7.25},
         "grade_filter": "eq=contrast=1.03:saturation=1.01",
         "sidechain_ratio": 1.8,
         "build_ambience": build_ambience,

@@ -1,10 +1,16 @@
-# Nomad Cinema Parodies — Pipeline Rules & Hardened Quality Gates (v2.7)
+# Nomad Cinema Parodies — Pipeline Rules & Hardened Quality Gates (v2.8)
 
 _Living engineering standard. Every gate, threshold, and lesson below is automatically published to the live studio Process Handbook and updated whenever a failure mode is discovered and fixed._
 
 ---
 
 ## Version & Hardening Changelog
+
+- **v2.8 (2026-11-28) — Gritty 2-Person Zero-Crowd Cinema, Anti-Wooden Performance, Continuous Multi-Act Lyria Scoring & Chained Practical FX:**
+  - **Strict 2-Person Gritty Scenes (Zero Crowd Extras):** Restrict dialogue scenes to two characters in iconic intimate locations (midnight diner booth, desolate gas-station counter) with zero background extras, eliminating frozen wooden bystanders and maximizing natural eye-line engagement.
+  - **Continuous Multi-Act Lyria 3.5 Scoring (No Dry Acts):** Generate cohesive 2-act `lyria-3.5` scores tailored to each film's texture (Mann nocturnal noir/synth-strings for *Heat*, stark desert tension/coin-toss pulse for *No Country*) running continuously end-to-end with measured-LUFS ducking and strictly visually-motivated foley (zero phantom off-camera SFX).
+  - **Anti-Wooden InfiniteTalk & Hands-Down / Resting-Prop Keyframe Lock:** Tune InfiniteTalk (`wan_cfg=1.5–1.6`, `steps=6`, `audio_scale=1.05`) with affirmative natural head-turn/micro-expression prompts, and keep all starting keyframes hands-down or props resting firmly on counters so multi-chunk renders never loop a mid-air hand gesture (`LSE-C 7.0–9.4`).
+  - **Chained Last-Frame LTX-2.5 Multi-Beat FX & Full-Headroom Start/End Pairs:** For multi-beat practical comedy climaxes (stand up -> 180° turn -> rear eruption), chain clip B directly from clip A's exact final frame (`mx2_20a_last.jpg`) to eliminate stitch pops, crop keyframes with generous headroom (`top_768=46` / full-headroom pairs), and match post-climax set destruction across subsequent shots (`MX2_22` stained armchair).
 
 - **v2.7 (2026-11-27) — Tight-Cast Narrative Coherence (Max 3 Characters), Canonical Speech Fidelity & Pre-Render Radio-Play Audio Gate:**
   - **Strict 3-Character Maximum per Film:** Every film stars at most 3 Nomad characters around a single continuous escalating dramatic conflict, eliminating crowded ensembles and non-sequitur catchphrase mashups while locking genuine emotional cause-and-effect from beat 1 to the climax.
