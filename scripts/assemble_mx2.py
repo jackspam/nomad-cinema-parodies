@@ -25,13 +25,19 @@ def build_score(shot_timing, total_dur, out_wav, tmp_dir, audio_dir):
     t20_s, t20_d = shot_timing[20][0] - t_start, shot_timing[20][1]
     vol_expr = f"if(between(t,{t20_s:.2f},{t20_s + t20_d:.2f}),0.40,1.0)"
     cue_wav = f"{tmp_dir}/sc_pills.wav"
+    af_tail = (
+        f"[a][b]acrossfade=d=3.0:c1=tri:c2=tri,atrim=0:{dur:.4f},asetpts=PTS-STARTPTS,"
+        f"volume={g:.2f}dB,volume='{vol_expr}':eval=frame,"
+        f"afade=t=in:st=0:d=1.2,afade=t=out:st={max(0.2, dur - 1.5):.3f}:d=1.5,aresample=48000[sc]"
+    )
     subprocess.run([
-        "ffmpeg", "-y", "-stream_loop", "-1", "-i", src,
-        "-af", (
-            f"atrim=start=1.0:duration={dur:.4f},asetpts=PTS-STARTPTS,volume={g:.2f}dB,"
-            f"volume='{vol_expr}':eval=frame,afade=t=in:st=0:d=1.0,afade=t=out:st={max(0.2, dur - 1.4):.3f}:d=1.4,aresample=48000"
+        "ffmpeg", "-y", "-i", src,
+        "-filter_complex", (
+            f"[0:a]atrim=start=4.0:end=67.5,asetpts=PTS-STARTPTS[a];"
+            f"[0:a]atrim=start=26.0:end=67.5,asetpts=PTS-STARTPTS[b];"
+            f"{af_tail}"
         ),
-        "-t", f"{dur:.4f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", cue_wav,
+        "-map", "[sc]", "-t", f"{dur:.4f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", cue_wav,
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     d_ms = int(round(t_start * 1000))
     subprocess.run([
@@ -45,11 +51,11 @@ def build_score(shot_timing, total_dur, out_wav, tmp_dir, audio_dir):
 def build_foley(shot_timing, total_dur, out_wav, audio_dir):
     cues = [
         (1,  lambda s, d: s + 0.10, f"{audio_dir}/sfx_mx2_thunder_crack.mp3",    -8.5, 3.3),
-        (3,  lambda s, d: s + 0.15, f"{audio_dir}/sfx_mx2_phone_tap.mp3",       -15.5, 1.8),
+        (3,  lambda s, d: s + 2.00, f"{audio_dir}/sfx_mx2_phone_tap.mp3",       -16.5, 1.6),
         (12, lambda s, d: s + 0.35, f"{audio_dir}/sfx_mx2_thunder_crack.mp3",   -13.5, 2.8),
         (19, lambda s, d: s + 1.10, f"{audio_dir}/sfx_mx2_thunder_crack.mp3",   -12.5, 2.2),
-        (20, lambda s, d: s + 0.55, f"{audio_dir}/sfx_mx2_diarrhea_torrent.mp3", -4.0, 3.15),
-        (20, lambda s, d: s + 0.45, f"{audio_dir}/sfx_mx2_thunder_crack.mp3",    -9.0, 3.20),
+        (20, lambda s, d: s + 0.02, f"{audio_dir}/sfx_mx2_diarrhea_torrent.mp3", -4.0, 3.15),
+        (20, lambda s, d: s + 0.00, f"{audio_dir}/sfx_mx2_thunder_crack.mp3",    -9.0, 3.20),
     ]
     return place_sfx_cues(cues, shot_timing, total_dur, out_wav, "MX2")
 
@@ -63,7 +69,8 @@ if __name__ == "__main__":
         "sfx_shots": [1, 19, 20],
         "beat_holds": [12, 17, 18, 22, 24],
         "impact_shots": [20],
-        "fx_durations": {1: 3.40, 19: 3.30, 20: 3.70},
+        "start_trims": {"MX2_20": 0.97},
+        "fx_durations": {1: 3.40, 19: 3.30, 20: 3.35},
         "grade_filter": "eq=contrast=1.03:saturation=1.01",
         "sidechain_ratio": 1.8,
         "build_ambience": build_ambience,

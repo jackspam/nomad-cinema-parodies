@@ -12,7 +12,7 @@ def _v27_audit_rows(data_slug: str) -> list[dict]:
     for sh in scr:
         sid = sh["shot_id"]
         spk = sh["speaker"].capitalize() if sh["speaker"] != "fx" else "FX"
-        r = sn[sid]
+        r = sn.get(sid, {"lse_c": None})
         if r.get("lse_c") is None:
             rev = f"LTX-2.5 Dev ({sh['camera_motion']}) | Visual QA + Hostile Re-Check PASS"
             note = sh["cam"]
@@ -226,37 +226,17 @@ FILMS = [
     },
     {
         "slug": "07_matrix",
+        "data_slug": "07_matrix_v2",
         "num": "07",
-        "title": "The Matrix — Red Pill / Magic Cone",
-        "subtitle": "1999 Emerald-Green Noir · Damon, Deron, Hooman, Zach & Morpheus",
-        "status": "Rejected — Queued for v2 Rebuild",
-        "status_cls": "rejected",
-        "hide_video": True,
+        "title": "The Matrix — Prompt Zero: The Red Pill Purge (v2.7)",
+        "subtitle": "1999 Emerald-Green Noir · Tight-Cast v2.7: Gigi, Damon & Zach",
+        "status": "1080p Ready",
+        "status_cls": "done",
         "mp4": "films/07_matrix_1080p.mp4",
-        "prep_time": "v1 Archived",
-        "render_time": "Queued for v2 rebuild with Nomads-only casting & SyncNet gating",
-        "audit": [
-            {"shot": "MX_01 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Morpheus in alligator leather armchair inside crumbling emerald Lafayette Hotel.", "revisions": "Approved (10/10)."},
-            {"shot": "MX_02 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Damon hunched in crimson chair gripping stomach ('Zion shrimp burrito mile 56').", "revisions": "Approved (10/10)."},
-            {"shot": "MX_03 (LTX-2.5 25.0s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Morpheus holding up glowing coppertop battery in leather glove.", "revisions": "Approved (10/10)."},
-            {"shot": "MX_04 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Zach in brown UPS hoodie on emerald hotel divan holding bright iPhone.", "revisions": "Approved (10/10)."},
-            {"shot": "MX_05 (LTX-2.5 25.0s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Morpheus glaring over pince-nez glasses at earth-brown joggers & flip-phone.", "revisions": "Approved (10/10)."},
-            {"shot": "MX_06 (LTX-2.5 v2)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "v1 spawned bystander; v2 locked solo Deron with steaming tea by lightning window.", "revisions": "v2 APPROVED (10/10)."},
-            {"shot": "MX_07 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Iconic Red Pill vs Blue Pill palms framed sharply under storm lightning.", "revisions": "Approved (10/10)."},
-            {"shot": "MX_08 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Damon squinting anxiously ('contain loperamide? Municipal court at nine').", "revisions": "Approved (10/10)."},
-            {"shot": "MX_09 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Deron waving warm teacup pitching two-vial Po Chai Pills against red pill.", "revisions": "Approved (10/10)."},
-            {"shot": "MX_10 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Zach lounging with phone asking if Nebuchadnezzar irrigates olive trees.", "revisions": "Approved (10/10)."},
-            {"shot": "MX_11 (LTX-2.5 60.0s v2)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "v1 grew floating TV over Hooman; v2 keeps Hooman crisp holding glowing cone + pill for full 14.8s.", "revisions": "v2 APPROVED (CRT bandpass EQ applied)."},
-            {"shot": "MX_12 (LTX-2.5 20.3s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Morpheus snapping open Nokia slider yelling 'Kill that monitor immediately!'.", "revisions": "Approved (10/10)."},
-            {"shot": "MX_13 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Hooman chanting 'No spoon! Only cone!' with glowing Magic Cone.", "revisions": "Approved (CRT EQ applied)."},
-            {"shot": "MX_14 (LTX-2.5)", "quality": 9, "physics": 9, "similarity": 10, "lipsync": 10, "notes": "Damon inspecting red capsule ('why am I sweating through a wetsuit?').", "revisions": "Approved (9/10)."},
-            {"shot": "MX_15 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Morpheus leaning forward intently ('Your mind makes it real, Damon').", "revisions": "Approved (10/10)."},
-            {"shot": "MX_16 (LTX-2.5 25.0s v2)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "v1 cloned conical-hat twin; v2 locked solo Deron cheering over hot teacup.", "revisions": "v2 APPROVED (10/10)."},
-            {"shot": "MX_17 (LTX-2.5 25.0s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Damon surging out of red armchair clutching stomach heading for bathroom.", "revisions": "Approved (10/10)."},
-            {"shot": "MX_18 (LTX-2.5 30.0s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Zach warning nervously from divan ('ChatGPT says unplug right now!').", "revisions": "Approved (10/10)."},
-            {"shot": "MX_19 (LTX-2.5 30.0s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Hooman wildly pitching Encino Matrix plumber through CRT monitor.", "revisions": "Approved (CRT EQ applied)."},
-            {"shot": "MX_20 (LTX-2.5 25.0s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Morpheus dark smirk closing out scene ('Disconnect the construct!').", "revisions": "Approved (10/10)."},
-        ],
+        "youtube_4k_url": "https://github.com/jackspam/nomad-cinema-parodies/releases/download/masters-v2.7/07_matrix_4k_youtube.mp4",
+        "prep_time": "11 Gold-Master + Derived ECU/OTS 21:9 Keyframes + Radio-Play QA + Wachowski Dry-Act & Don Davis Finale Spotting",
+        "render_time": "24/24 Verified Hybrid Render (21 InfiniteTalk + 3 LTX-2.5 Dev)",
+        "audit": _v27_audit_rows("07_matrix_v2"),
     },
 ]
 

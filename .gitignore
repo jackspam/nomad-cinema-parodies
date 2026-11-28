@@ -7,3 +7,5 @@ __pycache__/
 refs/yt_src/
 refs/yt/02_dark_knight_v2/frames/
 .DS_Store
+refs/yt/*/frames/
+refs/yt/*/camera_spec.json
