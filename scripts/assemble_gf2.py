@@ -1,18 +1,20 @@
 """Assemble Goodfellas v2 (04_goodfellas_1080p.mp4) with Copa walla -> hard dead-silence cut on 'Funny how lah?' -> finale swell."""
+import os
 import subprocess
 from v27_assemble_common import measure_lufs, place_sfx_cues, run_standard_assembly
 
 
 def build_ambience(shot_timing, total_dur, out_wav, tmp_dir, audio_dir):
-    # Room tone continuous all film (-38 LUFS) + supper-club walla strictly on GF2_01..04 cutting HARD SILENT at GF2_05!
+    # Warm continuous room air (-36 LUFS) + main Copa walla on GF2_01..04 cutting HARD SILENT on GF2_05,
+    # then softer muffled supper-club background room air (-37 LUFS) returning on GF2_06..24.
     src_room = f"{audio_dir}/sfx_gf2_room_clean.wav"
     in_r = measure_lufs(src_room)
-    g_r = max(-24.0, min(38.0, -34.0 - in_r))
+    g_r = max(-24.0, min(38.0, -36.0 - in_r))
     fade_st = max(0.5, total_dur - 1.0)
     r_wav = f"{tmp_dir}/amb_room.wav"
     subprocess.run([
         "ffmpeg", "-y", "-stream_loop", "-1", "-t", f"{total_dur + 0.5:.4f}", "-i", src_room,
-        "-af", f"aresample=48000,highpass=f=50,lowpass=f=240,volume={g_r:.2f}dB,alimiter=limit=-14dB:level=disabled,atrim=0:{total_dur:.6f},afade=t=in:st=0:d=0.4,afade=t=out:st={fade_st:.3f}:d=1.0",
+        "-af", f"aresample=48000,highpass=f=45,lowpass=f=2400,volume={g_r:.2f}dB,alimiter=limit=-14dB:level=disabled,atrim=0:{total_dur:.6f},afade=t=in:st=0:d=0.4,afade=t=out:st={fade_st:.3f}:d=1.0",
         "-t", f"{total_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", r_wav,
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
@@ -27,9 +29,20 @@ def build_ambience(shot_timing, total_dur, out_wav, tmp_dir, audio_dir):
         "-t", f"{total_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", w_wav,
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
+    t_resume = shot_timing[6][0]
+    dur_resume = max(1.0, total_dur - t_resume)
+    d_ms = int(round(t_resume * 1000))
+    g_w_late = max(-24.0, min(12.0, -37.0 - in_w))
+    w_late_wav = f"{tmp_dir}/amb_walla_late.wav"
     subprocess.run([
-        "ffmpeg", "-y", "-i", r_wav, "-i", w_wav,
-        "-filter_complex", f"[0:a][1:a]amix=inputs=2:duration=first:normalize=0,atrim=0:{total_dur:.6f}[aout]",
+        "ffmpeg", "-y", "-stream_loop", "-1", "-t", f"{dur_resume + 0.5:.4f}", "-i", src_w,
+        "-af", f"aresample=48000,highpass=f=120,lowpass=f=1400,volume={g_w_late:.2f}dB,atrim=0:{dur_resume:.6f},afade=t=in:st=0:d=1.5,afade=t=out:st={max(0.2, dur_resume - 1.0):.3f}:d=1.0,adelay={d_ms}|{d_ms},apad=whole_dur={total_dur:.6f},atrim=0:{total_dur:.6f}",
+        "-t", f"{total_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", w_late_wav,
+    ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+    subprocess.run([
+        "ffmpeg", "-y", "-i", r_wav, "-i", w_wav, "-i", w_late_wav,
+        "-filter_complex", f"[0:a][1:a][2:a]amix=inputs=3:duration=first:normalize=0,atrim=0:{total_dur:.6f}[aout]",
         "-map", "[aout]", "-t", f"{total_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", out_wav,
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
@@ -57,14 +70,18 @@ def build_score(shot_timing, total_dur, out_wav, tmp_dir, audio_dir):
 
 
 def build_foley(shot_timing, total_dur, out_wav, audio_dir):
+    # Trim quiet lead-in (0.00-0.85s) from stomach_groan so it rumbles clearly inside GF2_02; remove phantom clinks/misplaced groans.
+    tight_groan = os.path.join(os.path.dirname(out_wav), "gf2_groan_tight.wav")
+    subprocess.run([
+        "ffmpeg", "-y", "-ss", "0.85", "-i", f"{audio_dir}/sfx_gf2_stomach_groan.mp3",
+        "-t", "1.90", "-af", "afade=t=in:st=0:d=0.05,afade=t=out:st=1.65:d=0.25",
+        "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", tight_groan,
+    ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
     cues = [
-        (2,  lambda s, d: s + 0.05,               f"{audio_dir}/sfx_gf2_stomach_groan.mp3",    -10.0, 2.5),
-        (2,  lambda s, d: s + 2.10,               f"{audio_dir}/sfx_gf2_glass_clink.mp3",      -16.5, 1.2),
-        (5,  lambda s, d: s + max(0.0, d - 0.85), f"{audio_dir}/sfx_gf2_glass_clink.mp3",      -14.5, 1.2),
-        (7,  lambda s, d: s + max(0.0, d - 1.50), f"{audio_dir}/sfx_gf2_stomach_groan.mp3",    -12.5, 1.6),
-        (16, lambda s, d: s + 0.00,               f"{audio_dir}/sfx_gf2_stomach_groan.mp3",    -11.5, 1.8),
-        (19, lambda s, d: s + 0.00,               f"{audio_dir}/sfx_gf2_diarrhea_torrent.mp3",  -4.0, 3.6),
-        (23, lambda s, d: s + max(0.0, d - 0.90), f"{audio_dir}/sfx_gf2_glass_clink.mp3",      -14.5, 1.4),
+        (2,  lambda s, d: s + 0.45,               tight_groan,                                -4.5, 1.9),
+        (19, lambda s, d: s + 0.45,               f"{audio_dir}/sfx_gf2_diarrhea_torrent.mp3", -4.0, 3.25),
+        (23, lambda s, d: s + max(0.0, d - 0.90), f"{audio_dir}/sfx_gf2_glass_clink.mp3",     -14.5, 1.4),
     ]
     return place_sfx_cues(cues, shot_timing, total_dur, out_wav, "GF2")
 
@@ -77,6 +94,7 @@ if __name__ == "__main__":
         "out_name": "04_goodfellas_1080p.mp4",
         "sfx_shots": [2, 19],
         "beat_holds": [4, 5, 16, 18, 24],
+        "min_shot_durs": {5: 2.00},
         "impact_shots": [19],
         "start_trims": {"GF2_20": 0.16},
         "audio_offsets": {"GF2_04": 0.042, "GF2_13": 0.042},

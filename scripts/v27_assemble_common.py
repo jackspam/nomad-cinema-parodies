@@ -194,9 +194,10 @@ def run_standard_assembly(cfg: dict):
     os.makedirs(os.path.dirname(out_mp4), exist_ok=True)
 
     shots = json.load(open(f"{BASE}/scripts/{slug}_script.json"))["shots"]
-    jobs = {j["shot_id"]: j for j in json.load(open(f"{BASE}/scripts/{slug}_jobs.json"))}
+    jobs = {j["shot_id"]: j for j in json.load(open(f"{BASE}/scripts/{slug}_jobs.json")) if not j.get("out_prefix", "").endswith("_s2")}
     sfx_shots = set(cfg["sfx_shots"])
     beat_holds = set(cfg.get("beat_holds", ()))
+    min_shot_durs = cfg.get("min_shot_durs", {})
     impact_shots = set(cfg.get("impact_shots", ()))
     au_offsets = cfg.get("audio_offsets", {})
     start_trims = cfg.get("start_trims", {})
@@ -224,7 +225,7 @@ def run_standard_assembly(cfg: dict):
             lufs = measure_lufs(vo_p, au_off)
             gain_db = max(-10.0, min(14.0, -16.0 - lufs))
             tail = 0.38 if n in beat_holds else 0.22
-            target_dur = min(clip_dur, max(max(vo_dur, speech_end) + tail, 1.5))
+            target_dur = min(clip_dur, max(max(vo_dur, speech_end) + tail, float(min_shot_durs.get(n, 0.0)), 1.5))
 
         n_frames = max(24, int(round(target_dur * 24.0)))
         if n_frames / 24.0 > clip_dur:

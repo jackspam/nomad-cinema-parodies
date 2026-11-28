@@ -113,6 +113,7 @@ FILMS = [
         "status": "1080p Ready",
         "status_cls": "done",
         "mp4": "films/03_breaking_bad_1080p.mp4",
+        "youtube_4k_url": "https://github.com/jackspam/nomad-cinema-parodies/releases/download/masters-v2.7/03_breaking_bad_4k_youtube.mp4",
         "prep_time": "14 Gold-Master + Derived ECU/OTS 21:9 Keyframes + Radio-Play QA + Vince Gilligan Dry-Act & Desert Dobro Spotting",
         "render_time": "25/25 Verified Hybrid Render (23 InfiniteTalk + 2 LTX-2.5 Dev)",
         "audit": _v27_audit_rows("03_breaking_bad_v2"),
@@ -293,6 +294,7 @@ p.sub { color: #9ca3af; margin: 0 0 24px; }
 video, img { width: 100%; border-radius: 8px; background: #000; display: block; }
 .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: auto; }
 a.btn { display: inline-block; text-align: center; padding: 9px 14px; border-radius: 8px; background: #2563eb; color: #fff; text-decoration: none; font-weight: 600; font-size: 13px; }
+a.btn.yt4k { background: #059669; color: #fff; }
 a.btn.sec { background: #1f2937; color: #e5e7eb; border: 1px solid #374151; }
 a.btn:hover { opacity: 0.9; text-decoration: none; }
 table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13px; background: #141720; border-radius: 10px; overflow: hidden; }
@@ -323,9 +325,12 @@ def build():
         # Card for index.html
         video_block = ""
         dl_btn = ""
+        yt4k_btn = ""
         if has_mp4:
             video_block = f'<video controls playsinline src="{f["mp4"]}"></video>'
-            dl_btn = f'<a class="btn" href="{f["mp4"]}" download="{os.path.basename(f["mp4"])}">Download 1080p MP4</a>'
+            dl_btn = f'<a class="btn" href="{f["mp4"]}" download="{os.path.basename(f["mp4"])}">Download 1080p Web MP4</a>'
+        if f.get("youtube_4k_url"):
+            yt4k_btn = f'<a class="btn yt4k" href="{f["youtube_4k_url"]}">Download 4K YouTube Master</a>'
         preview_btn = f'<a class="btn" href="{f["preview_url"]}">Preview Verified Shots (23/40) →</a>' if f.get("preview_url") else ""
 
         cards_html.append(f"""
@@ -338,6 +343,7 @@ def build():
       {video_block}
       <div class="actions">
         {preview_btn}
+        {yt4k_btn}
         {dl_btn}
         <a class="btn sec" href="detail/{slug}.html">References &amp; QA Audit →</a>
       </div>
@@ -399,7 +405,13 @@ def build():
         if not audit_rows:
             audit_rows.append('<tr><td colspan="7" class="meta">Pending render — clip-by-clip QA scores and revision notes will populate as each shot finishes.</td></tr>')
 
-        detail_video = f'<video controls playsinline src="../{f["mp4"]}" style="max-width:760px;margin:16px 0;"></video>' if has_mp4 else ""
+        detail_actions = []
+        if f.get("youtube_4k_url"):
+            detail_actions.append(f'<a class="btn yt4k" href="{f["youtube_4k_url"]}">Download 4K YouTube Master</a>')
+        if has_mp4:
+            detail_actions.append(f'<a class="btn" href="../{f["mp4"]}" download="{os.path.basename(f["mp4"])}">Download 1080p Web MP4</a>')
+        detail_actions_html = f'<div class="actions" style="margin:0 0 18px;">{"".join(detail_actions)}</div>' if detail_actions else ""
+        detail_video = f'<video controls playsinline src="../{f["mp4"]}" style="max-width:760px;margin:16px 0 10px;"></video>{detail_actions_html}' if has_mp4 else detail_actions_html
 
         bench_section = ""
         if f.get("bench"):

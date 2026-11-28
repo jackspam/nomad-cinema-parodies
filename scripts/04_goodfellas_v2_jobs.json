@@ -28,10 +28,10 @@
     "camera_motion": "STATIC_LOCKED",
     "speaker": "fx",
     "speaker_side": "center",
-    "seed": 8102,
-    "ltx_prompt": "Photorealistic 1970s Scorsese 35mm Copacabana nightclub drama matching the starting frame. Static lock-off Copacabana VIP booth hold matching the starting frame: warm red fringed table lamp glows softly while Deron sits stiffly composed beneath his conical bamboo hat & red dragon silk robe suppressing a violent stomach cramp as Ajay chuckles slightly on the right and Sheren watches quietly. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, authentic Eastman 5296 tungsten 35mm film grain.",
-    "negative_prompt": "waxy skin, smooth plastic surface, nudity, flickering background, gold brocade pants, patterned trousers, extra limbs, subtitles, watermark, blurry",
-    "force": false
+    "seed": 8192,
+    "ltx_prompt": "Photorealistic 1970s Scorsese 35mm Copacabana nightclub drama matching the starting frame. Static lock-off Copacabana VIP booth hold matching the starting frame: warm red fringed table lamp glows softly while Deron sits stone-faced and grim beneath his conical bamboo hat & red dragon silk robe suppressing a violent stomach cramp with closed unsmiling lips; Sheren watches calmly with cold, worried, unsmiling eyes and closed lips; Ajay glances sideways nervously with closed lips and ZERO smiling. Every person in the booth maintains strict deadpan composure with closed mouths and zero smiles, zero smirks, and zero laughter. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, authentic Eastman 5296 tungsten 35mm film grain.",
+    "negative_prompt": "smiling, grinning, smirk, laughing, cheerful, happy expression, teeth showing, waxy skin, smooth plastic surface, nudity, flickering background, gold brocade pants, patterned trousers, extra limbs, subtitles, watermark, blurry",
+    "force": true
   },
   {
     "shot_id": "GF2_03",
@@ -310,18 +310,19 @@
     "shot_id": "GF2_19",
     "out_prefix": "gf2_GF2_19",
     "engine": "ltx25",
-    "start_image": "gf2_climax_fx.jpg",
-    "end_image": null,
+    "start_image": "gf2_master_wide.jpg",
+    "end_image": "gf2_climax_fx.jpg",
     "audio": "GF2_19.mp3",
     "silent_on_camera": true,
     "ltx_length": 97,
     "camera_motion": "STATIC_LOCKED",
     "speaker": "fx",
     "speaker_side": "center",
-    "seed": 8119,
-    "ltx_prompt": "Photorealistic 1970s Scorsese 35mm Copacabana nightclub drama matching the starting frame. Static lock-off Copacabana VIP booth practical-FX shot matching the starting frame: Deron keeps icy unblinking eye contact beneath his bamboo rice paddy hat and red dragon robe while a pressurized torrent of disgusting brown diarrhea explodes dynamically forward across the red linen table onto the burgundy floor, decanter base, and Ajay's ivory sleeves while all three freeze under glowing red club lamps. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, authentic Eastman 5296 tungsten 35mm film grain.",
+    "seed": 8199,
+    "ltx_prompt": "Photorealistic 1970s Scorsese 35mm Copacabana nightclub drama matching the starting frame. Static lock-off Copacabana VIP booth practical-FX shot matching the starting frame: frame 1 begins completely clean inside the crimson booth, then Deron holds icy unblinking stone-cold glare beneath his conical bamboo hat and red dragon robe as a violent pressurized torrent of disgusting thick dark-brown diarrhea erupts upward from underneath Deron's left side of the crimson tablecloth, blasting across the lower tablecloth, table lamp base, whiskey decanter, and splashing onto Ajay's ivory sleeves and lapels as Ajay recoils in horror and Sheren freezes with a silent wide-eyed gasp. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, authentic Eastman 5296 tungsten 35mm film grain.",
     "negative_prompt": "waxy skin, smooth plastic surface, nudity, flickering background, gold brocade pants, patterned trousers, extra limbs, subtitles, watermark, blurry",
-    "force": false
+    "force": true,
+    "end_guide_strength": 0.65
   },
   {
     "shot_id": "GF2_20",
@@ -407,5 +408,23 @@
     "ltx_prompt": "Photorealistic 1970s Scorsese 35mm Copacabana nightclub drama matching the starting frame. warm glowing red fringed table lamps, ruby velvet booth, dark lounge haze. Set context: MCU on Sheren wearing chic 1970s black velvet nightclub evening dress and gold earrings beside red fringed Copa lamp.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the dark-haired woman in a chic 1970s black velvet evening dress and gold earrings in frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"Bring two more scotches and a mop. And put the dry cleaning on his tab.\" maintaining stoic deadpan prestige gravity and closing mouth cleanly when dialogue finishes. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, micro-head emphasis on stressed words, and expressive jaw articulation (never frozen, never goofy smiling). Shallow f/1.8 anamorphic focus isolating razor-sharp skin pores and eyes over creamy background bokeh. Cigar smoke wisps drift lazily across crimson fringed lamps and dim supper-club patrons shift softly in deep warm bokeh. Real human skin pores, authentic Eastman 5296 tungsten 35mm film grain.",
     "negative_prompt": "frozen lips, closed mouth while speaking, listener talking, unprompted grin at end, waxy skin, subtitles, watermark, blurry, stiff robot pose, frozen eyes, blank mannequin stare",
     "force": false
+  },
+  {
+    "shot_id": "GF2_19",
+    "out_prefix": "gf2_GF2_19_s2",
+    "engine": "ltx25",
+    "start_image": "gf2_master_wide.jpg",
+    "end_image": "gf2_climax_fx.jpg",
+    "audio": "GF2_19.mp3",
+    "silent_on_camera": true,
+    "ltx_length": 97,
+    "camera_motion": "STATIC_LOCKED",
+    "speaker": "fx",
+    "speaker_side": "center",
+    "seed": 8299,
+    "ltx_prompt": "Photorealistic 1970s Scorsese 35mm Copacabana nightclub drama matching the starting frame. Static lock-off Copacabana VIP booth practical-FX shot matching the starting frame: frame 1 begins completely clean inside the crimson booth, then Deron holds icy unblinking stone-cold glare beneath his conical bamboo hat and red dragon robe as a violent pressurized torrent of disgusting thick dark-brown diarrhea erupts upward from underneath Deron's left side of the crimson tablecloth, blasting across the lower tablecloth, table lamp base, whiskey decanter, and splashing onto Ajay's ivory sleeves and lapels as Ajay recoils in horror and Sheren freezes with a silent wide-eyed gasp. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, authentic Eastman 5296 tungsten 35mm film grain.",
+    "negative_prompt": "waxy skin, smooth plastic surface, nudity, flickering background, gold brocade pants, patterned trousers, extra limbs, subtitles, watermark, blurry",
+    "force": true,
+    "end_guide_strength": 0.65
   }
 ]

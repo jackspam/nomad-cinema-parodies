@@ -340,8 +340,8 @@
     "shot_id": "MX2_20",
     "out_prefix": "mx2_MX2_20",
     "engine": "ltx25",
-    "start_image": "mx2_climax_fx.jpg",
-    "end_image": null,
+    "start_image": "mx2_master_wide.jpg",
+    "end_image": "mx2_climax_fx.jpg",
     "audio": "MX2_20.mp3",
     "silent_on_camera": true,
     "ltx_length": 97,
@@ -349,9 +349,10 @@
     "speaker": "fx",
     "speaker_side": "center",
     "seed": 8220,
-    "ltx_prompt": "Photorealistic 1999 Wachowski 35mm emerald-tinted cyberpunk noir matching the starting frame. Static lock-off emerald hotel practical-FX shot matching the starting frame: green-white lightning flashes outside the rainy gothic window as a catastrophic pressurized torrent of disgusting dark-brown chunky diarrhea blasts violently forward out of Zach's burgundy wingback chair across the hotel floor and carpet while Zach grips both armrests rigidly and Gigi & Damon watch in stoic stillness. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, subtle 1999 Super 35 anamorphic film grain.",
+    "ltx_prompt": "Photorealistic 1999 Wachowski 35mm emerald-tinted cyberpunk noir matching the starting frame. Static lock-off emerald hotel practical-FX shot matching the starting frame: frame 1 begins completely clean right after Zach swallows the red pill, then bright green-white lightning flashes outside the rainy gothic window as a catastrophic pressurized torrent of disgusting dark-brown chunky diarrhea blasts violently forward out of Zach's burgundy wingback chair across the hotel carpet while Zach grips both armrests stoically and Gigi & Damon watch in unblinking motionless composure. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, subtle 1999 Super 35 anamorphic film grain.",
     "negative_prompt": "waxy skin, smooth plastic surface, nudity, flickering background, gold brocade pants, patterned trousers, extra limbs, subtitles, watermark, blurry",
-    "force": false
+    "force": true,
+    "end_guide_strength": 0.65
   },
   {
     "shot_id": "MX2_21",
@@ -426,5 +427,23 @@
     "force": false,
     "wan_cfg": 1.6,
     "wan_steps": 6
+  },
+  {
+    "shot_id": "MX2_20",
+    "out_prefix": "mx2_MX2_20_s2",
+    "engine": "ltx25",
+    "start_image": "mx2_master_wide.jpg",
+    "end_image": "mx2_climax_fx.jpg",
+    "audio": "MX2_20.mp3",
+    "silent_on_camera": true,
+    "ltx_length": 97,
+    "camera_motion": "STATIC_LOCKED",
+    "speaker": "fx",
+    "speaker_side": "center",
+    "seed": 8320,
+    "ltx_prompt": "Photorealistic 1999 Wachowski 35mm emerald-tinted cyberpunk noir matching the starting frame. Static lock-off emerald hotel practical-FX shot matching the starting frame: frame 1 begins completely clean right after Zach swallows the red pill, then bright green-white lightning flashes outside the rainy gothic window as a catastrophic pressurized torrent of disgusting dark-brown chunky diarrhea blasts violently forward out of Zach's burgundy wingback chair across the hotel carpet while Zach grips both armrests stoically and Gigi & Damon watch in unblinking motionless composure. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, subtle 1999 Super 35 anamorphic film grain.",
+    "negative_prompt": "waxy skin, smooth plastic surface, nudity, flickering background, gold brocade pants, patterned trousers, extra limbs, subtitles, watermark, blurry",
+    "force": true,
+    "end_guide_strength": 0.65
   }
 ]
