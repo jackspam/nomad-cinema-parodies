@@ -221,10 +221,10 @@
     "camera_motion": "STATIC_LOCKED",
     "speaker": "gigi",
     "speaker_side": "left",
-    "seed": 8213,
-    "ltx_prompt": "Photorealistic 1999 Wachowski 35mm emerald-tinted cyberpunk noir matching the starting frame. moody green-tinted storm lightning through rain-lashed arched hotel windows. Set context: Edited directly from MX2_GIGI matching yt_30: Gigi raising both black-gloved hands forward holding glowing red pill (left palm) and cobalt blue pill (right palm) reflected in her round pince-nez lenses.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the late-60s woman with strawberry-blonde hair styled as Morpheus in a black alligator leather trenchcoat, purple silk shirt, dark tie, and round dark pince-nez sunglasses on the left of frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"You take the blue pill, the story ends. It numbs your stomach, you go home, and tomorrow morning you ask ChatGPT what to eat for breakfast all over again.\" maintaining stoic deadpan prestige gravity and closing mouth cleanly when dialogue finishes. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, micro-head emphasis on stressed words, and expressive jaw articulation (never frozen, never smiling, keeping an unsmiling, grave, motionless lower face between words). Steady storm rain streaks down arched gothic windowpanes while faint emerald-white lightning flickers off wet coats and eyewear. Real human skin pores, subtle 1999 Super 35 anamorphic film grain.",
-    "negative_prompt": "smiling, grinning, smirk, teeth showing while smiling, cheerful expression, frozen lips, closed mouth while speaking, listener talking, unprompted grin at end, waxy skin, dragon robe, bamboo hat, subtitles, watermark, blurry, stiff robot pose, frozen eyes, blank mannequin stare",
-    "force": false,
+    "seed": 8313,
+    "ltx_prompt": "Photorealistic 1999 Wachowski 35mm emerald-tinted cyberpunk noir matching the starting frame. moody green-tinted storm lightning through rain-lashed arched hotel windows. Set context: Edited directly from MX2_GIGI matching yt_30: Gigi raising both black-gloved hands forward holding glowing red pill (left palm) and cobalt blue pill (right palm) reflected in her round pince-nez lenses.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the late-60s woman with strawberry-blonde hair styled as Morpheus in a black alligator leather trenchcoat, purple silk shirt, dark tie, and round dark pince-nez sunglasses on the left of frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"You take the blue pill, the story ends. It numbs your stomach, you go home, and tomorrow morning you ask ChatGPT what to eat for breakfast all over again.\" maintaining stoic deadpan prestige gravity and closing mouth cleanly into a stern, solemn, deadpan expression with zero smile when dialogue finishes. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, micro-head emphasis on stressed words, and expressive jaw articulation (never frozen, never smiling, keeping an unsmiling, grave, motionless lower face between words). Subtle emerald storm-lightning ambient reflections shimmer faintly across her dark pince-nez lenses inside the quiet dim hotel room. Real human skin pores, subtle 1999 Super 35 anamorphic film grain.",
+    "negative_prompt": "foreground rain streaks, rain inside room, white vertical bars, stripes across face, smiling at end, gentle smile, smirk, smiling, grinning, smirk, teeth showing while smiling, cheerful expression, frozen lips, closed mouth while speaking, listener talking, unprompted grin at end, waxy skin, dragon robe, bamboo hat, subtitles, watermark, blurry, stiff robot pose, frozen eyes, blank mannequin stare",
+    "force": true,
     "wan_cfg": 1.6,
     "wan_steps": 6
   },
@@ -331,10 +331,10 @@
     "camera_motion": "STATIC_LOCKED",
     "speaker": "fx",
     "speaker_side": "right",
-    "seed": 8219,
-    "ltx_prompt": "Photorealistic 1999 Wachowski 35mm emerald-tinted cyberpunk noir matching the starting frame. Static lock-off close-up matching the starting frame: Zach raises his right hand holding the shiny red capsule up to his lips, pops it cleanly into his mouth, and swallows hard with a tight grimace as green storm lightning illuminates his face in the burgundy wingback armchair. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, subtle 1999 Super 35 anamorphic film grain.",
-    "negative_prompt": "waxy skin, smooth plastic surface, nudity, flickering background, gold brocade pants, patterned trousers, extra limbs, subtitles, watermark, blurry",
-    "force": false
+    "seed": 8319,
+    "ltx_prompt": "Photorealistic 1999 Wachowski 35mm emerald-tinted cyberpunk noir matching the starting frame. Static lock-off close-up matching the starting frame: Zach raises his right hand, pops the single crimson capsule cleanly into his mouth and swallows hard, then immediately drops his completely EMPTY right hand out of frame below the lower edge while squinting tightly as green storm lightning illuminates his face in the burgundy wingback armchair. After swallowing, BOTH hands stay completely empty and lowered out of sight. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, subtle 1999 Super 35 anamorphic film grain.",
+    "negative_prompt": "second red pill, holding pill after swallowing, pill reappearing in hand, fingers holding object at end, waxy skin, smooth plastic surface, nudity, flickering background, gold brocade pants, patterned trousers, extra limbs, subtitles, watermark, blurry",
+    "force": true
   },
   {
     "shot_id": "MX2_20",
@@ -402,10 +402,10 @@
     "camera_motion": "STATIC_LOCKED",
     "speaker": "gigi",
     "speaker_side": "left",
-    "seed": 8223,
-    "ltx_prompt": "Photorealistic 1999 Wachowski 35mm emerald-tinted cyberpunk noir matching the starting frame. moody green-tinted storm lightning through rain-lashed arched hotel windows. Set context: Iconic 1999 Morpheus CU matching yt_10: Gigi left-of-center seated in cracked burgundy tufted leather armchair, wearing black alligator-textured leather trenchcoat, deep purple silk shirt & dark tie, armless round dark pince-nez sunglasses, emerald chiaroscuro storm lighting.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the late-60s woman with strawberry-blonde hair styled as Morpheus in a black alligator leather trenchcoat, purple silk shirt, dark tie, and round dark pince-nez sunglasses on the left of frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"Because for the first time in years... you trusted your own gut, Zach.\" maintaining stoic deadpan prestige gravity and closing mouth cleanly when dialogue finishes. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, micro-head emphasis on stressed words, and expressive jaw articulation (never frozen, never smiling, keeping an unsmiling, grave, motionless lower face between words). Steady storm rain streaks down arched gothic windowpanes while faint emerald-white lightning flickers off wet coats and eyewear. Real human skin pores, subtle 1999 Super 35 anamorphic film grain.",
-    "negative_prompt": "smiling, grinning, smirk, teeth showing while smiling, cheerful expression, frozen lips, closed mouth while speaking, listener talking, unprompted grin at end, waxy skin, dragon robe, bamboo hat, subtitles, watermark, blurry, stiff robot pose, frozen eyes, blank mannequin stare",
-    "force": false,
+    "seed": 8323,
+    "ltx_prompt": "Photorealistic 1999 Wachowski 35mm emerald-tinted cyberpunk noir matching the starting frame. moody green-tinted storm lightning through rain-lashed arched hotel windows. Set context: Iconic 1999 Morpheus CU matching yt_10: Gigi left-of-center seated in cracked burgundy tufted leather armchair, wearing black alligator-textured leather trenchcoat, deep purple silk shirt & dark tie, armless round dark pince-nez sunglasses, emerald chiaroscuro storm lighting.. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Exact hair, hat, eyewear, costume, and set lighting preserved from the starting frame. ONLY the late-60s woman with strawberry-blonde hair styled as Morpheus in a black alligator leather trenchcoat, purple silk shirt, dark tie, and round dark pince-nez sunglasses on the left of frame actively speaks with natural jaw and lip articulation synced cleanly to the dialogue: \"Because for the first time in years... you trusted your own gut, Zach.\" maintaining stoic deadpan prestige gravity and closing mouth cleanly with serene unsmiling stoic poise when dialogue finishes. Any other character visible in frame keeps their mouth completely CLOSED without speaking. Natural unhurried Hollywood performance with subtle shoulder breathing, authentic eye blinks, micro-head emphasis on stressed words, and expressive jaw articulation (never frozen, never smiling, keeping an unsmiling, grave, motionless lower face between words). Faint emerald storm-lightning ambient reflections shimmer softly on her round dark pince-nez sunglasses inside the quiet peeling hotel room. Real human skin pores, subtle 1999 Super 35 anamorphic film grain.",
+    "negative_prompt": "foreground rain streaks, rain inside room, white vertical bars, stripes on wall, smiling, grinning, smirk, teeth showing while smiling, cheerful expression, frozen lips, closed mouth while speaking, listener talking, unprompted grin at end, waxy skin, dragon robe, bamboo hat, subtitles, watermark, blurry, stiff robot pose, frozen eyes, blank mannequin stare",
+    "force": true,
     "wan_cfg": 1.6,
     "wan_steps": 6
   },
@@ -427,23 +427,5 @@
     "force": false,
     "wan_cfg": 1.6,
     "wan_steps": 6
-  },
-  {
-    "shot_id": "MX2_20",
-    "out_prefix": "mx2_MX2_20_s2",
-    "engine": "ltx25",
-    "start_image": "mx2_master_wide.jpg",
-    "end_image": "mx2_climax_fx.jpg",
-    "audio": "MX2_20.mp3",
-    "silent_on_camera": true,
-    "ltx_length": 97,
-    "camera_motion": "STATIC_LOCKED",
-    "speaker": "fx",
-    "speaker_side": "center",
-    "seed": 8320,
-    "ltx_prompt": "Photorealistic 1999 Wachowski 35mm emerald-tinted cyberpunk noir matching the starting frame. Static lock-off emerald hotel practical-FX shot matching the starting frame: frame 1 begins completely clean right after Zach swallows the red pill, then bright green-white lightning flashes outside the rainy gothic window as a catastrophic pressurized torrent of disgusting dark-brown chunky diarrhea blasts violently forward out of Zach's burgundy wingback chair across the hotel carpet while Zach grips both armrests stoically and Gigi & Damon watch in unblinking motionless composure. Use static lock-off camera mounted on a heavy tripod, completely stationary framing. Real human skin pores, subtle 1999 Super 35 anamorphic film grain.",
-    "negative_prompt": "waxy skin, smooth plastic surface, nudity, flickering background, gold brocade pants, patterned trousers, extra limbs, subtitles, watermark, blurry",
-    "force": true,
-    "end_guide_strength": 0.65
   }
 ]

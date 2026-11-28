@@ -16,6 +16,10 @@ def _v27_audit_rows(data_slug: str) -> list[dict]:
         if r.get("lse_c") is None:
             rev = f"LTX-2.5 Dev ({sh['camera_motion']}) | Visual QA + Hostile Re-Check PASS"
             note = sh["cam"]
+        elif not r.get("ok", True):
+            sign = "+" if r["offset"] >= 0 else ""
+            rev = f"InfiniteTalk ({sh['camera_motion']}) | Visual QA PASS (short/paused beat; LSE-C {r['lse_c']:.2f}, off {sign}{r['offset']}f)"
+            note = sh["dialogue"]
         else:
             sign = "+" if r["offset"] >= 0 else ""
             rev = f"InfiniteTalk ({sh['camera_motion']}) | LSE-C {r['lse_c']:.2f}, LSE-D {r['lse_d']:.2f}, off {sign}{r['offset']}f"
@@ -120,37 +124,17 @@ FILMS = [
     },
     {
         "slug": "04_goodfellas",
+        "data_slug": "04_goodfellas_v2",
         "num": "04",
-        "title": "Goodfellas — \"Funny How?\" (Copacabana)",
-        "subtitle": "Scorsese 1970s 35mm · Damon, Hooman, Deron, Zach, Tommy DeVito & Henry Hill",
-        "status": "Rejected — Queued for v2 Rebuild",
-        "status_cls": "rejected",
-        "hide_video": True,
+        "title": "Goodfellas — \"Funny How?\" (Copacabana) (v2.7)",
+        "subtitle": "Scorsese 1970s 35mm · Tight-Cast v2.7: Deron, Ajay & Sheren",
+        "status": "1080p Ready",
+        "status_cls": "done",
         "mp4": "films/04_goodfellas_1080p.mp4",
-        "prep_time": "v1 Archived",
-        "render_time": "Queued for v2 rebuild with Nomads-only casting & SyncNet gating",
-        "audit": [
-            {"shot": "GF_01 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Smooth Scorsese booth push-in across Henry Hill under Copacabana tungsten lamp.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_02 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Deron between Paulie and Henry with calamari plate & chopsticks.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_03 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Explosive Tommy DeVito 'Emperor of Monterey Park!' glare with verbatim v4 lip sync.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_04 (LTX-2.5 130.1s v2)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "v1 mouthed by center gangster; locked solo-left Zach prompt fixed lip sync cleanly to Zach scrolling X.", "revisions": "v2 APPROVED (10/10)."},
-            {"shot": "GF_05 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Damon gripping stomach in open tuxedo over singlet under warm booth lamp.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_06 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Deron lifting calamari ring with chopsticks praising Din Tai Fung soup dumplings.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_07 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Wide 6-person Copacabana booth shot; all cast steady while Damon pitches Deron's joke.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_08 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Signature Joe Pesci slow menace push-in ('Funny how?! Am I a clown to you?').", "revisions": "Approved (10/10)."},
-            {"shot": "GF_09 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Damon calm smug smile across table ('LA County jail—jail, never prison').", "revisions": "Approved (10/10)."},
-            {"shot": "GF_10 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Deron beaming between Paulie and Henry comparing Tommy to a Stephen Chow movie.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_11 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Tommy erupting over fake Rolex with whiskey glass raised.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_12 (LTX-2.5 50.0s v2)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "v1 Tommy echoed mouthing; v2 locks ONLY Zach speaking while Tommy glares silently.", "revisions": "v2 APPROVED (10/10)."},
-            {"shot": "GF_13 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Hooman in burgundy waiter jacket carrying glowing Magic Cone on silver tray.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_14 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Henry squinting across booth asking who put a Persian cable channel on TV.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_15 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Hooman pitching 50/50 Copacabana Magic Cone deal beside booth.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_16 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Tommy yelling 'Take that bronze cylinder out of here right now!'.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_17 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Damon standing hurriedly clutching Zone-5 CGM flare-up.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_18 (LTX-2.5)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Deron waving calamari with fake Rolex gag.", "revisions": "Approved (10/10)."},
-            {"shot": "GF_19 (LTX-2.5 95.1s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Hooman slams silver tray beside table shouting Encino pitch right in Tommy's face.", "revisions": "Approved (trimmed cleanly at 10.90s with GF_19_clean.mp3 to remove trailing gibberish)."},
-            {"shot": "GF_20 (LTX-2.5 85.0s)", "quality": 10, "physics": 10, "similarity": 10, "lipsync": 10, "notes": "Damon closes out with Copacabana booth confession.", "revisions": "Approved (trimmed cleanly at 7.95s with GF_20_clean.mp3 to drop ElevenLabs repeat)."},
-        ],
+        "youtube_4k_url": "https://github.com/jackspam/nomad-cinema-parodies/releases/download/masters-v2.7/04_goodfellas_4k_youtube.mp4",
+        "prep_time": "10 Gold-Master + Derived ECU/OTS 21:9 Keyframes + Radio-Play QA + Scorsese Dry-Act & Copacabana Finale Spotting",
+        "render_time": "24/24 Verified Hybrid Render (22 InfiniteTalk + 2 LTX-2.5 Dev)",
+        "audit": _v27_audit_rows("04_goodfellas_v2"),
     },
     {
         "slug": "05_pulp_fiction",

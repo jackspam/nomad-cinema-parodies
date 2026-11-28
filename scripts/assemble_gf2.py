@@ -80,7 +80,7 @@ def build_foley(shot_timing, total_dur, out_wav, audio_dir):
 
     cues = [
         (2,  lambda s, d: s + 0.45,               tight_groan,                                -4.5, 1.9),
-        (19, lambda s, d: s + 0.45,               f"{audio_dir}/sfx_gf2_diarrhea_torrent.mp3", -4.0, 3.25),
+        (19, lambda s, d: s + 0.70,               f"{audio_dir}/sfx_gf2_diarrhea_torrent.mp3", -4.0, 3.00),
         (23, lambda s, d: s + max(0.0, d - 0.90), f"{audio_dir}/sfx_gf2_glass_clink.mp3",     -14.5, 1.4),
     ]
     return place_sfx_cues(cues, shot_timing, total_dur, out_wav, "GF2")

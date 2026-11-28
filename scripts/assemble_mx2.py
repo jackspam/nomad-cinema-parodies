@@ -6,11 +6,11 @@ from v27_assemble_common import measure_lufs, place_sfx_cues, run_standard_assem
 def build_ambience(shot_timing, total_dur, out_wav, tmp_dir, audio_dir):
     src = f"{audio_dir}/sfx_mx2_rain_clean.wav"
     in_i = measure_lufs(src)
-    g = max(-24.0, min(38.0, -30.5 - in_i))
+    g = max(-24.0, min(38.0, -32.0 - in_i))
     fade_st = max(0.5, total_dur - 1.0)
     subprocess.run([
         "ffmpeg", "-y", "-stream_loop", "-1", "-t", f"{total_dur + 0.5:.4f}", "-i", src,
-        "-af", f"aresample=48000,highpass=f=45,lowpass=f=320,volume={g:.2f}dB,alimiter=limit=-14dB:level=disabled,atrim=0:{total_dur:.6f},afade=t=in:st=0:d=0.4,afade=t=out:st={fade_st:.3f}:d=1.0",
+        "-af", f"aresample=48000,highpass=f=45,lowpass=f=2800,volume={g:.2f}dB,alimiter=limit=-14dB:level=disabled,atrim=0:{total_dur:.6f},afade=t=in:st=0:d=0.4,afade=t=out:st={fade_st:.3f}:d=1.0",
         "-t", f"{total_dur:.6f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", out_wav,
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
@@ -26,12 +26,12 @@ def build_score(shot_timing, total_dur, out_wav, tmp_dir, audio_dir):
     vol_expr = f"if(between(t,{t20_s:.2f},{t20_s + t20_d:.2f}),0.40,1.0)"
     cue_wav = f"{tmp_dir}/sc_pills.wav"
     subprocess.run([
-        "ffmpeg", "-y", "-ss", "1.0", "-i", src,
+        "ffmpeg", "-y", "-stream_loop", "-1", "-i", src,
         "-af", (
-            f"atrim=0:{dur:.4f},asetpts=PTS-STARTPTS,volume={g:.2f}dB,"
+            f"atrim=start=1.0:duration={dur:.4f},asetpts=PTS-STARTPTS,volume={g:.2f}dB,"
             f"volume='{vol_expr}':eval=frame,afade=t=in:st=0:d=1.0,afade=t=out:st={max(0.2, dur - 1.4):.3f}:d=1.4,aresample=48000"
         ),
-        "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", cue_wav,
+        "-t", f"{dur:.4f}", "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "2", cue_wav,
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     d_ms = int(round(t_start * 1000))
     subprocess.run([
@@ -44,15 +44,12 @@ def build_score(shot_timing, total_dur, out_wav, tmp_dir, audio_dir):
 
 def build_foley(shot_timing, total_dur, out_wav, audio_dir):
     cues = [
-        (1,  lambda s, d: s + 0.10,               f"{audio_dir}/sfx_mx2_thunder_crack.mp3",    -8.5, 3.3),
-        (3,  lambda s, d: s + 0.15,               f"{audio_dir}/sfx_mx2_phone_tap.mp3",       -15.5, 1.8),
-        (12, lambda s, d: s + 0.05,               f"{audio_dir}/sfx_mx2_pillcase_click.mp3",  -12.0, 1.4),
-        (12, lambda s, d: s + 0.35,               f"{audio_dir}/sfx_mx2_thunder_crack.mp3",   -13.5, 2.8),
-        (17, lambda s, d: s + max(0.0, d - 1.00), f"{audio_dir}/sfx_mx2_phone_tap.mp3",       -15.5, 1.4),
-        (19, lambda s, d: s + 0.15,               f"{audio_dir}/sfx_mx2_pillcase_click.mp3",  -14.0, 1.2),
-        (19, lambda s, d: s + 1.10,               f"{audio_dir}/sfx_mx2_thunder_crack.mp3",   -12.5, 2.2),
-        (20, lambda s, d: s + 0.00,               f"{audio_dir}/sfx_mx2_diarrhea_torrent.mp3", -4.0, 3.6),
-        (20, lambda s, d: s + 0.10,               f"{audio_dir}/sfx_mx2_thunder_crack.mp3",    -9.0, 3.2),
+        (1,  lambda s, d: s + 0.10, f"{audio_dir}/sfx_mx2_thunder_crack.mp3",    -8.5, 3.3),
+        (3,  lambda s, d: s + 0.15, f"{audio_dir}/sfx_mx2_phone_tap.mp3",       -15.5, 1.8),
+        (12, lambda s, d: s + 0.35, f"{audio_dir}/sfx_mx2_thunder_crack.mp3",   -13.5, 2.8),
+        (19, lambda s, d: s + 1.10, f"{audio_dir}/sfx_mx2_thunder_crack.mp3",   -12.5, 2.2),
+        (20, lambda s, d: s + 0.55, f"{audio_dir}/sfx_mx2_diarrhea_torrent.mp3", -4.0, 3.15),
+        (20, lambda s, d: s + 0.45, f"{audio_dir}/sfx_mx2_thunder_crack.mp3",    -9.0, 3.20),
     ]
     return place_sfx_cues(cues, shot_timing, total_dur, out_wav, "MX2")
 
